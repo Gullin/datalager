@@ -1,0 +1,37 @@
+# Data, Process Built or Temporary things in process #
+######################################################
+*.fmw
+*.ffs
+__secrets/
+_geodatarepo/
+_ned/
+_schema/
+_temp/
+
+
+# Documentation #
+#################
+_doc/*.*
+
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+
+# Logs and Databases #
+######################
+*.log
+_log/*.*
+
+
+# OS (Windows) generated files #
+################################
+Thumbs.db
