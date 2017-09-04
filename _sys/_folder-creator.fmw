@@ -1,0 +1,740 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    "C:\Program Files\FME 2017.0 (17259)\fme.exe" C:\Dev\Datalager\_sys\_folder-creator.fmw
+#          --FolderPath ""
+#          --ProcessName ""
+#          --ProcessID ""
+#          --RotDirectory "../"
+#    
+#    
+#!   HISTORY=""
+#!   MAX_LOG_FEATURES="200"
+#!   TITLE=""
+#!   CATEGORY=""
+#!   SOURCE="NONE"
+#!   SHOW_INFO_NODES="true"
+#!   USE_MARKDOWN=""
+#!   FME_DOCUMENT_PRIORGUID="0b5b0aaa-6122-4b61-a7e8-c8321bf006ef"
+#!   LAST_SAVE_BUILD="FME(R) 2017.0.0.0 (20170228 - Build 17259 - WIN64)"
+#!   ZOOM_SCALE="100"
+#!   DESTINATION="NONE"
+#!   WORKSPACE_VERSION="1"
+#!   FME_BUILD_NUM="17259"
+#!   VIEW_POSITION="-3715.66 1046.89"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   LOG_FILE="$(RotDirectory)_log/FME-$(FME_MF_NAME).log"
+#!   USAGE=""
+#!   TERMINATE_REJECTED="YES"
+#!   SOURCE_ROUTING_FILE=""
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   BEGIN_TCL=""
+#!   BEGIN_PYTHON=""
+#!   LAST_SAVE_DATE="2017-04-06T11:54:23"
+#!   DOC_TOP_LEFT="-1584.39 -1190.64"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   FME_DOCUMENT_GUID="7f0a86d4-51bd-4346-8d49-4a563df0ff5f"
+#!   FME_SERVER_SERVICES=""
+#!   END_TCL=""
+#!   PASSWORD=""
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   DOC_EXTENTS="1896.89 1548.18"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   SHOW_ANNOTATIONS="true"
+#!   PYTHON_COMPATIBILITY="27"
+#!   END_PYTHON=""
+#!   MARKDOWN_USAGE=""
+#!   DESCRIPTION=""
+#!   MARKDOWN_DESCRIPTION=""
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   IGNORE_READER_FAILURE="No"
+#!   DESTINATION_ROUTING_FILE=""
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="FILECOPY"
+#!   DATASET="$(FolderPath)"
+#!   KEYWORD="FILECOPY_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="512"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES="filecopy"
+#!   WRITE_DEFS="false"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_start_angle real64 fme_color char(50) fme_geometry fme_char(50) fme_feature_type char(50) fme_rotation real64 fme_basename char(50) fme_fill_color char(50) fme_sweep_angle real64 fme_type char(50) fme_secondary_axis real64 fme_primary_axis real64 fme_text_size real64 fme_dataset char(50) fme_text_string char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="false"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DIRONLY"
+#!   GENERATE_FME_BUILD_NUM="17259"
+#!   FANOUT_GROUP="NO"
+#!   FANOUT_EXPRESSION=""
+#!   COORDSYS=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the File Copy"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="text/plain"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="FILECOPY"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int32"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="FILECOPY"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="FILECOPY"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="FILECOPY"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="filecopy_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="FILECOPY"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="filecopy"
+#!   FEATURE_TYPE_NAME="$(FolderPath)"
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="-252.279 357.545"
+#!   BOUNDING_RECT="-252.279 357.545 560.282 71"
+#!   ORDER="5e+14"
+#!   COLLAPSED="false"
+#!   KEYWORD="FILECOPY_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="filecopy_source_dataset" ATTR_TYPE="char(512)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="filecopy_dest_dataset" ATTR_TYPE="char(512)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="filecopy_dest_filename" ATTR_TYPE="char(128)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL DIRNAME FolderPath Sökväg katalog:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT ProcessName Processnamn:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT ProcessID Process-ID:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT RotDirectory Katalogen där processen startar:"
+#!   DEFAULT_VALUE="../"
+#!   IS_STAND_ALONE="true"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="5"
+#!   NAME="Loggning"
+#!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="-1584.39 -316.254"
+#!   BOTTOM_RIGHT="312.5 -1190.64"
+#!   BOUNDING_RECT="-1584.39 -316.254 1896.89 874.383"
+#!   STICKY="true"
+#!   COLOUR="0.756863,0.54902,0.537255"
+#!   CONTENTS="4 8 11 12 7 "
+#! />
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="Creator"
+#!   VERSION="5"
+#!   POSITION="-1552.81 357.545"
+#!   BOUNDING_RECT="-1552.81 357.545 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17259"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="WorkspaceRunner"
+#!   VERSION="2"
+#!   POSITION="-879.134 -890.384"
+#!   BOUNDING_RECT="-879.134 -890.384 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17259"
+#! >
+#!     <OUTPUT_FEAT NAME="SUCCEEDED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Logg" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Timestamp" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Logg" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_failure_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="SUMMARY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_proc_count" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_processes{}" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="PARAMETER_TYPES" PARM_VALUE="EX_DATE_TIME,&lt;at&gt;Value&lt;openparen&gt;Timestamp&lt;closeparen&gt;,EX_PROCESS_NAME,$(ProcessName),EX_ID,$(ProcessID),EX_TYPE,INFORMATION,EX,&lt;at&gt;Value&lt;openparen&gt;Logg&lt;closeparen&gt;,EX_WorkSpace,$(FME_MF_DIR_USERTYPED)$(FME_MF_NAME),EX_ROT_DIRECTORY,$(RotDirectory)"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_PARAMETERS" PARM_VALUE="EX_DATE_TIME,&lt;at&gt;Value&lt;openparen&gt;Timestamp&lt;closeparen&gt;,EX_PROCESS_NAME,$(ProcessName),EX_ID,$(ProcessID),EX_TYPE,INFORMATION,EX,&lt;at&gt;Value&lt;openparen&gt;Logg&lt;closeparen&gt;,EX_WorkSpace,$(FME_MF_DIR_USERTYPED)$(FME_MF_NAME),EX_ROT_DIRECTORY,$(RotDirectory)"/>
+#!     <XFORM_PARM PARM_NAME="BLOCKING" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="MAX_PROC" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_FILE" PARM_VALUE="$(FME_MF_DIR)_logg.fmw"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="WorkspaceRunner"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="TimeStamper"
+#!   VERSION="1"
+#!   POSITION="-879.134 -434.379"
+#!   BOUNDING_RECT="-879.134 -434.379 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17259"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TIME_ATTR" PARM_VALUE="Timestamp"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TimeStamper"/>
+#!     <XFORM_PARM PARM_NAME="FMT" PARM_VALUE="^Y-^m-^d ^H:^M:^S"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="StringConcatenator"
+#!   VERSION="7"
+#!   POSITION="-879.134 -654.755"
+#!   BOUNDING_RECT="-879.134 -654.755 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17259"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Logg" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="Logg"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ACTION" PARM_VALUE="Create New Attribute"/>
+#!     <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="Skapar&lt;space&gt;katalog&lt;space&gt;$(FolderPath)"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="9"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="11"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+FME_PYTHON_VERSION 27
+GUI IGNORE DestDataset_FILECOPY_1,FILECOPY_OUT_FILE_OPERATION_FILECOPY_1,FILECOPY_OUT_OVERWRITE_FILE_FILECOPY_1,FILECOPY_OUT_COPY_SOURCE_DIRECTORY_FILECOPY_1,FILECOPY_OUT_COPY_SUBDIRECTORIES_FILECOPY_1,FILECOPY_OUT_FAIL_NONEXISTENT_SOURCE_FILECOPY_1,FILECOPY_OUT_MIME_TYPE_FILECOPY_1
+DEFAULT_MACRO FolderPath 
+GUI OPTIONAL DIRNAME FolderPath Sökväg katalog:
+DEFAULT_MACRO ProcessName 
+GUI TEXT ProcessName Processnamn:
+DEFAULT_MACRO ProcessID 
+GUI OPTIONAL TEXT ProcessID Process-ID:
+DEFAULT_MACRO RotDirectory ../
+GUI TEXT RotDirectory Katalogen där processen startar:
+INCLUDE [ if {{$(ProcessName)} == {}} { puts_real {Parameter 'ProcessName' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(RotDirectory)} == {}} { puts_real {Parameter 'RotDirectory' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE NULL
+READER_KEYWORD NULL_SOURCE
+NULL_SOURCE_DATASET null
+
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} FILECOPY
+MULTI_WRITER_KEYWORD{0} FILECOPY_1
+#! END_WB_HEADER
+
+#! START_WB_HEADER
+MACRO WB_KEYWORD "FILECOPY_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER FILECOPY FILECOPY_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_FILECOPY_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER FILECOPY FILECOPY_1
+DEFAULT_MACRO DestDataset_FILECOPY_1 $(FolderPath)
+GUI DIRNAME DestDataset_FILECOPY_1 Destination File Copy Folder:
+# =====================================================================
+# The following GUI line prompts for the overwrite flag.
+# The default is YES.
+# Possible values are YES or NO.
+# Any value other than NO or no is interpreted as YES.
+DEFAULT_MACRO FILECOPY_OUT_FILE_OPERATION_FILECOPY_1 COPY
+FILECOPY_1_FILE_OPERATION "$(FILECOPY_OUT_FILE_OPERATION_FILECOPY_1)"
+GUI CHOICE FILECOPY_OUT_FILE_OPERATION_FILECOPY_1 COPY%MOVE File Operation:
+# =====================================================================
+# The following GUI line prompts for the overwrite flag.
+# The default is YES.
+# Possible values are YES or NO.
+# Any value other than NO or no is interpreted as YES.
+DEFAULT_MACRO FILECOPY_OUT_OVERWRITE_FILE_FILECOPY_1 YES
+FILECOPY_1_OVERWRITE_FILE "$(FILECOPY_OUT_OVERWRITE_FILE_FILECOPY_1)"
+GUI CHOICE FILECOPY_OUT_OVERWRITE_FILE_FILECOPY_1 YES%NO Overwrite Existing File:
+# =====================================================================
+# The following GUI line prompts for the copy source folder flag.
+# The default is YES.
+# Possible values are YES or NO.
+# Any value other than NO or no is interpreted as YES.
+DEFAULT_MACRO FILECOPY_OUT_COPY_SOURCE_DIRECTORY_FILECOPY_1 NO
+FILECOPY_1_COPY_SOURCE_DIRECTORY "$(FILECOPY_OUT_COPY_SOURCE_DIRECTORY_FILECOPY_1)"
+GUI CHOICE FILECOPY_OUT_COPY_SOURCE_DIRECTORY_FILECOPY_1 YES%NO Copy Source Folder:
+# =====================================================================
+# The following GUI line prompts for the copy subfolders flag.
+# The default is YES.
+# Possible values are YES or NO.
+# Any value other than NO or no is interpreted as YES.
+DEFAULT_MACRO FILECOPY_OUT_COPY_SUBDIRECTORIES_FILECOPY_1 YES
+FILECOPY_1_COPY_SUBDIRECTORIES "$(FILECOPY_OUT_COPY_SUBDIRECTORIES_FILECOPY_1)"
+GUI CHOICE FILECOPY_OUT_COPY_SUBDIRECTORIES_FILECOPY_1 YES%NO Copy Subfolders:
+# =====================================================================
+# The following GUI line prompts for the error on non-existent source flag.
+# The default is NO.
+# Possible values are YES or NO.
+# Any value other than NO or no is interpreted as YES.
+DEFAULT_MACRO FILECOPY_OUT_FAIL_NONEXISTENT_SOURCE_FILECOPY_1 NO
+FILECOPY_1_FAIL_NONEXISTENT_SOURCE "$(FILECOPY_OUT_FAIL_NONEXISTENT_SOURCE_FILECOPY_1)"
+GUI CHOICE FILECOPY_OUT_FAIL_NONEXISTENT_SOURCE_FILECOPY_1 YES%NO Error on Non-Existent Source:
+# =====================================================================
+# Set the mime type. Note -- it is actually only used inside of workspaces
+# as a FORMAT_PARAMETER which even then is parsed only by the FME Server
+# Repository Manager
+# The list of mime types below is far from complete but was determined from
+# http://en.wikipedia.org/wiki/Internet_media_type as the common types.
+DEFAULT_MACRO FILECOPY_OUT_MIME_TYPE_FILECOPY_1 text/plain
+FILECOPY_1_MIME_TYPE "$(FILECOPY_OUT_MIME_TYPE_FILECOPY_1)"
+GUI OPTIONAL STRING_OR_CHOICE FILECOPY_OUT_MIME_TYPE_FILECOPY_1 application/json%application/pdf%application/x-dvi%application/x-shockwave-flash%application/x-rar-compressed%application/x-tar%application/zip%audio/mpeg%audio/vnd.rn-realaudio%audio/x-ms-wma%audio/x-wav%image/gif%image/jpeg%image/png%image/svg+xml%image/tiff%text/css%text/csv%text/html%text/plain%text/xml%video/mp4%video/mpeg%video/quicktime%video/x-ms-wmv MIME Type:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO FILECOPY_OUT_DESTINATION_DATASETTYPE_VALIDATION_FILECOPY_1 Yes
+FILECOPY_1_DESTINATION_DATASETTYPE_VALIDATION "$(FILECOPY_OUT_DESTINATION_DATASETTYPE_VALIDATION_FILECOPY_1)"
+FILECOPY_1_DATASET "$(DestDataset_FILECOPY_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+
+#! END_HEADER
+
+LOG_FILENAME "$(RotDirectory)_log/FME-$(FME_MF_NAME).log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_FILECOPY_1 FILECOPY_1
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME FolderCreator
+MACRO FME_VIEWER_APP fmedatainspector
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_CLASSIC NOT_ACTIVATED
+MACRO Creator_2D3D    2D_GEOMETRY
+MACRO Creator_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO Creator_2D3D 3D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+FACTORY_DEF $(Creator_XML) CreationFactory    FACTORY_NAME Creator_XML_Creator    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>)
+FACTORY_DEF $(Creator_CLASSIC) CreationFactory    FACTORY_NAME Creator_CLASSIC_Creator    $(Creator_2D3D) $(Creator_COORDS)    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * TeeFactory    FACTORY_NAME Creator_Cloner    INPUT FEATURE_TYPE _____CREATED______    NUMBER_OF_COPIES 1    OUTPUT FEATURE_TYPE Creator_CREATED        @Tcl2(Creator_CoordSysRemover)        @CoordSys()        fme_feature_type Creator
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Creator CREATED Splitter"   INPUT FEATURE_TYPE Creator_CREATED   OUTPUT FEATURE_TYPE Creator_CREATED_0_GJAgmIF9G6c=   OUTPUT FEATURE_TYPE Creator_CREATED_1_Exx7idfjvCA=
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED_0_GJAgmIF9G6c= Brancher -1 19"   INPUT FEATURE_TYPE Creator_CREATED_0_GJAgmIF9G6c=   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   OUTPUT PASSED FEATURE_TYPE *     @RemoveAttributes("Creator_CREATED_0_GJAgmIF9G6c= Brancher -1 19".BranchingFactory.Count)
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED_1_Exx7idfjvCA= Brancher -1 9"   INPUT FEATURE_TYPE Creator_CREATED_1_Exx7idfjvCA=   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   OUTPUT PASSED FEATURE_TYPE *     @RemoveAttributes("Creator_CREATED_1_Exx7idfjvCA= Brancher -1 9".BranchingFactory.Count)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+Tcl2 proc TimeStamper_formatGetter { inVal } {    if { [string compare $inVal {FME Date/Time (^Y^m^d^H^M^S)}] == 0 } {       return {^Y^m^d^H^M^S};    } elseif { [string compare $inVal {FME Date (^Y^m^d)}] == 0} {       return {^Y^m^d};    } elseif { [string compare $inVal {FME Time (^H^M^S)}] == 0} {       return {^H^M^S};    } elseif { [string compare $inVal {ISO Date (^Y-^m-^d)}] == 0} {       return {^Y-^m-^d};    } elseif { [string compare $inVal {ISO DateTime (^Y-^m-^dT^H:^M:^S)}] == 0} {       return {^Y-^m-^dT^H:^M:^S};    } elseif { [string compare $inVal {ISO Time (^H:^M:^S)}] == 0} {       return {^H:^M:^S};    } elseif { [string compare $inVal {Locale Date (^c)}] == 0} {       return {^c};    };    return $inVal; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME TimeStamper    INPUT  FEATURE_TYPE Creator_CREATED_1_Exx7idfjvCA=    OUTPUT FEATURE_TYPE TimeStamper_OUTPUT         @SupplyAttributes(ENCODED, Timestamp, @Timestamp(@Tcl2("TimeStamper_formatGetter {^Y-^m-^d ^H:^M:^S} ")))
+
+# -------------------------------------------------------------------------
+
+
+Tcl2 proc StringConcatenator_evaluator {} {    if {{OUTGOING} == {OUTGOING}} {      set attr [FME_DecodeText {Logg}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {<Unused>};      if {[string length $attrAll] == 0} { return; };      set attrs [split {<Unused>} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"Skapar<space>katalog<space>$(FolderPath$encode)"};    };    lappend parmList {StringConcatenator};    eval FME_Execute $parmList; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE TimeStamper_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT         @Tcl2("StringConcatenator_evaluator ")
+
+
+# -------------------------------------------------------------------------
+
+# Convert the workspace name to one containing only / -- Tcl likes this better
+# (and so do I)
+
+# And determine the "NULL" device so we can ensure we don't get stray output
+# messing up our stdout if we are running workspaces in the background
+# See http://wiki.tcl.tk/1649 for a description of the tcl_platform
+# variable, the "platform" part seems to have valid values windows, unix, and
+# macintosh (the latter of which is actually pre-OS X)
+
+Tcl2 if { $tcl_platform(platform) == {windows} } {         set ::null_device {NUL:};         set ::__WR_ENV_HELPER__ {};      } else {         set ::null_device {/dev/null};         set ::__WR_ENV_HELPER__ {/usr/bin/env FME_SUBPROCESS_RUN_DETACHED=1}      };
+Tcl2 proc WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_runner { parmListString workspaceFile } {    set workspaceFileUnix [regsub -all {\\} $workspaceFile {/}];    set parmListString [string range $parmListString 1 end-1];    set comment {        Build up the command line in a list, which we'll "eval" to get        at its pieces when we actually execute the "exec".    };    lappend commandArguments {*}$::__WR_ENV_HELPER__ {$(FME_HOME_UNIX)/fme}                             $workspaceFileUnix;    set parmList [split $parmListString {,}];    set comment {        At the same time, remember the TYPES for each of the parameters so        we can avoid logging any passwords in plain text (PR 64546)    };    set parmTypes [split {EX_DATE_TIME,<at>Value<openparen>Timestamp<closeparen>,EX_PROCESS_NAME,$(ProcessName$encode),EX_ID,$(ProcessID$encode),EX_TYPE,INFORMATION,EX,<at>Value<openparen>Logg<closeparen>,EX_WorkSpace,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),EX_ROT_DIRECTORY,$(RotDirectory$encode)} {,}];    set comment {        Note that foreach can walk thorugh more than one list at a time.        If the lists were ever out of sync (had different #s of entries, which should be impossible)        the iteration continues with the shorter list return an empty string. So we should be okay    };    set commandArgumentsToLog $commandArguments;    foreach {parmName encodedValue} $parmList parmType $parmTypes {       set comment {           Decode the parameter value which we now know is very encoded to guard           it from the parser and append them each to a new list which will be passed           as the arguments to the exec function.  Note that the           parameter names need to be turned into macro settings by           prepending them with --           Note also that the WorkspaceRunner sometimes encodes attribute           dereferences by placing <amp> at the beginning rather than using @Value.           Further note that string range forgives if the ending index is > the length of           the string, so we can just ask for the first 5 characters           when we're checking for <amp>.       };       if {[string length $parmName] == 0} { continue; };       lappend commandArguments \"--$parmName\";       lappend commandArgumentsToLog \"--$parmName\";       set comment {           for backwards compatibility, replace first <amp>       };       if { [string range $encodedValue 0 4] == {<amp>} &&            [string length $encodedValue] > 5 } {           set encodedValue [string replace $encodedValue 0 4 {<at>Value<openparen>}]];           append encodedValue "<closeparen>";       };       set comment { We used to call FME_DecodeTextOrAttr here. After changes to                     the code that writes out the mapping file section, we don't                     need to do this any more because the value would be in the                     correct state of encoding as required by the child workspace       };       set comment { parameter values starting with '<' causes tcl exec to fail so                     we escape leading '<' with backslash and then do the reverse                     when parsing command line arguments       };       if { [string index $encodedValue 0] == {<} } {          set encodedValue "\\$encodedValue";       };       lappend commandArguments $encodedValue;       set comment {           Ensure that passwords are not added into the logmessage (PR 64546)           We'll guard against both PASSWORD and PASSWORD_CONFIRM GUI types           by checking if the word PASSWORD is in the GUI TYPE at all       };       if { [string first {PASSWORD} $parmType] != -1 } {           lappend commandArgumentsToLog {***};       } else {           lappend commandArgumentsToLog $encodedValue;       };    };    set comment {        Now optionally run this in a detached way if we were not supposed        to wait by adding & on the end to put it in the background.  And        at the same time, ensure that any stray stdout/stderr is routed to        null.    };    if { {No} == {No} } {        lappend commandArguments \">$::null_device\";        lappend commandArgumentsToLog \">$::null_device\";        lappend commandArguments \"<$::null_device\";        lappend commandArgumentsToLog \"<$::null_device\";        FME_LogMessage fme_inform \"WorkspaceRunner: Initiating run of FME Workspace $workspaceFile with command line:\";    } else {        FME_LogMessage fme_inform \"WorkspaceRunner: Running FME Workspace $workspaceFile with command line:\";    };    set comment {        The below 2>@1 forces any standard error output to go into the msg variable        or to NULL if we're running in the background.    };    lappend commandArguments {2>@1};    lappend commandArgumentsToLog {2>@1};    if { {No} == {No} } {        lappend commandArguments {&};        lappend commandArgumentsToLog {&};    };    FME_LogMessage fme_inform [concat WorkspaceRunner: $commandArgumentsToLog];    if { {No} == {No} } {       after 1000;       while { [FME_CanSpawnFme ] == {0} } {             after 2000;       };    };    if {[catch {eval [concat exec $commandArguments] } msg ]} {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn \"WorkspaceRunner: Failed to run workspace $workspaceFileUnix -- Trace was:\n\n$msg\n\";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_process_count;       incr WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_process_count;       if { {No} == {No} } {           FME_LogMessage fme_inform \"WorkspaceRunner: Successfully initiated run of workspace $workspaceFile\";           global WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_all_processes;           lappend WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_all_processes $msg;       } else {           FME_LogMessage fme_inform \"WorkspaceRunner: Successfully ran workspace $workspaceFile\";       };       return SUCCESS;    }; }
+FACTORY_DEF * TestFactory    FACTORY_NAME WorkspaceRunner_ExecutorAndRouter    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    TEST @Tcl2("WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_runner {(EX_DATE_TIME,@EvaluateExpression(FDIV,STRING,<at>Value<openparen>Timestamp<closeparen>,WorkspaceRunner),EX_PROCESS_NAME,@EvaluateExpression(FDIV,STRING,$(ProcessName$encode),WorkspaceRunner),EX_ID,@EvaluateExpression(FDIV,STRING,$(ProcessID$encode),WorkspaceRunner),EX_TYPE,INFORMATION,EX,@EvaluateExpression(FDIV,STRING,<at>Value<openparen>Logg<closeparen>,WorkspaceRunner),EX_WorkSpace,@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),WorkspaceRunner),EX_ROT_DIRECTORY,@EvaluateExpression(FDIV,STRING,$(RotDirectory$encode),WorkspaceRunner))} {@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR$encode)_logg.fmw,WorkspaceRunner)}") == SUCCESS
+Tcl2 proc WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_summarizer { } {     global WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_process_count 0;     FME_SetAttribute _proc_count [set WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_process_count];     global WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_all_processes;     if {[info exists WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_all_processes]} {         set index 0;         foreach pid [set WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
+FACTORY_DEF * CreationFactory    FACTORY_NAME WorkspaceRunner_SummaryMaker    CREATE_AT_END yes
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Creator_CREATED_0_GJAgmIF9G6c= TO FILECOPY __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>filecopy<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>$(FolderPath$encode$encode)<comma>filecopy<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
