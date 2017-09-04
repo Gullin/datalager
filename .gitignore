@@ -2,6 +2,7 @@
 ######################################################
 *.fmw
 *.ffs
+*.fsi # indexfil till ffs
 __secrets/
 _geodatarepo/
 _ned/
