@@ -1,6 +1,5 @@
 # Data, Process Built or Temporary things in process #
 ######################################################
-*.fmw
 *.fmw.recover
 *.ffs
 *.fsi # indexfil till ffs
