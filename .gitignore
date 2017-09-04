@@ -1,8 +1,13 @@
 # Data, Process Built or Temporary things in process #
 ######################################################
 *.fmw
+*.fmw.recover
 *.ffs
 *.fsi # indexfil till ffs
+*.shp
+*.shx
+*.dbf
+*.sdf
 __secrets/
 _geodatarepo/
 _ned/
