@@ -69,6 +69,8 @@ EXIT /B
 REM Metoder
 REM H„mtar Lantm„teriets Fastighetskartan
 :GetFastighetskartanSkane
+    @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
+
     REM Landskrona --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Landskrona/Sweref 99 1330/Shape/fk_1282.Sweref_99_1330.Shape.zip"
     REM Sk†ne      --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Lan 12/Sweref 99 TM/Shape/fk_12.Sweref_99_TM.Shape.zip"
     @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
@@ -85,13 +87,15 @@ REM H„mtar Lantm„teriets Fastighetskartan
 
         EXIT /B
     ) ELSE (
-        @CALL _sys\_log-batch INFOR "Process %DL_PROCESSID% %DL_FMEPROCESS01%"
+        @CALL _sys\_log-batch KLART "%DL_PROCESSID% %DL_FMEPROCESS01%"
     )
 GOTO :eof
 
 
 REM Skapar klippytor fr†n kommungr„nser i Fastighetskartan
 :CreateCutingSurface
+    @CALL _sys\_log-batch START "Process %DL_PROCESSID% %DL_FMEPROCESS02%"
+
     REM Valfri parameter med enhet meter (anv„nds inte s„tts ett standardv„rde)
     REM FME-parameter --Buffer
     @%DL_FMEFULLPATH% %DL_FMEPROCESS02% ^
@@ -105,13 +109,15 @@ REM Skapar klippytor fr†n kommungr„nser i Fastighetskartan
 
         EXIT /B
     ) ELSE (
-        @CALL _sys\_log-batch INFOR "Process %DL_PROCESSID% %DL_FMEPROCESS02%"
+        @CALL _sys\_log-batch KLART "%DL_PROCESSID% %DL_FMEPROCESS02%"
     )
 GOTO :eof
 
 
 REM Hanterar data till datalager
 :ManageSourceDatalager
+    @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS03%"
+
     @%DL_FMEFULLPATH% %DL_FMEPROCESS03% ^
                         --ProcessName %DL_PROCESSID% ^
                         --RotDirectory %DL_ROTDIR% ^
@@ -124,7 +130,7 @@ REM Hanterar data till datalager
 
         EXIT /B
     ) ELSE (
-        @CALL _sys\_log-batch INFOR "Process %DL_PROCESSID% %DL_FMEPROCESS03%"
+        @CALL _sys\_log-batch KLART "%DL_PROCESSID% %DL_FMEPROCESS03%"
     )
 GOTO :eof
 ENDLOCAL

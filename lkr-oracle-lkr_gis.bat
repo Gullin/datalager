@@ -63,6 +63,8 @@ EXIT /B
 REM Metoder
 REM Hanterar data till datalager
 :ManageSourceDatalager
+    @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
+
     REM Valfri parameter med enhet meter (anv„nds inte s„tts ett standardv„rde)
     REM FME-parameter --InData (tabeller som ska l„sas skrivs med punktnoterad schemanamn och tabellnamn [ex. LKR_GIS.GIS_V_BLADINDELNING], mellanslag mellan tabeller)
     @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
@@ -78,7 +80,7 @@ REM Hanterar data till datalager
 
         EXIT /B
     ) ELSE (
-        @CALL _sys\_log-batch INFOR "Process %DL_PROCESSID% %DL_FMEPROCESS01%"
+        @CALL _sys\_log-batch KLART "%DL_PROCESSID% %DL_FMEPROCESS01%"
     )
 GOTO :eof
 ENDLOCAL

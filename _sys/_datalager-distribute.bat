@@ -59,6 +59,8 @@ EXIT /B
 
 REM Metoder
 :DistributeDatalager
+    @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
+
     @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
                         --ProcessName %DL_PROCESSID% ^
                         --RotDirectory %DL_ROTDIR% ^
@@ -71,6 +73,6 @@ REM Metoder
 
         EXIT /B
     ) ELSE (
-        @CALL _sys\_log-batch INFOR "Process %DL_PROCESSID% %DL_FMEPROCESS01%"
+        @CALL _sys\_log-batch KLART "%DL_PROCESSID% %DL_FMEPROCESS01%"
     )
 GOTO :eof
