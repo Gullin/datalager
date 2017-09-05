@@ -58,6 +58,8 @@ IF %ERRORLEVEL% EQU 0 (
         IF "%_arg%"=="-r" SET RESETING=1
         IF "%_arg%"=="clear" SET CLEARING=1
         IF "%_arg%"=="-c" SET CLEARING=1
+        IF "%_arg%"=="schemainit" SET SCHEMAINIT=1
+        IF "%_arg%"=="-si" SET SCHEMAINIT=1
         IF "%_arg%"=="instal" SET INSTALLING=1
         IF "%_arg%"=="-i" SET INSTALLING=1
 
@@ -73,6 +75,16 @@ IF %ERRORLEVEL% EQU 0 (
             @CALL _sys\_process-clean-clear
 
             SET CLEARING=
+
+            GOTO exit
+        )
+        IF DEFINED SCHEMAINIT (
+            @CALL _sys\_log-batch CLEAR %DL_PROCESSID_MASTER%
+            SET _ARGS2=%2
+            SET _ARGS3=%2
+            @CALL _sys\_schema-init %2 %3
+
+            SET SCHEMAINIT=
 
             GOTO exit
         )
