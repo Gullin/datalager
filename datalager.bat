@@ -80,9 +80,7 @@ IF %ERRORLEVEL% EQU 0 (
         )
         IF DEFINED SCHEMAINIT (
             @CALL _sys\_log-batch CLEAR %DL_PROCESSID_MASTER%
-            SET _ARGS2=%2
-            SET _ARGS3=%2
-            @CALL _sys\_schema-init %2 %3
+            @CALL _sys\_schema-init %2 %3 %4 %5
 
             SET SCHEMAINIT=
 
@@ -111,4 +109,3 @@ IF %ERRORLEVEL% EQU 0 (
 @CALL _sys\_log-batch KLART %DL_PROCESSID_MASTER%
 :break
 ENDLOCAL
-PAUSE
