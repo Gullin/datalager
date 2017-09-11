@@ -9,7 +9,7 @@ REM Namn f”r hela processen
 SET DL_PROCESSNAME=lkr-oracle-lkr_gis
 REM Processlokala parametrar
 SET DL_OUTDIR=landskrona\lkr_gis\
-SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\oracle-lkr_gis-DatalagerManage.fmw"
+SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\oracle-lkr_gis-DatalagerManage-driver.fmw"
 
 
 
@@ -70,8 +70,7 @@ REM Hanterar data till datalager
     @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
                         --ProcessName %DL_PROCESSID% ^
                         --RotDirectory %DL_ROTDIR% ^
-                        --InData "LKR_GIS.GIS_V_BLADINDELNING" ^
-                        --DatabaseSchema "LKR_GIS" ^
+                        --Manifest %DL_ROTDIR%%DL_PROCESSNAME%\_schema\schema-manifest.xlsx ^
                         --OutputDirectory %DL_PROCESSMODULOUTDIR%
 
     IF %ERRORLEVEL% NEQ 0 (
