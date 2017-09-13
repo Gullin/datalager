@@ -80,7 +80,7 @@ IF %ERRORLEVEL% EQU 0 (
         )
         IF DEFINED SCHEMAINIT (
             @CALL _sys\_log-batch CLEAR %DL_PROCESSID_MASTER%
-            @CALL _sys\_schema-init %2 %3 %4 %5
+            @CALL _sys\_schema %2 init %3 %4 %5
 
             SET SCHEMAINIT=
 
