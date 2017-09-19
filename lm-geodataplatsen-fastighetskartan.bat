@@ -12,7 +12,7 @@ REM Processlokala parametrar
 SET DL_OUTDIR=lantmateriet\gsd-fastighetskartan\
 SET DL_FMEPROCESS01="_sys\_ftp-caller.fmw"
 SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\01-KlippytorFromFKSkaneSw99TM.fmw"
-SET DL_FMEPROCESS03="%DL_PROCESSNAME%\_fme\02-GSD-Fastighetskartan-DatalagerManage.fmw"
+SET DL_FMEPROCESS03="%DL_PROCESSNAME%\_fme\02-GSD-Fastighetskartan-DatalagerManage-driver.fmw"
 
 
 
@@ -34,8 +34,8 @@ IF %ERRORLEVEL% EQU 0 (
 
 
     REM FME-processer
-    @CALL :GetFastighetskartanSkane
-    @CALL :CreateCutingSurface
+    REM @CALL :GetFastighetskartanSkane
+    REM @CALL :CreateCutingSurface
     @CALL :ManageSourceDatalager
 
 
@@ -121,7 +121,6 @@ REM Hanterar data till datalager
     @%DL_FMEFULLPATH% %DL_FMEPROCESS03% ^
                         --ProcessName %DL_PROCESSID% ^
                         --RotDirectory %DL_ROTDIR% ^
-                        --InData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_12.Sweref_99_TM.Shape.zip ^
                         --OutputDirectory %DL_PROCESSMODULOUTDIR%
 
     IF %ERRORLEVEL% NEQ 0 (
