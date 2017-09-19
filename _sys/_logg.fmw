@@ -41,7 +41,7 @@
 #!   SOURCE="NONE"
 #!   TITLE=""
 #!   ZOOM_SCALE="36"
-#!   LAST_SAVE_DATE="2017-09-19T16:18:54"
+#!   LAST_SAVE_DATE="2017-09-19T16:21:55"
 #!   DESCRIPTION=""
 #!   FME_DOCUMENT_GUID="e32841ca-1870-4e95-b345-8133238bb5b6"
 #!   USAGE=""
@@ -1163,12 +1163,12 @@
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI IGNORE OPTIONAL FILENAME Destination_exc_file Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Sökväg exceptionfil:"
-#!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)_log/Exception.log"
+#!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)_log/FATAL_ERROR.log"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI IGNORE OPTIONAL FILENAME Destination_exc_file_local Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Sökväg exceptionfil:"
-#!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)$(EX_PROCESS_NAME)/_log/Exception.log"
+#!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)$(EX_PROCESS_NAME)/_log/FATAL_ERROR.log"
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
@@ -2178,9 +2178,9 @@ DEFAULT_MACRO EX_ROT_DIRECTORY ../
 GUI OPTIONAL TEXT EX_ROT_DIRECTORY Katalogen där processen startar:
 DEFAULT_MACRO IsWholeProcessRun 1
 GUI OPTIONAL TEXT IsWholeProcessRun Är hela datalagerprocessen körd:
-DEFAULT_MACRO Destination_exc_file $(EX_ROT_DIRECTORY)_log/Exception.log
+DEFAULT_MACRO Destination_exc_file $(EX_ROT_DIRECTORY)_log/FATAL_ERROR.log
 GUI IGNORE OPTIONAL FILENAME Destination_exc_file Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Sökväg exceptionfil:
-DEFAULT_MACRO Destination_exc_file_local $(EX_ROT_DIRECTORY)$(EX_PROCESS_NAME)/_log/Exception.log
+DEFAULT_MACRO Destination_exc_file_local $(EX_ROT_DIRECTORY)$(EX_PROCESS_NAME)/_log/FATAL_ERROR.log
 GUI IGNORE OPTIONAL FILENAME Destination_exc_file_local Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Sökväg exceptionfil:
 DEFAULT_MACRO Destination_log_file $(EX_ROT_DIRECTORY)_log/DatalagerLogg.xlsx
 GUI IGNORE OPTIONAL FILENAME Destination_log_file Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Sökväg loggfil:
@@ -2544,8 +2544,8 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_
 
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e12_replacer { findText replaceText invalidValue} {     set attrs [split \"_EX_WorkSpace\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE StringConcatenator_2_OUTPUT    INPUT  FEATURE_TYPE Tester_4_FAILED    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e12_replacer {<solidus>} {<backslash>} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e13_replacer { findText replaceText invalidValue} {     set attrs [split \"_EX_WorkSpace\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE StringConcatenator_2_OUTPUT    INPUT  FEATURE_TYPE Tester_4_FAILED    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e13_replacer {<solidus>} {<backslash>} {_FME_NO_OP_}")
 
 # -------------------------------------------------------------------------
 
