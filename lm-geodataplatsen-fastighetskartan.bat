@@ -12,7 +12,7 @@ REM Processlokala parametrar
 SET DL_OUTDIR=lantmateriet\gsd-fastighetskartan\
 SET DL_FMEPROCESS01="_sys\_ftp-caller.fmw"
 SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\01-KlippytorFromFKSkaneSw99TM.fmw"
-SET DL_FMEPROCESS03="%DL_PROCESSNAME%\_fme\02-GSD-Fastighetskartan-DatalagerManage.fmw"
+SET DL_FMEPROCESS03="%DL_PROCESSNAME%\_fme\02-GSD-Fastighetskartan-DatalagerManage-driver.fmw"
 
 
 
@@ -34,8 +34,8 @@ IF %ERRORLEVEL% EQU 0 (
 
 
     REM FME-processer
-    @CALL :GetFastighetskartanSkane
-    @CALL :CreateCutingSurface
+    REM @CALL :GetFastighetskartanSkane
+    REM @CALL :CreateCutingSurface
     @CALL :ManageSourceDatalager
 
 
@@ -74,7 +74,7 @@ REM H„mtar Lantm„teriets Fastighetskartan
     REM Landskrona --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Landskrona/Sweref 99 1330/Shape/fk_1282.Sweref_99_1330.Shape.zip"
     REM Sk†ne      --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Lan 12/Sweref 99 TM/Shape/fk_12.Sweref_99_TM.Shape.zip"
     @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
-                        --ProcessName %DL_PROCESSID% ^
+                        --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Lan 12/Sweref 99 TM/Shape/fk_12.Sweref_99_TM.Shape.zip" ^
                         --User %USER-LM-GEODATAPLATSEN% ^
@@ -99,7 +99,7 @@ REM Skapar klippytor fr†n kommungr„nser i Fastighetskartan
     REM Valfri parameter med enhet meter (anv„nds inte s„tts ett standardv„rde)
     REM FME-parameter --Buffer
     @%DL_FMEFULLPATH% %DL_FMEPROCESS02% ^
-                        --ProcessName %DL_PROCESSID% ^
+                        --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --ShpInData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_12.Sweref_99_TM.Shape.zip
 
@@ -119,9 +119,8 @@ REM Hanterar data till datalager
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS03%"
 
     @%DL_FMEFULLPATH% %DL_FMEPROCESS03% ^
-                        --ProcessName %DL_PROCESSID% ^
+                        --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
-                        --InData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_12.Sweref_99_TM.Shape.zip ^
                         --OutputDirectory %DL_PROCESSMODULOUTDIR%
 
     IF %ERRORLEVEL% NEQ 0 (
