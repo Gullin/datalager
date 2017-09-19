@@ -35,15 +35,15 @@
 #!   MAX_LOG_FEATURES="200"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   END_PYTHON=""
-#!   FME_DOCUMENT_PRIORGUID="87c17a14-eb93-443b-99db-0a6e4ed025ef,4fd95922-3887-40fa-9321-d9bbdd9582a3,78aefedc-b91c-40e0-92d7-d76ce2a37072,8c86b130-534d-4b7b-b36c-7f4dbe4f6bb3,9960c267-c72e-4ae2-b9f9-6c6d765c56a8,7df86ffb-8fd6-4780-9b20-0c9218508a49,3dc6cfe2-48ef-4604-a3a0-d1dcbefa76ca,5c2d3c59-c127-4c62-a24e-ea2417ea1002,9df341f6-d837-4d63-a79e-51e03bb8c12b,595ee802-b7f7-4eb3-a879-45ae87b630fc,4f1f0bf0-bf4b-46ff-b007-e748ecbc8863,d29b0163-f5c3-4067-830e-9678bf290053,35d6d41f-5b28-4a8d-adc9-ac876e8373e7,43cfba42-d9a3-4634-a52c-2fe55094e926,21a5822b-2721-4189-bd0e-498ee2c2c138"
+#!   FME_DOCUMENT_PRIORGUID="87c17a14-eb93-443b-99db-0a6e4ed025ef,4fd95922-3887-40fa-9321-d9bbdd9582a3,78aefedc-b91c-40e0-92d7-d76ce2a37072,8c86b130-534d-4b7b-b36c-7f4dbe4f6bb3,9960c267-c72e-4ae2-b9f9-6c6d765c56a8,7df86ffb-8fd6-4780-9b20-0c9218508a49,3dc6cfe2-48ef-4604-a3a0-d1dcbefa76ca,5c2d3c59-c127-4c62-a24e-ea2417ea1002,9df341f6-d837-4d63-a79e-51e03bb8c12b,595ee802-b7f7-4eb3-a879-45ae87b630fc,4f1f0bf0-bf4b-46ff-b007-e748ecbc8863,d29b0163-f5c3-4067-830e-9678bf290053,35d6d41f-5b28-4a8d-adc9-ac876e8373e7,43cfba42-d9a3-4634-a52c-2fe55094e926,21a5822b-2721-4189-bd0e-498ee2c2c138,80fa5584-a6df-4253-9eb4-d5464e23f147"
 #!   SHOW_ANNOTATIONS="true"
 #!   DOC_TOP_LEFT="-646.453 -3947.15"
 #!   SOURCE="NONE"
 #!   TITLE=""
-#!   ZOOM_SCALE="75"
-#!   LAST_SAVE_DATE="2017-09-19T16:01:20"
+#!   ZOOM_SCALE="36"
+#!   LAST_SAVE_DATE="2017-09-19T16:18:54"
 #!   DESCRIPTION=""
-#!   FME_DOCUMENT_GUID="80fa5584-a6df-4253-9eb4-d5464e23f147"
+#!   FME_DOCUMENT_GUID="e32841ca-1870-4e95-b345-8133238bb5b6"
 #!   USAGE=""
 #!   DESTINATION_ROUTING_FILE=""
 #!   FME_SERVER_SERVICES=""
@@ -51,7 +51,7 @@
 #!   WORKSPACE_VERSION="1"
 #!   IGNORE_READER_FAILURE="No"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
-#!   VIEW_POSITION="654.173 250.003"
+#!   VIEW_POSITION="-3125.03 625.006"
 #!   CATEGORY=""
 #!   HISTORY=""
 #!   END_TCL=""
@@ -85,6 +85,7 @@
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="FILE"
 #!   GENERATE_FME_BUILD_NUM="17259"
+#!   NAME="Exception [TEXTLINE] - 1"
 #!   COORDSYS=""
 #!   FANOUT_GROUP="NO"
 #!   FANOUT_EXPRESSION="&lt;Unused&gt;"
@@ -108,6 +109,62 @@
 #! <METAFILE_PARAMETER
 #!   NAME="READER_FEATURE_TYPE_EDITING"
 #!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Text file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="text_line"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="TEXTLINE"
+#!   DATASET="$(Destination_exc_file_local)"
+#!   KEYWORD="TEXTLINE_2"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="60"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES="text_line"
+#!   WRITE_DEFS="false"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_text_size number(31,15) fme_text_string char(50) fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_secondary_axis number(31,15) fme_fill_color char(50) fme_type char(50) fme_primary_axis number(31,15) fme_start_angle number(31,15) text_line_eol char(10) fme_sweep_angle number(31,15) fme_rotation number(31,15) fme_geometry fme_char(50) fme_feature_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="false"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="17539"
+#!   NAME="ExceptionLocal [TEXTLINE] - 2"
+#!   COORDSYS=""
+#!   FANOUT_GROUP="NO"
+#!   FANOUT_EXPRESSION=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="txt file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="text/plain"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Text file"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="READER_DATASET_HINT"
@@ -1041,6 +1098,25 @@
 #!     <DEFLINE_PARM PARM_NAME="sqlite3_general_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="sqlite3_drop_table" PARM_VALUE="NO"/>
 #! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="text_line"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="51"
+#!   FEAT_GEOMTYPE="text_line_none"
+#!   POSITION="4935.47 -2348.98"
+#!   BOUNDING_RECT="4935.47 -2348.98 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="false"
+#!   KEYWORD="TEXTLINE_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="text_line_data" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
 #! </FMESERVER>
@@ -1091,6 +1167,11 @@
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI IGNORE OPTIONAL FILENAME Destination_exc_file_local Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Sökväg exceptionfil:"
+#!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)$(EX_PROCESS_NAME)/_log/Exception.log"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI IGNORE OPTIONAL FILENAME Destination_log_file Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Sökväg loggfil:"
 #!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)_log/DatalagerLogg.xlsx"
 #!   IS_STAND_ALONE="false"
@@ -1099,6 +1180,11 @@
 #!   GUI_LINE="GUI IGNORE OPTIONAL FILENAME Destination_log_file_sqlite SQLite_Database_Files(*.sl3;*.db;*.sqlite)|*.sl3;*.db;*.sqlite|SQLite_Database_Files(*.sl3)|*.sl3|SQLite_Database_Files(*.db)|*.db|SQLite_Database_Files(*.sqlite)|*.sqlite|All_files(*)|* Sökväg loggfil:"
 #!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)_log/DatalagerLogg.sqlite"
 #!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI IGNORE OPTIONAL TEXT EX_ROT_DIRECTORY_2 Katalogen där processen startar:"
+#!   DEFAULT_VALUE="../"
+#!   IS_STAND_ALONE="true"
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
@@ -1163,7 +1249,7 @@
 #!   BOUNDING_RECT="3598.46 -1707.77 1883.05 2239.39"
 #!   STICKY="true"
 #!   COLOUR="0.431373,0.203922,0.466667"
-#!   CONTENTS="61 28 48 42 59 30 29 12 5 56 "
+#!   CONTENTS="61 28 48 42 59 55 30 29 51 12 5 56 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="42"
@@ -1174,7 +1260,7 @@
 #!   BOUNDING_RECT="3598.46 -1831.77 1883.05 711.526"
 #!   STICKY="true"
 #!   COLOUR="0.266667,0.631373,0.0784314"
-#!   CONTENTS="28 29 12 5 "
+#!   CONTENTS="28 55 29 51 12 5 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="53"
@@ -1336,8 +1422,8 @@
 #!   IDENTIFIER="12"
 #!   TYPE="StringConcatenator"
 #!   VERSION="7"
-#!   POSITION="4308.79 -1937.27"
-#!   BOUNDING_RECT="4308.79 -1937.27 -1 -1"
+#!   POSITION="3679.62 -2328.94"
+#!   BOUNDING_RECT="3679.62 -2328.94 -1 -1"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1673,6 +1759,47 @@
 #!     <XFORM_PARM PARM_NAME="TREAT_AS_BYTES" PARM_VALUE="Honor Encoding"/>
 #!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="55"
+#!   TYPE="Tester"
+#!   VERSION="2"
+#!   POSITION="4344.88 -1955.77"
+#!   BOUNDING_RECT="4344.88 -1955.77 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17539"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_5"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;_IsWholeProcessRun&lt;closeparen&gt; = 1"/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#!     <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
@@ -1731,11 +1858,11 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="15"
+#!   IDENTIFIER="62"
 #!   SOURCE_NODE="12"
-#!   TARGET_NODE="5"
+#!   TARGET_NODE="55"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -1841,6 +1968,17 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
+#!   IDENTIFIER="63"
+#!   SOURCE_NODE="55"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
 #!   IDENTIFIER="59"
 #!   SOURCE_NODE="56"
 #!   TARGET_NODE="30"
@@ -1912,6 +2050,17 @@
 #!   TARGET_NODE="9"
 #!   SOURCE_PORT_DESC="fo 1 FAILED"
 #!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="64"
+#!   SOURCE_NODE="55"
+#!   TARGET_NODE="51"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -2012,7 +2161,7 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 FME_PYTHON_VERSION 27
-GUI IGNORE DestDataset_TEXTLINE_1,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1,TEXTLINE_OUT_ENCODING_TEXTLINE_1,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1,DestDataset_XLSXW_1,XLSXW_OUT_OVERWRITE_FILE_XLSXW_1,XLSXW_OUT_TEMPLATEFILE_XLSXW_1,TEMPLATE_SHEET_XLSXW_1,DestDataset_SQLITE3_1,SQLITE3_OUT_OVERWRITE_FILE_SQLITE3_1,SQLITE3_OUT_DATASET_TEMPLATE_SQLITE3_1,SQLITE3_OUT_ADVANCED_SQLITE3_1,SQLITE3_OUT_WRITER_MODE_SQLITE3_1,SQLITE3_OUT_START_TRANSACTION_SQLITE3_1,SQLITE3_OUT_TRANSACTION_INTERVAL_SQLITE3_1,SQLITE3_OUT_BEGIN_SQL{0}_SQLITE3_1,SQLITE3_OUT_END_SQL{0}_SQLITE3_1,SQLITE3_OUT_INIT_TABLES_SQLITE3_1
+GUI IGNORE DestDataset_TEXTLINE_1,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1,TEXTLINE_OUT_ENCODING_TEXTLINE_1,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1,DestDataset_TEXTLINE_2,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_2,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_2,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_2,TEXTLINE_OUT_ENCODING_TEXTLINE_2,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_2,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_2,DestDataset_XLSXW_1,XLSXW_OUT_OVERWRITE_FILE_XLSXW_1,XLSXW_OUT_TEMPLATEFILE_XLSXW_1,TEMPLATE_SHEET_XLSXW_1,DestDataset_SQLITE3_1,SQLITE3_OUT_OVERWRITE_FILE_SQLITE3_1,SQLITE3_OUT_DATASET_TEMPLATE_SQLITE3_1,SQLITE3_OUT_ADVANCED_SQLITE3_1,SQLITE3_OUT_WRITER_MODE_SQLITE3_1,SQLITE3_OUT_START_TRANSACTION_SQLITE3_1,SQLITE3_OUT_TRANSACTION_INTERVAL_SQLITE3_1,SQLITE3_OUT_BEGIN_SQL{0}_SQLITE3_1,SQLITE3_OUT_END_SQL{0}_SQLITE3_1,SQLITE3_OUT_INIT_TABLES_SQLITE3_1
 DEFAULT_MACRO EX_DATE_TIME 
 GUI OPTIONAL DATETIME EX_DATE_TIME "{}" Exception date time:
 DEFAULT_MACRO EX_PROCESS_NAME 
@@ -2031,10 +2180,14 @@ DEFAULT_MACRO IsWholeProcessRun 1
 GUI OPTIONAL TEXT IsWholeProcessRun Är hela datalagerprocessen körd:
 DEFAULT_MACRO Destination_exc_file $(EX_ROT_DIRECTORY)_log/Exception.log
 GUI IGNORE OPTIONAL FILENAME Destination_exc_file Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Sökväg exceptionfil:
+DEFAULT_MACRO Destination_exc_file_local $(EX_ROT_DIRECTORY)$(EX_PROCESS_NAME)/_log/Exception.log
+GUI IGNORE OPTIONAL FILENAME Destination_exc_file_local Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Sökväg exceptionfil:
 DEFAULT_MACRO Destination_log_file $(EX_ROT_DIRECTORY)_log/DatalagerLogg.xlsx
 GUI IGNORE OPTIONAL FILENAME Destination_log_file Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Sökväg loggfil:
 DEFAULT_MACRO Destination_log_file_sqlite $(EX_ROT_DIRECTORY)_log/DatalagerLogg.sqlite
 GUI IGNORE OPTIONAL FILENAME Destination_log_file_sqlite SQLite_Database_Files(*.sl3;*.db;*.sqlite)|*.sl3;*.db;*.sqlite|SQLite_Database_Files(*.sl3)|*.sl3|SQLite_Database_Files(*.db)|*.db|SQLite_Database_Files(*.sqlite)|*.sqlite|All_files(*)|* Sökväg loggfil:
+DEFAULT_MACRO EX_ROT_DIRECTORY_2 ../
+GUI IGNORE OPTIONAL TEXT EX_ROT_DIRECTORY_2 Katalogen där processen startar:
 INCLUDE [ if {{$(EX_PROCESS_NAME)} == {}} { puts_real {Parameter 'EX_PROCESS_NAME' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
@@ -2047,10 +2200,12 @@ MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
 MULTI_WRITER_TYPE{0} TEXTLINE
 MULTI_WRITER_KEYWORD{0} TEXTLINE_1
-MULTI_WRITER_TYPE{1} XLSXW
-MULTI_WRITER_KEYWORD{1} XLSXW_1
-MULTI_WRITER_TYPE{2} SQLITE3
-MULTI_WRITER_KEYWORD{2} SQLITE3_1
+MULTI_WRITER_TYPE{1} TEXTLINE
+MULTI_WRITER_KEYWORD{1} TEXTLINE_2
+MULTI_WRITER_TYPE{2} XLSXW
+MULTI_WRITER_KEYWORD{2} XLSXW_1
+MULTI_WRITER_TYPE{3} SQLITE3
+MULTI_WRITER_KEYWORD{3} SQLITE3_1
 #! END_WB_HEADER
 
 #! START_WB_HEADER
@@ -2112,6 +2267,66 @@ GUI STRING_OR_CHOICE TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1 application/json%applicat
 DEFAULT_MACRO TEXTLINE_OUT_DESTINATION_DATASETTYPE_VALIDATION_TEXTLINE_1 Yes
 TEXTLINE_1_DESTINATION_DATASETTYPE_VALIDATION "$(TEXTLINE_OUT_DESTINATION_DATASETTYPE_VALIDATION_TEXTLINE_1)"
 TEXTLINE_1_DATASET "$(DestDataset_TEXTLINE_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "TEXTLINE_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER TEXTLINE TEXTLINE_2
+# =====================================================================
+# The following GUI line prompts for a folder to be used as the
+# the destination for the TextLine files. The user input is stored in
+# a macro, which is then used to define the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_TEXTLINE_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER TEXTLINE TEXTLINE_2
+DEFAULT_MACRO DestDataset_TEXTLINE_2 $(Destination_exc_file_local)
+GUI FILENAME DestDataset_TEXTLINE_2 Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_2 YES
+TEXTLINE_2_OVERWRITE_FILE "$(TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_2)"
+GUI CHOICE TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_2 YES%NO Overwrite Existing File:
+# =====================================================================
+# Set the type of encoding for the output file
+# =====================================================================
+# Set line termination character
+DEFAULT_MACRO TEXTLINE_OUT_END_OF_LINE_TEXTLINE_2 System
+TEXTLINE_2_END_OF_LINE "$(TEXTLINE_OUT_END_OF_LINE_TEXTLINE_2)"
+GUI CHOICE TEXTLINE_OUT_END_OF_LINE_TEXTLINE_2 System%Windows%Unix%Macintosh%Source%None Line Termination:
+# =====================================================================
+# Set whether to write the last line termination character
+DEFAULT_MACRO TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_2 YES
+TEXTLINE_2_WRITE_LAST_EOL "$(TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_2)"
+GUI CHOICE TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_2 YES%NO Write Last Line Terminator:
+DEFAULT_MACRO TEXTLINE_OUT_ENCODING_TEXTLINE_2 SYSTEM
+TEXTLINE_2_ENCODING "$(TEXTLINE_OUT_ENCODING_TEXTLINE_2)"
+GUI STRING_OR_ENCODING TEXTLINE_OUT_ENCODING_TEXTLINE_2 SYSTEM%* Character Encoding:
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_2 YES
+TEXTLINE_2_WRITE_UTF8_BOM "$(TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_2)"
+GUI CHOICE TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_2 YES%NO Write UTF Byte Order Mark
+# =====================================================================
+# Set the mime type. Note -- it is actually only used inside of workspaces
+# as a FORMAT_PARAMETER which even then is parsed only by the FME Server
+# Repository Manager
+DEFAULT_MACRO TEXTLINE_OUT_MIME_TYPE_TEXTLINE_2 text/plain
+TEXTLINE_2_MIME_TYPE "$(TEXTLINE_OUT_MIME_TYPE_TEXTLINE_2)"
+GUI STRING_OR_CHOICE TEXTLINE_OUT_MIME_TYPE_TEXTLINE_2 application/json%application/octet-stream%application/xml%application/x-www-form-urlencoded%image/gif%image/jpeg%image/png%image/tiff%multipart/mixed%multipart/alternative%multipart/related%text/html%text/plain%text/xml MIME Type:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO TEXTLINE_OUT_DESTINATION_DATASETTYPE_VALIDATION_TEXTLINE_2 Yes
+TEXTLINE_2_DESTINATION_DATASETTYPE_VALIDATION "$(TEXTLINE_OUT_DESTINATION_DATASETTYPE_VALIDATION_TEXTLINE_2)"
+TEXTLINE_2_DATASET "$(DestDataset_TEXTLINE_2)"
 #! END_DEST_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "XLSXW_1"
@@ -2259,6 +2474,7 @@ FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_TEXTLINE_1 TEXTLINE_1
+DEFAULT_MACRO DATASET_KEYWORD_TEXTLINE_2 TEXTLINE_2
 DEFAULT_MACRO DATASET_KEYWORD_XLSXW_1 XLSXW_1
 DEFAULT_MACRO DATASET_KEYWORD_SQLITE3_1 SQLITE3_1
 # -------------------------------------------------------------------------
@@ -2328,8 +2544,8 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_
 
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e11_replacer { findText replaceText invalidValue} {     set attrs [split \"_EX_WorkSpace\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE StringConcatenator_2_OUTPUT    INPUT  FEATURE_TYPE Tester_4_FAILED    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e11_replacer {<solidus>} {<backslash>} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e12_replacer { findText replaceText invalidValue} {     set attrs [split \"_EX_WorkSpace\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE StringConcatenator_2_OUTPUT    INPUT  FEATURE_TYPE Tester_4_FAILED    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e12_replacer {<solidus>} {<backslash>} {_FME_NO_OP_}")
 
 # -------------------------------------------------------------------------
 
@@ -2353,6 +2569,9 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TY
 
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester_5    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_IsWholeProcessRun<closeparen>,Tester_5) = 1 ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_5_PASSED    OUTPUT FAILED FEATURE_TYPE Tester_5_FAILED
+# -------------------------------------------------------------------------
+
 Tcl2 proc AttributeEncoder_convert {} {    set attrs [split {<Unused>} { }];    set allAttributes false;    if { {ALL} == {ALL} } {       set attrs [FME_AttributeNames];       set allAttributes true;    };    set parmList {{EvaluateExpression} {ATTR_SET_EXPR}};    foreach attr $attrs {      if {[string first {fme_} $attr] == 0 && $allAttributes} {         continue;      };      if {$allAttributes} {        set attr [FME_EncodeText $attr];      };      set funcAttr $attr;      if { [string first "<quote>" $attr] != -1 }      {          set funcAttr [string map {"<quote>" "<backslash><quote>"} $attr];          append funcAttr "<quote>";          set funcAttr "<quote>"$funcAttr;      };      set funcCall [join [list "<at>ConvertEncoding<openparen>windows-1252<comma><at>Value<openparen>" $funcAttr "<closeparen><comma>FALSE<closeparen>"] {}];      lappend parmList $attr;      lappend parmList $funcCall;    };    lappend parmList {AttributeEncoder};    eval FME_Execute $parmList; }
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeEncoder    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT_1_RySErNGX5NA=    INPUT  FEATURE_TYPE Tester_2_FAILED_1_z/q1qWuo7hw=    OUTPUT FEATURE_TYPE AttributeEncoder_OUTPUT         @Tcl2("AttributeEncoder_convert")
 
@@ -2360,7 +2579,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeEncoder    INPUT  FEATURE_TYPE
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeEncoder OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeEncoder_OUTPUT   OUTPUT FEATURE_TYPE AttributeEncoder_OUTPUT_0_bQdvSHoUl6w=   OUTPUT FEATURE_TYPE AttributeEncoder_OUTPUT_1_R6ywTqFEB7c=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC StringConcatenator_OUTPUT TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeEncoder_OUTPUT_1_R6ywTqFEB7c= TO SQLITE3 __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>Tidpunkt<comma>_EX_DATE_TIME<comma>Processnamn<comma>_EX_PROCESS_NAME<comma>Process<lt>space<gt>ID<comma>_EX_ID<comma>Typ<comma>_EX_TYPE<comma>Meddelande<comma>Exception<comma>FME<lt>space<gt>workspace<comma>_EX_WorkSpace<closeparen>,multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Generell<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeEncoder_OUTPUT_0_bQdvSHoUl6w= TO XLSXW __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>Tidpunkt<comma>_EX_DATE_TIME<comma>Processnamn<comma>_EX_PROCESS_NAME<comma>Process<lt>space<gt>ID<comma>_EX_ID<comma>Typ<comma>_EX_TYPE<comma>Meddelande<comma>Exception<comma>FME<lt>space<gt>workspace<comma>_EX_WorkSpace<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Generell<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Tester_5_PASSED TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeEncoder_OUTPUT_1_R6ywTqFEB7c= TO SQLITE3 __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>Tidpunkt<comma>_EX_DATE_TIME<comma>Processnamn<comma>_EX_PROCESS_NAME<comma>Process<lt>space<gt>ID<comma>_EX_ID<comma>Typ<comma>_EX_TYPE<comma>Meddelande<comma>Exception<comma>FME<lt>space<gt>workspace<comma>_EX_WorkSpace<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Generell<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeEncoder_OUTPUT_0_bQdvSHoUl6w= TO XLSXW __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>Tidpunkt<comma>_EX_DATE_TIME<comma>Processnamn<comma>_EX_PROCESS_NAME<comma>Process<lt>space<gt>ID<comma>_EX_ID<comma>Typ<comma>_EX_TYPE<comma>Meddelande<comma>Exception<comma>FME<lt>space<gt>workspace<comma>_EX_WorkSpace<closeparen>,multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Generell<closeparen> GEOMETRY    ROUTE FME_GENERIC Tester_5_FAILED TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
