@@ -44,6 +44,7 @@ IF %ERRORLEVEL% EQU 0 (
     IF DEFINED DL_ISWHOLEPROCESS (
         ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
     ) ELSE (
+        SET DL_ISWHOLEPROCESS=0
         ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
         @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
     )
@@ -79,7 +80,8 @@ REM H„mtar Lantm„teriets Fastighetskartan
                         --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Lan 12/Sweref 99 TM/Shape/fk_12.Sweref_99_TM.Shape.zip" ^
                         --User %USER-LM-GEODATAPLATSEN% ^
                         --Password %PASS-LM-GEODATAPLATSEN% ^
-                        --OutputDirectory %DL_ROTDIR%%DL_PROCESSNAME%/_ned
+                        --OutputDirectory %DL_ROTDIR%%DL_PROCESSNAME%/_ned ^
+                        --IsWholeProcessRun %DL_ISWHOLEPROCESS%
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"
@@ -101,7 +103,8 @@ REM Skapar klippytor fr†n kommungr„nser i Fastighetskartan
     @%DL_FMEFULLPATH% %DL_FMEPROCESS02% ^
                         --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
-                        --ShpInData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_12.Sweref_99_TM.Shape.zip
+                        --ShpInData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_12.Sweref_99_TM.Shape.zip ^
+                        --IsWholeProcessRun %DL_ISWHOLEPROCESS%
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"
@@ -121,7 +124,8 @@ REM Hanterar data till datalager
     @%DL_FMEFULLPATH% %DL_FMEPROCESS03% ^
                         --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
-                        --OutputDirectory %DL_PROCESSMODULOUTDIR%
+                        --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
+                        --IsWholeProcessRun %DL_ISWHOLEPROCESS%
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"

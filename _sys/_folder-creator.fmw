@@ -5,58 +5,59 @@
 #    Command-line to run this workspace:
 #    
 #    
-#    "C:\Program Files\FME 2017.0 (17259)\fme.exe" C:\Dev\Datalager\_sys\_folder-creator.fmw
+#    "C:\Program Files\FME\2017_1_17539\fme.exe" C:\Dev\Datalager_procsrc\_sys\_folder-creator.fmw
 #          --FolderPath ""
 #          --ProcessName ""
 #          --ProcessID ""
 #          --RotDirectory "../"
+#          --IsWholeProcessRun "1"
 #    
 #    
-#!   HISTORY=""
-#!   MAX_LOG_FEATURES="200"
-#!   TITLE=""
 #!   CATEGORY=""
-#!   SOURCE="NONE"
-#!   SHOW_INFO_NODES="true"
-#!   USE_MARKDOWN=""
-#!   FME_DOCUMENT_PRIORGUID="0b5b0aaa-6122-4b61-a7e8-c8321bf006ef"
-#!   LAST_SAVE_BUILD="FME(R) 2017.0.0.0 (20170228 - Build 17259 - WIN64)"
-#!   ZOOM_SCALE="100"
-#!   DESTINATION="NONE"
-#!   WORKSPACE_VERSION="1"
-#!   FME_BUILD_NUM="17259"
-#!   VIEW_POSITION="-3715.66 1046.89"
-#!   FME_REPROJECTION_ENGINE="FME"
-#!   LOG_FILE="$(RotDirectory)_log/FME-$(FME_MF_NAME).log"
-#!   USAGE=""
 #!   TERMINATE_REJECTED="YES"
-#!   SOURCE_ROUTING_FILE=""
-#!   FME_GEOMETRY_HANDLING="Enhanced"
-#!   BEGIN_TCL=""
-#!   BEGIN_PYTHON=""
-#!   LAST_SAVE_DATE="2017-04-06T11:54:23"
-#!   DOC_TOP_LEFT="-1584.39 -1190.64"
-#!   FME_STROKE_MAX_DEVIATION="0"
-#!   FME_DOCUMENT_GUID="7f0a86d4-51bd-4346-8d49-4a563df0ff5f"
+#!   IGNORE_READER_FAILURE="No"
 #!   FME_SERVER_SERVICES=""
-#!   END_TCL=""
+#!   MAX_LOG_FEATURES="200"
+#!   SHOW_INFO_NODES="true"
 #!   PASSWORD=""
 #!   WARN_INVALID_XFORM_PARAM="Yes"
-#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   END_TCL=""
+#!   END_PYTHON=""
+#!   BEGIN_TCL=""
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   USAGE=""
+#!   DESCRIPTION=""
 #!   REDIRECT_TERMINATORS="NONE"
-#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
-#!   DOC_EXTENTS="1896.89 1548.18"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   DESTINATION="NONE"
+#!   LAST_SAVE_DATE="2017-09-19T16:13:35"
 #!   LOG_MAX_RECORDED_FEATURES="200"
+#!   USE_MARKDOWN=""
+#!   SOURCE_ROUTING_FILE=""
 #!   SHOW_ANNOTATIONS="true"
 #!   PYTHON_COMPATIBILITY="27"
-#!   END_PYTHON=""
+#!   BEGIN_PYTHON=""
+#!   WORKSPACE_VERSION="1"
+#!   LOG_FILE="$(RotDirectory)_log/FME-$(FME_MF_NAME).log"
+#!   VIEW_POSITION="-3646.91 578.131"
+#!   FME_DOCUMENT_PRIORGUID="0b5b0aaa-6122-4b61-a7e8-c8321bf006ef,7f0a86d4-51bd-4346-8d49-4a563df0ff5f"
+#!   TITLE=""
+#!   SOURCE="NONE"
 #!   MARKDOWN_USAGE=""
-#!   DESCRIPTION=""
+#!   FME_BUILD_NUM="17539"
+#!   FME_DOCUMENT_GUID="7f5c7d03-e7a7-44d1-a7a3-74a1510040ec"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   DOC_TOP_LEFT="-1584.39 -1190.64"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   ZOOM_SCALE="100"
+#!   LAST_SAVE_BUILD="FME(R) 2017.1.0.0 (20170731 - Build 17539 - WIN64)"
 #!   MARKDOWN_DESCRIPTION=""
-#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
-#!   ATTR_TYPE_ENCODING="SDF"
-#!   IGNORE_READER_FAILURE="No"
 #!   DESTINATION_ROUTING_FILE=""
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   DOC_EXTENTS="1896.89 1548.18"
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -72,7 +73,7 @@
 #!   WRITE_DEFS="false"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_start_angle real64 fme_color char(50) fme_geometry fme_char(50) fme_feature_type char(50) fme_rotation real64 fme_basename char(50) fme_fill_color char(50) fme_sweep_angle real64 fme_type char(50) fme_secondary_axis real64 fme_primary_axis real64 fme_text_size real64 fme_dataset char(50) fme_text_string char(50)"
+#!   EXPOSABLE_ATTRS="fme_type char(50) fme_dataset char(50) fme_basename char(50) fme_rotation real64 fme_text_string char(50) fme_fill_color char(50) fme_start_angle real64 fme_primary_axis real64 fme_geometry fme_char(50) fme_color char(50) fme_text_size real64 fme_feature_type char(50) fme_sweep_angle real64 fme_secondary_axis real64"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -82,24 +83,24 @@
 #!   DATASET_TYPE="DIRONLY"
 #!   GENERATE_FME_BUILD_NUM="17259"
 #!   FANOUT_GROUP="NO"
-#!   FANOUT_EXPRESSION=""
 #!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
 #! >
-#! <METAFILE_PARAMETER
-#!   NAME="WRITER_FEATURE_TYPE_EDITING"
-#!   VALUE="NO"
-#! />
 #! <METAFILE_PARAMETER
 #!   NAME="FEATURE_TYPE_DEFAULT_NAME"
 #!   VALUE="File1"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the File Copy"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_FEATURE_TYPE_EDITING"
 #!   VALUE="NO"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a folder for the File Copy"
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="MIME_TYPE"
@@ -375,18 +376,23 @@
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT ProcessName Processnamn:"
+#!   GUI_LINE="GUI TEXT_OR_ATTR ProcessName Processnamn:"
 #!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT ProcessID Process-ID:"
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR ProcessID Process-ID:"
 #!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI TEXT RotDirectory Katalogen där processen startar:"
 #!   DEFAULT_VALUE="../"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR IsWholeProcessRun Är hela datalagerprocessen körd:"
+#!   DEFAULT_VALUE="1"
 #!   IS_STAND_ALONE="true"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -404,7 +410,7 @@
 #!   BOUNDING_RECT="-1584.39 -316.254 1896.89 874.383"
 #!   STICKY="true"
 #!   COLOUR="0.756863,0.54902,0.537255"
-#!   CONTENTS="4 8 11 12 7 "
+#!   CONTENTS="4 11 7 8 12 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -421,16 +427,16 @@
 #! >
 #!     <OUTPUT_FEAT NAME="CREATED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
-#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
-#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="4"
@@ -441,7 +447,7 @@
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="17259"
+#!   LAST_PARM_EDIT="17539"
 #! >
 #!     <OUTPUT_FEAT NAME="SUCCEEDED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -456,14 +462,14 @@
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
 #!     <XFORM_ATTR ATTR_NAME="_proc_count" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_processes{}" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_PARM PARM_NAME="PARAMETER_TYPES" PARM_VALUE="EX_DATE_TIME,&lt;at&gt;Value&lt;openparen&gt;Timestamp&lt;closeparen&gt;,EX_PROCESS_NAME,$(ProcessName),EX_ID,$(ProcessID),EX_TYPE,INFORMATION,EX,&lt;at&gt;Value&lt;openparen&gt;Logg&lt;closeparen&gt;,EX_WorkSpace,$(FME_MF_DIR_USERTYPED)$(FME_MF_NAME),EX_ROT_DIRECTORY,$(RotDirectory)"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="WORKSPACE_PARAMETERS" PARM_VALUE="EX_DATE_TIME,&lt;at&gt;Value&lt;openparen&gt;Timestamp&lt;closeparen&gt;,EX_PROCESS_NAME,$(ProcessName),EX_ID,$(ProcessID),EX_TYPE,INFORMATION,EX,&lt;at&gt;Value&lt;openparen&gt;Logg&lt;closeparen&gt;,EX_WorkSpace,$(FME_MF_DIR_USERTYPED)$(FME_MF_NAME),EX_ROT_DIRECTORY,$(RotDirectory)"/>
-#!     <XFORM_PARM PARM_NAME="BLOCKING" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="MAX_PROC" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="WORKSPACE_FILE" PARM_VALUE="$(FME_MF_DIR)_logg.fmw"/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_PARAMETERS" PARM_VALUE="EX_DATE_TIME,&lt;at&gt;Value&lt;openparen&gt;Timestamp&lt;closeparen&gt;,EX_PROCESS_NAME,$(ProcessName),EX_ID,$(ProcessID),EX_TYPE,INFORMATION,EX,&lt;at&gt;Value&lt;openparen&gt;Logg&lt;closeparen&gt;,EX_WorkSpace,$(FME_MF_DIR_USERTYPED)$(FME_MF_NAME),EX_ROT_DIRECTORY,$(RotDirectory),IsWholeProcessRun,$(IsWholeProcessRun)"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BLOCKING" PARM_VALUE="No"/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="WorkspaceRunner"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_TYPES" PARM_VALUE="DATETIME,TEXT,TEXT,CHOICE,TEXT_EDIT_OR_NUM_MULTI_FEATURE,TEXT,TEXT,TEXT"/>
+#!     <XFORM_PARM PARM_NAME="MAX_PROC" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="7"
@@ -479,11 +485,11 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="Timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="FMT" PARM_VALUE="^Y-^m-^d ^H:^M:^S"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TIME_ATTR" PARM_VALUE="Timestamp"/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TimeStamper"/>
-#!     <XFORM_PARM PARM_NAME="FMT" PARM_VALUE="^Y-^m-^d ^H:^M:^S"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="8"
@@ -501,12 +507,12 @@
 #!     <XFORM_ATTR ATTR_NAME="Timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Logg" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="Logg"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARAM_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ACTION" PARM_VALUE="Create New Attribute"/>
-#!     <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="Skapar&lt;space&gt;katalog&lt;space&gt;$(FolderPath)"/>
+#!     <XFORM_PARM PARM_NAME="PARAM_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator"/>
+#!     <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="Skapar&lt;space&gt;katalog&lt;space&gt;$(FolderPath)"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -574,6 +580,8 @@ DEFAULT_MACRO ProcessID
 GUI OPTIONAL TEXT ProcessID Process-ID:
 DEFAULT_MACRO RotDirectory ../
 GUI TEXT RotDirectory Katalogen där processen startar:
+DEFAULT_MACRO IsWholeProcessRun 1
+GUI OPTIONAL TEXT IsWholeProcessRun Är hela datalagerprocessen körd:
 INCLUDE [ if {{$(ProcessName)} == {}} { puts_real {Parameter 'ProcessName' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(RotDirectory)} == {}} { puts_real {Parameter 'RotDirectory' must be given a value.}; exit 1; }; ]
 #! START_HEADER
@@ -679,7 +687,7 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME FolderCreator
+MACRO WORKSPACE_NAME _folder-creator
 MACRO FME_VIEWER_APP fmedatainspector
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
@@ -726,9 +734,9 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TY
 # macintosh (the latter of which is actually pre-OS X)
 
 Tcl2 if { $tcl_platform(platform) == {windows} } {         set ::null_device {NUL:};         set ::__WR_ENV_HELPER__ {};      } else {         set ::null_device {/dev/null};         set ::__WR_ENV_HELPER__ {/usr/bin/env FME_SUBPROCESS_RUN_DETACHED=1}      };
-Tcl2 proc WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_runner { parmListString workspaceFile } {    set workspaceFileUnix [regsub -all {\\} $workspaceFile {/}];    set parmListString [string range $parmListString 1 end-1];    set comment {        Build up the command line in a list, which we'll "eval" to get        at its pieces when we actually execute the "exec".    };    lappend commandArguments {*}$::__WR_ENV_HELPER__ {$(FME_HOME_UNIX)/fme}                             $workspaceFileUnix;    set parmList [split $parmListString {,}];    set comment {        At the same time, remember the TYPES for each of the parameters so        we can avoid logging any passwords in plain text (PR 64546)    };    set parmTypes [split {EX_DATE_TIME,<at>Value<openparen>Timestamp<closeparen>,EX_PROCESS_NAME,$(ProcessName$encode),EX_ID,$(ProcessID$encode),EX_TYPE,INFORMATION,EX,<at>Value<openparen>Logg<closeparen>,EX_WorkSpace,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),EX_ROT_DIRECTORY,$(RotDirectory$encode)} {,}];    set comment {        Note that foreach can walk thorugh more than one list at a time.        If the lists were ever out of sync (had different #s of entries, which should be impossible)        the iteration continues with the shorter list return an empty string. So we should be okay    };    set commandArgumentsToLog $commandArguments;    foreach {parmName encodedValue} $parmList parmType $parmTypes {       set comment {           Decode the parameter value which we now know is very encoded to guard           it from the parser and append them each to a new list which will be passed           as the arguments to the exec function.  Note that the           parameter names need to be turned into macro settings by           prepending them with --           Note also that the WorkspaceRunner sometimes encodes attribute           dereferences by placing <amp> at the beginning rather than using @Value.           Further note that string range forgives if the ending index is > the length of           the string, so we can just ask for the first 5 characters           when we're checking for <amp>.       };       if {[string length $parmName] == 0} { continue; };       lappend commandArguments \"--$parmName\";       lappend commandArgumentsToLog \"--$parmName\";       set comment {           for backwards compatibility, replace first <amp>       };       if { [string range $encodedValue 0 4] == {<amp>} &&            [string length $encodedValue] > 5 } {           set encodedValue [string replace $encodedValue 0 4 {<at>Value<openparen>}]];           append encodedValue "<closeparen>";       };       set comment { We used to call FME_DecodeTextOrAttr here. After changes to                     the code that writes out the mapping file section, we don't                     need to do this any more because the value would be in the                     correct state of encoding as required by the child workspace       };       set comment { parameter values starting with '<' causes tcl exec to fail so                     we escape leading '<' with backslash and then do the reverse                     when parsing command line arguments       };       if { [string index $encodedValue 0] == {<} } {          set encodedValue "\\$encodedValue";       };       lappend commandArguments $encodedValue;       set comment {           Ensure that passwords are not added into the logmessage (PR 64546)           We'll guard against both PASSWORD and PASSWORD_CONFIRM GUI types           by checking if the word PASSWORD is in the GUI TYPE at all       };       if { [string first {PASSWORD} $parmType] != -1 } {           lappend commandArgumentsToLog {***};       } else {           lappend commandArgumentsToLog $encodedValue;       };    };    set comment {        Now optionally run this in a detached way if we were not supposed        to wait by adding & on the end to put it in the background.  And        at the same time, ensure that any stray stdout/stderr is routed to        null.    };    if { {No} == {No} } {        lappend commandArguments \">$::null_device\";        lappend commandArgumentsToLog \">$::null_device\";        lappend commandArguments \"<$::null_device\";        lappend commandArgumentsToLog \"<$::null_device\";        FME_LogMessage fme_inform \"WorkspaceRunner: Initiating run of FME Workspace $workspaceFile with command line:\";    } else {        FME_LogMessage fme_inform \"WorkspaceRunner: Running FME Workspace $workspaceFile with command line:\";    };    set comment {        The below 2>@1 forces any standard error output to go into the msg variable        or to NULL if we're running in the background.    };    lappend commandArguments {2>@1};    lappend commandArgumentsToLog {2>@1};    if { {No} == {No} } {        lappend commandArguments {&};        lappend commandArgumentsToLog {&};    };    FME_LogMessage fme_inform [concat WorkspaceRunner: $commandArgumentsToLog];    if { {No} == {No} } {       after 1000;       while { [FME_CanSpawnFme ] == {0} } {             after 2000;       };    };    if {[catch {eval [concat exec $commandArguments] } msg ]} {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn \"WorkspaceRunner: Failed to run workspace $workspaceFileUnix -- Trace was:\n\n$msg\n\";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_process_count;       incr WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_process_count;       if { {No} == {No} } {           FME_LogMessage fme_inform \"WorkspaceRunner: Successfully initiated run of workspace $workspaceFile\";           global WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_all_processes;           lappend WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_all_processes $msg;       } else {           FME_LogMessage fme_inform \"WorkspaceRunner: Successfully ran workspace $workspaceFile\";       };       return SUCCESS;    }; }
-FACTORY_DEF * TestFactory    FACTORY_NAME WorkspaceRunner_ExecutorAndRouter    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    TEST @Tcl2("WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_runner {(EX_DATE_TIME,@EvaluateExpression(FDIV,STRING,<at>Value<openparen>Timestamp<closeparen>,WorkspaceRunner),EX_PROCESS_NAME,@EvaluateExpression(FDIV,STRING,$(ProcessName$encode),WorkspaceRunner),EX_ID,@EvaluateExpression(FDIV,STRING,$(ProcessID$encode),WorkspaceRunner),EX_TYPE,INFORMATION,EX,@EvaluateExpression(FDIV,STRING,<at>Value<openparen>Logg<closeparen>,WorkspaceRunner),EX_WorkSpace,@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),WorkspaceRunner),EX_ROT_DIRECTORY,@EvaluateExpression(FDIV,STRING,$(RotDirectory$encode),WorkspaceRunner))} {@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR$encode)_logg.fmw,WorkspaceRunner)}") == SUCCESS
-Tcl2 proc WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_summarizer { } {     global WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_process_count 0;     FME_SetAttribute _proc_count [set WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_process_count];     global WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_all_processes;     if {[info exists WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_all_processes]} {         set index 0;         foreach pid [set WorkspaceRunner_8aeb3528_1db5_487b_997c_418ae49bb8b92_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
+Tcl2 proc WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_runner { parmListString workspaceFile } {    set workspaceFileUnix [regsub -all {\\} $workspaceFile {/}];    set parmListString [string range $parmListString 1 end-1];    set comment {        Build up the command line in a list, which we'll "eval" to get        at its pieces when we actually execute the "exec".    };    lappend commandArguments {*}$::__WR_ENV_HELPER__ {$(FME_HOME_UNIX)/fme}                             $workspaceFileUnix;    set parmList [split $parmListString {,}];    set comment {        At the same time, remember the TYPES for each of the parameters so        we can avoid logging any passwords in plain text (PR 64546)    };    set parmTypes [split {DATETIME,TEXT,TEXT,CHOICE,TEXT_EDIT_OR_NUM_MULTI_FEATURE,TEXT,TEXT,TEXT} {,}];    set comment {        Note that foreach can walk thorugh more than one list at a time.        If the lists were ever out of sync (had different #s of entries, which should be impossible)        the iteration continues with the shorter list return an empty string. So we should be okay    };    set commandArgumentsToLog $commandArguments;    foreach {parmName encodedValue} $parmList parmType $parmTypes {       set comment {           Decode the parameter value which we now know is very encoded to guard           it from the parser and append them each to a new list which will be passed           as the arguments to the exec function.  Note that the           parameter names need to be turned into macro settings by           prepending them with --           Note also that the WorkspaceRunner sometimes encodes attribute           dereferences by placing <amp> at the beginning rather than using @Value.           Further note that string range forgives if the ending index is > the length of           the string, so we can just ask for the first 5 characters           when we're checking for <amp>.       };       if {[string length $parmName] == 0} { continue; };       lappend commandArguments \"--$parmName\";       lappend commandArgumentsToLog \"--$parmName\";       set comment {           for backwards compatibility, replace first <amp>       };       if { [string range $encodedValue 0 4] == {<amp>} &&            [string length $encodedValue] > 5 } {           set encodedValue [string replace $encodedValue 0 4 {<at>Value<openparen>}]];           append encodedValue "<closeparen>";       };       set comment { We used to call FME_DecodeTextOrAttr here. After changes to                     the code that writes out the mapping file section, we don't                     need to do this any more because the value would be in the                     correct state of encoding as required by the child workspace       };       set comment { parameter values starting with '<' causes tcl exec to fail so                     we escape leading '<' with backslash and then do the reverse                     when parsing command line arguments       };       if { [string index $encodedValue 0] == {<} } {          set encodedValue "\\$encodedValue";       };       lappend commandArguments $encodedValue;       set comment {           Ensure that passwords are not added into the logmessage (PR 64546)           We'll guard against both PASSWORD and PASSWORD_CONFIRM GUI types           by checking if the word PASSWORD is in the GUI TYPE at all       };       if { [string first {PASSWORD} $parmType] != -1 } {           lappend commandArgumentsToLog {***};       } else {           lappend commandArgumentsToLog $encodedValue;       };    };    set comment {        Now optionally run this in a detached way if we were not supposed        to wait by adding & on the end to put it in the background.  And        at the same time, ensure that any stray stdout/stderr is routed to        null.    };    if { {No} == {No} } {        lappend commandArguments \">$::null_device\";        lappend commandArgumentsToLog \">$::null_device\";        lappend commandArguments \"<$::null_device\";        lappend commandArgumentsToLog \"<$::null_device\";        FME_LogMessage fme_inform \"WorkspaceRunner: Initiating run of FME Workspace $workspaceFile with command line:\";    } else {        FME_LogMessage fme_inform \"WorkspaceRunner: Running FME Workspace $workspaceFile with command line:\";    };    set comment {        The below 2>@1 forces any standard error output to go into the msg variable        or to NULL if we're running in the background.    };    lappend commandArguments {2>@1};    lappend commandArgumentsToLog {2>@1};    if { {No} == {No} } {        lappend commandArguments {&};        lappend commandArgumentsToLog {&};    };    FME_LogMessage fme_inform [concat WorkspaceRunner: $commandArgumentsToLog];    if { {No} == {No} } {       after 1000;       while { [FME_CanSpawnFme ] == {0} } {             after 2000;       };    };    if {[catch {eval [concat exec $commandArguments] } msg ]} {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn \"WorkspaceRunner: Failed to run workspace $workspaceFileUnix -- Trace was:\n\n$msg\n\";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_process_count;       incr WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_process_count;       if { {No} == {No} } {           FME_LogMessage fme_inform \"WorkspaceRunner: Successfully initiated run of workspace $workspaceFile\";           global WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_all_processes;           lappend WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_all_processes $msg;       } else {           FME_LogMessage fme_inform \"WorkspaceRunner: Successfully ran workspace $workspaceFile\";       };       return SUCCESS;    }; }
+FACTORY_DEF * TestFactory    FACTORY_NAME WorkspaceRunner_ExecutorAndRouter    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    TEST @Tcl2("WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_runner {(EX_DATE_TIME,@EvaluateExpression(FDIV,STRING,<at>Value<openparen>Timestamp<closeparen>,WorkspaceRunner),EX_PROCESS_NAME,@EvaluateExpression(FDIV,STRING,$(ProcessName$encode),WorkspaceRunner),EX_ID,@EvaluateExpression(FDIV,STRING,$(ProcessID$encode),WorkspaceRunner),EX_TYPE,INFORMATION,EX,@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Logg<closeparen>,WorkspaceRunner),EX_WorkSpace,@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),WorkspaceRunner),EX_ROT_DIRECTORY,@EvaluateExpression(FDIV,STRING,$(RotDirectory$encode),WorkspaceRunner),IsWholeProcessRun,@EvaluateExpression(FDIV,STRING,$(IsWholeProcessRun$encode),WorkspaceRunner))} {@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR$encode)_logg.fmw,WorkspaceRunner)}") == SUCCESS
+Tcl2 proc WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_summarizer { } {     global WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_process_count 0;     FME_SetAttribute _proc_count [set WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_process_count];     global WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_all_processes;     if {[info exists WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_all_processes]} {         set index 0;         foreach pid [set WorkspaceRunner_b155a130_adfa_43d7_bc6f_3cfe647b20680_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
 FACTORY_DEF * CreationFactory    FACTORY_NAME WorkspaceRunner_SummaryMaker    CREATE_AT_END yes
 
 # -------------------------------------------------------------------------

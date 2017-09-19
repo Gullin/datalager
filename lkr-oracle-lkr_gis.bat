@@ -38,6 +38,7 @@ IF %ERRORLEVEL% EQU 0 (
     IF DEFINED DL_ISWHOLEPROCESS (
         ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
     ) ELSE (
+        SET DL_ISWHOLEPROCESS=0
         ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
         @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
     )
@@ -71,7 +72,8 @@ REM Hanterar data till datalager
                         --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --Manifest %DL_ROTDIR%%DL_PROCESSNAME%\_schema\schema-manifest.xlsx ^
-                        --OutputDirectory %DL_PROCESSMODULOUTDIR%
+                        --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
+                        --IsWholeProcessRun %DL_ISWHOLEPROCESS%
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"
