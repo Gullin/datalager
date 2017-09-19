@@ -12,6 +12,11 @@ IF NOT EXIST %DL_PROCESSNAME%\_fme (
     @CALL _sys\_log-batch INFOR "Skapad katalog %DL_PROCESSNAME%\_fme"
 )
 
+IF NOT EXIST %DL_PROCESSNAME%\_log (
+    MD %DL_PROCESSNAME%\_log
+    @CALL _sys\_log-batch INFOR "Skapad katalog %DL_PROCESSNAME%\_log"
+)
+
 IF NOT EXIST %DL_PROCESSNAME%\_ned (
     MD %DL_PROCESSNAME%\_ned
     @CALL _sys\_log-batch INFOR "Skapad katalog %DL_PROCESSNAME%\_ned"
