@@ -1,8 +1,8 @@
+@ECHO OFF
 REM Kallas p† fr†n alla bat-filer.
 REM Placeras f”rst i andra bat-filer.
 REM Ska ligga i processens rotkatalog
 
-@ECHO OFF
 REM SetLocal EnableDelayedExpansion
 
 
