@@ -74,7 +74,7 @@ REM H„mtar Lantm„teriets Fastighetskartan
     REM Landskrona --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Landskrona/Sweref 99 1330/Shape/fk_1282.Sweref_99_1330.Shape.zip"
     REM Sk†ne      --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Lan 12/Sweref 99 TM/Shape/fk_12.Sweref_99_TM.Shape.zip"
     @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
-                        --ProcessName %DL_PROCESSID% ^
+                        --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Lan 12/Sweref 99 TM/Shape/fk_12.Sweref_99_TM.Shape.zip" ^
                         --User %USER-LM-GEODATAPLATSEN% ^
@@ -99,7 +99,7 @@ REM Skapar klippytor fr†n kommungr„nser i Fastighetskartan
     REM Valfri parameter med enhet meter (anv„nds inte s„tts ett standardv„rde)
     REM FME-parameter --Buffer
     @%DL_FMEFULLPATH% %DL_FMEPROCESS02% ^
-                        --ProcessName %DL_PROCESSID% ^
+                        --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --ShpInData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_12.Sweref_99_TM.Shape.zip
 
@@ -119,7 +119,7 @@ REM Hanterar data till datalager
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS03%"
 
     @%DL_FMEFULLPATH% %DL_FMEPROCESS03% ^
-                        --ProcessName %DL_PROCESSID% ^
+                        --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --OutputDirectory %DL_PROCESSMODULOUTDIR%
 
