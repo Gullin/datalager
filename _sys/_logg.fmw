@@ -41,7 +41,7 @@
 #!   SOURCE="NONE"
 #!   TITLE=""
 #!   ZOOM_SCALE="36"
-#!   LAST_SAVE_DATE="2017-09-19T16:21:55"
+#!   LAST_SAVE_DATE="2017-09-19T16:26:07"
 #!   DESCRIPTION=""
 #!   FME_DOCUMENT_GUID="e32841ca-1870-4e95-b345-8133238bb5b6"
 #!   USAGE=""
@@ -1249,7 +1249,7 @@
 #!   BOUNDING_RECT="3598.46 -1707.77 1883.05 2239.39"
 #!   STICKY="true"
 #!   COLOUR="0.431373,0.203922,0.466667"
-#!   CONTENTS="61 28 48 42 59 55 30 29 51 12 5 56 "
+#!   CONTENTS="61 28 48 42 59 66 55 30 29 51 12 5 56 65 67 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="42"
@@ -1260,7 +1260,7 @@
 #!   BOUNDING_RECT="3598.46 -1831.77 1883.05 711.526"
 #!   STICKY="true"
 #!   COLOUR="0.266667,0.631373,0.0784314"
-#!   CONTENTS="28 55 29 51 12 5 "
+#!   CONTENTS="28 66 55 29 51 12 5 65 67 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="53"
@@ -1422,8 +1422,8 @@
 #!   IDENTIFIER="12"
 #!   TYPE="StringConcatenator"
 #!   VERSION="7"
-#!   POSITION="3679.62 -2328.94"
-#!   BOUNDING_RECT="3679.62 -2328.94 -1 -1"
+#!   POSITION="3692.64 -2172.69"
+#!   BOUNDING_RECT="3692.64 -2172.69 -1 -1"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1733,8 +1733,8 @@
 #!   IDENTIFIER="56"
 #!   TYPE="AttributeEncoder"
 #!   VERSION="0"
-#!   POSITION="4045.13 -2866.18"
-#!   BOUNDING_RECT="4045.13 -2866.18 -1 -1"
+#!   POSITION="3723.95 -2866.18"
+#!   BOUNDING_RECT="3723.95 -2866.18 -1 -1"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1800,6 +1800,37 @@
 #!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
 #!     <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="65"
+#!   TYPE="AttributeEncoder"
+#!   VERSION="0"
+#!   POSITION="3697.95 -2356.79"
+#!   BOUNDING_RECT="3697.95 -2356.79 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17259"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeEncoder_2"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRCHOICE" PARM_VALUE="All Attributes"/>
+#!     <XFORM_PARM PARM_NAME="DEST_ENCODING" PARM_VALUE="windows-1252"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TREAT_AS_BYTES" PARM_VALUE="Honor Encoding"/>
+#!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
@@ -1858,9 +1889,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="62"
+#!   IDENTIFIER="66"
 #!   SOURCE_NODE="12"
-#!   TARGET_NODE="55"
+#!   TARGET_NODE="65"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1997,6 +2028,17 @@
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="67"
+#!   SOURCE_NODE="65"
+#!   TARGET_NODE="55"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
 #!   EXTRA_POINTS=""
 #! />
@@ -2544,8 +2586,8 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_
 
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e13_replacer { findText replaceText invalidValue} {     set attrs [split \"_EX_WorkSpace\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE StringConcatenator_2_OUTPUT    INPUT  FEATURE_TYPE Tester_4_FAILED    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e13_replacer {<solidus>} {<backslash>} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e14_replacer { findText replaceText invalidValue} {     set attrs [split \"_EX_WorkSpace\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE StringConcatenator_2_OUTPUT    INPUT  FEATURE_TYPE Tester_4_FAILED    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_bcd65956_4e72_4c29_af3d_34cb641081e14_replacer {<solidus>} {<backslash>} {_FME_NO_OP_}")
 
 # -------------------------------------------------------------------------
 
@@ -2569,7 +2611,13 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TY
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TestFactory    FACTORY_NAME Tester_5    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_IsWholeProcessRun<closeparen>,Tester_5) = 1 ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_5_PASSED    OUTPUT FAILED FEATURE_TYPE Tester_5_FAILED
+Tcl2 proc AttributeEncoder_2_convert {} {    set attrs [split {<Unused>} { }];    set allAttributes false;    if { {ALL} == {ALL} } {       set attrs [FME_AttributeNames];       set allAttributes true;    };    set parmList {{EvaluateExpression} {ATTR_SET_EXPR}};    foreach attr $attrs {      if {[string first {fme_} $attr] == 0 && $allAttributes} {         continue;      };      if {$allAttributes} {        set attr [FME_EncodeText $attr];      };      set funcAttr $attr;      if { [string first "<quote>" $attr] != -1 }      {          set funcAttr [string map {"<quote>" "<backslash><quote>"} $attr];          append funcAttr "<quote>";          set funcAttr "<quote>"$funcAttr;      };      set funcCall [join [list "<at>ConvertEncoding<openparen>windows-1252<comma><at>Value<openparen>" $funcAttr "<closeparen><comma>FALSE<closeparen>"] {}];      lappend parmList $attr;      lappend parmList $funcCall;    };    lappend parmList {AttributeEncoder_2};    eval FME_Execute $parmList; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeEncoder_2    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    OUTPUT FEATURE_TYPE AttributeEncoder_2_OUTPUT         @Tcl2("AttributeEncoder_2_convert")
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester_5    INPUT  FEATURE_TYPE AttributeEncoder_2_OUTPUT    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_IsWholeProcessRun<closeparen>,Tester_5) = 1 ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_5_PASSED    OUTPUT FAILED FEATURE_TYPE Tester_5_FAILED
 # -------------------------------------------------------------------------
 
 Tcl2 proc AttributeEncoder_convert {} {    set attrs [split {<Unused>} { }];    set allAttributes false;    if { {ALL} == {ALL} } {       set attrs [FME_AttributeNames];       set allAttributes true;    };    set parmList {{EvaluateExpression} {ATTR_SET_EXPR}};    foreach attr $attrs {      if {[string first {fme_} $attr] == 0 && $allAttributes} {         continue;      };      if {$allAttributes} {        set attr [FME_EncodeText $attr];      };      set funcAttr $attr;      if { [string first "<quote>" $attr] != -1 }      {          set funcAttr [string map {"<quote>" "<backslash><quote>"} $attr];          append funcAttr "<quote>";          set funcAttr "<quote>"$funcAttr;      };      set funcCall [join [list "<at>ConvertEncoding<openparen>windows-1252<comma><at>Value<openparen>" $funcAttr "<closeparen><comma>FALSE<closeparen>"] {}];      lappend parmList $attr;      lappend parmList $funcCall;    };    lappend parmList {AttributeEncoder};    eval FME_Execute $parmList; }
