@@ -18,7 +18,7 @@ REM Loggfil f”r batch-h„ndelserna, redog”r f”r processtege
 SET DL_LOGFILE=BatchEventLog.log
 
 REM Skapas om fel uppst†r i processen och inneh†ller ett mer utf”rligare felmeddelande „n det som loggas i DL_LOGFILE
-SET DL_LOGERROR=Exception.log
+SET DL_LOGERROR=FATAL_ERROR.log
 
 REM Fil inneh†llande s”kv„gar till repositoryts underkataloger genererade av resp. processmodul (repositorydelar)
 SET DL_DISTSOURCEFILE=DatalagerDistributionSource.log

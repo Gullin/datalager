@@ -11,8 +11,8 @@ FOR /D %%p IN ("*.*") DO (
     REM Logg-katalogen
     IF %%p==_log (
         REM Rensar filen f”r allvarliga undantagsloggar
-        REM "Exception.log"
-        IF EXIST %%p\Exception.log DEL /S /Q %%p\Exception.log
+        REM "FATAL_ERROR.log"
+        IF EXIST %%p\FATAL_ERROR.log DEL /S /Q %%p\FATAL_ERROR.log
         REM Alla "FME-*.log"
         SET folder=%%p
         FOR /R %folder% %%i IN ("FME-*.log") DO DEL /S /Q %%i
