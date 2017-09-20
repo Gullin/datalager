@@ -1,5 +1,5 @@
 @ECHO OFF
-SETLOCAL
+SETLOCAL EnableDelayedExpansion
 @CALL _global-settings
 
 REM CP 437 (DOS)
@@ -45,13 +45,23 @@ IF %ERRORLEVEL% EQU 0 (
 
         
         REM Processmoduler
-        REM @CALL lm-geodataplatsen-fastighetskartan
+        @CALL lm-geodataplatsen-fastighetskartan
         @CALL lkr-oracle-lkr_gis
 
 
 
-        REM Kopierar ut genererat datalager till platser. Platser definieras i rutinen.
-        REM @CALL _sys\_datalager-distribute
+        REM Kontrollerar om processen har k”rts utan allvarliga fel, distribueras i s† fall
+        @CALL _sys\_exist-FATAL_ERROR
+        
+        IF !ERRORLEVEL! NEQ 99999 (
+
+            REM Kopierar ut genererat datalager till platser. Platser definieras i rutinen.
+            @CALL _sys\_datalager-distribute
+
+        ) ELSE (
+            @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID_MASTER%"
+            @CALL :Message
+        )
 
     ) ELSE (
         IF "%_arg%"=="reset" SET RESETING=1
@@ -80,7 +90,7 @@ IF %ERRORLEVEL% EQU 0 (
         )
         IF DEFINED SCHEMAINIT (
             @CALL _sys\_log-batch CLEAR %DL_PROCESSID_MASTER%
-            @CALL _sys\_schema-driver %2 write init %3 %4 %5
+            @CALL _sys\_schema-driver %2 %DL_ISWHOLEPROCESS% write init %3 %4 %5
 
             SET SCHEMAINIT=
 
@@ -108,4 +118,13 @@ IF %ERRORLEVEL% EQU 0 (
 :exit
 @CALL _sys\_log-batch KLART %DL_PROCESSID_MASTER%
 :break
+
+
+
+REM ### METODER ###
+REM Meddelandefunktion
+:Message
+    REM TODO: K”r meddelandefunktion - NOT IMPLEMENTED
+    ECHO Meddelar...
+GOTO :eof
 ENDLOCAL

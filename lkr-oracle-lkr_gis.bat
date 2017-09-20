@@ -10,6 +10,9 @@ SET DL_PROCESSNAME=lkr-oracle-lkr_gis
 REM Processlokala parametrar
 SET DL_OUTDIR=landskrona\lkr_gis\
 SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\oracle-lkr_gis-DatalagerManage-driver.fmw"
+IF NOT DEFINED DL_ISWHOLEPROCESS (
+    SET DL_ISWHOLEPROCESS=0
+)
 
 
 
@@ -27,7 +30,7 @@ SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 @CALL _sys\_log-batch START %DL_PROCESSID%
 IF %ERRORLEVEL% EQU 0 (
     REM Validering av data-schema
-    @CALL _sys\_schema-driver %DL_PROCESSNAME% validate NULL ORACLE_SPATIAL LKR_GIS
+    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL ORACLE_SPATIAL LKR_GIS
 
     REM Kontrollerar om valideringen har godk„nnts annars k”rs ej resterande
     IF DEFINED DL_ISWHOLEPROCESS (
@@ -46,15 +49,23 @@ IF %ERRORLEVEL% EQU 0 (
 
 
         REM Loggning av resp. process resurskatalog f”r distribuering och distribuering om processmodulen k”rs enskilt
-        IF DEFINED DL_ISWHOLEPROCESS (
+        REM Distribuering g”rs ej vid fel.
+        IF %DL_ISWHOLEPROCESS% == 1 (
             ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
         ) ELSE (
-            SET DL_ISWHOLEPROCESS=0
-            ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
-            @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+            @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
+
+            IF !ERRORLEVEL! NEQ 99999 (
+                ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
+                @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+            ) ELSE (
+                @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
+                @CALL :Message
+            )
         )
 
     ) ELSE (
+        @CALL _sys\_log-batch ERROR "Allvarligt fel vid validering av datasets schema i process %DL_PROCESSID%"
         @CALL :Message
     )
 
@@ -78,7 +89,7 @@ EXIT /B
 REM ### METODER ###
 REM Meddelandefunktion
 :Message
-    IF NOT DEFINED DL_ISWHOLEPROCESS (
+    IF %DL_ISWHOLEPROCESS% == 0 (
         REM TODO: K”r meddelandefunktion - NOT IMPLEMENTED
         ECHO Meddelar...
     )
@@ -95,6 +106,7 @@ REM Hanterar data till datalager
                         --RotDirectory %DL_ROTDIR% ^
                         --Manifest %DL_ROTDIR%%DL_PROCESSNAME%\_schema\schema-manifest.xlsx ^
                         --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
+                        --ProcessModulName %DL_PROCESSNAME% ^
                         --IsWholeProcessRun %DL_ISWHOLEPROCESS%
 
     IF %ERRORLEVEL% NEQ 0 (

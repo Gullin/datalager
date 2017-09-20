@@ -20,7 +20,7 @@ SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 
 @CALL _sys\_log-batch START %DL_PROCESSID%
 IF %ERRORLEVEL% EQU 0 (
-    IF DEFINED DL_ISWHOLEPROCESS (
+    IF %DL_ISWHOLEPROCESS% == 1 (
         SET DL_SOURCES=%DL_ROTDIR%%DL_DISTSOURCE%
 
 
@@ -65,7 +65,9 @@ REM Metoder
                         --ProcessName %DL_PROCESSID% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --InData %DL_SOURCES% ^
-                        --RepoSourceDirectory %DL_ROTDIR%%DL_REPOSITORYROTDIR%
+                        --RepoSourceDirectory %DL_ROTDIR%%DL_REPOSITORYROTDIR% ^
+                        --ProcessModulName %_arg% ^
+                        --IsWholeProcessRun %DL_ISWHOLEPROCESS%
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"

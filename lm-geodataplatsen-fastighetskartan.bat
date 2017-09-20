@@ -13,6 +13,9 @@ SET DL_OUTDIR=lantmateriet\gsd-fastighetskartan\
 SET DL_FMEPROCESS01="_sys\_ftp-caller.fmw"
 SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\01-KlippytorFromFKSkaneSw99TM.fmw"
 SET DL_FMEPROCESS03="%DL_PROCESSNAME%\_fme\02-GSD-Fastighetskartan-DatalagerManage-driver.fmw"
+IF NOT DEFINED DL_ISWHOLEPROCESS (
+    SET DL_ISWHOLEPROCESS=0
+)
 
 
 
@@ -37,16 +40,20 @@ IF %ERRORLEVEL% EQU 0 (
     @CALL :GetFastighetskartanSkane
 
     REM Validering av data-schema
-    @CALL _sys\_schema-driver %DL_PROCESSNAME% validate NULL ESRISHAPE
+    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL ESRISHAPE
+
+    
     
     REM Kontrollerar om valideringen har godk„nnts annars k”rs ej resterande
-    IF DEFINED DL_ISWHOLEPROCESS (
+    IF %DL_ISWHOLEPROCESS% == 1 (
         @CALL _sys\_exist-FATAL_ERROR
     ) ELSE (
         @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
     )
 
-    IF NOT !ERRORLEVEL!==99999 (
+
+
+    IF !ERRORLEVEL! NEQ 99999 (
 
 
 
@@ -57,17 +64,23 @@ IF %ERRORLEVEL% EQU 0 (
 
 
         REM Loggning av resp. process resurskatalog f”r distribuering och distribuering om processmodulen k”rs enskilt
-        IF DEFINED DL_ISWHOLEPROCESS (
+        REM Distribuering g”rs ej vid fel.
+        IF %DL_ISWHOLEPROCESS% == 1 (
             ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
         ) ELSE (
-            SET DL_ISWHOLEPROCESS=0
-            ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
-            @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+            @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
+
+            IF !ERRORLEVEL! NEQ 99999 (
+                ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
+                @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+            ) ELSE (
+                @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
+                @CALL :Message
+            )
         )
 
-        ECHO Processerar...
-
     ) ELSE (
+        @CALL _sys\_log-batch ERROR "Allvarligt fel vid validering av datasets schema i process %DL_PROCESSID%"
         @CALL :Message
     )
 
@@ -92,7 +105,7 @@ EXIT /B
 REM ### METODER ###
 REM Meddelandefunktion
 :Message
-    IF NOT DEFINED DL_ISWHOLEPROCESS (
+    IF %DL_ISWHOLEPROCESS% == 0 (
         REM TODO: K”r meddelandefunktion - NOT IMPLEMENTED
         ECHO Meddelar...
     )
@@ -111,6 +124,7 @@ REM H„mtar Lantm„teriets Fastighetskartan
                         --User %USER-LM-GEODATAPLATSEN% ^
                         --Password %PASS-LM-GEODATAPLATSEN% ^
                         --OutputDirectory %DL_ROTDIR%%DL_PROCESSNAME%/_ned ^
+                        --ProcessModulName %DL_PROCESSNAME% ^
                         --IsWholeProcessRun %DL_ISWHOLEPROCESS%
 
     IF %ERRORLEVEL% NEQ 0 (
@@ -134,6 +148,7 @@ REM Skapar klippytor fr†n kommungr„nser i Fastighetskartan
                         --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --ShpInData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_12.Sweref_99_TM.Shape.zip ^
+                        --ProcessModulName %DL_PROCESSNAME% ^
                         --IsWholeProcessRun %DL_ISWHOLEPROCESS%
 
     IF %ERRORLEVEL% NEQ 0 (
@@ -155,6 +170,7 @@ REM Hanterar data till datalager
                         --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
+                        --ProcessModulName %DL_PROCESSNAME% ^
                         --IsWholeProcessRun %DL_ISWHOLEPROCESS%
 
     IF %ERRORLEVEL% NEQ 0 (
