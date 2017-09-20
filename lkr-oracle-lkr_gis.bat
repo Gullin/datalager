@@ -1,5 +1,5 @@
 @CALL _global-settings
-SETLOCAL
+SETLOCAL EnableDelayedExpansion
 
 REM CP 437 (DOS)
 
@@ -26,23 +26,37 @@ SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 
 @CALL _sys\_log-batch START %DL_PROCESSID%
 IF %ERRORLEVEL% EQU 0 (
+    REM Validering av data-schema
+    @CALL _sys\_schema-driver %DL_PROCESSNAME% validate NULL ORACLE_SPATIAL LKR_GIS
 
-
-
-    REM FME-processer
-    @CALL :ManageSourceDatalager
-
-
-
-    REM Loggning av resp. process resurskatalog f”r distribuering och distribuering om processmodulen k”rs enskilt
+    REM Kontrollerar om valideringen har godk„nnts annars k”rs ej resterande
     IF DEFINED DL_ISWHOLEPROCESS (
-        ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
+        @CALL _sys\_exist-FATAL_ERROR
     ) ELSE (
-        SET DL_ISWHOLEPROCESS=0
-        ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
-        @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+        @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
     )
 
+    IF NOT !ERRORLEVEL!==99999 (
+
+
+
+        REM FME-processer
+        @CALL :ManageSourceDatalager
+
+
+
+        REM Loggning av resp. process resurskatalog f”r distribuering och distribuering om processmodulen k”rs enskilt
+        IF DEFINED DL_ISWHOLEPROCESS (
+            ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
+        ) ELSE (
+            SET DL_ISWHOLEPROCESS=0
+            ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
+            @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+        )
+
+    ) ELSE (
+        @CALL :Message
+    )
 
 
 ) ELSE (
@@ -61,7 +75,15 @@ EXIT /B
 
 
 
-REM Metoder
+REM ### METODER ###
+REM Meddelandefunktion
+:Message
+    IF NOT DEFINED DL_ISWHOLEPROCESS (
+        REM TODO: K”r meddelandefunktion - NOT IMPLEMENTED
+        ECHO Meddelar...
+    )
+GOTO :eof
+
 REM Hanterar data till datalager
 :ManageSourceDatalager
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
