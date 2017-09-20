@@ -33,13 +33,13 @@ IF %ERRORLEVEL% EQU 0 (
     @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL ORACLE_SPATIAL LKR_GIS
 
     REM Kontrollerar om valideringen har godk„nnts annars k”rs ej resterande
-    IF DEFINED DL_ISWHOLEPROCESS (
+    IF %DL_ISWHOLEPROCESS% == 1 (
         @CALL _sys\_exist-FATAL_ERROR
     ) ELSE (
         @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
     )
 
-    IF NOT !ERRORLEVEL!==99999 (
+    IF !ERRORLEVEL! NEQ 99999 (
 
 
 
