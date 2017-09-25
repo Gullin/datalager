@@ -10,7 +10,8 @@ REM             variabeln kr„vs
 
 SET DL_LOG_ARG1=%1
 
-IF NOT "%DL_LOG_ARG1%"=="" (
+IF "%DL_LOG_ARG1%" NEQ "" (
     IF EXIST %DL_LOG_ARG1%\_log\FATAL_ERROR.log EXIT /b 99999
+) ELSE (
+    IF EXIST _log\FATAL_ERROR.log EXIT /b 99999
 )
-IF EXIST _log\FATAL_ERROR.log EXIT /b 99999
