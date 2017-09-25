@@ -31,8 +31,7 @@ IF %ERRORLEVEL% EQU 0 (
 
 
     ) ELSE (
-        SET DL_SOURCES=%DL_ROTDIR%%_arg%\_temp\%DL_DISTSOURCEFILE%
-    ECHO INNE-MODUL
+        SET DL_SOURCES=%DL_ROTDIR%%_arg%\_log\%DL_DISTSOURCEFILE%
 
 
 
