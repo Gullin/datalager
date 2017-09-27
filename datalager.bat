@@ -22,6 +22,7 @@ SET DL_ISWHOLEPROCESS=1
 
 
 @CALL _sys\_process-create-frame %DL_PROCESSNAME%
+@CALL _sys\_process-clean-clear
 
 REM skapar tidsst„mpel och unikt process-ID f”r sp†rning av k”rd batch-process
 FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime iso-simple') DO SET CurrentDateTime=%%i %%j
