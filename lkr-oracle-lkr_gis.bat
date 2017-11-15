@@ -44,6 +44,9 @@ IF %ERRORLEVEL% EQU 0 (
 
     IF !ERRORLEVEL! NEQ 99999 (
 
+        REM Nollst„ller felkod genom en instruktion som endast kan fungera
+        verify >nul
+
 
 
         REM FME-processer
@@ -51,25 +54,36 @@ IF %ERRORLEVEL% EQU 0 (
 
 
 
-        REM Loggning av resp. process resurskatalog f”r distribuering och distribuering om processmodulen k”rs enskilt
-        REM Distribuering g”rs ej vid fel.
-        IF %DL_ISWHOLEPROCESS% == 1 (
-            ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
-        ) ELSE (
-            @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
-
-            IF !ERRORLEVEL! NEQ 99999 (
-                ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
-                @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+        IF !ERRORLEVEL! EQU 0 (
+            REM Loggning av resp. process resurskatalog f”r distribuering och distribuering om processmodulen k”rs enskilt
+            REM Distribuering g”rs ej vid fel.
+            IF %DL_ISWHOLEPROCESS% == 1 (
+                ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
             ) ELSE (
-                @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
-                @CALL :Message
+                @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
+
+                IF !ERRORLEVEL! NEQ 99999 (
+                    ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
+                    @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+                ) ELSE (
+                    @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
+                    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR f”r %DL_PROCESSID% genererad av FME-processerna. Kunde ej g† vidare med distribuering av repository."
+
+                    @CALL :SendErrorMessage
+                )
             )
+        ) ELSE (
+            @CALL _sys\_log-batch ERROR "Allvarligt fel vid dataprocessandet i process %DL_PROCESSID%"
+            @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, dataprocessandet har misslyckats"
+
+            @CALL :SendErrorMessage
         )
 
     ) ELSE (
         @CALL _sys\_log-batch ERROR "Allvarligt fel vid validering av datasets schema i process %DL_PROCESSID%"
-        @CALL :Message
+        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, validering av dataschema har misslyckats"
+
+        @CALL :SendErrorMessage
     )
 
 
@@ -77,13 +91,12 @@ IF %ERRORLEVEL% EQU 0 (
     @CALL _sys\_log-batch ERROR "Processen %DL_PROCESSID% kunde inte k”ras"
     @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%"
 
-    GOTO break
+    @CALL :SendErrorMessage
 )
 
 
 :exit
 @CALL _sys\_log-batch KLART %DL_PROCESSID%
-:break
 EXIT /B
 
 
@@ -91,10 +104,10 @@ EXIT /B
 
 REM ### METODER ###
 REM Meddelandefunktion
-:Message
+REM Skickas endast om processmodulen k”rs individuellt och inte n„r datalagerprocessen k”rs i sin helhet
+:SendErrorMessage
     IF %DL_ISWHOLEPROCESS% == 0 (
-        REM TODO: K”r meddelandefunktion - NOT IMPLEMENTED
-        ECHO Meddelar...
+        @CALL _sys\_emailer-send-error %DL_PROCESSNAME%
     )
 GOTO :eof
 

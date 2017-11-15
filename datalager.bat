@@ -58,10 +58,11 @@ IF %ERRORLEVEL% EQU 0 (
 
             REM Kopierar ut genererat datalager till platser. Platser definieras i rutinen.
             @CALL _sys\_datalager-distribute
-
         ) ELSE (
             @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID_MASTER%"
-            @CALL :Message
+            @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR i %DL_PROCESSID_MASTER% f”r n†gon av processmodulerna"
+
+            @CALL :SendErrorMessage
         )
 
     ) ELSE (
@@ -79,7 +80,7 @@ IF %ERRORLEVEL% EQU 0 (
 
             SET RESETING=
 
-            GOTO break
+            EXIT
         )
         IF DEFINED CLEARING (
             @CALL _sys\_log-batch CLEAR %DL_PROCESSID_MASTER%
@@ -107,25 +108,27 @@ IF %ERRORLEVEL% EQU 0 (
         )
 
         @CALL _sys\_log-batch ERROR "%DL_PROCESSID_MASTER% argument %_arg% existerar ej"
+        @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID_MASTER%, argument %_arg% existerar ej"
+        
+        @CALL :SendErrorMessage
     )
 ) ELSE (
     @CALL _sys\_log-batch ERROR "Processen %DL_PROCESSID_MASTER% kunde inte k”ras"
     @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID_MASTER%"
 
-    GOTO break
+    @CALL :SendErrorMessage
 )
 
 
 :exit
 @CALL _sys\_log-batch KLART %DL_PROCESSID_MASTER%
-:break
+EXIT
 
 
 
 REM ### METODER ###
 REM Meddelandefunktion
-:Message
-    REM TODO: K”r meddelandefunktion - NOT IMPLEMENTED
-    ECHO Meddelar...
+:SendErrorMessage
+    @CALL _sys\_emailer-send-error %DL_PROCESSNAME%
 GOTO :eof
 ENDLOCAL
