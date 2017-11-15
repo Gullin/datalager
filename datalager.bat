@@ -66,13 +66,13 @@ IF %ERRORLEVEL% EQU 0 (
         )
 
     ) ELSE (
-        IF "%_arg%"=="reset" SET RESETING=1
+        IF "%_arg%"=="--reset" SET RESETING=1
         IF "%_arg%"=="-r" SET RESETING=1
-        IF "%_arg%"=="clear" SET CLEARING=1
+        IF "%_arg%"=="--clear" SET CLEARING=1
         IF "%_arg%"=="-c" SET CLEARING=1
-        IF "%_arg%"=="schemainit" SET SCHEMAINIT=1
+        IF "%_arg%"=="--schemainit" SET SCHEMAINIT=1
         IF "%_arg%"=="-si" SET SCHEMAINIT=1
-        IF "%_arg%"=="instal" SET INSTALLING=1
+        IF "%_arg%"=="--instal" SET INSTALLING=1
         IF "%_arg%"=="-i" SET INSTALLING=1
 
         IF DEFINED RESETING (
