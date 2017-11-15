@@ -1,5 +1,5 @@
 @CALL _global-settings
-@call __secrets\_secrets.bat
+@CALL __secrets\_secrets.bat
 SETLOCAL EnableDelayedExpansion
 
 REM CP 437 (DOS)
