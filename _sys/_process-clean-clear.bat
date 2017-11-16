@@ -34,7 +34,7 @@ IF DEFINED _IsProcessModul (
                 ATTRIB +R %%p\%DL_LOGERROR%
             )
 
-            DEL /S /Q %%p\*.*
+            2>nul (DEL /S /Q %%p\*.*) >nul
 
             ATTRIB -R %%p\%DL_LOGFILE%
             ATTRIB -R %%p\DatalagerLogg.sqlite
@@ -80,7 +80,7 @@ IF NOT "%_obj-not-to-delete%"=="_" (
         SET _sub-folder=%%f
         SET _obj-not-to-delete-sub=!_sub-folder:~0,1!
         IF NOT "!_obj-not-to-delete-sub!"=="_" RMDIR /S /Q "%%f"
-        DEL /Q *.*
+        2>nul (DEL /Q *.*) >nul
     )
     CD..
     endlocal
@@ -89,13 +89,13 @@ IF NOT "%_obj-not-to-delete%"=="_" (
     REM F”r alla underkataloger i _fme
     FOR /D %%i IN (%_obj%\_fme\*) DO RMDIR /S /Q "%%i"
     REM F”r alla filer i _fme
-    FOR /R %_obj%\_fme %%i IN (*) DO IF NOT %%~xi==.fmw DEL /S /Q "%%i"
+    FOR /R %_obj%\_fme %%i IN (*) DO IF NOT %%~xi==.fmw 2>nul (DEL /S /Q "%%i") >nul
 
     REM Speciellt f”r _log-systemkatalog (ska endast inneh†lla aktuell k”rningsinformation)
     REM F”r alla underkataloger i _log
     FOR /D %%i IN (%_obj%\_log\*) DO RMDIR /S /Q "%%i"
     REM F”r alla filer i _schema
-    DEL /S /Q %_obj%\_log\*.*
+    2>nul (DEL /S /Q %_obj%\_log\*.*) >nul
 
     REM Speciellt f”r _schema-systemkatalog
     REM F”r alla underkataloger i _schema
@@ -103,7 +103,7 @@ IF NOT "%_obj-not-to-delete%"=="_" (
     REM Radera alla filer i _schema utom de som skrivskyddas
     ATTRIB +R %_obj%\_schema\_modul-settings-datasets.ini
     ATTRIB +R %_obj%\_schema\schema-manifest.xlsx
-    DEL /S /Q %_obj%\_schema\*.*
+    2>nul (DEL /S /Q %_obj%\_schema\*.*) >nul
     ATTRIB -R %_obj%\_schema\_modul-settings-datasets.ini
     ATTRIB -R %_obj%\_schema\schema-manifest.xlsx
 
