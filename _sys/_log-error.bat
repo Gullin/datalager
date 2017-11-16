@@ -8,4 +8,12 @@ SET DL_LOG_ARG2=%2
 :: skapar tidsst„mpel
 FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime') DO SET CurrentDateTime=%%i %%j
 
-@ECHO %CurrentDateTime% ^| %DL_LOG_ARG1% ^| null ^| ERROR ^| %DL_LOG_ARG2% ^| null >> %DL_LOGDIR%%DL_LOGERROR%
+IF NOT DEFINED DL_ISWHOLEPROCESS (
+    SET DL_ISWHOLEPROCESS=1
+)
+
+IF %DL_ISWHOLEPROCESS% == 1 (
+    @ECHO %CurrentDateTime% ^| %DL_LOG_ARG1% ^| null ^| ERROR ^| %DL_LOG_ARG2% ^| null >> %DL_LOGDIR%%DL_LOGERROR%
+) ELSE (
+    @ECHO %CurrentDateTime% ^| %DL_LOG_ARG1% ^| null ^| ERROR ^| %DL_LOG_ARG2% ^| null >> %DL_LOG_ARG1%\%DL_LOGDIR%%DL_LOGERROR%
+)
