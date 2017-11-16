@@ -56,8 +56,10 @@ IF DEFINED _IsProcessModul (
 
     REM Skapar signal-fil om att instruktionen „r k”rd
     REM skapar tidsst„mpel
-    FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime iso-simple') DO SET CurrentDateTime=%%i %%j
-    ECHO. > _cleared_%CurrentDateTime%
+    IF %_IsProcessModul%==0 (
+        FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime iso-simple') DO SET CurrentDateTime=%%i %%j
+        ECHO. > _cleared_%CurrentDateTime%
+    )
 ) ELSE (
     @CALL _sys\_log-batch ERROR "Processen _process-clean-clear.bat kunde inte k”ras"
     @CALL _sys\_log-error "_process-clean-clear.bat" "Errorlevel %ERRORLEVEL% f”r argument %_arg1%"
