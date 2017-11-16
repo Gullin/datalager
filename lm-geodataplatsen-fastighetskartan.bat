@@ -116,7 +116,11 @@ REM Kontrollerar om processen har k”rts med allvarliga fel, i s† fall skicka med
 @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
 
 IF !ERRORLEVEL! EQU 99999 (
-    @CALL :SendErrorMessage
+    IF %DL_ISWHOLEPROCESS% == 0 (
+        REM Meddelandefunktion
+        REM Skickas endast om processmodulen k”rs individuellt och inte n„r datalagerprocessen k”rs i sin helhet
+        @CALL _sys\_emailer-send-error %DL_PROCESSNAME%
+    )
 )
 
 @CALL _sys\_log-batch KLART %DL_PROCESSID%
@@ -126,14 +130,6 @@ EXIT /B
 
 
 REM ### METODER ###
-REM Meddelandefunktion
-REM Skickas endast om processmodulen k”rs individuellt och inte n„r datalagerprocessen k”rs i sin helhet
-:SendErrorMessage
-    IF %DL_ISWHOLEPROCESS% == 0 (
-        @CALL _sys\_emailer-send-error %DL_PROCESSNAME%
-    )
-GOTO :eof
-
 REM H„mtar Lantm„teriets Fastighetskartan
 :GetFastighetskartanSkane
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"

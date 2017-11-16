@@ -125,17 +125,9 @@ REM Kontrollerar om processen har k”rts med allvarliga fel, i s† fall skicka med
 @CALL _sys\_exist-FATAL_ERROR
 
 IF !ERRORLEVEL! EQU 99999 (
-    @CALL :SendErrorMessage
+    @CALL _sys\_emailer-send-error %DL_PROCESSNAME%
 )
 
 @CALL _sys\_log-batch KLART %DL_PROCESSID_MASTER%
 EXIT
-
-
-
-REM ### METODER ###
-REM Meddelandefunktion
-:SendErrorMessage
-    @CALL _sys\_emailer-send-error %DL_PROCESSNAME%
-GOTO :eof
 ENDLOCAL
