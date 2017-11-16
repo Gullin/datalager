@@ -26,21 +26,21 @@ IF DEFINED _IsProcessModul (
     FOR /D %%p IN ("*.*") DO (
         REM Logg-katalogen
         IF %%p==_log (
-            ATTRIB +R %%p\%DL_LOGFILE%
-            ATTRIB +R %%p\DatalagerLogg.sqlite
-            ATTRIB +R %%p\DatalagerLogg.xlsx
+            IF EXIST %%p\%DL_LOGFILE% ATTRIB +R %%p\%DL_LOGFILE%
+            IF EXIST %%p\DatalagerLogg.sqlite ATTRIB +R %%p\DatalagerLogg.sqlite
+            IF EXIST %%p\DatalagerLogg.xlsx ATTRIB +R %%p\DatalagerLogg.xlsx
             IF %_IsProcessModul%==1 (
-                ATTRIB +R %%p\%DL_DISTSOURCEFILE%
-                ATTRIB +R %%p\%DL_LOGERROR%
+                IF EXIST %%p\%DL_DISTSOURCEFILE% ATTRIB +R %%p\%DL_DISTSOURCEFILE%
+                IF EXIST %%p\%DL_LOGERROR% ATTRIB +R %%p\%DL_LOGERROR%
             )
 
             2>nul (DEL /S /Q %%p\*.*) >nul
 
-            ATTRIB -R %%p\%DL_LOGFILE%
-            ATTRIB -R %%p\DatalagerLogg.sqlite
-            ATTRIB -R %%p\DatalagerLogg.xlsx
-            ATTRIB -R %%p\%DL_DISTSOURCEFILE%
-            ATTRIB -R %%p\%DL_LOGERROR%
+            IF EXIST %%p\%DL_LOGFILE% ATTRIB -R %%p\%DL_LOGFILE%
+            IF EXIST %%p\DatalagerLogg.sqlite ATTRIB -R %%p\DatalagerLogg.sqlite
+            IF EXIST %%p\DatalagerLogg.xlsx ATTRIB -R %%p\DatalagerLogg.xlsx
+            IF EXIST %%p\%DL_DISTSOURCEFILE% ATTRIB -R %%p\%DL_DISTSOURCEFILE%
+            IF EXIST %%p\%DL_LOGERROR% ATTRIB -R %%p\%DL_LOGERROR%
         )
 
         REM Om Argument med processmodulsnamn inte existerar itereras resp. katalog,
@@ -103,11 +103,11 @@ IF NOT "%_obj-not-to-delete%"=="_" (
     REM F”r alla underkataloger i _schema
     FOR /D %%i IN (%_obj%\_schema\*) DO RMDIR /S /Q "%%i"
     REM Radera alla filer i _schema utom de som skrivskyddas
-    ATTRIB +R %_obj%\_schema\_modul-settings-datasets.ini
-    ATTRIB +R %_obj%\_schema\schema-manifest.xlsx
+    IF EXIST %_obj%\_schema\_modul-settings-datasets.ini ATTRIB +R %_obj%\_schema\_modul-settings-datasets.ini
+    IF EXIST %_obj%\_schema\schema-manifest.xlsx ATTRIB +R %_obj%\_schema\schema-manifest.xlsx
     2>nul (DEL /S /Q %_obj%\_schema\*.*) >nul
-    ATTRIB -R %_obj%\_schema\_modul-settings-datasets.ini
-    ATTRIB -R %_obj%\_schema\schema-manifest.xlsx
+    IF EXIST %_obj%\_schema\_modul-settings-datasets.ini ATTRIB -R %_obj%\_schema\_modul-settings-datasets.ini
+    IF EXIST %_obj%\_schema\schema-manifest.xlsx ATTRIB -R %_obj%\_schema\schema-manifest.xlsx
 
 )
 GOTO :eof

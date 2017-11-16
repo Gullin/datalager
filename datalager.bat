@@ -41,7 +41,7 @@ IF %ERRORLEVEL% EQU 0 (
         IF NOT DEFINED DL_REPOSITORYROTDIR SET DL_REPOSITORYROTDIR=_geodatarepo\
 
         REM Loggning av resp. process resurskatalog f”r distribuering senare i processen. Skapar tom fil.
-        ECHO. 2> %DL_DISTSOURCE%
+        >nul ECHO 2> %DL_DISTSOURCE%
 
 
         
