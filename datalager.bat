@@ -62,7 +62,7 @@ IF %ERRORLEVEL% EQU 0 (
             @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID_MASTER%"
             @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR i %DL_PROCESSID_MASTER% f”r n†gon av processmodulerna"
 
-            @CALL :SendErrorMessage
+            GOTO exit
         )
 
     ) ELSE (
@@ -110,17 +110,24 @@ IF %ERRORLEVEL% EQU 0 (
         @CALL _sys\_log-batch ERROR "%DL_PROCESSID_MASTER% argument %_arg% existerar ej"
         @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID_MASTER%, argument %_arg% existerar ej"
         
-        @CALL :SendErrorMessage
+        GOTO exit
     )
 ) ELSE (
     @CALL _sys\_log-batch ERROR "Processen %DL_PROCESSID_MASTER% kunde inte k”ras"
     @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID_MASTER%"
 
-    @CALL :SendErrorMessage
+    GOTO exit
 )
 
 
 :exit
+REM Kontrollerar om processen har k”rts med allvarliga fel, i s† fall skicka meddelande
+@CALL _sys\_exist-FATAL_ERROR
+
+IF !ERRORLEVEL! EQU 99999 (
+    @CALL :SendErrorMessage
+)
+
 @CALL _sys\_log-batch KLART %DL_PROCESSID_MASTER%
 EXIT
 

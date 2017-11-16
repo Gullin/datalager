@@ -69,21 +69,21 @@ IF %ERRORLEVEL% EQU 0 (
                     @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
                     @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR f”r %DL_PROCESSID% genererad av FME-processerna. Kunde ej g† vidare med distribuering av repository."
 
-                    @CALL :SendErrorMessage
+                    GOTO exit
                 )
             )
         ) ELSE (
             @CALL _sys\_log-batch ERROR "Allvarligt fel vid dataprocessandet i process %DL_PROCESSID%"
             @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, dataprocessandet har misslyckats"
 
-            @CALL :SendErrorMessage
+            GOTO exit
         )
 
     ) ELSE (
         @CALL _sys\_log-batch ERROR "Allvarligt fel vid validering av datasets schema i process %DL_PROCESSID%"
         @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, validering av dataschema har misslyckats"
 
-        @CALL :SendErrorMessage
+        GOTO exit
     )
 
 
@@ -91,11 +91,18 @@ IF %ERRORLEVEL% EQU 0 (
     @CALL _sys\_log-batch ERROR "Processen %DL_PROCESSID% kunde inte k”ras"
     @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%"
 
-    @CALL :SendErrorMessage
+    GOTO exit
 )
 
 
 :exit
+REM Kontrollerar om processen har k”rts med allvarliga fel, i s† fall skicka meddelande
+@CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
+
+IF !ERRORLEVEL! EQU 99999 (
+    @CALL :SendErrorMessage
+)
+
 @CALL _sys\_log-batch KLART %DL_PROCESSID%
 EXIT /B
 
