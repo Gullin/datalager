@@ -35,8 +35,8 @@ IF %ERRORLEVEL% EQU 0 (
 
 
 
-    REM FME-processer
-    @CALL :DistributeDatalager
+        REM FME-processer
+        @CALL :DistributeDatalager
 
 
 
@@ -65,7 +65,6 @@ REM Metoder
                         --RotDirectory %DL_ROTDIR% ^
                         --InData %DL_SOURCES% ^
                         --RepoSourceDirectory %DL_ROTDIR%%DL_REPOSITORYROTDIR% ^
-                        --ProcessModulName %_arg% ^
                         --IsWholeProcessRun %DL_ISWHOLEPROCESS%
 
     IF %ERRORLEVEL% NEQ 0 (
