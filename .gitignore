@@ -36,7 +36,7 @@ _doc/*.*
 # Logs and Databases #
 ######################
 *.log
-_log/*.*
+**/_log/*
 
 
 # OS (Windows) generated files #
