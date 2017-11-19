@@ -1,4 +1,5 @@
 @CALL _global-settings
+SETLOCAL EnableDelayedExpansion
 
 REM CP 437 (DOS)
 REM K”r en clean samt, rensar
@@ -23,9 +24,9 @@ FOR /D %%p IN ("*.*") DO (
 REM Skapar signal-fil om att instruktionen „r k”rd
 REM skapar tidsst„mpel
 FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime iso-simple') DO SET CurrentDateTime=%%i %%j
-ECHO. > _reseted_%CurrentDateTime%
+ECHO. > _reseted_!CurrentDateTime!
 GOTO :eof
-
+ENDLOCAL
 
 
 REM Raderar filer och kataloger i underliggande processkataloger som ej „r systemkataloger (startar med "_")
