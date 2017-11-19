@@ -10,7 +10,7 @@ IF NOT [%1]==[] (
     SET _arg=%1
 )
 
-@%DL_FMEFULLPATH% _sys\_emailer-send-error.fmw ^
+> nul @%DL_FMEFULLPATH% _sys\_emailer-send-error.fmw ^
                     --ProcessName %DL_PROCESSNAME% ^
                     --RotDirectory %DL_ROTDIR% ^
                     --ProcessModulName %_arg% ^

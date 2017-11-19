@@ -60,7 +60,7 @@ REM Metoder
 :DistributeDatalager
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
 
-    @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
+    > nul @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
                         --ProcessName %DL_PROCESSID% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --InData %DL_SOURCES% ^
