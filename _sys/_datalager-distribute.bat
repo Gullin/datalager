@@ -43,7 +43,7 @@ IF %ERRORLEVEL% EQU 0 (
     )
 ) ELSE (
     @CALL _sys\_log-batch ERROR "Processen %DL_PROCESSID% kunde inte k”ras"
-    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%"
+    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%" %_arg%
 
     GOTO break
 )
@@ -69,7 +69,7 @@ REM Metoder
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"
-        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_FMEPROCESS01%"
+        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_FMEPROCESS01%" %_arg%
 
         EXIT /B
     ) ELSE (
