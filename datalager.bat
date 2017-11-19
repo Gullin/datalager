@@ -25,7 +25,6 @@ SET DL_ISWHOLEPROCESS=1
 
 
 @CALL _sys\_process-create-frame %DL_PROCESSNAME%
-@CALL _sys\_process-clean-clear
 
 REM skapar tidsst„mpel och unikt process-ID f”r sp†rning av k”rd batch-process
 FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime iso-simple') DO SET CurrentDateTime=%%i %%j
@@ -37,6 +36,8 @@ IF EXIST _reseted_*.* DEL _reseted_*.*
 IF EXIST _cleared_*.* DEL _cleared_*.*
 IF %ERRORLEVEL% EQU 0 (
     IF NOT DEFINED _arg (
+
+        @CALL _sys\_process-clean-clear
 
         REM M†lkatalog f”r processernas resulterande data.
         REM Variabeln DL_REPOSITORYROTDIR ska skickas med som parameter till alla FME-processer som genererar output till datalagret.
