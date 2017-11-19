@@ -11,7 +11,7 @@ SET DL_LOG_ARG3=%3
 FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime standard') DO SET CurrentDateTime=%%i %%j
 
 IF NOT DEFINED DL_ISWHOLEPROCESS (
-    SET DL_ISWHOLEPROCESS=1
+    SET DL_ISWHOLEPROCESS=0
 )
 
 CHCP 1252
