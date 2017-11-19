@@ -16,7 +16,10 @@ REM Namn f”r hel- eller delprocessen (modul) som batch-filen hanterar
 SET DL_PROCESSNAME=datalager
 
 REM S„tts till 1 f”r att indikera att datalagerprocessen k”rs i sin helhet. Anv„nds vid utdistribuering av repot,
-REM testas mot variablen i modulerna f”r veta var k„lla tillut kopiering ska skrivas (globalt eller f”r modulen).
+REM testas mot variablen i modulerna f”r veta var k„lla till ut kopiering ska skrivas (globalt eller f”r modulen).
+REM 0 = processmodul
+REM 1 = datalagerprocessen i sin helhet (standardinst„llning)
+REM 2 = k”rs med argument, olika metoder, och utg”r inte n†gon dataprocess
 SET DL_ISWHOLEPROCESS=1
 
 
@@ -66,6 +69,9 @@ IF %ERRORLEVEL% EQU 0 (
         )
 
     ) ELSE (
+        
+        SET DL_ISWHOLEPROCESS=2
+
         IF "%_arg%"=="--reset" SET RESETING=1
         IF "%_arg%"=="-r" SET RESETING=1
         IF "%_arg%"=="--clear" SET CLEARING=1

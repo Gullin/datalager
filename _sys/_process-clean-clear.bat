@@ -97,8 +97,13 @@ IF NOT "%_obj-not-to-delete%"=="_" (
     REM Speciellt f”r _log-systemkatalog (ska endast inneh†lla aktuell k”rningsinformation)
     REM F”r alla underkataloger i _log
     FOR /D %%i IN (%_obj%\_log\*) DO RMDIR /S /Q "%%i"
-    REM F”r alla filer i _schema
-    2>nul (DEL /S /Q %_obj%\_log\*.*) >nul
+    REM Radera filer endast n„r processmodul k”rs individuellt eller f”r -c | --clear
+    IF %DL_ISWHOLEPROCESS% == 0 SET isDelete=true
+    IF %DL_ISWHOLEPROCESS% == 2 SET isDelete=true
+    IF "!isDelete!" == "true" (
+        REM F”r alla filer i _log
+        2>nul (DEL /S /Q %_obj%\_log\*.*) >nul
+    )
 
     REM Speciellt f”r _schema-systemkatalog
     REM F”r alla underkataloger i _schema
