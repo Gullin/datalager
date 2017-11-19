@@ -120,7 +120,7 @@ REM Hanterar data till datalager
 
     REM Valfri parameter med enhet meter (anv„nds inte s„tts ett standardv„rde)
     REM FME-parameter --InData (tabeller som ska l„sas skrivs med punktnoterad schemanamn och tabellnamn [ex. LKR_GIS.GIS_V_BLADINDELNING], mellanslag mellan tabeller)
-    > nul @%DL_FMEFULLPATH% %DL_FMEPROCESS01% 
+    > nul @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
                         --ProcessName %DL_PROCESSNAME% ^
                         --RotDirectory %DL_ROTDIR% ^
                         --Manifest %DL_ROTDIR%%DL_PROCESSNAME%\_schema\schema-manifest.xlsx ^
