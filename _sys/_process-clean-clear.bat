@@ -54,9 +54,10 @@ IF DEFINED _IsProcessModul (
         )
     )
 
-    REM Skapar signal-fil om att instruktionen „r k”rd
-    REM skapar tidsst„mpel
+    REM Skapar signal-fil om att instruktionen „r k”rd, skapas om processen k”rs
+    REM i sin helhet d† det endast „r n„r v„xln -c | --clear anv„nds
     IF %_IsProcessModul%==0 (
+        REM skapar tidsst„mpel
         FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime iso-simple') DO SET CurrentDateTime=%%i %%j
         ECHO. > _cleared_%CurrentDateTime%
     )
