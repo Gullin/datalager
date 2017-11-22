@@ -60,12 +60,14 @@ REM Metoder
 :DistributeDatalager
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
 
-    > nul @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
-                        --ProcessName %DL_PROCESSID% ^
-                        --RotDirectory %DL_ROTDIR% ^
-                        --InData %DL_SOURCES% ^
-                        --RepoSourceDirectory %DL_ROTDIR%%DL_REPOSITORYROTDIR% ^
-                        --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+    >nul (
+        @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
+                            --ProcessName %DL_PROCESSID% ^
+                            --RotDirectory %DL_ROTDIR% ^
+                            --InData %DL_SOURCES% ^
+                            --RepoSourceDirectory %DL_ROTDIR%%DL_REPOSITORYROTDIR% ^
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+    )
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"

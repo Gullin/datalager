@@ -136,15 +136,17 @@ REM H„mtar Lantm„teriets Fastighetskartan
 
     REM Landskrona --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Landskrona/Sweref 99 1330/Shape/fk_1282.Sweref_99_1330.Shape.zip"
     REM Sk†ne      --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Lan 12/Sweref 99 TM/Shape/fk_12.Sweref_99_TM.Shape.zip"
-    > nul @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
-                        --ProcessName %DL_PROCESSNAME% ^
-                        --RotDirectory %DL_ROTDIR% ^
-                        --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Lan 12/Sweref 99 TM/Shape/fk_12.Sweref_99_TM.Shape.zip" ^
-                        --User %USER-LM-GEODATAPLATSEN% ^
-                        --Password %PASS-LM-GEODATAPLATSEN% ^
-                        --OutputDirectory %DL_ROTDIR%%DL_PROCESSNAME%/_ned ^
-                        --ProcessModulName %DL_PROCESSNAME% ^
-                        --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+    >nul (
+        @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
+                            --ProcessName %DL_PROCESSNAME% ^
+                            --RotDirectory %DL_ROTDIR% ^
+                            --FtpUrl "ftp://download.lantmateriet.se/produkter/GSD-Fastighetskartan vektor/Skane/Lan 12/Sweref 99 TM/Shape/fk_12.Sweref_99_TM.Shape.zip" ^
+                            --User %USER-LM-GEODATAPLATSEN% ^
+                            --Password %PASS-LM-GEODATAPLATSEN% ^
+                            --OutputDirectory %DL_ROTDIR%%DL_PROCESSNAME%/_ned ^
+                            --ProcessModulName %DL_PROCESSNAME% ^
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+    )
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"
@@ -163,12 +165,14 @@ REM Skapar klippytor fr†n kommungr„nser i Fastighetskartan
 
     REM Valfri parameter med enhet meter (anv„nds inte s„tts ett standardv„rde)
     REM FME-parameter --Buffer
-    > nul @%DL_FMEFULLPATH% %DL_FMEPROCESS02% ^
-                        --ProcessName %DL_PROCESSNAME% ^
-                        --RotDirectory %DL_ROTDIR% ^
-                        --ShpInData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_12.Sweref_99_TM.Shape.zip ^
-                        --ProcessModulName %DL_PROCESSNAME% ^
-                        --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+    >nul (
+            @%DL_FMEFULLPATH% %DL_FMEPROCESS02% ^
+                            --ProcessName %DL_PROCESSNAME% ^
+                            --RotDirectory %DL_ROTDIR% ^
+                            --ShpInData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_12.Sweref_99_TM.Shape.zip ^
+                            --ProcessModulName %DL_PROCESSNAME% ^
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+    )
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"
@@ -185,12 +189,14 @@ REM Hanterar data till datalager
 :ManageSourceDatalager
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS03%"
 
-    > nul @%DL_FMEFULLPATH% %DL_FMEPROCESS03% ^
-                        --ProcessName %DL_PROCESSNAME% ^
-                        --RotDirectory %DL_ROTDIR% ^
-                        --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
-                        --ProcessModulName %DL_PROCESSNAME% ^
-                        --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+    >nul (
+        @%DL_FMEFULLPATH% %DL_FMEPROCESS03% ^
+                            --ProcessName %DL_PROCESSNAME% ^
+                            --RotDirectory %DL_ROTDIR% ^
+                            --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
+                            --ProcessModulName %DL_PROCESSNAME% ^
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+    )
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"

@@ -92,17 +92,19 @@ REM Metoder
 :Schema
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
 
-    @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
-                        --ProcessName %DL_PROCESSID% ^
-                        --RotDirectory %DL_ROTDIR% ^
-                        --DriverAction %_arg3% ^
-                        --InData %_arg6% ^
-                        --InData-DatabaseTable %_arg7% ^
-                        --DataFormat %_arg5% ^
-                        --OutSchemaFileNameSuffix %_arg4% ^
-                        --OutputDirectory %DL_ROTDIR%%_arg1%\_schema\ ^
-                        --ProcessModulName %_arg1% ^
-                        --IsWholeProcessRun %_arg2%
+    >nul (
+        @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
+                            --ProcessName %DL_PROCESSID% ^
+                            --RotDirectory %DL_ROTDIR% ^
+                            --DriverAction %_arg3% ^
+                            --InData %_arg6% ^
+                            --InData-DatabaseTable %_arg7% ^
+                            --DataFormat %_arg5% ^
+                            --OutSchemaFileNameSuffix %_arg4% ^
+                            --OutputDirectory %DL_ROTDIR%%_arg1%\_schema\ ^
+                            --ProcessModulName %_arg1% ^
+                            --IsWholeProcessRun %_arg2%
+    )
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"

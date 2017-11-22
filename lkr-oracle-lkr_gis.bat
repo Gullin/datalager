@@ -120,13 +120,15 @@ REM Hanterar data till datalager
 
     REM Valfri parameter med enhet meter (anv„nds inte s„tts ett standardv„rde)
     REM FME-parameter --InData (tabeller som ska l„sas skrivs med punktnoterad schemanamn och tabellnamn [ex. LKR_GIS.GIS_V_BLADINDELNING], mellanslag mellan tabeller)
-    > nul @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
-                        --ProcessName %DL_PROCESSNAME% ^
-                        --RotDirectory %DL_ROTDIR% ^
-                        --Manifest %DL_ROTDIR%%DL_PROCESSNAME%\_schema\schema-manifest.xlsx ^
-                        --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
-                        --ProcessModulName %DL_PROCESSNAME% ^
-                        --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+    >nul (
+        @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
+                            --ProcessName %DL_PROCESSNAME% ^
+                            --RotDirectory %DL_ROTDIR% ^
+                            --Manifest %DL_ROTDIR%%DL_PROCESSNAME%\_schema\schema-manifest.xlsx ^
+                            --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
+                            --ProcessModulName %DL_PROCESSNAME% ^
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+    )
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"
