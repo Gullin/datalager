@@ -79,6 +79,8 @@ IF %ERRORLEVEL% EQU 0 (
         IF "%_arg%"=="-c" SET CLEARING=1
         IF "%_arg%"=="--schemainit" SET SCHEMAINIT=1
         IF "%_arg%"=="-si" SET SCHEMAINIT=1
+        IF "%_arg%"=="--backupconfig" SET BACKUPCONF=1
+        IF "%_arg%"=="-bc" SET BACKUPCONF=1
         IF "%_arg%"=="--instal" SET INSTALLING=1
         IF "%_arg%"=="-i" SET INSTALLING=1
 
@@ -102,6 +104,14 @@ IF %ERRORLEVEL% EQU 0 (
             @CALL _sys\_schema-driver %2 %DL_ISWHOLEPROCESS% write init %3 %4 %5
 
             SET SCHEMAINIT=
+
+            GOTO exit
+        )
+        IF DEFINED BACKUPCONF (
+            @CALL _sys\_log-batch BKPCF %DL_PROCESSID_MASTER%
+            @CALL _sys\_backup-config %2
+
+            SET BACKUPCONF=
 
             GOTO exit
         )
