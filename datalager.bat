@@ -98,7 +98,7 @@ IF %ERRORLEVEL% EQU 0 (
             GOTO exit
         )
         IF DEFINED SCHEMAINIT (
-            @CALL _sys\_log-batch CLEAR %DL_PROCESSID_MASTER%
+            @CALL _sys\_log-batch SCHEM %DL_PROCESSID_MASTER%
             @CALL _sys\_schema-driver %2 %DL_ISWHOLEPROCESS% write init %3 %4 %5
 
             SET SCHEMAINIT=
