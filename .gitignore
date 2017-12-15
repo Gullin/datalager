@@ -10,6 +10,7 @@
 _cleared_*
 _reseted_*
 __secrets/
+_bkp/
 _geodatarepo/
 _ned/
 _schema/
