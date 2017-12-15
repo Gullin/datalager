@@ -29,6 +29,10 @@ IF %ERRORLEVEL% EQU 0 (
 
     ECHO TEST
     ECHO Argument: %_arg1%
+    IF NOT EXIST _bkp (
+        MD _bkp
+        @CALL _sys\_log-batch INFOR "Skapad katalog _bkp"
+    )
 
 
 ) ELSE (
