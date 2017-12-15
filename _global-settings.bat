@@ -14,6 +14,9 @@ SET DL_ROTDIR=%~dp0
 REM ™vergripande katalog f”r loggning
 SET DL_LOGDIR=_log\
 
+REM ™vergripande katalog f”r backup
+SET DL_BKPDIR=_bkp\
+
 REM Loggfil f”r batch-h„ndelserna, redog”r f”r processtege
 SET DL_LOGFILE=BatchEventLog.log
 
