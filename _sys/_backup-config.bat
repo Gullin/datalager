@@ -27,11 +27,43 @@ SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 @CALL _sys\_log-batch START %DL_PROCESSID%
 IF %ERRORLEVEL% EQU 0 (
 
-    ECHO TEST
-    ECHO Argument: %_arg1%
-    IF NOT EXIST _bkp (
-        MD _bkp
-        @CALL _sys\_log-batch INFOR "Skapad katalog _bkp"
+    REM Kontrollerar s† att rot-katalog f”r backup existerar, annars skapar
+    IF NOT EXIST !DL_BKPDIR! (
+        MD !DL_BKPDIR!
+        @CALL _sys\_log-batch INFOR "Skapad katalog !DL_BKPDIR!"
+    )
+
+    REM Skapar underkatalogs namn unikt
+    FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime iso-simple') DO SET CurrentDateTime=%%i%%j
+    SET configBkpFolder=_config_!CurrentDateTime!
+    IF NOT DEFINED _arg1 (
+        SET configBkpFolder=!configBkpFolder!_all
+    ) ELSE (
+        SET configBkpFolder=!configBkpFolder!_%_arg1%
+    )
+    REM Skapar sessionens katalog f”r backup
+    CD !DL_BKPDIR!
+    IF NOT EXIST !configBkpFolder! (
+        MD !configBkpFolder!
+        CD..
+        @CALL _sys\_log-batch INFOR "Skapad katalog !DL_BKPDIR!!configBkpFolder!"
+    ) ELSE (
+        CD..
+    )
+
+    SET COPYTOFOLDER=!DL_BKPDIR!!configBkpFolder!
+    IF NOT DEFINED _arg1 (
+        COPY _global-settings-targetpaths.ini !COPYTOFOLDER! > nul
+        FOR /D %%p IN ("*.*") DO (
+            SET FOLDER=%%p
+            IF NOT "!FOLDER:~0,1!"=="_" (
+                IF EXIST !FOLDER!\_schema\_modul-settings-datasets.ini ECHO K| XCOPY /Y !FOLDER!\_schema\_modul-settings-datasets.ini !COPYTOFOLDER!\!FOLDER!\_schema /I > nul
+                IF EXIST !FOLDER!\_schema\schema-manifest.xlsx ECHO K| XCOPY /Y !FOLDER!\_schema\schema-manifest.xlsx !COPYTOFOLDER!\!FOLDER!\_schema /I > nul
+            )
+        )
+    ) ELSE (
+        IF EXIST %_arg1%\_schema\_modul-settings-datasets.ini ECHO K| XCOPY %_arg1%\_schema\_modul-settings-datasets.ini !COPYTOFOLDER!\%_arg1%\_schema /I > nul
+        IF EXIST %_arg1%\_schema\schema-manifest.xlsx ECHO K| XCOPY %_arg1%\_schema\schema-manifest.xlsx !COPYTOFOLDER!\%_arg1%\_schema /I > nul
     )
 
 
@@ -47,10 +79,3 @@ IF %ERRORLEVEL% EQU 0 (
 @CALL _sys\_log-batch KLART %DL_PROCESSID%
 :break
 EXIT /B
-
-
-
-Metoder
-:CopyStructuresFiles
-
-GOTO :eof
