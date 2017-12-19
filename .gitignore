@@ -19,7 +19,7 @@ _temp/
 
 # Documentation #
 #################
-_doc/*.*
+**/_doc/
 
 
 # Packages #
