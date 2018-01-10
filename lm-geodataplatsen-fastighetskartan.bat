@@ -165,6 +165,8 @@ REM Skapar klippytor fr†n kommungr„nser i Fastighetskartan
 
     REM Valfri parameter med enhet meter (anv„nds inte s„tts ett standardv„rde)
     REM FME-parameter --Buffer
+    REM Landskrona  --ShpInData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_1282.Sweref_99_1330.Shape.zip ^
+    REM Sk†ne       --ShpInData %DL_ROTDIR%%DL_PROCESSNAME%/_ned/fk_12.Sweref_99_TM.Shape.zip ^
     >nul (
             @%DL_FMEFULLPATH% %DL_FMEPROCESS02% ^
                             --ProcessName %DL_PROCESSNAME% ^
