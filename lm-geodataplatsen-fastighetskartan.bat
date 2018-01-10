@@ -10,7 +10,7 @@ REM Namn f”r hela processen
 SET DL_PROCESSNAME=lm-geodataplatsen-fastighetskartan
 REM Processlokala parametrar
 SET DL_OUTDIR=lantmateriet\gsd-fastighetskartan\
-SET DL_FMEPROCESS01="_sys\_ftp-caller.fmw"
+SET DL_FMEPROCESS01="_sys\_download-ftp-caller.fmw"
 SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\01-KlippytorFromFKSkaneSw99TM.fmw"
 SET DL_FMEPROCESS03="%DL_PROCESSNAME%\_fme\02-GSD-Fastighetskartan-DatalagerManage-driver.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
