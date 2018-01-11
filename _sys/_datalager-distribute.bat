@@ -1,5 +1,7 @@
 @ECHO OFF
 @CALL _global-settings
+SETLOCAL
+
 
 REM CP 437 (DOS)
 REM Argument 1: Om processmodulen k”rs enskilt skickas processmodulens utkatalog med in som argument
@@ -79,3 +81,4 @@ REM Metoder
         @CALL _sys\_log-batch KLART "%DL_PROCESSID% %DL_FMEPROCESS01%"
     )
 GOTO :eof
+ENDLOCAL
