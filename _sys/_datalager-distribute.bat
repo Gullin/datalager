@@ -66,6 +66,7 @@ REM Metoder
                             --RotDirectory %DL_ROTDIR% ^
                             --InData %DL_SOURCES% ^
                             --RepoSourceDirectory %DL_ROTDIR%%DL_REPOSITORYROTDIR% ^
+                            --ProcessModulName %_arg% ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS%
     )
 
