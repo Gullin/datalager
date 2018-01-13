@@ -50,8 +50,9 @@ IF %ERRORLEVEL% EQU 0 (
 
         
         REM Processmoduler
-        @CALL lm-geodataplatsen-fastighetskartan
         @CALL lkr-oracle-lkr_gis
+        @CALL lm-geodataplatsen-fastighetskartan
+        @CALL nvv
 
 
 
