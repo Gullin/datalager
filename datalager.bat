@@ -82,6 +82,8 @@ IF %ERRORLEVEL% EQU 0 (
         IF "%_arg%"=="-si" SET SCHEMAINIT=1
         IF "%_arg%"=="--backupconfig" SET BACKUPCONF=1
         IF "%_arg%"=="-bc" SET BACKUPCONF=1
+        IF "%_arg%"=="--createsecrets" SET CREATESECRETS=1
+        IF "%_arg%"=="-cs" SET CREATESECRETS=1
         IF "%_arg%"=="--instal" SET INSTALLING=1
         IF "%_arg%"=="-i" SET INSTALLING=1
 
@@ -113,6 +115,14 @@ IF %ERRORLEVEL% EQU 0 (
             @CALL _sys\_backup-config %2
 
             SET BACKUPCONF=
+
+            GOTO exit
+        )
+        IF DEFINED CREATESECRETS (
+            @CALL _sys\_log-batch SECTS %DL_PROCESSID_MASTER%
+            @CALL _sys\_create-secrets-body
+
+            SET CREATESECRETS=
 
             GOTO exit
         )
