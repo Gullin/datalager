@@ -19,7 +19,10 @@ _temp/
 
 # Documentation #
 #################
-**/_doc/
+_doc/*/*
+_doc/*.*
+!*.md
+!*/_doc/_content/
 
 
 # Packages #
