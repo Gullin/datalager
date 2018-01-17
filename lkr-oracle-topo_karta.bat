@@ -9,7 +9,7 @@ REM Namn f”r hela processen
 SET DL_PROCESSNAME=lkr-oracle-topo_karta
 REM Processlokala parametrar
 SET DL_OUTDIR=landskrona\topo_karta\
-SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\fme-process.fmw"
+SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\oracle-topo_karta-DatalagerManage-driver.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
     SET DL_ISWHOLEPROCESS=0
 )
@@ -34,7 +34,7 @@ SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 IF %ERRORLEVEL% EQU 0 (
     REM Validering av data-schema
     REM Žndras f”r resp. processmodul
-    REM @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL ORACLE_SPATIAL TOPO_KARTA
+    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL ORACLE_SPATIAL TOPO_KARTA
 
     REM Kontrollerar om valideringen har godk„nnts annars k”rs ej resterande
     IF %DL_ISWHOLEPROCESS% == 1 (
@@ -51,7 +51,7 @@ IF %ERRORLEVEL% EQU 0 (
 
 
         REM FME-processer
-        REM @CALL :ManageSourceDatalager
+        @CALL :ManageSourceDatalager
 
 
 
@@ -65,7 +65,7 @@ IF %ERRORLEVEL% EQU 0 (
 
                 IF !ERRORLEVEL! NEQ 99999 (
                     ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
-                    REM @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+                    @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
                 ) ELSE (
                     @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
                     @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR f”r %DL_PROCESSID% genererad av FME-processerna. Kunde ej g† vidare med distribuering av repository." %DL_PROCESSNAME%
@@ -119,7 +119,6 @@ REM Hanterar data till datalager
 :ManageSourceDatalager
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
 
-    REM <#BESKRIVNING AV PARAMETRAR TILL FME-PROCESS#>
     >nul (
         @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
                             --ProcessName %DL_PROCESSNAME% ^
