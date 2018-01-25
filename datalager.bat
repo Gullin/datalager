@@ -63,7 +63,7 @@ IF %ERRORLEVEL% EQU 0 (
         IF !ERRORLEVEL! NEQ 99999 (
 
             REM Kopierar ut genererat datalager till platser. Platser definieras i rutinen.
-            @CALL _sys\_datalager-distribute
+            @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
         ) ELSE (
             @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID_MASTER%"
             @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR i %DL_PROCESSID_MASTER% f”r n†gon av processmodulerna"

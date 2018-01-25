@@ -154,7 +154,6 @@ REM Hanterar data till datalager
         @%DL_FMEFULLPATH% %DL_FMEPROCESS02% ^
                             --ProcessName %DL_PROCESSNAME% ^
                             --RotDirectory %DL_ROTDIR% ^
-                            --Manifest %DL_ROTDIR%%DL_PROCESSNAME%\_schema\schema-manifest.xlsx ^
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS%

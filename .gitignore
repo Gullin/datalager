@@ -1,12 +1,32 @@
+######################################################
 # Data, Process Built or Temporary things in process #
 ######################################################
+#Safes' Feature Manipulation Engine (FME)
 *.fmw.recover
 *.ffs
 *.fsi # indexfil till ffs
+
+#Datasetsformat shape
 *.shp
 *.shx
 *.dbf
+*.sbn
+*.sbx
+*.prj
+*.cpg
+*.fbn
+*.fbx
+*.ain
+*.aih
+*.ixs
+*.mxs
+*.atx
+*.shp.xml
+*.qix
+
+#Datasetsformat Autodesk MapGuide Enterprise SDF
 *.sdf
+
 _cleared_*
 _reseted_*
 __secrets/
@@ -17,11 +37,15 @@ _schema/
 _temp/
 
 
+
+#################
 # Documentation #
 #################
 **/_doc/
 
 
+
+############
 # Packages #
 ############
 *.7z
@@ -34,12 +58,16 @@ _temp/
 *.zip
 
 
+
+######################
 # Logs and Databases #
 ######################
 *.log
 **/_log/*
 
 
+
+################################
 # OS (Windows) generated files #
 ################################
 Thumbs.db
