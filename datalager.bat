@@ -26,6 +26,9 @@ SET DL_ISWHOLEPROCESS=1
 
 
 
+@CALL _sys\_log-batch #INIT ########################################
+
+
 @CALL _sys\_process-create-frame %DL_PROCESSNAME%
 
 REM skapar tidsst„mpel och unikt process-ID f”r sp†rning av k”rd batch-process
