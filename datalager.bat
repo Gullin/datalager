@@ -3,7 +3,9 @@ SETLOCAL EnableDelayedExpansion
 @CALL _global-settings
 
 REM CP 437 (DOS)
-REM Argument 1: V„xel [ null | [ reset|-r ] | [ clear|-c ] | [instal|-i] ]
+REM Argument 1: V„xel [ null | [ ---reset|-r ]          | [ --clear|-c ] | 
+REM                            [ --schemainit|-si ]     | [ --backupconfig|-bc ] |
+REM                            [ --createsecrets|-cs ]  | [ --instal|-i ] ]
 
 REM Kontrollerar om ett argument existerar, anv„nder argumentet f”r alternativ till att k”ra hela processen.
 REM Ska hela processen k”ras skickas inget argument med.
@@ -22,6 +24,9 @@ REM 1 = datalagerprocessen i sin helhet (standardinst„llning)
 REM 2 = k”rs med argument, olika metoder, och utg”r inte n†gon dataprocess
 SET DL_ISWHOLEPROCESS=1
 
+
+
+@CALL _sys\_log-batch #INIT ########################################
 
 
 @CALL _sys\_process-create-frame %DL_PROCESSNAME%

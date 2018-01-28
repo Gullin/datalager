@@ -6,10 +6,10 @@ REM CP 437 (DOS)
 
 REM S„tts per bat-fil
 REM Namn f”r hela processen
-SET DL_PROCESSNAME=lkr-oracle-lkr_gis
+SET DL_PROCESSNAME=lkr-oracle-topo_special
 REM Processlokala parametrar
-SET DL_OUTDIR=landskrona\lkr_gis\
-SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\oracle-lkr_gis-DatalagerManage-driver.fmw"
+SET DL_OUTDIR=landskrona\topo_special
+SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\oracle-topo_special-DatalagerManage-driver.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
     SET DL_ISWHOLEPROCESS=0
 )
@@ -34,7 +34,8 @@ SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 @CALL _sys\_log-batch START %DL_PROCESSID%
 IF %ERRORLEVEL% EQU 0 (
     REM Validering av data-schema
-    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL ORACLE_SPATIAL LKR_GIS
+    REM Žndras f”r resp. processmodul
+    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL ORACLE_SPATIAL TOPO_SPECIAL
 
     REM Kontrollerar om valideringen har godk„nnts annars k”rs ej resterande
     IF %DL_ISWHOLEPROCESS% == 1 (
@@ -119,8 +120,7 @@ REM Hanterar data till datalager
 :ManageSourceDatalager
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
 
-    REM Valfri parameter med enhet meter (anv„nds inte s„tts ett standardv„rde)
-    REM FME-parameter --InData (tabeller som ska l„sas skrivs med punktnoterad schemanamn och tabellnamn [ex. LKR_GIS.GIS_V_BLADINDELNING], mellanslag mellan tabeller)
+    REM <#BESKRIVNING AV PARAMETRAR TILL FME-PROCESS#>
     >nul (
         @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
                             --ProcessName %DL_PROCESSNAME% ^

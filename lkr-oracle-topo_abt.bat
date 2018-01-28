@@ -18,6 +18,7 @@ IF NOT DEFINED DL_ISWHOLEPROCESS (
 
 @CALL _sys\_process-create-frame %DL_PROCESSNAME%
 IF %DL_ISWHOLEPROCESS%==0 (
+    @CALL _sys\_log-batch #INIT ########################################
     @CALL _sys\_process-clean-clear %DL_PROCESSNAME%
 )
 
