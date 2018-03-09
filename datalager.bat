@@ -62,6 +62,7 @@ IF %ERRORLEVEL% EQU 0 (
         @CALL lkr-oracle-topo_ndrk
         @CALL lkr-oracle-topo_special
         @CALL lm-geodataplatsen-fastighetskartan
+        @CALL lst
         @CALL nvv
 
 
