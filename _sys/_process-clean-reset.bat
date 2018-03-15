@@ -15,6 +15,7 @@ FOR /D %%p IN ("*.*") DO (
     REM Raderar log-katalog och alla loggar
     IF %%p==_log RMDIR %%p /S /Q
     IF %%p==_bkp RMDIR %%p /S /Q
+    IF %%p==_deploy RMDIR %%p /S /Q
 
     REM Radera katalog f”r repository
     IF %%p==%DL_REPOSITORYROTDIR% RMDIR %%p /S /Q
