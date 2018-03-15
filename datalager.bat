@@ -5,7 +5,7 @@ SETLOCAL EnableDelayedExpansion
 REM CP 437 (DOS)
 REM Argument 1: V„xel [ null | [ ---reset|-r ]          | [ --clear|-c ] | 
 REM                            [ --schemainit|-si ]     | [ --backupconfig|-bc ] |
-REM                            [ --createsecrets|-cs ]  | [ --deploy | -d ] |
+REM                            [ --createsecrets|-cs ]  | [ --deploy|-d ] |
 REM                            [ --instal|-i ] ]
 
 REM Kontrollerar om ett argument existerar, anv„nder argumentet f”r alternativ till att k”ra hela processen.
