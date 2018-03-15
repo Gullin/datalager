@@ -44,6 +44,12 @@ IF DEFINED _IsProcessModul (
             IF EXIST %%p\%DL_LOGERROR% ATTRIB -R %%p\%DL_LOGERROR%
         )
 
+        IF %%p==_deploy (
+            IF EXIST %%p (
+                RMDIR /S /Q %%p
+            )
+        )
+
         REM Om Argument med processmodulsnamn inte existerar itereras resp. katalog,
         REM i annat fall endast katalog med namn samma som processmodulsnamn
         IF %_IsProcessModul%==0 (

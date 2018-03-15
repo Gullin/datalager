@@ -5,7 +5,8 @@ SETLOCAL EnableDelayedExpansion
 REM CP 437 (DOS)
 REM Argument 1: V„xel [ null | [ ---reset|-r ]          | [ --clear|-c ] | 
 REM                            [ --schemainit|-si ]     | [ --backupconfig|-bc ] |
-REM                            [ --createsecrets|-cs ]  | [ --instal|-i ] ]
+REM                            [ --createsecrets|-cs ]  | [ --deploy | -d ] |
+REM                            [ --instal|-i ] ]
 
 REM Kontrollerar om ett argument existerar, anv„nder argumentet f”r alternativ till att k”ra hela processen.
 REM Ska hela processen k”ras skickas inget argument med.
@@ -95,6 +96,8 @@ IF %ERRORLEVEL% EQU 0 (
         IF "%_arg%"=="-bc" SET BACKUPCONF=1
         IF "%_arg%"=="--createsecrets" SET CREATESECRETS=1
         IF "%_arg%"=="-cs" SET CREATESECRETS=1
+        IF "%_arg%"=="--deploy" SET DEPLOY=1
+        IF "%_arg%"=="-d" SET DEPLOY=1
         IF "%_arg%"=="--instal" SET INSTALLING=1
         IF "%_arg%"=="-i" SET INSTALLING=1
 
@@ -134,6 +137,14 @@ IF %ERRORLEVEL% EQU 0 (
             @CALL _sys\_create-secrets-body
 
             SET CREATESECRETS=
+
+            GOTO exit
+        )
+        IF DEFINED DEPLOY (
+            @CALL _sys\_log-batch DPLOY %DL_PROCESSID_MASTER%
+            @CALL _sys\_deploy
+
+            SET DEPLOY=
 
             GOTO exit
         )

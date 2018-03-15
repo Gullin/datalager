@@ -17,6 +17,9 @@ SET DL_LOGDIR=_log\
 REM ™vergripande katalog f”r backup
 SET DL_BKPDIR=_bkp\
 
+REM ™vergripande katalog f”r kopiering av filer f”r deploy
+SET DL_DEPLOYDIR=_deploy\
+
 REM Loggfil f”r batch-h„ndelserna, redog”r f”r processtege
 SET DL_LOGFILE=BatchEventLog.log
 
