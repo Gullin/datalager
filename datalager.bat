@@ -117,8 +117,19 @@ IF %ERRORLEVEL% EQU 0 (
             GOTO exit
         )
         IF DEFINED SCHEMAINIT (
+            IF [%4]==[] (
+                SET _arg4=NULL
+            ) ELSE (
+                SET _arg4=%4
+            )
+            IF [%5]==[] (
+                SET _arg5=NULL
+            ) ELSE (
+                SET _arg5=%5
+            )
+
             @CALL _sys\_log-batch SCHEM %DL_PROCESSID_MASTER%
-            @CALL _sys\_schema-driver %2 %DL_ISWHOLEPROCESS% write init %3 %4 %5
+            @CALL _sys\_schema-driver %2 %DL_ISWHOLEPROCESS% write init %3 !_arg4! !_arg5!
 
             SET SCHEMAINIT=
 
