@@ -4,8 +4,8 @@ SETLOCAL EnableDelayedExpansion
 REM CP 437 (DOS)
 
 
-REM Sï¿½tts per bat-fil
-REM Namn fï¿½r hela processen
+REM S„tts per bat-fil
+REM Namn f”r hela processen
 SET DL_PROCESSNAME=lst
 REM Processlokala parametrar
 SET DL_OUTDIR=lst
@@ -25,10 +25,10 @@ IF %DL_ISWHOLEPROCESS%==0 (
 
 
 
-REM Anvï¿½nds fï¿½r utdata vid alla FME-processer
+REM Anv„nds f”r utdata vid alla FME-processer
 SET DL_PROCESSMODULOUTDIR=%DL_ROTDIR%%DL_REPOSITORYROTDIR%%DL_OUTDIR%
 
-REM skapar tidsstï¿½mpel och unikt process-ID fï¿½r spï¿½rning av kï¿½rd batch-process
+REM skapar tidsst„mpel och unikt process-ID f”r sp†rning av k”rd batch-process
 FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime iso-simple') DO SET CurrentDateTime=%%i %%j
 SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 
@@ -41,10 +41,10 @@ IF %ERRORLEVEL% EQU 0 (
     @CALL :Download
 
     REM Validering av data-schema
-    REM ï¿½ndras fï¿½r resp. processmodul
+    REM Žndras f”r resp. processmodul
     @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL ESRISHAPE
 
-    REM Kontrollerar om valideringen har godkï¿½nnts annars kï¿½rs ej resterande
+    REM Kontrollerar om valideringen har godk„nnts annars k”rs ej resterande
     IF %DL_ISWHOLEPROCESS% == 1 (
         @CALL _sys\_exist-FATAL_ERROR
     ) ELSE (
@@ -53,7 +53,7 @@ IF %ERRORLEVEL% EQU 0 (
 
     IF !ERRORLEVEL! NEQ 99999 (
 
-        REM Nollstï¿½ller felkod genom en instruktion som endast kan fungera
+        REM Nollst„ller felkod genom en instruktion som endast kan fungera
         verify >nul
 
 
@@ -64,8 +64,8 @@ IF %ERRORLEVEL% EQU 0 (
 
 
         IF !ERRORLEVEL! EQU 0 (
-            REM Loggning av resp. process resurskatalog fï¿½r distribuering och distribuering om processmodulen kï¿½rs enskilt
-            REM Distribuering gï¿½rs ej vid fel.
+            REM Loggning av resp. process resurskatalog f”r distribuering och distribuering om processmodulen k”rs enskilt
+            REM Distribuering g”rs ej vid fel.
             IF %DL_ISWHOLEPROCESS% == 1 (
                 ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
             ) ELSE (
@@ -76,42 +76,42 @@ IF %ERRORLEVEL% EQU 0 (
                     @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
                 ) ELSE (
                     @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
-                    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! frï¿½n FATAL_ERROR fï¿½r %DL_PROCESSID% genererad av FME-processerna. Kunde ej gï¿½ vidare med distribuering av repository." %DL_PROCESSNAME%
+                    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR f”r %DL_PROCESSID% genererad av FME-processerna. Kunde ej g† vidare med distribuering av repository." %DL_PROCESSNAME%
 
                     GOTO exit
                 )
             )
         ) ELSE (
             @CALL _sys\_log-batch ERROR "Allvarligt fel vid dataprocessandet i process %DL_PROCESSID%"
-            @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% fï¿½r %DL_PROCESSID%, dataprocessandet har misslyckats" %DL_PROCESSNAME%
+            @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, dataprocessandet har misslyckats" %DL_PROCESSNAME%
 
             GOTO exit
         )
 
     ) ELSE (
         @CALL _sys\_log-batch ERROR "Allvarligt fel vid validering av datasets schema i process %DL_PROCESSID%"
-        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% fï¿½r %DL_PROCESSID%, validering av dataschema har misslyckats" %DL_PROCESSNAME%
+        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, validering av dataschema har misslyckats" %DL_PROCESSNAME%
 
         GOTO exit
     )
 
 
 ) ELSE (
-    @CALL _sys\_log-batch ERROR "Processen %DL_PROCESSID% kunde inte kï¿½ras"
-    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% fï¿½r %DL_PROCESSID%" %DL_PROCESSNAME%
+    @CALL _sys\_log-batch ERROR "Processen %DL_PROCESSID% kunde inte k”ras"
+    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%" %DL_PROCESSNAME%
 
     GOTO exit
 )
 
 
 :exit
-REM Kontrollerar om processen har kï¿½rts med allvarliga fel, i sï¿½ fall skicka meddelande
+REM Kontrollerar om processen har k”rts med allvarliga fel, i s† fall skicka meddelande
 @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
 
 IF !ERRORLEVEL! EQU 99999 (
     IF %DL_ISWHOLEPROCESS% == 0 (
         REM Meddelandefunktion
-        REM Skickas endast om processmodulen kï¿½rs individuellt och inte nï¿½r datalagerprocessen kï¿½rs i sin helhet
+        REM Skickas endast om processmodulen k”rs individuellt och inte n„r datalagerprocessen k”rs i sin helhet
         @CALL _sys\_emailer-send-error %DL_PROCESSNAME%
     )
 )
@@ -137,8 +137,8 @@ REM Ladda ner data till datalager
     )
 
     IF %ERRORLEVEL% NEQ 0 (
-        @CALL _sys\_log-batch ERROR "FME-processen slutfï¿½rdes inte korrekt"
-        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% fï¿½r %DL_FMEPROCESS01%" %DL_PROCESSNAME%
+        @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"
+        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_FMEPROCESS01%" %DL_PROCESSNAME%
 
         EXIT /B
     ) ELSE (
@@ -161,8 +161,8 @@ REM Hanterar data till datalager
     )
 
     IF %ERRORLEVEL% NEQ 0 (
-        @CALL _sys\_log-batch ERROR "FME-processen slutfï¿½rdes inte korrekt"
-        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% fï¿½r %DL_FMEPROCESS02%" %DL_PROCESSNAME%
+        @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"
+        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_FMEPROCESS02%" %DL_PROCESSNAME%
 
         EXIT /B
     ) ELSE (
