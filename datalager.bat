@@ -99,7 +99,7 @@ IF %ERRORLEVEL% EQU 0 (
         IF "%_arg%"=="--deploy" SET DEPLOY=1
         IF "%_arg%"=="-d" SET DEPLOY=1
         IF "%_arg%"=="--instal" SET INSTALLING=1
-        IF "%_arg%"=="-i" SET INSTALLING=1
+        IF "%_arg%"=="-i" SET INSTALLING=1 ELSE GOTO notdefined
 
         IF DEFINED RESETING (
             @CALL _sys\_process-clean-reset
@@ -167,6 +167,9 @@ IF %ERRORLEVEL% EQU 0 (
 
             GOTO exit
         )
+
+        :notdefined
+        ECHO V„xeln ej definerad
 
         @CALL _sys\_log-batch ERROR "%DL_PROCESSID_MASTER% argument %_arg% existerar ej"
         @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID_MASTER%, argument %_arg% existerar ej"
