@@ -16,8 +16,8 @@ IF NOT DEFINED DL_ISWHOLEPROCESS (
 
 CHCP 1252 > nul
 IF %DL_ISWHOLEPROCESS% == 1 (
-    @ECHO %CurrentDateTime% ^| %DL_LOG_ARG1% ^| null ^| ERROR ^| %DL_LOG_ARG2% ^| null >> %DL_LOGDIR%%DL_LOGERROR%
+    @ECHO %CurrentDateTime% ^| %DL_LOG_ARG1% ^| null ^| ERROR ^| %DL_LOG_ARG2% ^| null >> .\%DL_LOGDIR%%DL_LOGERROR%
 ) ELSE (
-    @ECHO %CurrentDateTime% ^| %DL_LOG_ARG1% ^| null ^| ERROR ^| %DL_LOG_ARG2% ^| null >> %DL_LOG_ARG3%\%DL_LOGDIR%%DL_LOGERROR%
+    @ECHO %CurrentDateTime% ^| %DL_LOG_ARG1% ^| null ^| ERROR ^| %DL_LOG_ARG2% ^| null >> .\%DL_LOG_ARG3%\%DL_LOGDIR%%DL_LOGERROR%
 )
 CHCP 437 > nul
