@@ -106,7 +106,7 @@ IF %ERRORLEVEL% EQU 0 (
 
             SET RESETING=
 
-            EXIT
+            GOTO exit
         )
         IF DEFINED CLEARING (
             @CALL _sys\_log-batch CLEAR %DL_PROCESSID_MASTER%
