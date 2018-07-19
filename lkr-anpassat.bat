@@ -9,7 +9,9 @@ REM Namn f”r hela processen
 SET DL_PROCESSNAME=lkr-anpassat
 REM Processlokala parametrar
 SET DL_OUTDIR=landskrona\anpassat\
-SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\fme-process.fmw"
+SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\DatalagerManage.fmw"
+SET DL_DIRPLANDOKUMENT="\\admsrv0011.adm.landskrona.local\d$\LANDSKRONA\Kommunal_verksamhetsdata\Plan\plandokument"
+SET DL_DIRPLANDOKUMENT2ND="\\admsrv0012.adm.landskrona.local\d$\LANDSKRONA\Kommunal_verksamhetsdata\Plan\plandokument"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
     SET DL_ISWHOLEPROCESS=0
 )
@@ -35,7 +37,7 @@ SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 IF %ERRORLEVEL% EQU 0 (
     REM Validering av data-schema
     REM Žndras f”r resp. processmodul
-    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate <#NULL ORACLE_SPATIAL LKR_GIS#>
+    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate
 
     REM Kontrollerar om valideringen har godk„nnts annars k”rs ej resterande
     IF %DL_ISWHOLEPROCESS% == 1 (
@@ -127,7 +129,10 @@ REM Hanterar data till datalager
                             --RotDirectory %DL_ROTDIR% ^
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
-                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
+                            --PlandokumentDir  %DL_DIRPLANDOKUMENT% ^
+                            --PlandokumentFileFilter "{**/*.pdf,**/*.tif}" ^
+                            --PlandokumentDir2Nd  %DL_DIRPLANDOKUMENT2ND%
     )
 
     IF %ERRORLEVEL% NEQ 0 (
