@@ -9,9 +9,11 @@ REM Namn f”r hela processen
 SET DL_PROCESSNAME=lkr-anpassat
 REM Processlokala parametrar
 SET DL_OUTDIR=landskrona\anpassat\
-SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\DatalagerManage.fmw"
-SET DL_DIRPLANDOKUMENT="\\admsrv0011.adm.landskrona.local\d$\LANDSKRONA\Kommunal_verksamhetsdata\Plan\plandokument"
-SET DL_DIRPLANDOKUMENT2ND="\\admsrv0012.adm.landskrona.local\d$\LANDSKRONA\Kommunal_verksamhetsdata\Plan\plandokument"
+SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\lkr-anpassat-DatalagerManage.fmw"
+REM SET DL_DIRPLANDOKUMENT="\\admsrv0011.adm.landskrona.local\d$\LANDSKRONA\Kommunal_verksamhetsdata\Plan\plandokument"
+REM SET DL_DIRPLANDOKUMENT2ND="\\admsrv0012.adm.landskrona.local\d$\LANDSKRONA\Kommunal_verksamhetsdata\Plan\plandokument"
+SET DL_DIRPLANDOKUMENT="C:\dev\plandokument\src\plandokument"
+SET DL_DIRPLANDOKUMENT2ND="C:\temp\plandokument"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
     SET DL_ISWHOLEPROCESS=0
 )
@@ -68,7 +70,7 @@ IF %ERRORLEVEL% EQU 0 (
 
                 IF !ERRORLEVEL! NEQ 99999 (
                     ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
-                    @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+                    REM @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
                 ) ELSE (
                     @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
                     @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR f”r %DL_PROCESSID% genererad av FME-processerna. Kunde ej g† vidare med distribuering av repository." %DL_PROCESSNAME%
