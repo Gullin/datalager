@@ -38,7 +38,7 @@ IF %ERRORLEVEL% EQU 0 (
 
 
     REM FME-processer
-    REM @CALL :Download
+    @CALL :Download
 
     REM Validering av data-schema
     REM Žndras f”r resp. processmodul
@@ -73,7 +73,7 @@ IF %ERRORLEVEL% EQU 0 (
 
                 IF !ERRORLEVEL! NEQ 99999 (
                     ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
-                    REM @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+                    @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
                 ) ELSE (
                     @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
                     @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR f”r %DL_PROCESSID% genererad av FME-processerna. Kunde ej g† vidare med distribuering av repository." %DL_PROCESSNAME%
