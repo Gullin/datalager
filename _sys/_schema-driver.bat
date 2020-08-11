@@ -16,6 +16,7 @@ REM             Argument 6 och 7 ska d† ocks† utel„mnas.
 REM             ESRISHAPE           F”r ESRI shape-filer
 REM             ORACLE_SPATIAL      F”r databas Oracle och datatypen spatial
 REM             ORACLE_NONSPATIAL   F”r databas Oracle endast tabelldata
+REM             POSTGIS             F”r databas Postgresql med spatialt till„gg kallad PostGIS
 REM Argument 6: Dataset vars schema-struktur ska l„sas av.
 REM             F”r filer anges s”kv„g och f”r databas anges det namn i FME som definierar anslutningen. Absoluta s”kv„gen anges vid filer.
 REM             F”r specifik fil ange exempelvis c:\katalog\dataset.shp
