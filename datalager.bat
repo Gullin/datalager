@@ -65,6 +65,7 @@ IF %ERRORLEVEL% EQU 0 (
         @CALL lkr-oracle-topo_special
         @CALL lkr-postgis-td_baskarta
         @CALL lkr-postgis-td_detaljplan
+        @CALL lkr-postgis-td_drk
         @CALL lm-geodataplatsen-fastighetskartan
         @CALL lst
         @CALL nvv
