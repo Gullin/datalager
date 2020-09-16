@@ -57,6 +57,7 @@ IF %ERRORLEVEL% EQU 0 (
         
         REM Processmoduler
         @CALL lkr-anpassat
+        @CALL lkr-anpassat-ecos
         @CALL lkr-oracle-lkr_gis
         @CALL lkr-oracle-topo_abt
         @CALL lkr-oracle-topo_bal
