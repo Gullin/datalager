@@ -68,6 +68,7 @@ IF %ERRORLEVEL% EQU 0 (
         @CALL lkr-postgis-td_baskarta_anpassat
         @CALL lkr-postgis-td_detaljplan
         @CALL lkr-postgis-td_drk
+        @CALL lkr-postgis-td_drk_anpassat
         @CALL lkr-postgis-td_bal
         @CALL lkr-postgis-td_bal_anpassat
         @CALL lm-geodataplatsen-fastighetskartan
