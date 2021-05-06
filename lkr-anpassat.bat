@@ -12,8 +12,8 @@ SET DL_OUTDIR=landskrona\anpassat\
 SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\lkr-anpassat-DatalagerManage.fmw"
 REM SET DL_DIRPLANDOKUMENT="\\admsrv0011.adm.landskrona.local\d$\LANDSKRONA\Kommunal_verksamhetsdata\Plan\plandokument"
 REM SET DL_DIRPLANDOKUMENT2ND="\\admsrv0012.adm.landskrona.local\d$\LANDSKRONA\Kommunal_verksamhetsdata\Plan\plandokument"
-SET DL_DIRPLANDOKUMENT="C:\dev\plandokument\src\plandokument"
-SET DL_DIRPLANDOKUMENT2ND="C:\temp\plandokument"
+SET DL_DIRPLANDOKUMENT="C:\temp\plandokument\pdf"
+SET DL_DIRPLANDOKUMENT2ND="C:\temp\plandokument\pdf2nd"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
     SET DL_ISWHOLEPROCESS=0
 )
@@ -133,7 +133,7 @@ REM Hanterar data till datalager
                             --ProcessModulName %DL_PROCESSNAME% ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
                             --PlandokumentDir  %DL_DIRPLANDOKUMENT% ^
-                            --PlandokumentFileFilter "{**/*.pdf,**/*.tif}" ^
+                            --PlandokumentFileFilter "**/*.{pdf,tif}" ^
                             --PlandokumentDir2Nd  %DL_DIRPLANDOKUMENT2ND%
     )
 

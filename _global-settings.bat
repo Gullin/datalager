@@ -40,7 +40,8 @@ SET DL_REPOSITORYROTDIR=_geodatarepo\
 REM FME-VARIABLER
 REM S”kv„g till fme som k”r fmw-filerna (FME-skripten). Fullst„ndig s”kv„g kr„vs n„r flera installationer finns p† k”rande maskin
 REM Om l„sning av Oracle-data ska g”ras f†r FME:s s”kv„g ej inneh†lla tecken som strider mot Oracle (ex. paranteser, accepteras i katalognamngivning men ej av Oracles' anslutningsstr„ng)
-SET DL_FMEFULLPATH="C:\Program Files\FME\2018_1_1_2_18586\fme.exe"
+@REM SET DL_FMEFULLPATH="C:\Program Files\FME_2018_1_2_1_18592\fme.exe"
+SET DL_FMEFULLPATH="C:\Program Files\FME_2021_0_21306\fme.exe"
 
 REM S”kv„g till FME:s arbetskatalog. Ska ligga skilt fr†n enhet d„r OS finns installerat, g„rna p† snabb diskyta med SSD-diskar och med bra tilltaget lagringsutrymme
 SET FME_TEMP=d:\fme_temp_workdir\
