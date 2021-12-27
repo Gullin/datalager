@@ -9,7 +9,7 @@ REM S„tts per bat-fil
 REM Namn f”r hela processen
 SET DL_PROCESSNAME=trv-lastkajen
 REM Processlokala parametrar
-SET DL_OUTDIR=trafikverket\lastkajen
+SET DL_OUTDIR=trafikverket\nvdb
 SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\01-download-lastkajen-api.fmw"
 SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\02-lastkajen-DatalagerManage-driver.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
