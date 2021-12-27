@@ -131,7 +131,7 @@ REM H„mta geodatapaket fr†n lastkajen
     REM <#BESKRIVNING AV PARAMETRAR TILL FME-PROCESS#>
     >nul (
         @REM @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
-        @%DL_FMEFULLPATH% %DL_FMEPROCESS01% --FME_LAUNCH_VIEWER_APP YES ^
+        @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
                             --ProcessName %DL_PROCESSNAME% ^
                             --RotDirectory %DL_ROTDIR% ^
                             --User %USER-TRV-LASTKAJEN% ^
@@ -159,7 +159,7 @@ REM Hanterar data till datalager
     REM <#BESKRIVNING AV PARAMETRAR TILL FME-PROCESS#>
     >nul (
         @REM @%DL_FMEFULLPATH% %DL_FMEPROCESS02% ^
-        @%DL_FMEFULLPATH% %DL_FMEPROCESS02% --FME_LAUNCH_VIEWER_APP YES ^
+        @%DL_FMEFULLPATH% %DL_FMEPROCESS02% ^
                             --ProcessName %DL_PROCESSNAME% ^
                             --RotDirectory %DL_ROTDIR% ^
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
