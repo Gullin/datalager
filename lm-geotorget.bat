@@ -160,7 +160,7 @@ REM H„mta data fr†n Geotorget
         @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
                             --ProcessName %DL_PROCESSNAME% ^
                             --RotDirectory %DL_ROTDIR% ^
-                            --MaxTimmarTillNyLeverans 200 ^
+                            --MaxTimmarTillNyLeverans 24 ^
                             --CONSUMERKEY %CONSUMERKEY-LM-GEOTORGET% ^
                             --CONSUMERSECRET %CONSUMERSECRET-LM-GEOTORGET% ^
                             --OnlyOrder "%ORDER%" ^
