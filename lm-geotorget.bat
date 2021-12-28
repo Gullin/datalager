@@ -196,11 +196,11 @@ REM Hanterar data till datalager
 
     IF %ERRORLEVEL% NEQ 0 (
         @CALL _sys\_log-batch ERROR "FME-processen slutf”rdes inte korrekt"
-        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_FMEPROCESS01%" %DL_PROCESSNAME%
+        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_FMEPROCESS02%" %DL_PROCESSNAME%
 
         EXIT /B
     ) ELSE (
-        @CALL _sys\_log-batch KLART "%DL_PROCESSID% %DL_FMEPROCESS01%"
+        @CALL _sys\_log-batch KLART "%DL_PROCESSID% %DL_FMEPROCESS02%"
     )
 GOTO :eof
 ENDLOCAL
