@@ -74,6 +74,7 @@ IF %ERRORLEVEL% EQU 0 (
         @CALL lkr-postgis-td_bal_anpassat
         @REM "lm-geodataplatsen-fastighetskartan" ska plockas bort i en kommande version. Ers„tts med "GSD-Fastighetskartan topografi, vektor"
         @REM @CALL lm-geodataplatsen-fastighetskartan
+        @CALL lm-geotorget
         @CALL lst
         @CALL nvv
         @CALL trv-lastkajen
