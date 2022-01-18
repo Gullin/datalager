@@ -19,7 +19,7 @@ REM S„tts per bat-fil
 REM Namn f”r hela processen
 SET DL_PROCESSNAME=lm-geotorget
 REM Processlokala parametrar
-SET DL_OUTDIR=lantmateriet\topografi-10-nedladdning
+SET DL_OUTDIR=lantmateriet\topografi_10_nedladdning
 SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\01-download-geotorget-api.fmw"
 SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\02-geotorget-DatalagerManage-driver.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
