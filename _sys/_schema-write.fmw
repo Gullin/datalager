@@ -27,8 +27,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="21306"
-#!   FME_DOCUMENT_GUID="9a194b29-dc27-4d41-b0e1-e5da691e84d5"
-#!   FME_DOCUMENT_PRIORGUID="e6801a4d-2f22-4f85-884a-74e01264f126,5fbf7781-f0c5-4147-8aa4-4fbe50a08535,1648d179-ff29-468f-ac90-0a6b51910de5,4255d209-5925-4571-984a-ab8a1994d5f0,daa4a58b-c216-402e-a475-a52b8b94963a,e46e15ab-05e3-4896-a22e-cf4dffa026a0,b7d42555-8af9-4391-b04a-9ac95bf190a2,332152ef-1c76-4828-9123-0f3aa67d2691,9d2257f0-bf91-4d90-bd79-1fb320c630ed,aeb732c3-9d99-40e8-9c5d-1b81a8261fa3,9e60c362-9239-4822-b47d-f610c04043f5,6d46df44-9f5f-4459-8e0e-06e4be5352c5,8c55156e-5678-4ee6-9b27-77908a14bed7,1e6b960a-f615-4e9a-bc71-1c065f37e176,28fa7d82-2b93-4515-9c72-dcc5b2594824,32f9a5bd-6fc2-45f5-842c-578d8155baed,2a716206-d835-465a-8b97-3905f5f0fe08,d3ba7619-746d-489f-9574-81c32c671d4b,f5793d93-ecb9-4f2a-8159-199e179f0ad5,55d4f1b3-8ecb-4c8e-90db-2a722940c32d,573e710f-def8-4fba-9dd8-6cabaa8016ae,70a4ca7a-e587-4e42-82ea-d0490ea78b46,6119bb11-dd41-4d12-b3db-019df2e0c11d,703f1e81-e244-45a6-b1c8-815b4790c540,af96c65f-f90d-4fa5-86c3-e7e15a8469e2,5eb75bbf-242d-4b02-8d01-689ebf8f36f8,6f3771cc-6969-4c1e-a63a-cb53a628bb94,8f56f157-dd47-46e5-9aeb-dbe7f2b242db,4af535df-eb28-43b3-875a-212b44c20f0b,06702803-873d-41fe-8267-10f8a4ac9049"
+#!   FME_DOCUMENT_GUID="a1d54b04-2525-4221-8487-711ea09058cc"
+#!   FME_DOCUMENT_PRIORGUID="e6801a4d-2f22-4f85-884a-74e01264f126,5fbf7781-f0c5-4147-8aa4-4fbe50a08535,1648d179-ff29-468f-ac90-0a6b51910de5,4255d209-5925-4571-984a-ab8a1994d5f0,daa4a58b-c216-402e-a475-a52b8b94963a,e46e15ab-05e3-4896-a22e-cf4dffa026a0,b7d42555-8af9-4391-b04a-9ac95bf190a2,332152ef-1c76-4828-9123-0f3aa67d2691,9d2257f0-bf91-4d90-bd79-1fb320c630ed,aeb732c3-9d99-40e8-9c5d-1b81a8261fa3,9e60c362-9239-4822-b47d-f610c04043f5,6d46df44-9f5f-4459-8e0e-06e4be5352c5,8c55156e-5678-4ee6-9b27-77908a14bed7,1e6b960a-f615-4e9a-bc71-1c065f37e176,28fa7d82-2b93-4515-9c72-dcc5b2594824,32f9a5bd-6fc2-45f5-842c-578d8155baed,2a716206-d835-465a-8b97-3905f5f0fe08,d3ba7619-746d-489f-9574-81c32c671d4b,f5793d93-ecb9-4f2a-8159-199e179f0ad5,55d4f1b3-8ecb-4c8e-90db-2a722940c32d,573e710f-def8-4fba-9dd8-6cabaa8016ae,70a4ca7a-e587-4e42-82ea-d0490ea78b46,6119bb11-dd41-4d12-b3db-019df2e0c11d,703f1e81-e244-45a6-b1c8-815b4790c540,af96c65f-f90d-4fa5-86c3-e7e15a8469e2,5eb75bbf-242d-4b02-8d01-689ebf8f36f8,6f3771cc-6969-4c1e-a63a-cb53a628bb94,8f56f157-dd47-46e5-9aeb-dbe7f2b242db,4af535df-eb28-43b3-875a-212b44c20f0b,06702803-873d-41fe-8267-10f8a4ac9049,9a194b29-dc27-4d41-b0e1-e5da691e84d5"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_NAMES_ENCODING="windows-1252"
@@ -38,7 +38,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2021.0.0.1 (20210315 - Build 21306 - WIN64)"
-#!   LAST_SAVE_DATE="2021-12-13T17:50:39"
+#!   LAST_SAVE_DATE="2022-01-24T21:40:42"
 #!   LOG_FILE="$(RotDirectory)_log/FME-$(FME_MF_NAME).log"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -57,7 +57,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="3156.92 959.831"
+#!   VIEW_POSITION="-873.733 1001.29"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="98"
@@ -311,6 +311,75 @@
 #! />
 #! </DATASET>
 #! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="SCHEMA_READER"
+#!   FORMAT="MSSQL_ADO"
+#!   DATASET="$(InData)"
+#!   KEYWORD="MSSQL_ADO_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="mssql_where_clause_wwjd &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="db_type char(254) fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string char(50) fme_type char(50) multi_reader_full_id integer multi_reader_id integer multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP mssql_table_setings_group mssql_where_clause_wwjd Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG mssql_where_clause_wwjd MODE,SQL;FORMAT,MSSQL_ADO WHERE Clause&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="Indexed IndexedNotNull Unique UniqueClustered Clustered ClusteredNotNull NotNull PrimaryKey"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   FTTR_TYPE="FEATURE_TYPES_ENCODED"
+#!   FEATURE_TYPES_LIST="dbo.fir_fastigh"
+#!   GENERATE_FME_BUILD_NUM="21306"
+#!   NAME="[MSSQL_ADO]"
+#!   COORDSYS=""
+#!   FEATURE_TYPES="$(InData-DatabaseTable)"
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="MSSQL_ADO_IN_APPLICATION_INTENT MSSQL_ADO_IN_READ_CACHE_SIZE MSSQL_ADO_IN_BEGIN_SQL{0} MSSQL_ADO_IN_END_SQL{0} MSSQL_ADO_OUT_BULK_INSERT MSSQL_ADO_OUT_TRANSACTION_INTERVAL MSSQL_ADO_OUT_BEGIN_SQL{0} MSSQL_ADO_OUT_END_SQL{0}"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="Database"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL{0} END_SQL{0}"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! </DATASET>
+#! <DATASET
 #!   IS_SOURCE="false"
 #!   ROLE="WRITER"
 #!   FORMAT="XLSXW"
@@ -380,222 +449,6 @@
 #! </DATASET>
 #! </DATASETS>
 #! <DATA_TYPES>
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="varchar2(width)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="raw(width)"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="raw(width)"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="nchar(width)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="nvarchar(width)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="clob"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="json"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="nclob"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xmltype"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="float"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="binary_double"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="float"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="binary_float"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="integer"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="integer"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="timestamptz"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="timestamptz(width)"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="timestampltz"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="timestampltz(width)"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="timestamp"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="timestamp(width)"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="timestamp"
-#!   FME_TYPE="fme_time"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_date"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="char(8)"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(width,decimal)"
-#!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(10,0)"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(19,0)"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(20,0)"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="clob"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="ORACLE_SPATIAL"
-#! />
 #! <DATA_TYPE
 #!   IS_SOURCE="true"
 #!   FORMAT_TYPE="bool"
@@ -793,6 +646,222 @@
 #!   FORMAT_TYPE="varbit(width)"
 #!   FME_TYPE="fme_varchar(width)"
 #!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bit"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="image"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ntext"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uniqueidentifier"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="tinyint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bigint"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bigint"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="identity"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime2"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime2(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetimeoffset(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smalldatetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time(width)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="numeric(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="numeric(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="money"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallmoney"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nvarchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varbinary(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="MSSQL_ADO"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="true"
@@ -1155,6 +1224,222 @@
 #!   FORMAT="SCHEMA"
 #! />
 #! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar2(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="raw(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="raw(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nvarchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="clob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nclob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xmltype"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary_double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary_float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamptz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamptz(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestampltz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestampltz(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(10,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(19,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="clob"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="string(width,xlsx_col_props)"
 #!   FME_TYPE="fme_varchar(width)"
@@ -1504,7 +1789,7 @@
 #!   FEAT_GEOMTYPE="fme_no_geom"
 #!   POSITION="150.001 -230"
 #!   BOUNDING_RECT="150.001 -230 728.13300000000004 71"
-#!   ORDER="500000000000000"
+#!   ORDER="500000000000306"
 #!   COLLAPSED="true"
 #!   KEYWORD="SCHEMA_1"
 #!   PARMS_EDITED="true"
@@ -1620,7 +1905,7 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED InData-DatabaseTable LKR_GIS,_FORMAT_OVERRIDE_,POSTGIS,_DATASET_OVERRIDE_,InData,FME_CONNECTION_GROUP,,FME_GROUP_NAMED1,,WHERE_CLAUSE,,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,SEARCH_METHOD,MBR_OVERLAPS,ADVANCED,,FEATURES_PER_FETCH,10000,BEGIN_SQL,,END_SQL,,SCHEMAS_FOR_TABLE_LISTING,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,NAMED_CONNECTION,LKR_GIS,_MERGE_SCHEMAS,YES,READ_TIME_WITH_TIMEZONE,Yes,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,USE_TRUE_POSTGIS_TYPES,yes,DISABLE_COLLECTION_SPLITTING,yes,_MERGE_SCHEMAS,YES Tabell att läsa:"
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED InData-DatabaseTable LKR_GIS,_FORMAT_OVERRIDE_,MSSQL_ADO,_DATASET_OVERRIDE_,InData,FME_CONNECTION_GROUP,,COMMAND_TIMEOUT,30,FME_GROUP_NAMED1,,WHERE_CLAUSE_WWJD,,ADVANCED,,APPLICATION_INTENT,ReadWrite,READ_CACHE_SIZE,10,BEGIN_SQL{0},,END_SQL{0},,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,NAMED_CONNECTION,LKR_GIS,_MERGE_SCHEMAS,YES,CREATE_FEATURE_TABLES_FROM_DATA,Yes,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,_MERGE_SCHEMAS,YES Tabell att läsa:"
 #!   DEFAULT_VALUE="NULL"
 #!   IS_STAND_ALONE="false"
 #! />
@@ -1671,7 +1956,7 @@
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <USER_PARAMETERS
-#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiIuLi8iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUm90RGlyZWN0b3J5IiwicHJvbXB0IjoiS2F0YWxvZ2VuIGTDpHIgcHJvY2Vzc2VuIHN0YXJ0YXI6IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJQcm9jZXNzTmFtZSIsInByb21wdCI6IlByb2Nlc3NuYW1uOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJzIn0sIm5hbWUiOiJEYXRhRm9ybWF0IiwicHJvbXB0IjoiSW5wdXQgRm9ybWF0OiIsInJlcXVpcmVkIjp0cnVlLCJ0eXBlIjoiZHJvcGRvd24iLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IkxLUl9HSVMiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiSW5EYXRhIiwicHJvbXB0IjoiSW5kYXRhIChzaGFwZSwgemlwIGVsbGVyIGRhdGFiYXNzY2hlbWEpOiIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJWYWx1ZXMiLCJjb25maWd1cmF0aW9uIjpbeyJuYW1lIjoiRk1FX0NPTk5FQ1RJT05fR1JPVVAiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkZNRV9HUk9VUF9OQU1FRDEiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IldIRVJFX0NMQVVTRSIsInZhbHVlIjoiIn0seyJuYW1lIjoiVVNFX1NFQVJDSF9FTlZFTE9QRSIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUlOWCIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NSU5ZIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01BWFgiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUFYWSIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9DT09SRElOQVRFX1NZU1RFTSIsInZhbHVlIjoiIn0seyJuYW1lIjoiQ0xJUF9UT19FTlZFTE9QRSIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJTRUFSQ0hfTUVUSE9EIiwidmFsdWUiOiJNQlJfT1ZFUkxBUFMifSx7Im5hbWUiOiJBRFZBTkNFRCIsInZhbHVlIjoiIn0seyJuYW1lIjoiRkVBVFVSRVNfUEVSX0ZFVENIIiwidmFsdWUiOiIxMDAwMCJ9LHsibmFtZSI6IkJFR0lOX1NRTCIsInZhbHVlIjoiIn0seyJuYW1lIjoiRU5EX1NRTCIsInZhbHVlIjoiIn0seyJuYW1lIjoiU0NIRU1BU19GT1JfVEFCTEVfTElTVElORyIsInZhbHVlIjoiIn0seyJuYW1lIjoiQ09PUkRTWVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlNUQVJUX0ZFQVRVUkUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiTUFYX0ZFQVRVUkVTX1BFUl9GRUFUVVJFX1RZUEUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1JTl9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiTkFNRURfQ09OTkVDVElPTiIsInZhbHVlIjoiTEtSX0dJUyJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJSRUFEX1RJTUVfV0lUSF9USU1FWk9ORSIsInZhbHVlIjoiWWVzIn0seyJuYW1lIjoiUVVFUllfRkVBVFVSRV9UWVBFU19GT1JfTUVSR0VfRklMVEVSUyIsInZhbHVlIjoiWWVzIn0seyJuYW1lIjoiVVNFX1RSVUVfUE9TVEdJU19UWVBFUyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiRElTQUJMRV9DT0xMRUNUSU9OX1NQTElUVElORyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlJFVFJJRVZFX0FMTF9UQUJMRV9OQU1FUyIsInZhbHVlIjoiWUVTIn1dLCJkYXRhc2V0Ijp7InBhcmFtZXRlciI6IkluRGF0YSJ9LCJmb3JtYXQiOiJQT1NUR0lTIiwidmFsdWVzVG9Vc2UiOiJmZWF0dXJlVHlwZXMifSwiZGVmYXVsdFZhbHVlIjoiTlVMTCIsIm5hbWUiOiJJbkRhdGEtRGF0YWJhc2VUYWJsZSIsInByb21wdCI6IlRhYmVsbCBhdHQgbMOkc2E6IiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoibGlzdGJveCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWRQYXJ0cyJ9LHsiZGVmYXVsdFZhbHVlIjoiZmx1c2giLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiT3V0U2NoZW1hRmlsZU5hbWVTdWZmaXgiLCJwcm9tcHQiOiJTdWZmaXggcMOlIGZpbG5hbW4gZsO2ciBzY2hlbWFsaXN0bmluZyAoc2thcGFzIG1lZCBiaW5kZXN0cmVjayk6IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiT3V0cHV0RGlyZWN0b3J5IiwicHJvbXB0IjoiS2F0YWxvZyBmw7ZyIGxhZ3JpbmcgYXYgZGVsIGF2IGRhdGFsYWdlcjoiLCJyZXF1aXJlZCI6ZmFsc2UsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJQcm9jZXNzTW9kdWxOYW1lIiwicHJvbXB0IjoiUHJvY2Vzc21vZHVsc25hbW46IiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IjEiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiSXNXaG9sZVByb2Nlc3NSdW4iLCJwcm9tcHQiOiLDhHIgaGVsYSBkYXRhbGFnZXJwcm9jZXNzZW4ga8O2cmQ6IiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImNob2ljZXMiOlt7ImRpc3BsYXkiOiJZZXMiLCJ2YWx1ZSI6IlllcyJ9LHsiZGlzcGxheSI6Ik5vIiwidmFsdWUiOiJObyJ9XSwiZGVmYXVsdFZhbHVlIjoiWWVzIiwibmFtZSI6IlhMU1hXX09VVF9PVkVSV1JJVEVfRklMRV9YTFNYVyIsInByb21wdCI6Ik92ZXJ3cml0ZSBFeGlzdGluZyBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJ0eXBlIjoiZHJvcGRvd24iLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImhpZGRlbiI6dHJ1ZSwibmFtZSI6IkZNRV9VU0VSX1BBUkFNX1BSSVZBVEVfR1JQIiwicGFyYW1ldGVycyI6W3siZGVmYXVsdFZhbHVlIjoic2NoZW1hLSQoT3V0U2NoZW1hRmlsZU5hbWVTdWZmaXgpIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwiaGlkZGVuIjp0cnVlLCJuYW1lIjoiT3V0U2NoZW1hRmlsZU5hbWUiLCJwcm9tcHQiOiJGaWxuYW1uIGbDtnIgc2NoZW1hbGlzdG5pbmc6IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiIueGxzeCIsImVkaXRvciI6InBsYWludGV4dCIsImhpZGRlbiI6dHJ1ZSwibmFtZSI6Ik91dFNjaGVtYUZpbGVFeHRlbnRpb24iLCJwcm9tcHQiOiJGaWzDpG5kZWxzZSBmw7ZyIHNjaGVtbGlzdG5pbmc6IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiIkKE91dHB1dERpcmVjdG9yeSkkKE91dFNjaGVtYUZpbGVOYW1lKSQoT3V0U2NoZW1hRmlsZUV4dGVudGlvbikiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJPdXQiLCJwcm9tcHQiOiJTY2hlbWEtZG9rdW1lbnRhdGlvbjoiLCJyZXF1aXJlZCI6ZmFsc2UsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV0sInByb21wdCI6IlByaXZhdGUgUGFyYW1ldGVycyIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6Imdyb3VwIiwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ=="
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiIuLi8iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUm90RGlyZWN0b3J5IiwicHJvbXB0IjoiS2F0YWxvZ2VuIGTDpHIgcHJvY2Vzc2VuIHN0YXJ0YXI6IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJQcm9jZXNzTmFtZSIsInByb21wdCI6IlByb2Nlc3NuYW1uOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJzIn0sIm5hbWUiOiJEYXRhRm9ybWF0IiwicHJvbXB0IjoiSW5wdXQgRm9ybWF0OiIsInJlcXVpcmVkIjp0cnVlLCJ0eXBlIjoiZHJvcGRvd24iLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IkxLUl9HSVMiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiSW5EYXRhIiwicHJvbXB0IjoiSW5kYXRhIChzaGFwZSwgemlwIGVsbGVyIGRhdGFiYXNzY2hlbWEpOiIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJWYWx1ZXMiLCJjb25maWd1cmF0aW9uIjpbeyJuYW1lIjoiRk1FX0NPTk5FQ1RJT05fR1JPVVAiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNPTU1BTkRfVElNRU9VVCIsInZhbHVlIjoiMzAifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQxIiwidmFsdWUiOiIifSx7Im5hbWUiOiJXSEVSRV9DTEFVU0VfV1dKRCIsInZhbHVlIjoiIn0seyJuYW1lIjoiQURWQU5DRUQiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkFQUExJQ0FUSU9OX0lOVEVOVCIsInZhbHVlIjoiUmVhZFdyaXRlIn0seyJuYW1lIjoiUkVBRF9DQUNIRV9TSVpFIiwidmFsdWUiOiIxMCJ9LHsibmFtZSI6IkJFR0lOX1NRTHswfSIsInZhbHVlIjoiIn0seyJuYW1lIjoiRU5EX1NRTHswfSIsInZhbHVlIjoiIn0seyJuYW1lIjoiQ09PUkRTWVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlNUQVJUX0ZFQVRVUkUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiTUFYX0ZFQVRVUkVTX1BFUl9GRUFUVVJFX1RZUEUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1JTl9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiTkFNRURfQ09OTkVDVElPTiIsInZhbHVlIjoiTEtSX0dJUyJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJDUkVBVEVfRkVBVFVSRV9UQUJMRVNfRlJPTV9EQVRBIiwidmFsdWUiOiJZZXMifSx7Im5hbWUiOiJRVUVSWV9GRUFUVVJFX1RZUEVTX0ZPUl9NRVJHRV9GSUxURVJTIiwidmFsdWUiOiJZZXMifSx7Im5hbWUiOiJfTUVSR0VfU0NIRU1BUyIsInZhbHVlIjoiWUVTIn0seyJuYW1lIjoiUkVUUklFVkVfQUxMX1RBQkxFX05BTUVTIiwidmFsdWUiOiJZRVMifV0sImRhdGFzZXQiOnsicGFyYW1ldGVyIjoiSW5EYXRhIn0sImZvcm1hdCI6Ik1TU1FMX0FETyIsInZhbHVlc1RvVXNlIjoiZmVhdHVyZVR5cGVzIn0sImRlZmF1bHRWYWx1ZSI6Ik5VTEwiLCJuYW1lIjoiSW5EYXRhLURhdGFiYXNlVGFibGUiLCJwcm9tcHQiOiJUYWJlbGwgYXR0IGzDpHNhOiIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6Imxpc3Rib3giLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkUGFydHMifSx7ImRlZmF1bHRWYWx1ZSI6ImZsdXNoIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Ik91dFNjaGVtYUZpbGVOYW1lU3VmZml4IiwicHJvbXB0IjoiU3VmZml4IHDDpSBmaWxuYW1uIGbDtnIgc2NoZW1hbGlzdG5pbmcgKHNrYXBhcyBtZWQgYmluZGVzdHJlY2spOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Ik91dHB1dERpcmVjdG9yeSIsInByb21wdCI6IkthdGFsb2cgZsO2ciBsYWdyaW5nIGF2IGRlbCBhdiBkYXRhbGFnZXI6IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUHJvY2Vzc01vZHVsTmFtZSIsInByb21wdCI6IlByb2Nlc3Ntb2R1bHNuYW1uOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiIxIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IklzV2hvbGVQcm9jZXNzUnVuIiwicHJvbXB0Ijoiw4RyIGhlbGEgZGF0YWxhZ2VycHJvY2Vzc2VuIGvDtnJkOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VzIjpbeyJkaXNwbGF5IjoiWWVzIiwidmFsdWUiOiJZZXMifSx7ImRpc3BsYXkiOiJObyIsInZhbHVlIjoiTm8ifV0sImRlZmF1bHRWYWx1ZSI6IlllcyIsIm5hbWUiOiJYTFNYV19PVVRfT1ZFUldSSVRFX0ZJTEVfWExTWFciLCJwcm9tcHQiOiJPdmVyd3JpdGUgRXhpc3RpbmcgRmlsZToiLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6ImRyb3Bkb3duIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJoaWRkZW4iOnRydWUsIm5hbWUiOiJGTUVfVVNFUl9QQVJBTV9QUklWQVRFX0dSUCIsInBhcmFtZXRlcnMiOlt7ImRlZmF1bHRWYWx1ZSI6InNjaGVtYS0kKE91dFNjaGVtYUZpbGVOYW1lU3VmZml4KSIsImVkaXRvciI6InBsYWludGV4dCIsImhpZGRlbiI6dHJ1ZSwibmFtZSI6Ik91dFNjaGVtYUZpbGVOYW1lIiwicHJvbXB0IjoiRmlsbmFtbiBmw7ZyIHNjaGVtYWxpc3RuaW5nOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiLnhsc3giLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJPdXRTY2hlbWFGaWxlRXh0ZW50aW9uIiwicHJvbXB0IjoiRmlsw6RuZGVsc2UgZsO2ciBzY2hlbWxpc3RuaW5nOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiJChPdXRwdXREaXJlY3RvcnkpJChPdXRTY2hlbWFGaWxlTmFtZSkkKE91dFNjaGVtYUZpbGVFeHRlbnRpb24pIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwiaGlkZGVuIjp0cnVlLCJuYW1lIjoiT3V0IiwicHJvbXB0IjoiU2NoZW1hLWRva3VtZW50YXRpb246IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn1dLCJwcm9tcHQiOiJQcml2YXRlIFBhcmFtZXRlcnMiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJncm91cCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
 #! >
 #! <PARAMETER_INFO>
 #!     <INFO NAME="DataFormat" IS_STAND_ALONE="false" />
@@ -1751,7 +2036,7 @@
 #!   BOUNDING_RECT="4708.5799999999999 -255 1107.55 401.15600000000001"
 #!   STICKY="true"
 #!   COLOUR="0.23921568627450981,0.71372549019607845,0.031372549019607843,0.39215686274509803"
-#!   CONTENTS="20 9 19 "
+#!   CONTENTS="19 9 20 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1765,7 +2050,7 @@
 #!   BOUNDING_RECT="-10.642300000000001 -1105.6199999999999 9144.2563634133603 1370.77"
 #!   STICKY="true"
 #!   COLOUR="0.74117647058823533,0.4392156862745098,0.60392156862745094,0.39215686274509803"
-#!   CONTENTS="39 72 79 76 82 71 54 55 70 49 74 78 32 80 31 73 40 50 51 67 59 "
+#!   CONTENTS="39 76 40 82 31 71 67 51 73 55 72 49 78 59 74 50 80 54 70 32 79 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1779,7 +2064,7 @@
 #!   BOUNDING_RECT="6953.1950319503194 800.63190631906355 849.95817145671481 786.34928129281332"
 #!   STICKY="true"
 #!   COLOUR="0.81568627450980391,0.5607843137254902,0.85882352941176465,1"
-#!   CONTENTS="86 84 85 97 "
+#!   CONTENTS="85 86 84 97 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
@@ -2140,12 +2425,12 @@
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2383,12 +2668,12 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2430,12 +2715,12 @@
 #! >
 #!     <OUTPUT_FEAT NAME="SUCCEEDED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2459,12 +2744,12 @@
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -2646,12 +2931,12 @@
 #! >
 #!     <OUTPUT_FEAT NAME="SAMPLED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2673,12 +2958,12 @@
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="NOT_SAMPLED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -2719,12 +3004,12 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2909,12 +3194,12 @@
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2938,12 +3223,12 @@
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;Rejected&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -2982,12 +3267,12 @@
 #! >
 #!     <OUTPUT_FEAT NAME="POSTGIS"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3009,12 +3294,12 @@
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -3053,12 +3338,12 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3102,12 +3387,12 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_export" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filter_export_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -4367,10 +4652,10 @@
 #!     <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dataset{}.fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="TotaltAntal" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_dataset_concatenated" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ds0_fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ds1_fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_dsn_fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_dataset_concatenated" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator_OUTPUT_-__StringConcatenator_Output"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
@@ -4577,7 +4862,7 @@
 
 FME_PYTHON_VERSION 2or3
 ARCGIS_COMPATIBILITY ARCGIS_AUTO
-GUI IGNORE SourceDataset_SCHEMA_1,SCHEMA_IN_REAL_FORMAT_SCHEMA_1,SCHEMA_IN_EXPOSE_ATTRS_GROUP_SCHEMA_1,SCHEMA_IN_NETWORK_AUTHENTICATION_SCHEMA_1,SourceDataset_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_EXPOSE_ATTRS_GROUP_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_ORACLE_OBJECT_RDR_ADV_PARA_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_1,SourceDataset_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_EXPOSE_ATTRS_GROUP_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_ORACLENONSPATIAL_RDR_ADV_PARA_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_CHUNK_SIZE_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_END_SQL{0}_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_WORKSPACE_ORACLE_NONSPATIAL_1,SourceDataset_POSTGIS_1,POSTGIS_IN_FME_CONNECTION_GROUP_POSTGIS_1,POSTGIS_IN_FME_GROUP_NAMED1_POSTGIS_1,POSTGIS_IN_WHERE_CLAUSE_POSTGIS_1,POSTGIS_IN_USE_SEARCH_ENVELOPE_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_1,POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_1,POSTGIS_IN_SEARCH_METHOD_POSTGIS_1,POSTGIS_IN_ADVANCED_POSTGIS_1,POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_1,POSTGIS_IN_BEGIN_SQL_POSTGIS_1,POSTGIS_IN_END_SQL_POSTGIS_1,POSTGIS_IN_SCHEMAS_FOR_TABLE_LISTING_POSTGIS_1,DestDataset_XLSXW_1,XLSXW_OUT_OVERWRITE_FILE_XLSXW_1,XLSXW_OUT_TEMPLATEFILE_XLSXW_1,TEMPLATE_SHEET_XLSXW_1
+GUI IGNORE SourceDataset_SCHEMA_1,SCHEMA_IN_REAL_FORMAT_SCHEMA_1,SCHEMA_IN_EXPOSE_ATTRS_GROUP_SCHEMA_1,SCHEMA_IN_NETWORK_AUTHENTICATION_SCHEMA_1,SourceDataset_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_EXPOSE_ATTRS_GROUP_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_ORACLE_OBJECT_RDR_ADV_PARA_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_1,SourceDataset_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_EXPOSE_ATTRS_GROUP_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_ORACLENONSPATIAL_RDR_ADV_PARA_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_CHUNK_SIZE_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_END_SQL{0}_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_IN_WORKSPACE_ORACLE_NONSPATIAL_1,SourceDataset_POSTGIS_1,POSTGIS_IN_FME_CONNECTION_GROUP_POSTGIS_1,POSTGIS_IN_FME_GROUP_NAMED1_POSTGIS_1,POSTGIS_IN_WHERE_CLAUSE_POSTGIS_1,POSTGIS_IN_USE_SEARCH_ENVELOPE_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_1,POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_1,POSTGIS_IN_SEARCH_METHOD_POSTGIS_1,POSTGIS_IN_ADVANCED_POSTGIS_1,POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_1,POSTGIS_IN_BEGIN_SQL_POSTGIS_1,POSTGIS_IN_END_SQL_POSTGIS_1,POSTGIS_IN_SCHEMAS_FOR_TABLE_LISTING_POSTGIS_1,SourceDataset_MSSQL_ADO_1,MSSQL_ADO_IN_FME_CONNECTION_GROUP_MSSQL_ADO_1,MSSQL_ADO_IN_COMMAND_TIMEOUT_MSSQL_ADO_1,MSSQL_ADO_IN_FME_GROUP_NAMED1_MSSQL_ADO_1,MSSQL_ADO_IN_WHERE_CLAUSE_WWJD_MSSQL_ADO_1,MSSQL_ADO_IN_ADVANCED_MSSQL_ADO_1,MSSQL_ADO_IN_APPLICATION_INTENT_MSSQL_ADO_1,MSSQL_ADO_IN_READ_CACHE_SIZE_MSSQL_ADO_1,MSSQL_ADO_IN_BEGIN_SQL{0}_MSSQL_ADO_1,MSSQL_ADO_IN_END_SQL{0}_MSSQL_ADO_1,DestDataset_XLSXW_1,XLSXW_OUT_OVERWRITE_FILE_XLSXW_1,XLSXW_OUT_TEMPLATEFILE_XLSXW_1,TEMPLATE_SHEET_XLSXW_1
 # ============================================================================
 DEFAULT_MACRO RotDirectory ../
 DEFAULT_MACRO ProcessName 
@@ -4598,14 +4883,14 @@ GUI TEXT RotDirectory Katalogen där processen startar:
 GUI OPTIONAL TEXT ProcessName Processnamn:
 GUI READERPICK DataFormat Input Format:
 GUI TEXT InData Indata (shape, zip eller databasschema):
-GUI OPTIONAL FEATURE_TYPES_ENCODED InData-DatabaseTable LKR_GIS,_FORMAT_OVERRIDE_,POSTGIS,_DATASET_OVERRIDE_,InData,FME_CONNECTION_GROUP,,FME_GROUP_NAMED1,,WHERE_CLAUSE,,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,SEARCH_METHOD,MBR_OVERLAPS,ADVANCED,,FEATURES_PER_FETCH,10000,BEGIN_SQL,,END_SQL,,SCHEMAS_FOR_TABLE_LISTING,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,NAMED_CONNECTION,LKR_GIS,_MERGE_SCHEMAS,YES,READ_TIME_WITH_TIMEZONE,Yes,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,USE_TRUE_POSTGIS_TYPES,yes,DISABLE_COLLECTION_SPLITTING,yes,_MERGE_SCHEMAS,YES Tabell att läsa:
+GUI OPTIONAL FEATURE_TYPES_ENCODED InData-DatabaseTable LKR_GIS,_FORMAT_OVERRIDE_,MSSQL_ADO,_DATASET_OVERRIDE_,InData,FME_CONNECTION_GROUP,,COMMAND_TIMEOUT,30,FME_GROUP_NAMED1,,WHERE_CLAUSE_WWJD,,ADVANCED,,APPLICATION_INTENT,ReadWrite,READ_CACHE_SIZE,10,BEGIN_SQL{0},,END_SQL{0},,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,NAMED_CONNECTION,LKR_GIS,_MERGE_SCHEMAS,YES,CREATE_FEATURE_TABLES_FROM_DATA,Yes,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,_MERGE_SCHEMAS,YES Tabell att läsa:
 GUI OPTIONAL TEXT OutSchemaFileNameSuffix Suffix på filnamn för schemalistning (skapas med bindestreck):
 GUI OPTIONAL TEXT OutputDirectory Katalog för lagring av del av datalager:
 GUI OPTIONAL TEXT ProcessModulName Processmodulsnamn:
 GUI OPTIONAL TEXT IsWholeProcessRun Är hela datalagerprocessen körd:
 GUI CHOICE XLSXW_OUT_OVERWRITE_FILE_XLSXW Yes%No Overwrite Existing File:
 # ============================================================================
-USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiIuLi8iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUm90RGlyZWN0b3J5IiwicHJvbXB0IjoiS2F0YWxvZ2VuIGTDpHIgcHJvY2Vzc2VuIHN0YXJ0YXI6IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJQcm9jZXNzTmFtZSIsInByb21wdCI6IlByb2Nlc3NuYW1uOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJzIn0sIm5hbWUiOiJEYXRhRm9ybWF0IiwicHJvbXB0IjoiSW5wdXQgRm9ybWF0OiIsInJlcXVpcmVkIjp0cnVlLCJ0eXBlIjoiZHJvcGRvd24iLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IkxLUl9HSVMiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiSW5EYXRhIiwicHJvbXB0IjoiSW5kYXRhIChzaGFwZSwgemlwIGVsbGVyIGRhdGFiYXNzY2hlbWEpOiIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJWYWx1ZXMiLCJjb25maWd1cmF0aW9uIjpbeyJuYW1lIjoiRk1FX0NPTk5FQ1RJT05fR1JPVVAiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkZNRV9HUk9VUF9OQU1FRDEiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IldIRVJFX0NMQVVTRSIsInZhbHVlIjoiIn0seyJuYW1lIjoiVVNFX1NFQVJDSF9FTlZFTE9QRSIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUlOWCIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NSU5ZIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01BWFgiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUFYWSIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9DT09SRElOQVRFX1NZU1RFTSIsInZhbHVlIjoiIn0seyJuYW1lIjoiQ0xJUF9UT19FTlZFTE9QRSIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJTRUFSQ0hfTUVUSE9EIiwidmFsdWUiOiJNQlJfT1ZFUkxBUFMifSx7Im5hbWUiOiJBRFZBTkNFRCIsInZhbHVlIjoiIn0seyJuYW1lIjoiRkVBVFVSRVNfUEVSX0ZFVENIIiwidmFsdWUiOiIxMDAwMCJ9LHsibmFtZSI6IkJFR0lOX1NRTCIsInZhbHVlIjoiIn0seyJuYW1lIjoiRU5EX1NRTCIsInZhbHVlIjoiIn0seyJuYW1lIjoiU0NIRU1BU19GT1JfVEFCTEVfTElTVElORyIsInZhbHVlIjoiIn0seyJuYW1lIjoiQ09PUkRTWVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlNUQVJUX0ZFQVRVUkUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiTUFYX0ZFQVRVUkVTX1BFUl9GRUFUVVJFX1RZUEUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1JTl9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiTkFNRURfQ09OTkVDVElPTiIsInZhbHVlIjoiTEtSX0dJUyJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJSRUFEX1RJTUVfV0lUSF9USU1FWk9ORSIsInZhbHVlIjoiWWVzIn0seyJuYW1lIjoiUVVFUllfRkVBVFVSRV9UWVBFU19GT1JfTUVSR0VfRklMVEVSUyIsInZhbHVlIjoiWWVzIn0seyJuYW1lIjoiVVNFX1RSVUVfUE9TVEdJU19UWVBFUyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiRElTQUJMRV9DT0xMRUNUSU9OX1NQTElUVElORyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlJFVFJJRVZFX0FMTF9UQUJMRV9OQU1FUyIsInZhbHVlIjoiWUVTIn1dLCJkYXRhc2V0Ijp7InBhcmFtZXRlciI6IkluRGF0YSJ9LCJmb3JtYXQiOiJQT1NUR0lTIiwidmFsdWVzVG9Vc2UiOiJmZWF0dXJlVHlwZXMifSwiZGVmYXVsdFZhbHVlIjoiTlVMTCIsIm5hbWUiOiJJbkRhdGEtRGF0YWJhc2VUYWJsZSIsInByb21wdCI6IlRhYmVsbCBhdHQgbMOkc2E6IiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoibGlzdGJveCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWRQYXJ0cyJ9LHsiZGVmYXVsdFZhbHVlIjoiZmx1c2giLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiT3V0U2NoZW1hRmlsZU5hbWVTdWZmaXgiLCJwcm9tcHQiOiJTdWZmaXggcMOlIGZpbG5hbW4gZsO2ciBzY2hlbWFsaXN0bmluZyAoc2thcGFzIG1lZCBiaW5kZXN0cmVjayk6IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiT3V0cHV0RGlyZWN0b3J5IiwicHJvbXB0IjoiS2F0YWxvZyBmw7ZyIGxhZ3JpbmcgYXYgZGVsIGF2IGRhdGFsYWdlcjoiLCJyZXF1aXJlZCI6ZmFsc2UsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJQcm9jZXNzTW9kdWxOYW1lIiwicHJvbXB0IjoiUHJvY2Vzc21vZHVsc25hbW46IiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IjEiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiSXNXaG9sZVByb2Nlc3NSdW4iLCJwcm9tcHQiOiLDhHIgaGVsYSBkYXRhbGFnZXJwcm9jZXNzZW4ga8O2cmQ6IiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImNob2ljZXMiOlt7ImRpc3BsYXkiOiJZZXMiLCJ2YWx1ZSI6IlllcyJ9LHsiZGlzcGxheSI6Ik5vIiwidmFsdWUiOiJObyJ9XSwiZGVmYXVsdFZhbHVlIjoiWWVzIiwibmFtZSI6IlhMU1hXX09VVF9PVkVSV1JJVEVfRklMRV9YTFNYVyIsInByb21wdCI6Ik92ZXJ3cml0ZSBFeGlzdGluZyBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJ0eXBlIjoiZHJvcGRvd24iLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImhpZGRlbiI6dHJ1ZSwibmFtZSI6IkZNRV9VU0VSX1BBUkFNX1BSSVZBVEVfR1JQIiwicGFyYW1ldGVycyI6W3siZGVmYXVsdFZhbHVlIjoic2NoZW1hLSQoT3V0U2NoZW1hRmlsZU5hbWVTdWZmaXgpIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwiaGlkZGVuIjp0cnVlLCJuYW1lIjoiT3V0U2NoZW1hRmlsZU5hbWUiLCJwcm9tcHQiOiJGaWxuYW1uIGbDtnIgc2NoZW1hbGlzdG5pbmc6IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiIueGxzeCIsImVkaXRvciI6InBsYWludGV4dCIsImhpZGRlbiI6dHJ1ZSwibmFtZSI6Ik91dFNjaGVtYUZpbGVFeHRlbnRpb24iLCJwcm9tcHQiOiJGaWzDpG5kZWxzZSBmw7ZyIHNjaGVtbGlzdG5pbmc6IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiIkKE91dHB1dERpcmVjdG9yeSkkKE91dFNjaGVtYUZpbGVOYW1lKSQoT3V0U2NoZW1hRmlsZUV4dGVudGlvbikiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJPdXQiLCJwcm9tcHQiOiJTY2hlbWEtZG9rdW1lbnRhdGlvbjoiLCJyZXF1aXJlZCI6ZmFsc2UsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV0sInByb21wdCI6IlByaXZhdGUgUGFyYW1ldGVycyIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6Imdyb3VwIiwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ==
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiIuLi8iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUm90RGlyZWN0b3J5IiwicHJvbXB0IjoiS2F0YWxvZ2VuIGTDpHIgcHJvY2Vzc2VuIHN0YXJ0YXI6IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJQcm9jZXNzTmFtZSIsInByb21wdCI6IlByb2Nlc3NuYW1uOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJzIn0sIm5hbWUiOiJEYXRhRm9ybWF0IiwicHJvbXB0IjoiSW5wdXQgRm9ybWF0OiIsInJlcXVpcmVkIjp0cnVlLCJ0eXBlIjoiZHJvcGRvd24iLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IkxLUl9HSVMiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiSW5EYXRhIiwicHJvbXB0IjoiSW5kYXRhIChzaGFwZSwgemlwIGVsbGVyIGRhdGFiYXNzY2hlbWEpOiIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJWYWx1ZXMiLCJjb25maWd1cmF0aW9uIjpbeyJuYW1lIjoiRk1FX0NPTk5FQ1RJT05fR1JPVVAiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNPTU1BTkRfVElNRU9VVCIsInZhbHVlIjoiMzAifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQxIiwidmFsdWUiOiIifSx7Im5hbWUiOiJXSEVSRV9DTEFVU0VfV1dKRCIsInZhbHVlIjoiIn0seyJuYW1lIjoiQURWQU5DRUQiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkFQUExJQ0FUSU9OX0lOVEVOVCIsInZhbHVlIjoiUmVhZFdyaXRlIn0seyJuYW1lIjoiUkVBRF9DQUNIRV9TSVpFIiwidmFsdWUiOiIxMCJ9LHsibmFtZSI6IkJFR0lOX1NRTHswfSIsInZhbHVlIjoiIn0seyJuYW1lIjoiRU5EX1NRTHswfSIsInZhbHVlIjoiIn0seyJuYW1lIjoiQ09PUkRTWVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlNUQVJUX0ZFQVRVUkUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiTUFYX0ZFQVRVUkVTX1BFUl9GRUFUVVJFX1RZUEUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1JTl9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiTkFNRURfQ09OTkVDVElPTiIsInZhbHVlIjoiTEtSX0dJUyJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJDUkVBVEVfRkVBVFVSRV9UQUJMRVNfRlJPTV9EQVRBIiwidmFsdWUiOiJZZXMifSx7Im5hbWUiOiJRVUVSWV9GRUFUVVJFX1RZUEVTX0ZPUl9NRVJHRV9GSUxURVJTIiwidmFsdWUiOiJZZXMifSx7Im5hbWUiOiJfTUVSR0VfU0NIRU1BUyIsInZhbHVlIjoiWUVTIn0seyJuYW1lIjoiUkVUUklFVkVfQUxMX1RBQkxFX05BTUVTIiwidmFsdWUiOiJZRVMifV0sImRhdGFzZXQiOnsicGFyYW1ldGVyIjoiSW5EYXRhIn0sImZvcm1hdCI6Ik1TU1FMX0FETyIsInZhbHVlc1RvVXNlIjoiZmVhdHVyZVR5cGVzIn0sImRlZmF1bHRWYWx1ZSI6Ik5VTEwiLCJuYW1lIjoiSW5EYXRhLURhdGFiYXNlVGFibGUiLCJwcm9tcHQiOiJUYWJlbGwgYXR0IGzDpHNhOiIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6Imxpc3Rib3giLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkUGFydHMifSx7ImRlZmF1bHRWYWx1ZSI6ImZsdXNoIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Ik91dFNjaGVtYUZpbGVOYW1lU3VmZml4IiwicHJvbXB0IjoiU3VmZml4IHDDpSBmaWxuYW1uIGbDtnIgc2NoZW1hbGlzdG5pbmcgKHNrYXBhcyBtZWQgYmluZGVzdHJlY2spOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Ik91dHB1dERpcmVjdG9yeSIsInByb21wdCI6IkthdGFsb2cgZsO2ciBsYWdyaW5nIGF2IGRlbCBhdiBkYXRhbGFnZXI6IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUHJvY2Vzc01vZHVsTmFtZSIsInByb21wdCI6IlByb2Nlc3Ntb2R1bHNuYW1uOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiIxIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IklzV2hvbGVQcm9jZXNzUnVuIiwicHJvbXB0Ijoiw4RyIGhlbGEgZGF0YWxhZ2VycHJvY2Vzc2VuIGvDtnJkOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VzIjpbeyJkaXNwbGF5IjoiWWVzIiwidmFsdWUiOiJZZXMifSx7ImRpc3BsYXkiOiJObyIsInZhbHVlIjoiTm8ifV0sImRlZmF1bHRWYWx1ZSI6IlllcyIsIm5hbWUiOiJYTFNYV19PVVRfT1ZFUldSSVRFX0ZJTEVfWExTWFciLCJwcm9tcHQiOiJPdmVyd3JpdGUgRXhpc3RpbmcgRmlsZToiLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6ImRyb3Bkb3duIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJoaWRkZW4iOnRydWUsIm5hbWUiOiJGTUVfVVNFUl9QQVJBTV9QUklWQVRFX0dSUCIsInBhcmFtZXRlcnMiOlt7ImRlZmF1bHRWYWx1ZSI6InNjaGVtYS0kKE91dFNjaGVtYUZpbGVOYW1lU3VmZml4KSIsImVkaXRvciI6InBsYWludGV4dCIsImhpZGRlbiI6dHJ1ZSwibmFtZSI6Ik91dFNjaGVtYUZpbGVOYW1lIiwicHJvbXB0IjoiRmlsbmFtbiBmw7ZyIHNjaGVtYWxpc3RuaW5nOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiLnhsc3giLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJPdXRTY2hlbWFGaWxlRXh0ZW50aW9uIiwicHJvbXB0IjoiRmlsw6RuZGVsc2UgZsO2ciBzY2hlbWxpc3RuaW5nOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiJChPdXRwdXREaXJlY3RvcnkpJChPdXRTY2hlbWFGaWxlTmFtZSkkKE91dFNjaGVtYUZpbGVFeHRlbnRpb24pIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwiaGlkZGVuIjp0cnVlLCJuYW1lIjoiT3V0IiwicHJvbXB0IjoiU2NoZW1hLWRva3VtZW50YXRpb246IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn1dLCJwcm9tcHQiOiJQcml2YXRlIFBhcmFtZXRlcnMiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJncm91cCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0=
 # ============================================================================
 INCLUDE [ if {{$(RotDirectory)} == {}} { puts_real {Parameter 'RotDirectory' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(DataFormat)} == {}} { puts_real {Parameter 'DataFormat' must be given a value.}; exit 1; }; ]
@@ -4629,6 +4914,10 @@ MULTI_READER_TYPE{3} NULL
 MULTI_READER_FORMAT{3} POSTGIS
 MULTI_READER_KEYWORD{3} POSTGIS_1
 MULTI_READER_GEN_DIRECTIVES{3} TABLELIST,public.raster_columns,_MERGE_SCHEMAS,YES,WHERE_CLAUSE,,READ_TIME_WITH_TIMEZONE,Yes,FEATURES_PER_FETCH,10000,BEGIN_SQL,,POSTGIS_EXPOSE_FORMAT_ATTRS,,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,END_SQL,,SEARCH_ENVELOPE_MAXY,0,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,NAMED_CONNECTION,PG_GEODATA,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,SCHEMAS_FOR_TABLE_LISTING,,USE_TRUE_POSTGIS_TYPES,yes,USE_SEARCH_ENVELOPE,NO,ADVANCED,,SEARCH_ENVELOPE_MINX,0,CLIP_TO_ENVELOPE,NO,SEARCH_METHOD,MBR_OVERLAPS,EXPOSE_ATTRS_GROUP,,DISABLE_COLLECTION_SPLITTING,yes
+MULTI_READER_TYPE{4} NULL
+MULTI_READER_FORMAT{4} MSSQL_ADO
+MULTI_READER_KEYWORD{4} MSSQL_ADO_1
+MULTI_READER_GEN_DIRECTIVES{4} NAMED_CONNECTION,FBLASA,_MERGE_SCHEMAS,YES,COMMAND_TIMEOUT,30,WHERE_CLAUSE_WWJD,,ADVANCED,,CREATE_FEATURE_TABLES_FROM_DATA,Yes,END_SQL<opencurly>0<closecurly>,,BEGIN_SQL<opencurly>0<closecurly>,,EXPOSE_ATTRS_GROUP,,TABLELIST,dbo.fir_fastigh,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,APPLICATION_INTENT,ReadWrite,READ_CACHE_SIZE,10,MSSQL_ADO_EXPOSE_FORMAT_ATTRS,
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
@@ -4985,6 +5274,71 @@ POSTGIS_1_SCHEMAS_FOR_TABLE_LISTING $(POSTGIS_IN_SCHEMAS_FOR_TABLE_LISTING_POSTG
 POSTGIS_1_DATASET "$(SourceDataset_POSTGIS_1)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
+MACRO WB_KEYWORD "MSSQL_ADO_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER MSSQL_ADO MSSQL_ADO_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_MSSQL_ADO_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER MSSQL_ADO MSSQL_ADO_1
+DEFAULT_MACRO SourceDataset_MSSQL_ADO_1 $(InData)
+GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_MSSQL_ADO_1 FMT:MSSQL_ADO Connection:
+DEFAULT_MACRO MSSQL_ADO_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_MSSQL_ADO_1 Yes
+MSSQL_ADO_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(MSSQL_ADO_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_MSSQL_ADO_1)"
+DEFAULT_MACRO MSSQL_ADO_IN_FME_CONNECTION_GROUP_MSSQL_ADO_1 
+GUI OPTIONAL DISCLOSUREGROUP MSSQL_ADO_IN_FME_CONNECTION_GROUP_MSSQL_ADO_1 MSSQL_ADO_IN_NAMED_CONNECTION%MSSQL_ADO_IN_COMMAND_TIMEOUT_MSSQL_ADO_1 Database Connection
+# ============================================================================
+# Command timeout
+DEFAULT_MACRO MSSQL_ADO_IN_COMMAND_TIMEOUT_MSSQL_ADO_1 30
+MSSQL_ADO_1_COMMAND_TIMEOUT "$(MSSQL_ADO_IN_COMMAND_TIMEOUT_MSSQL_ADO_1)"
+GUI OPTIONAL INTEGER MSSQL_ADO_IN_COMMAND_TIMEOUT_MSSQL_ADO_1 Command Timeout (Seconds):
+DEFAULT_MACRO MSSQL_ADO_IN_FME_GROUP_NAMED1_MSSQL_ADO_1 
+GUI OPTIONAL DISCLOSUREGROUP MSSQL_ADO_IN_FME_GROUP_NAMED1_MSSQL_ADO_1 MSSQL_ADO_IN_TABLELIST%MSSQL_ADO_IN_WHERE_CLAUSE_WWJD_MSSQL_ADO_1 Constraints
+# ============================================================================
+# And an optional global WHERE clause
+DEFAULT_MACRO MSSQL_ADO_IN_WHERE_CLAUSE_WWJD_MSSQL_ADO_1 
+MSSQL_ADO_1_WHERE_CLAUSE_WWJD "$(MSSQL_ADO_IN_WHERE_CLAUSE_WWJD_MSSQL_ADO_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG MSSQL_ADO_IN_WHERE_CLAUSE_WWJD_MSSQL_ADO_1 MODE,WHERE WHERE Clause:
+DEFAULT_MACRO MSSQL_ADO_IN_EXPOSE_ATTRS_GROUP_MSSQL_ADO_1
+MSSQL_ADO_1_EXPOSE_ATTRS_GROUP "$(MSSQL_ADO_IN_EXPOSE_ATTRS_GROUP_MSSQL_ADO_1)"
+DEFAULT_MACRO MSSQL_ADO_IN_ADVANCED_MSSQL_ADO_1 
+GUI OPTIONAL DISCLOSUREGROUP MSSQL_ADO_IN_ADVANCED_MSSQL_ADO_1 MSSQL_ADO_IN_APPLICATION_INTENT_MSSQL_ADO_1%MSSQL_ADO_IN_READ_CACHE_SIZE_MSSQL_ADO_1%MSSQL_ADO_IN_BEGIN_SQL{0}_MSSQL_ADO_1%MSSQL_ADO_IN_END_SQL{0}_MSSQL_ADO_1 Advanced
+DEFAULT_MACRO MSSQL_ADO_IN_APPLICATION_INTENT_MSSQL_ADO_1 ReadWrite
+MSSQL_ADO_1_APPLICATION_INTENT "$(MSSQL_ADO_IN_APPLICATION_INTENT_MSSQL_ADO_1)"
+GUI CHOICE MSSQL_ADO_IN_APPLICATION_INTENT_MSSQL_ADO_1 ReadWrite%ReadOnly Application Intent
+# ============================================================================
+# This keyword controls how many records to retrieve at one time into local
+# memory from the provider
+DEFAULT_MACRO MSSQL_ADO_IN_READ_CACHE_SIZE_MSSQL_ADO_1 10
+MSSQL_ADO_1_READ_CACHE_SIZE "$(MSSQL_ADO_IN_READ_CACHE_SIZE_MSSQL_ADO_1)"
+GUI OPTIONAL TEXT MSSQL_ADO_IN_READ_CACHE_SIZE_MSSQL_ADO_1 Number Of Records To Fetch At A Time
+# ============================================================================
+# The following specifies an SQL command to execute before opening the first
+# table.
+DEFAULT_MACRO MSSQL_ADO_IN_BEGIN_SQL{0}_MSSQL_ADO_1 
+MSSQL_ADO_1_BEGIN_SQL{0} "$(MSSQL_ADO_IN_BEGIN_SQL{0}_MSSQL_ADO_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG MSSQL_ADO_IN_BEGIN_SQL{0}_MSSQL_ADO_1 MODE,SQL;FORMAT,MSSQL_ADO SQL To Run Before Read
+# ============================================================================
+# The following specifies an SQL command to execute after closing all the
+# tables.
+DEFAULT_MACRO MSSQL_ADO_IN_END_SQL{0}_MSSQL_ADO_1 
+MSSQL_ADO_1_END_SQL{0} "$(MSSQL_ADO_IN_END_SQL{0}_MSSQL_ADO_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG MSSQL_ADO_IN_END_SQL{0}_MSSQL_ADO_1 MODE,SQL;FORMAT,MSSQL_ADO SQL To Run After Read
+DEFAULT_MACRO MSSQL_ADO_IN_CREATE_FEATURE_TABLES_FROM_DATA_MSSQL_ADO_1 Yes
+MSSQL_ADO_1_CREATE_FEATURE_TABLES_FROM_DATA "$(MSSQL_ADO_IN_CREATE_FEATURE_TABLES_FROM_DATA_MSSQL_ADO_1)"
+# ============================================================================
+DEFAULT_MACRO MSSQL_ADO_IN_ATTRIBUTE_READING_MSSQL_ADO_1 DEFLINE_ATTRS
+MSSQL_ADO_1_ATTRIBUTE_READING "$(MSSQL_ADO_IN_ATTRIBUTE_READING_MSSQL_ADO_1)"
+# ============================================================================
+MSSQL_ADO_1_GENERATE_FME_BUILD_NUM 21306
+MSSQL_ADO_1_DATASET "$(SourceDataset_MSSQL_ADO_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
 MACRO WB_KEYWORD "XLSXW_1"
 #! END_WB_HEADER
 #! START_DEST_HEADER XLSXW XLSXW_1
@@ -5072,10 +5426,11 @@ DEFAULT_MACRO DATASET_KEYWORD_SCHEMA_1 SCHEMA_1
 DEFAULT_MACRO DATASET_KEYWORD_ORACLE_SPATIAL_1 ORACLE_SPATIAL_1
 DEFAULT_MACRO DATASET_KEYWORD_ORACLE_NONSPATIAL_1 ORACLE_NONSPATIAL_1
 DEFAULT_MACRO DATASET_KEYWORD_POSTGIS_1 POSTGIS_1
+DEFAULT_MACRO DATASET_KEYWORD_MSSQL_ADO_1 MSSQL_ADO_1
 DEFAULT_MACRO DATASET_KEYWORD_XLSXW_1 XLSXW_1
 # -------------------------------------------------------------------------
 
-SCHEMA_1_READER_META_ATTRIBUTES fme_basename fme_feature_type fme_dataset
+SCHEMA_1_READER_META_ATTRIBUTES fme_basename fme_dataset fme_feature_type
 
 # -------------------------------------------------------------------------
 
@@ -5091,9 +5446,14 @@ POSTGIS_1_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
+MSSQL_ADO_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
 ORACLE_SPATIAL_1_FEATURE_TYPES $(InData-DatabaseTable)
 ORACLE_NONSPATIAL_1_FEATURE_TYPES $(InData-DatabaseTable)
 POSTGIS_1_FEATURE_TYPES $(InData-DatabaseTable)
+MSSQL_ADO_1_FEATURE_TYPES $(InData-DatabaseTable)
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
@@ -5140,13 +5500,13 @@ FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_<lt>UNFILTERED<gt> INPUT FEATUR
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {YES} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_3f60a412_4235_48f8_9410_9e5c590b24870_replacer { findText replaceText invalidValue} {     set attrs [split \"fme_data_type,native_data_type\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE TestFilter_POSTGIS    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_3f60a412_4235_48f8_9410_9e5c590b24870_replacer {<comma>PrimaryKey} {} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_874d68cc_9fc7_49dd_89bd_097decac5e991_replacer { findText replaceText invalidValue} {     set attrs [split \"fme_data_type,native_data_type\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE TestFilter_POSTGIS    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_874d68cc_9fc7_49dd_89bd_097decac5e991_replacer {<comma>PrimaryKey} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {YES} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_2_1c7c533b_a6d4_4ef4_bb98_105fca3c94670_replacer { findText replaceText invalidValue} {     set attrs [split \"fme_data_type,native_data_type\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer_2    INPUT  FEATURE_TYPE StringReplacer_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_2_OUTPUT         @Tcl2("StringReplacer_2_1c7c533b_a6d4_4ef4_bb98_105fca3c94670_replacer {<comma>BTREE} {} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_2_003415c4_e641_43fe_a156_ef2b0ddadc9c1_replacer { findText replaceText invalidValue} {     set attrs [split \"fme_data_type,native_data_type\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer_2    INPUT  FEATURE_TYPE StringReplacer_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_2_OUTPUT         @Tcl2("StringReplacer_2_003415c4_e641_43fe_a156_ef2b0ddadc9c1_replacer {<comma>BTREE} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} SortFactory    FACTORY_NAME { FeatureHolder }    INPUT  FEATURE_TYPE StringReplacer_2_OUTPUT    INPUT  FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>    FLUSH_WHEN_GROUPS_CHANGE { No }    OUTPUT { SORTED FEATURE_TYPE FeatureHolder_OUTPUT          }
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureHolder OUTPUT Splitter"   INPUT FEATURE_TYPE FeatureHolder_OUTPUT   OUTPUT FEATURE_TYPE FeatureHolder_OUTPUT_0_KLgW8kDgBx4=   OUTPUT FEATURE_TYPE FeatureHolder_OUTPUT_1_UIyMFea60+w=
@@ -5171,7 +5531,7 @@ MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_TRANSFORMER_GROUP
 MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_SUB_DOC_NAME DTStamperYYYY-MM-DD_HH:MI:SS.sss
 DEFAULT_MACRO DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input1639414240 Input Splitter"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input1643056842 Input Splitter"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 DEFAULT_MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeStamper_EXPRESSION
 INCLUDE [    set expression {<at>DateTimeCast<openparen><at>DateTimeNow<openparen>local<closeparen><comma>datetime<closeparen>};    if { "NO" eq "NO" } {        set expression <at>TimeZoneRemove<openparen>$expression<closeparen>;    };    puts "MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeStamper_EXPRESSION $expression"; ]
@@ -5187,13 +5547,13 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.ss
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_9f7991e1_1800_451c_9584_3a1eac816b400_replacer { findText replaceText invalidValue} {     set attrs [split \"_dts\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_9f7991e1_1800_451c_9584_3a1eac816b400_replacer {<backslash>.<backslash>d*} {} {_FME_NO_OP_}")
+Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_64827537_7a83_46c3_ba4d_413e31948f8d3_replacer { findText replaceText invalidValue} {     set attrs [split \"_dts\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_64827537_7a83_46c3_ba4d_413e31948f8d3_replacer {<backslash>.<backslash>d*} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_619f8fbf_9c58_45dc_9080_cf78af4468290_replacer { findText replaceText invalidValue} {     set attrs [split \"_mils\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_619f8fbf_9c58_45dc_9080_cf78af4468290_replacer {.*<backslash>.} {} {_FME_NO_OP_}")
+Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_d6c4c836_10d7_467d_983b_6a953fd3777b3_replacer { findText replaceText invalidValue} {     set attrs [split \"_mils\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_d6c4c836_10d7_467d_983b_6a953fd3777b3_replacer {.*<backslash>.} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 # Since the Tcl "END" index specification starts at -1 for the second
 # last character, and we've defined -1 to be the last charater, we've got
@@ -5211,8 +5571,8 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC }    } else {        puts "MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover }    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringConcatenator_OUTPUT"    OUTPUT { FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"        @RemoveAttributes(fme_encoded,_mils,_dts,_subMils)        $($(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output1639414240 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>1639414240 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeConverter_<REJECTED>"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>" @RemoveAttributes(_dts)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output1643056842 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>1643056842 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeConverter_<REJECTED>"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>" @RemoveAttributes(_dts)
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DTStamperYYYY-MM-DD_HH:MI:SS.sss_3 Output Output Renamer/Nuker"   INPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_3_Output   OUTPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_3_Output
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DTStamperYYYY-MM-DD_HH:MI:SS.sss_3 <Rejected> Output Renamer/Nuker"   INPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_3_<Rejected>
@@ -5240,24 +5600,24 @@ Tcl2 proc quotifyForParameterFileV3a { sourceString } {   if {[string length $so
 # literal value or resolved expression value resulting from @EvaluateExpression().
 # Each value part had to be wwjd encoded because mapping file parsing was mangling
 # the values by removing double quotes and spaces when passed in to this Tcl routine.
-Tcl2 proc Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_runner { parmListString workspaceFile } {    global Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands;    global Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_batch_count;    incr Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_batch_count 0;    if { [info exists Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands] == 0 } {       set Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands {};    };    set workspaceFileUnix [regsub -all {\\} $workspaceFile {/}];    set comment    {        Build up the command line in a list, which we'll write it out to a        parameter file.    };    set commandArguments {};    set commandArgumentsToLog {};    set workspaceToRun [quotifyForParameterFileV3a $workspaceFileUnix];    lappend commandArguments $workspaceToRun;    lappend commandArgumentsToLog $workspaceToRun;    set parameterList [split $parmListString \x07];    set parmTypes [split {DATETIME,TEXT,TEXT,CHOICE,TEXT_EDIT_OR_NUM_MULTI_FEATURE,TEXT,TEXT,TEXT,TEXT} {,}];    foreach {parmName parmValue} $parameterList {parmType} $parmTypes {      set parmValue [quotifyForParameterFileV3a [FME_DecodeText $parmValue]];      lappend commandArguments --$parmName;      lappend commandArgumentsToLog --$parmName;      lappend commandArguments $parmValue;      if { [string first {PASSWORD} $parmType] != -1 } {           lappend commandArgumentsToLog {*********};      } else {           lappend commandArgumentsToLog $parmValue;      };    };    lappend commandArguments {--FME_LAUNCH_VIEWER_APP};    lappend commandArguments {YES};    lappend Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands [join $commandArguments " "];    incr Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_batch_count;    if { {No} == {No} && {1} > 1  && $Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_batch_count <= {1} } {       FME_LogMessage fme_inform 933450 Logg_7 $commandArgumentsToLog;    } else {       FME_LogMessage fme_inform 933451 Logg_7 $commandArgumentsToLog;    };    if { {No} != {No} || $Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_batch_count == {1} } {       set Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_batch_count 0;       set commandFile [Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_writeCommandFile $Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend cmdArgs {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;    } else {       return SUCCESS;    };    return [Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_runCommand $cmdArgs $workspaceFileUnix]; }
+Tcl2 proc Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_runner { parmListString workspaceFile } {    global Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands;    global Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_batch_count;    incr Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_batch_count 0;    if { [info exists Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands] == 0 } {       set Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands {};    };    set workspaceFileUnix [regsub -all {\\} $workspaceFile {/}];    set comment    {        Build up the command line in a list, which we'll write it out to a        parameter file.    };    set commandArguments {};    set commandArgumentsToLog {};    set workspaceToRun [quotifyForParameterFileV3a $workspaceFileUnix];    lappend commandArguments $workspaceToRun;    lappend commandArgumentsToLog $workspaceToRun;    set parameterList [split $parmListString \x07];    set parmTypes [split {DATETIME,TEXT,TEXT,CHOICE,TEXT_EDIT_OR_NUM_MULTI_FEATURE,TEXT,TEXT,TEXT,TEXT} {,}];    foreach {parmName parmValue} $parameterList {parmType} $parmTypes {      set parmValue [quotifyForParameterFileV3a [FME_DecodeText $parmValue]];      lappend commandArguments --$parmName;      lappend commandArgumentsToLog --$parmName;      lappend commandArguments $parmValue;      if { [string first {PASSWORD} $parmType] != -1 } {           lappend commandArgumentsToLog {*********};      } else {           lappend commandArgumentsToLog $parmValue;      };    };    lappend commandArguments {--FME_LAUNCH_VIEWER_APP};    lappend commandArguments {YES};    lappend Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands [join $commandArguments " "];    incr Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_batch_count;    if { {No} == {No} && {1} > 1  && $Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_batch_count <= {1} } {       FME_LogMessage fme_inform 933450 Logg_7 $commandArgumentsToLog;    } else {       FME_LogMessage fme_inform 933451 Logg_7 $commandArgumentsToLog;    };    if { {No} != {No} || $Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_batch_count == {1} } {       set Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_batch_count 0;       set commandFile [Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_writeCommandFile $Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend cmdArgs {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;    } else {       return SUCCESS;    };    return [Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_runCommand $cmdArgs $workspaceFileUnix]; }
 # ------------------------------------------------------------------------------
 # When batching commands, any overflow commands will be run at the end. Say you
 # batch by 2 and there are 5 incoming features. Then we will have 2 batches with
 # 2 commands each and 1 overflow batch with 1 command
-Tcl2 proc Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_flushNeeded { } {    global Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands;    if { [info exists Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands] == 1 && [llength $Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands] > 0 } {       return YES;    } else {       return NO;    }; }
-Tcl2 proc Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_flushPending { } {    global Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands;    if { [info exists Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands] == 1 && [llength $Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands] > 0 } {       set workspaceToRun [lindex $Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands 0];       set commandFile [Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_writeCommandFile $Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend commandArguments {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;       return [Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_runCommand $commandArguments $workspaceToRun];    };    return SUCCESS; }
+Tcl2 proc Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_flushNeeded { } {    global Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands;    if { [info exists Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands] == 1 && [llength $Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands] > 0 } {       return YES;    } else {       return NO;    }; }
+Tcl2 proc Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_flushPending { } {    global Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands;    if { [info exists Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands] == 1 && [llength $Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands] > 0 } {       set workspaceToRun [lindex $Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands 0];       set commandFile [Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_writeCommandFile $Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend commandArguments {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;       return [Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_runCommand $commandArguments $workspaceToRun];    };    return SUCCESS; }
 # ------------------------------------------------------------------------------
 # Build and run the command
-Tcl2 proc Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_runCommand {commandArguments workspaceFileUnix} {    if { {No} == {No} && $::__platform__ != {windows} } {       lappend commandArguments \">$::null_device\";       lappend commandArguments \"<$::null_device\";    };    set comment    {       The below 2>@1 forces any standard error output to go into the msg variable       or to NULL if we're running in the background.    };    if { {No} != {No} || $::__platform__ != {windows} } {       lappend commandArguments {2>@1};    };    if { {No} == {No} } {        lappend commandArguments {&};    };    if { {No} == {No} } {       after 1000;       while { [FME_CanSpawnFme ] == {0} } {             after 2000;       };    };    if { No == {No} && {1} > 1 } {       FME_LogMessage fme_inform 933452 Logg_7 $commandArguments;    } else {       FME_LogMessage fme_inform 933453 Logg_7 $commandArguments;    };    if { $::__platform__ == {windows} && {No} == {No} } {       set comment       {          Only on Windows in non-blocking mode we convert Tcl list to string joined          by space (affectively flattening the list). Prior to this we have already          ensured that in this mode paths are always quoted.       };       set commandArguments [join $commandArguments " "];       set catchResult [catch {FME_Execute System RETURN_PID_IF_ASYNC $commandArguments} msg];    } else {       set catchResult [catch {eval [concat exec $commandArguments]} msg];    };    if { $catchResult } {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn 933454 Logg_7 $workspaceFileUnix "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_process_count;       incr Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_process_count;       if { {No} == {No} } {           FME_LogMessage fme_inform 933455 Logg_7 $workspaceFileUnix;           global Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_all_processes;           lappend Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_all_processes $msg;       } else {           FME_LogMessage fme_inform 933456 Logg_7 $workspaceFileUnix;       };       return SUCCESS;    }; }
+Tcl2 proc Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_runCommand {commandArguments workspaceFileUnix} {    if { {No} == {No} && $::__platform__ != {windows} } {       lappend commandArguments \">$::null_device\";       lappend commandArguments \"<$::null_device\";    };    set comment    {       The below 2>@1 forces any standard error output to go into the msg variable       or to NULL if we're running in the background.    };    if { {No} != {No} || $::__platform__ != {windows} } {       lappend commandArguments {2>@1};    };    if { {No} == {No} } {        lappend commandArguments {&};    };    if { {No} == {No} } {       after 1000;       while { [FME_CanSpawnFme ] == {0} } {             after 2000;       };    };    if { No == {No} && {1} > 1 } {       FME_LogMessage fme_inform 933452 Logg_7 $commandArguments;    } else {       FME_LogMessage fme_inform 933453 Logg_7 $commandArguments;    };    if { $::__platform__ == {windows} && {No} == {No} } {       set comment       {          Only on Windows in non-blocking mode we convert Tcl list to string joined          by space (affectively flattening the list). Prior to this we have already          ensured that in this mode paths are always quoted.       };       set commandArguments [join $commandArguments " "];       set catchResult [catch {FME_Execute System RETURN_PID_IF_ASYNC $commandArguments} msg];    } else {       set catchResult [catch {eval [concat exec $commandArguments]} msg];    };    if { $catchResult } {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn 933454 Logg_7 $workspaceFileUnix "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_process_count;       incr Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_process_count;       if { {No} == {No} } {           FME_LogMessage fme_inform 933455 Logg_7 $workspaceFileUnix;           global Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_all_processes;           lappend Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_all_processes $msg;       } else {           FME_LogMessage fme_inform 933456 Logg_7 $workspaceFileUnix;       };       return SUCCESS;    }; }
 # ------------------------------------------------------------------------------
 # Create and write commands to command file
-Tcl2 proc Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_writeCommandFile { commands } {    set commandFile [FME_TempFilename wsr_cm_];    if { [catch { set cmdFileId [open $commandFile "w"] } msg ] } {       FME_LogMessage fme_warn 933457 Logg_7 $commandFile "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return {};    };    fconfigure $cmdFileId -encoding utf-8;    puts $cmdFileId {#! encoding=\"utf-8\"};    puts $cmdFileId DELETE_FILE_AFTER_LOAD;    foreach {command} $commands {       puts $cmdFileId $command;    };    close $cmdFileId;    return $commandFile; }
+Tcl2 proc Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_writeCommandFile { commands } {    set commandFile [FME_TempFilename wsr_cm_];    if { [catch { set cmdFileId [open $commandFile "w"] } msg ] } {       FME_LogMessage fme_warn 933457 Logg_7 $commandFile "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return {};    };    fconfigure $cmdFileId -encoding utf-8;    puts $cmdFileId {#! encoding=\"utf-8\"};    puts $cmdFileId DELETE_FILE_AFTER_LOAD;    foreach {command} $commands {       puts $cmdFileId $command;    };    close $cmdFileId;    return $commandFile; }
 # ------------------------------------------------------------------------------
 # Use \x07 (BELL) character as the delimiter when writing WORKSPACE_PARAMETERS
 # to mapping file
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_7_ExecutorAndRouter }    INPUT  FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_3_Output    TEST @Tcl2("Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_runner {EX_DATE_TIME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_datetimestamp<closeparen>,Logg_7)EX_PROCESS_NAME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessName<closeparen>,Logg_7)EX_ID@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessID<closeparen>,Logg_7)EX_TYPEKLARTEX@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Logg<closeparen>,Logg_7)EX_WorkSpace@EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),Logg_7)EX_ROT_DIRECTORY@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>RotDirectory<closeparen>,Logg_7)EX_PROCESS_MODUL_NAME@EvaluateExpression(FDIV,STRING_ENCODED,$(ProcessModulName$encode),Logg_7)IsWholeProcessRun@EvaluateExpression(FDIV,STRING_ENCODED,$(IsWholeProcessRun$encode),Logg_7)} {@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR$encode)_logg.fmw,Logg_7)}") == SUCCESS
-Tcl2 proc Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_summarizer { } {     global Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_process_count 0;     FME_SetAttribute _proc_count [set Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_process_count];     global Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_all_processes;     if {[info exists Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_all_processes]} {         set index 0;         foreach pid [set Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_7_ExecutorAndRouter }    INPUT  FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_3_Output    TEST @Tcl2("Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_runner {EX_DATE_TIME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_datetimestamp<closeparen>,Logg_7)EX_PROCESS_NAME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessName<closeparen>,Logg_7)EX_ID@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessID<closeparen>,Logg_7)EX_TYPEKLARTEX@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Logg<closeparen>,Logg_7)EX_WorkSpace@EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),Logg_7)EX_ROT_DIRECTORY@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>RotDirectory<closeparen>,Logg_7)EX_PROCESS_MODUL_NAME@EvaluateExpression(FDIV,STRING_ENCODED,$(ProcessModulName$encode),Logg_7)IsWholeProcessRun@EvaluateExpression(FDIV,STRING_ENCODED,$(IsWholeProcessRun$encode),Logg_7)} {@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR$encode)_logg.fmw,Logg_7)}") == SUCCESS
+Tcl2 proc Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_summarizer { } {     global Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_process_count 0;     FME_SetAttribute _proc_count [set Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_process_count];     global Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_all_processes;     if {[info exists Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_all_processes]} {         set index 0;         foreach pid [set Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
 # ------------------------------------------------------------------------------
 # Clean up the last batch, if anything was pending.
 FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Logg_7_CleanerUpperOfBatchesInitiator }    CREATE_AT_END yes    OUTPUT { FEATURE_TYPE Logg_7___cleanup___ }
@@ -5267,9 +5627,9 @@ FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Logg_7_CleanerUpperOfBatchesIn
 # As it stands, we are set up here to send out one "dud" completely empty feature that will
 # go out FAILURE if there was a problem. It will have no attributes. Only sent out if there was something
 # left to process and the run did not succeed.
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_7_CleanerUpperOfBatchesDoWeNeedToDoIt }    INPUT FEATURE_TYPE Logg_7___cleanup___    TEST { @Tcl2(Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_flushNeeded) == YES }    OUTPUT PASSED FEATURE_TYPE Logg_7___cleanup___
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_7_CleanerUpperOfBatchesDoWeNeedToDoIt }    INPUT FEATURE_TYPE Logg_7___cleanup___    TEST { @Tcl2(Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_flushNeeded) == YES }    OUTPUT PASSED FEATURE_TYPE Logg_7___cleanup___
 # Note that we don't output anything if we succeed -- we only catch and output the failure
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_7_CleanerUpperOfBatchesRunner }    INPUT FEATURE_TYPE Logg_7___cleanup___    TEST { @Tcl2(Logg_7_c13b9f44_4e6b_4b72_934e_a33dcf817ea80_flushPending) == SUCCESS }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_7_CleanerUpperOfBatchesRunner }    INPUT FEATURE_TYPE Logg_7___cleanup___    TEST { @Tcl2(Logg_7_01b24e4a_5b8e_4ba9_928d_6bfcca9c5b741_flushPending) == SUCCESS }
 FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Logg_7_SummaryMaker }    CREATE_AT_END yes
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "ConcatenatedSample_2 StringAttribute Input Collector"   INPUT FEATURE_TYPE ListExploder_<REJECTED>   OUTPUT FEATURE_TYPE ConcatenatedSample_2_StringAttribute
@@ -5282,7 +5642,7 @@ MACRO $(ConcatenatedSample_WORKSPACE_NAME)_FME_DATASET <at>Value<openparen>fme_d
 MACRO $(ConcatenatedSample_WORKSPACE_NAME)_NumberToShorten 3
 DEFAULT_MACRO ConcatenatedSample_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(ConcatenatedSample_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(ConcatenatedSample_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute1639414240 Input Splitter"   INPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute"   OUTPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,fme_dataset,$($(ConcatenatedSample_WORKSPACE_NAME)_FME_DATASET),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute1643056842 Input Splitter"   INPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute"   OUTPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,fme_dataset,$($(ConcatenatedSample_WORKSPACE_NAME)_FME_DATASET),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 DEFAULT_MACRO $(ConcatenatedSample_WORKSPACE_NAME)_Aggregator_BREAK_ATTR
 FACTORY_DEF {*} AggregateFactory    FACTORY_NAME $(ConcatenatedSample_WORKSPACE_NAME)_Aggregator    INPUT  FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute"    MODE ONE_LEVEL    $($(ConcatenatedSample_WORKSPACE_NAME)_Aggregator_BREAK_ATTR)    REMOVE_GEOMETRY NO    COUNT_ATTRIBUTE "TotaltAntal"    ACCUMULATE_ATTRIBUTES One    LIST_NAME "dataset{}"    LIST_ATTRS_TO_INCLUDE { fme_dataset }    LIST_ATTRS_TO_INCLUDE_MODE SELECTED    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_Aggregator_AGGREGATE"
@@ -5316,7 +5676,7 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(ConcatenatedSample_WORKSPACE_NAME
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split "dataset<opencurly><closecurly> dataset<opencurly><closecurly>.fme_dataset"] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC }    } else {        puts "MACRO $(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover }    INPUT  FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringConcatenator_OUTPUT_-__StringConcatenator_Output_Output"    OUTPUT { FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_OUTPUT"        @RemoveAttributes(fme_encoded,fme_dataset,_ds1_fme_dataset,_dsn_fme_dataset,dataset<opencurly>0<closecurly>.fme_dataset,_ds0_fme_dataset)        $($(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ConcatenatedSample_WORKSPACE_NAME)_StringConcatenatedSample1639414240 Output Collector"   INPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringConcatenatedSample"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ConcatenatedSample_WORKSPACE_NAME)_StringConcatenatedSample1643056842 Output Collector"   INPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringConcatenatedSample"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(ConcatenatedSample_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "ConcatenatedSample_2 StringConcatenatedSample Output Renamer/Nuker"   INPUT FEATURE_TYPE ConcatenatedSample_2_StringConcatenatedSample   OUTPUT FEATURE_TYPE ConcatenatedSample_2_StringConcatenatedSample
 # -------------------------------------------------------------------------
@@ -5330,7 +5690,7 @@ MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_TRANSFORMER_GROUP
 MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_SUB_DOC_NAME DTStamperYYYY-MM-DD_HH:MI:SS.sss
 DEFAULT_MACRO DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input1639414240 Input Splitter"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input1643056842 Input Splitter"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 DEFAULT_MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeStamper_EXPRESSION
 INCLUDE [    set expression {<at>DateTimeCast<openparen><at>DateTimeNow<openparen>local<closeparen><comma>datetime<closeparen>};    if { "NO" eq "NO" } {        set expression <at>TimeZoneRemove<openparen>$expression<closeparen>;    };    puts "MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeStamper_EXPRESSION $expression"; ]
@@ -5346,13 +5706,13 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.ss
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_9f7991e1_1800_451c_9584_3a1eac816b401_replacer { findText replaceText invalidValue} {     set attrs [split \"_dts\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_9f7991e1_1800_451c_9584_3a1eac816b401_replacer {<backslash>.<backslash>d*} {} {_FME_NO_OP_}")
+Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_64827537_7a83_46c3_ba4d_413e31948f8d4_replacer { findText replaceText invalidValue} {     set attrs [split \"_dts\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_64827537_7a83_46c3_ba4d_413e31948f8d4_replacer {<backslash>.<backslash>d*} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_619f8fbf_9c58_45dc_9080_cf78af4468291_replacer { findText replaceText invalidValue} {     set attrs [split \"_mils\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_619f8fbf_9c58_45dc_9080_cf78af4468291_replacer {.*<backslash>.} {} {_FME_NO_OP_}")
+Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_d6c4c836_10d7_467d_983b_6a953fd3777b4_replacer { findText replaceText invalidValue} {     set attrs [split \"_mils\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_d6c4c836_10d7_467d_983b_6a953fd3777b4_replacer {.*<backslash>.} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 # Since the Tcl "END" index specification starts at -1 for the second
 # last character, and we've defined -1 to be the last charater, we've got
@@ -5370,8 +5730,8 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC }    } else {        puts "MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover }    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringConcatenator_OUTPUT"    OUTPUT { FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"        @RemoveAttributes(fme_encoded,_mils,_dts,_subMils)        $($(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output1639414240 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>1639414240 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeConverter_<REJECTED>"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>" @RemoveAttributes(_dts)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output1643056842 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>1643056842 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeConverter_<REJECTED>"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>" @RemoveAttributes(_dts)
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DTStamperYYYY-MM-DD_HH:MI:SS.sss_2 Output Output Renamer/Nuker"   INPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_2_Output   OUTPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_2_Output
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DTStamperYYYY-MM-DD_HH:MI:SS.sss_2 <Rejected> Output Renamer/Nuker"   INPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_2_<Rejected>
@@ -5399,24 +5759,24 @@ Tcl2 proc quotifyForParameterFileV3a { sourceString } {   if {[string length $so
 # literal value or resolved expression value resulting from @EvaluateExpression().
 # Each value part had to be wwjd encoded because mapping file parsing was mangling
 # the values by removing double quotes and spaces when passed in to this Tcl routine.
-Tcl2 proc Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_runner { parmListString workspaceFile } {    global Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands;    global Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_batch_count;    incr Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_batch_count 0;    if { [info exists Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands] == 0 } {       set Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands {};    };    set workspaceFileUnix [regsub -all {\\} $workspaceFile {/}];    set comment    {        Build up the command line in a list, which we'll write it out to a        parameter file.    };    set commandArguments {};    set commandArgumentsToLog {};    set workspaceToRun [quotifyForParameterFileV3a $workspaceFileUnix];    lappend commandArguments $workspaceToRun;    lappend commandArgumentsToLog $workspaceToRun;    set parameterList [split $parmListString \x07];    set parmTypes [split {DATETIME,TEXT,TEXT,CHOICE,TEXT_EDIT_OR_NUM_MULTI_FEATURE,TEXT,TEXT,TEXT,TEXT} {,}];    foreach {parmName parmValue} $parameterList {parmType} $parmTypes {      set parmValue [quotifyForParameterFileV3a [FME_DecodeText $parmValue]];      lappend commandArguments --$parmName;      lappend commandArgumentsToLog --$parmName;      lappend commandArguments $parmValue;      if { [string first {PASSWORD} $parmType] != -1 } {           lappend commandArgumentsToLog {*********};      } else {           lappend commandArgumentsToLog $parmValue;      };    };    lappend commandArguments {--FME_LAUNCH_VIEWER_APP};    lappend commandArguments {YES};    lappend Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands [join $commandArguments " "];    incr Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_batch_count;    if { {No} == {No} && {1} > 1  && $Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_batch_count <= {1} } {       FME_LogMessage fme_inform 933450 Logg_3 $commandArgumentsToLog;    } else {       FME_LogMessage fme_inform 933451 Logg_3 $commandArgumentsToLog;    };    if { {No} != {No} || $Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_batch_count == {1} } {       set Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_batch_count 0;       set commandFile [Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_writeCommandFile $Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend cmdArgs {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;    } else {       return SUCCESS;    };    return [Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_runCommand $cmdArgs $workspaceFileUnix]; }
+Tcl2 proc Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_runner { parmListString workspaceFile } {    global Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands;    global Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_batch_count;    incr Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_batch_count 0;    if { [info exists Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands] == 0 } {       set Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands {};    };    set workspaceFileUnix [regsub -all {\\} $workspaceFile {/}];    set comment    {        Build up the command line in a list, which we'll write it out to a        parameter file.    };    set commandArguments {};    set commandArgumentsToLog {};    set workspaceToRun [quotifyForParameterFileV3a $workspaceFileUnix];    lappend commandArguments $workspaceToRun;    lappend commandArgumentsToLog $workspaceToRun;    set parameterList [split $parmListString \x07];    set parmTypes [split {DATETIME,TEXT,TEXT,CHOICE,TEXT_EDIT_OR_NUM_MULTI_FEATURE,TEXT,TEXT,TEXT,TEXT} {,}];    foreach {parmName parmValue} $parameterList {parmType} $parmTypes {      set parmValue [quotifyForParameterFileV3a [FME_DecodeText $parmValue]];      lappend commandArguments --$parmName;      lappend commandArgumentsToLog --$parmName;      lappend commandArguments $parmValue;      if { [string first {PASSWORD} $parmType] != -1 } {           lappend commandArgumentsToLog {*********};      } else {           lappend commandArgumentsToLog $parmValue;      };    };    lappend commandArguments {--FME_LAUNCH_VIEWER_APP};    lappend commandArguments {YES};    lappend Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands [join $commandArguments " "];    incr Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_batch_count;    if { {No} == {No} && {1} > 1  && $Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_batch_count <= {1} } {       FME_LogMessage fme_inform 933450 Logg_3 $commandArgumentsToLog;    } else {       FME_LogMessage fme_inform 933451 Logg_3 $commandArgumentsToLog;    };    if { {No} != {No} || $Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_batch_count == {1} } {       set Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_batch_count 0;       set commandFile [Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_writeCommandFile $Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend cmdArgs {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;    } else {       return SUCCESS;    };    return [Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_runCommand $cmdArgs $workspaceFileUnix]; }
 # ------------------------------------------------------------------------------
 # When batching commands, any overflow commands will be run at the end. Say you
 # batch by 2 and there are 5 incoming features. Then we will have 2 batches with
 # 2 commands each and 1 overflow batch with 1 command
-Tcl2 proc Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_flushNeeded { } {    global Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands;    if { [info exists Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands] == 1 && [llength $Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands] > 0 } {       return YES;    } else {       return NO;    }; }
-Tcl2 proc Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_flushPending { } {    global Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands;    if { [info exists Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands] == 1 && [llength $Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands] > 0 } {       set workspaceToRun [lindex $Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands 0];       set commandFile [Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_writeCommandFile $Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend commandArguments {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;       return [Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_runCommand $commandArguments $workspaceToRun];    };    return SUCCESS; }
+Tcl2 proc Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_flushNeeded { } {    global Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands;    if { [info exists Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands] == 1 && [llength $Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands] > 0 } {       return YES;    } else {       return NO;    }; }
+Tcl2 proc Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_flushPending { } {    global Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands;    if { [info exists Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands] == 1 && [llength $Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands] > 0 } {       set workspaceToRun [lindex $Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands 0];       set commandFile [Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_writeCommandFile $Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend commandArguments {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;       return [Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_runCommand $commandArguments $workspaceToRun];    };    return SUCCESS; }
 # ------------------------------------------------------------------------------
 # Build and run the command
-Tcl2 proc Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_runCommand {commandArguments workspaceFileUnix} {    if { {No} == {No} && $::__platform__ != {windows} } {       lappend commandArguments \">$::null_device\";       lappend commandArguments \"<$::null_device\";    };    set comment    {       The below 2>@1 forces any standard error output to go into the msg variable       or to NULL if we're running in the background.    };    if { {No} != {No} || $::__platform__ != {windows} } {       lappend commandArguments {2>@1};    };    if { {No} == {No} } {        lappend commandArguments {&};    };    if { {No} == {No} } {       after 1000;       while { [FME_CanSpawnFme ] == {0} } {             after 2000;       };    };    if { No == {No} && {1} > 1 } {       FME_LogMessage fme_inform 933452 Logg_3 $commandArguments;    } else {       FME_LogMessage fme_inform 933453 Logg_3 $commandArguments;    };    if { $::__platform__ == {windows} && {No} == {No} } {       set comment       {          Only on Windows in non-blocking mode we convert Tcl list to string joined          by space (affectively flattening the list). Prior to this we have already          ensured that in this mode paths are always quoted.       };       set commandArguments [join $commandArguments " "];       set catchResult [catch {FME_Execute System RETURN_PID_IF_ASYNC $commandArguments} msg];    } else {       set catchResult [catch {eval [concat exec $commandArguments]} msg];    };    if { $catchResult } {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn 933454 Logg_3 $workspaceFileUnix "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_process_count;       incr Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_process_count;       if { {No} == {No} } {           FME_LogMessage fme_inform 933455 Logg_3 $workspaceFileUnix;           global Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_all_processes;           lappend Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_all_processes $msg;       } else {           FME_LogMessage fme_inform 933456 Logg_3 $workspaceFileUnix;       };       return SUCCESS;    }; }
+Tcl2 proc Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_runCommand {commandArguments workspaceFileUnix} {    if { {No} == {No} && $::__platform__ != {windows} } {       lappend commandArguments \">$::null_device\";       lappend commandArguments \"<$::null_device\";    };    set comment    {       The below 2>@1 forces any standard error output to go into the msg variable       or to NULL if we're running in the background.    };    if { {No} != {No} || $::__platform__ != {windows} } {       lappend commandArguments {2>@1};    };    if { {No} == {No} } {        lappend commandArguments {&};    };    if { {No} == {No} } {       after 1000;       while { [FME_CanSpawnFme ] == {0} } {             after 2000;       };    };    if { No == {No} && {1} > 1 } {       FME_LogMessage fme_inform 933452 Logg_3 $commandArguments;    } else {       FME_LogMessage fme_inform 933453 Logg_3 $commandArguments;    };    if { $::__platform__ == {windows} && {No} == {No} } {       set comment       {          Only on Windows in non-blocking mode we convert Tcl list to string joined          by space (affectively flattening the list). Prior to this we have already          ensured that in this mode paths are always quoted.       };       set commandArguments [join $commandArguments " "];       set catchResult [catch {FME_Execute System RETURN_PID_IF_ASYNC $commandArguments} msg];    } else {       set catchResult [catch {eval [concat exec $commandArguments]} msg];    };    if { $catchResult } {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn 933454 Logg_3 $workspaceFileUnix "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_process_count;       incr Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_process_count;       if { {No} == {No} } {           FME_LogMessage fme_inform 933455 Logg_3 $workspaceFileUnix;           global Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_all_processes;           lappend Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_all_processes $msg;       } else {           FME_LogMessage fme_inform 933456 Logg_3 $workspaceFileUnix;       };       return SUCCESS;    }; }
 # ------------------------------------------------------------------------------
 # Create and write commands to command file
-Tcl2 proc Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_writeCommandFile { commands } {    set commandFile [FME_TempFilename wsr_cm_];    if { [catch { set cmdFileId [open $commandFile "w"] } msg ] } {       FME_LogMessage fme_warn 933457 Logg_3 $commandFile "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return {};    };    fconfigure $cmdFileId -encoding utf-8;    puts $cmdFileId {#! encoding=\"utf-8\"};    puts $cmdFileId DELETE_FILE_AFTER_LOAD;    foreach {command} $commands {       puts $cmdFileId $command;    };    close $cmdFileId;    return $commandFile; }
+Tcl2 proc Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_writeCommandFile { commands } {    set commandFile [FME_TempFilename wsr_cm_];    if { [catch { set cmdFileId [open $commandFile "w"] } msg ] } {       FME_LogMessage fme_warn 933457 Logg_3 $commandFile "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return {};    };    fconfigure $cmdFileId -encoding utf-8;    puts $cmdFileId {#! encoding=\"utf-8\"};    puts $cmdFileId DELETE_FILE_AFTER_LOAD;    foreach {command} $commands {       puts $cmdFileId $command;    };    close $cmdFileId;    return $commandFile; }
 # ------------------------------------------------------------------------------
 # Use \x07 (BELL) character as the delimiter when writing WORKSPACE_PARAMETERS
 # to mapping file
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_3_ExecutorAndRouter }    INPUT  FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_2_Output    TEST @Tcl2("Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_runner {EX_DATE_TIME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_datetimestamp<closeparen>,Logg_3)EX_PROCESS_NAME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessName<closeparen>,Logg_3)EX_ID@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessID<closeparen>,Logg_3)EX_TYPEVARNINGEX@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Logg<closeparen>,Logg_3)EX_WorkSpace@EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),Logg_3)EX_ROT_DIRECTORY@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>RotDirectory<closeparen>,Logg_3)EX_PROCESS_MODUL_NAME@EvaluateExpression(FDIV,STRING_ENCODED,$(ProcessModulName$encode),Logg_3)IsWholeProcessRun@EvaluateExpression(FDIV,STRING_ENCODED,$(IsWholeProcessRun$encode),Logg_3)} {@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR$encode)_logg.fmw,Logg_3)}") == SUCCESS
-Tcl2 proc Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_summarizer { } {     global Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_process_count 0;     FME_SetAttribute _proc_count [set Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_process_count];     global Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_all_processes;     if {[info exists Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_all_processes]} {         set index 0;         foreach pid [set Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_3_ExecutorAndRouter }    INPUT  FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_2_Output    TEST @Tcl2("Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_runner {EX_DATE_TIME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_datetimestamp<closeparen>,Logg_3)EX_PROCESS_NAME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessName<closeparen>,Logg_3)EX_ID@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessID<closeparen>,Logg_3)EX_TYPEVARNINGEX@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Logg<closeparen>,Logg_3)EX_WorkSpace@EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),Logg_3)EX_ROT_DIRECTORY@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>RotDirectory<closeparen>,Logg_3)EX_PROCESS_MODUL_NAME@EvaluateExpression(FDIV,STRING_ENCODED,$(ProcessModulName$encode),Logg_3)IsWholeProcessRun@EvaluateExpression(FDIV,STRING_ENCODED,$(IsWholeProcessRun$encode),Logg_3)} {@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR$encode)_logg.fmw,Logg_3)}") == SUCCESS
+Tcl2 proc Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_summarizer { } {     global Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_process_count 0;     FME_SetAttribute _proc_count [set Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_process_count];     global Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_all_processes;     if {[info exists Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_all_processes]} {         set index 0;         foreach pid [set Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
 # ------------------------------------------------------------------------------
 # Clean up the last batch, if anything was pending.
 FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Logg_3_CleanerUpperOfBatchesInitiator }    CREATE_AT_END yes    OUTPUT { FEATURE_TYPE Logg_3___cleanup___ }
@@ -5426,9 +5786,9 @@ FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Logg_3_CleanerUpperOfBatchesIn
 # As it stands, we are set up here to send out one "dud" completely empty feature that will
 # go out FAILURE if there was a problem. It will have no attributes. Only sent out if there was something
 # left to process and the run did not succeed.
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_3_CleanerUpperOfBatchesDoWeNeedToDoIt }    INPUT FEATURE_TYPE Logg_3___cleanup___    TEST { @Tcl2(Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_flushNeeded) == YES }    OUTPUT PASSED FEATURE_TYPE Logg_3___cleanup___
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_3_CleanerUpperOfBatchesDoWeNeedToDoIt }    INPUT FEATURE_TYPE Logg_3___cleanup___    TEST { @Tcl2(Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_flushNeeded) == YES }    OUTPUT PASSED FEATURE_TYPE Logg_3___cleanup___
 # Note that we don't output anything if we succeed -- we only catch and output the failure
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_3_CleanerUpperOfBatchesRunner }    INPUT FEATURE_TYPE Logg_3___cleanup___    TEST { @Tcl2(Logg_3_d5837118_b00e_4d34_9d17_88573c402ac50_flushPending) == SUCCESS }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_3_CleanerUpperOfBatchesRunner }    INPUT FEATURE_TYPE Logg_3___cleanup___    TEST { @Tcl2(Logg_3_961d3da7_fc86_4897_8ca9_bfe4a93531131_flushPending) == SUCCESS }
 FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Logg_3_SummaryMaker }    CREATE_AT_END yes
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "ConcatenatedSample StringAttribute Input Collector"   INPUT FEATURE_TYPE UUIDGenerator_2_OUTPUT_1_auHCD7Yu0A0=   OUTPUT FEATURE_TYPE ConcatenatedSample_StringAttribute
@@ -5441,7 +5801,7 @@ MACRO $(ConcatenatedSample_WORKSPACE_NAME)_FME_DATASET <at>Value<openparen>fme_d
 MACRO $(ConcatenatedSample_WORKSPACE_NAME)_NumberToShorten 3
 DEFAULT_MACRO ConcatenatedSample_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(ConcatenatedSample_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(ConcatenatedSample_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute1639414240 Input Splitter"   INPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute"   OUTPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,fme_dataset,$($(ConcatenatedSample_WORKSPACE_NAME)_FME_DATASET),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute1643056842 Input Splitter"   INPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute"   OUTPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,fme_dataset,$($(ConcatenatedSample_WORKSPACE_NAME)_FME_DATASET),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 DEFAULT_MACRO $(ConcatenatedSample_WORKSPACE_NAME)_Aggregator_BREAK_ATTR
 FACTORY_DEF {*} AggregateFactory    FACTORY_NAME $(ConcatenatedSample_WORKSPACE_NAME)_Aggregator    INPUT  FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringAttribute"    MODE ONE_LEVEL    $($(ConcatenatedSample_WORKSPACE_NAME)_Aggregator_BREAK_ATTR)    REMOVE_GEOMETRY NO    COUNT_ATTRIBUTE "TotaltAntal"    ACCUMULATE_ATTRIBUTES One    LIST_NAME "dataset{}"    LIST_ATTRS_TO_INCLUDE { fme_dataset }    LIST_ATTRS_TO_INCLUDE_MODE SELECTED    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_Aggregator_AGGREGATE"
@@ -5475,7 +5835,7 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(ConcatenatedSample_WORKSPACE_NAME
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split "dataset<opencurly><closecurly> dataset<opencurly><closecurly>.fme_dataset"] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC }    } else {        puts "MACRO $(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover }    INPUT  FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringConcatenator_OUTPUT_-__StringConcatenator_Output_Output"    OUTPUT { FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_OUTPUT"        @RemoveAttributes(fme_encoded,fme_dataset,_ds1_fme_dataset,_dsn_fme_dataset,dataset<opencurly>0<closecurly>.fme_dataset,_ds0_fme_dataset)        $($(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ConcatenatedSample_WORKSPACE_NAME)_StringConcatenatedSample1639414240 Output Collector"   INPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringConcatenatedSample"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ConcatenatedSample_WORKSPACE_NAME)_StringConcatenatedSample1643056842 Output Collector"   INPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(ConcatenatedSample_WORKSPACE_NAME)_StringConcatenatedSample"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(ConcatenatedSample_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "ConcatenatedSample StringConcatenatedSample Output Renamer/Nuker"   INPUT FEATURE_TYPE ConcatenatedSample_StringConcatenatedSample   OUTPUT FEATURE_TYPE ConcatenatedSample_StringConcatenatedSample
 # -------------------------------------------------------------------------
@@ -5489,7 +5849,7 @@ MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_TRANSFORMER_GROUP
 MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_SUB_DOC_NAME DTStamperYYYY-MM-DD_HH:MI:SS.sss
 DEFAULT_MACRO DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input1639414240 Input Splitter"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input1643056842 Input Splitter"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 DEFAULT_MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeStamper_EXPRESSION
 INCLUDE [    set expression {<at>DateTimeCast<openparen><at>DateTimeNow<openparen>local<closeparen><comma>datetime<closeparen>};    if { "NO" eq "NO" } {        set expression <at>TimeZoneRemove<openparen>$expression<closeparen>;    };    puts "MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeStamper_EXPRESSION $expression"; ]
@@ -5505,13 +5865,13 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.ss
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_9f7991e1_1800_451c_9584_3a1eac816b402_replacer { findText replaceText invalidValue} {     set attrs [split \"_dts\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_9f7991e1_1800_451c_9584_3a1eac816b402_replacer {<backslash>.<backslash>d*} {} {_FME_NO_OP_}")
+Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_64827537_7a83_46c3_ba4d_413e31948f8d5_replacer { findText replaceText invalidValue} {     set attrs [split \"_dts\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_64827537_7a83_46c3_ba4d_413e31948f8d5_replacer {<backslash>.<backslash>d*} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_619f8fbf_9c58_45dc_9080_cf78af4468292_replacer { findText replaceText invalidValue} {     set attrs [split \"_mils\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_619f8fbf_9c58_45dc_9080_cf78af4468292_replacer {.*<backslash>.} {} {_FME_NO_OP_}")
+Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_d6c4c836_10d7_467d_983b_6a953fd3777b5_replacer { findText replaceText invalidValue} {     set attrs [split \"_mils\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_d6c4c836_10d7_467d_983b_6a953fd3777b5_replacer {.*<backslash>.} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 # Since the Tcl "END" index specification starts at -1 for the second
 # last character, and we've defined -1 to be the last charater, we've got
@@ -5529,8 +5889,8 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC }    } else {        puts "MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover }    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringConcatenator_OUTPUT"    OUTPUT { FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"        @RemoveAttributes(fme_encoded,_mils,_dts,_subMils)        $($(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output1639414240 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>1639414240 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeConverter_<REJECTED>"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>" @RemoveAttributes(_dts)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output1643056842 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>1643056842 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeConverter_<REJECTED>"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>" @RemoveAttributes(_dts)
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DTStamperYYYY-MM-DD_HH:MI:SS.sss Output Output Renamer/Nuker"   INPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_Output   OUTPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_Output
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DTStamperYYYY-MM-DD_HH:MI:SS.sss <Rejected> Output Renamer/Nuker"   INPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_<Rejected>
@@ -5558,24 +5918,24 @@ Tcl2 proc quotifyForParameterFileV3a { sourceString } {   if {[string length $so
 # literal value or resolved expression value resulting from @EvaluateExpression().
 # Each value part had to be wwjd encoded because mapping file parsing was mangling
 # the values by removing double quotes and spaces when passed in to this Tcl routine.
-Tcl2 proc Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_runner { parmListString workspaceFile } {    global Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands;    global Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_batch_count;    incr Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_batch_count 0;    if { [info exists Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands] == 0 } {       set Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands {};    };    set workspaceFileUnix [regsub -all {\\} $workspaceFile {/}];    set comment    {        Build up the command line in a list, which we'll write it out to a        parameter file.    };    set commandArguments {};    set commandArgumentsToLog {};    set workspaceToRun [quotifyForParameterFileV3a $workspaceFileUnix];    lappend commandArguments $workspaceToRun;    lappend commandArgumentsToLog $workspaceToRun;    set parameterList [split $parmListString \x07];    set parmTypes [split {DATETIME,TEXT,TEXT,CHOICE,TEXT_EDIT_OR_NUM_MULTI_FEATURE,TEXT,TEXT,TEXT,TEXT} {,}];    foreach {parmName parmValue} $parameterList {parmType} $parmTypes {      set parmValue [quotifyForParameterFileV3a [FME_DecodeText $parmValue]];      lappend commandArguments --$parmName;      lappend commandArgumentsToLog --$parmName;      lappend commandArguments $parmValue;      if { [string first {PASSWORD} $parmType] != -1 } {           lappend commandArgumentsToLog {*********};      } else {           lappend commandArgumentsToLog $parmValue;      };    };    lappend commandArguments {--FME_LAUNCH_VIEWER_APP};    lappend commandArguments {YES};    lappend Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands [join $commandArguments " "];    incr Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_batch_count;    if { {No} == {No} && {1} > 1  && $Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_batch_count <= {1} } {       FME_LogMessage fme_inform 933450 Logg_2 $commandArgumentsToLog;    } else {       FME_LogMessage fme_inform 933451 Logg_2 $commandArgumentsToLog;    };    if { {No} != {No} || $Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_batch_count == {1} } {       set Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_batch_count 0;       set commandFile [Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_writeCommandFile $Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend cmdArgs {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;    } else {       return SUCCESS;    };    return [Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_runCommand $cmdArgs $workspaceFileUnix]; }
+Tcl2 proc Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_runner { parmListString workspaceFile } {    global Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands;    global Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_batch_count;    incr Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_batch_count 0;    if { [info exists Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands] == 0 } {       set Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands {};    };    set workspaceFileUnix [regsub -all {\\} $workspaceFile {/}];    set comment    {        Build up the command line in a list, which we'll write it out to a        parameter file.    };    set commandArguments {};    set commandArgumentsToLog {};    set workspaceToRun [quotifyForParameterFileV3a $workspaceFileUnix];    lappend commandArguments $workspaceToRun;    lappend commandArgumentsToLog $workspaceToRun;    set parameterList [split $parmListString \x07];    set parmTypes [split {DATETIME,TEXT,TEXT,CHOICE,TEXT_EDIT_OR_NUM_MULTI_FEATURE,TEXT,TEXT,TEXT,TEXT} {,}];    foreach {parmName parmValue} $parameterList {parmType} $parmTypes {      set parmValue [quotifyForParameterFileV3a [FME_DecodeText $parmValue]];      lappend commandArguments --$parmName;      lappend commandArgumentsToLog --$parmName;      lappend commandArguments $parmValue;      if { [string first {PASSWORD} $parmType] != -1 } {           lappend commandArgumentsToLog {*********};      } else {           lappend commandArgumentsToLog $parmValue;      };    };    lappend commandArguments {--FME_LAUNCH_VIEWER_APP};    lappend commandArguments {YES};    lappend Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands [join $commandArguments " "];    incr Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_batch_count;    if { {No} == {No} && {1} > 1  && $Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_batch_count <= {1} } {       FME_LogMessage fme_inform 933450 Logg_2 $commandArgumentsToLog;    } else {       FME_LogMessage fme_inform 933451 Logg_2 $commandArgumentsToLog;    };    if { {No} != {No} || $Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_batch_count == {1} } {       set Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_batch_count 0;       set commandFile [Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_writeCommandFile $Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend cmdArgs {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;    } else {       return SUCCESS;    };    return [Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_runCommand $cmdArgs $workspaceFileUnix]; }
 # ------------------------------------------------------------------------------
 # When batching commands, any overflow commands will be run at the end. Say you
 # batch by 2 and there are 5 incoming features. Then we will have 2 batches with
 # 2 commands each and 1 overflow batch with 1 command
-Tcl2 proc Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_flushNeeded { } {    global Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands;    if { [info exists Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands] == 1 && [llength $Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands] > 0 } {       return YES;    } else {       return NO;    }; }
-Tcl2 proc Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_flushPending { } {    global Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands;    if { [info exists Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands] == 1 && [llength $Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands] > 0 } {       set workspaceToRun [lindex $Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands 0];       set commandFile [Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_writeCommandFile $Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend commandArguments {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;       return [Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_runCommand $commandArguments $workspaceToRun];    };    return SUCCESS; }
+Tcl2 proc Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_flushNeeded { } {    global Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands;    if { [info exists Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands] == 1 && [llength $Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands] > 0 } {       return YES;    } else {       return NO;    }; }
+Tcl2 proc Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_flushPending { } {    global Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands;    if { [info exists Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands] == 1 && [llength $Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands] > 0 } {       set workspaceToRun [lindex $Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands 0];       set commandFile [Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_writeCommandFile $Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands];       if { $commandFile == {} } {          return FAILURE;       };       set Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {No} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend commandArguments {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;       return [Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_runCommand $commandArguments $workspaceToRun];    };    return SUCCESS; }
 # ------------------------------------------------------------------------------
 # Build and run the command
-Tcl2 proc Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_runCommand {commandArguments workspaceFileUnix} {    if { {No} == {No} && $::__platform__ != {windows} } {       lappend commandArguments \">$::null_device\";       lappend commandArguments \"<$::null_device\";    };    set comment    {       The below 2>@1 forces any standard error output to go into the msg variable       or to NULL if we're running in the background.    };    if { {No} != {No} || $::__platform__ != {windows} } {       lappend commandArguments {2>@1};    };    if { {No} == {No} } {        lappend commandArguments {&};    };    if { {No} == {No} } {       after 1000;       while { [FME_CanSpawnFme ] == {0} } {             after 2000;       };    };    if { No == {No} && {1} > 1 } {       FME_LogMessage fme_inform 933452 Logg_2 $commandArguments;    } else {       FME_LogMessage fme_inform 933453 Logg_2 $commandArguments;    };    if { $::__platform__ == {windows} && {No} == {No} } {       set comment       {          Only on Windows in non-blocking mode we convert Tcl list to string joined          by space (affectively flattening the list). Prior to this we have already          ensured that in this mode paths are always quoted.       };       set commandArguments [join $commandArguments " "];       set catchResult [catch {FME_Execute System RETURN_PID_IF_ASYNC $commandArguments} msg];    } else {       set catchResult [catch {eval [concat exec $commandArguments]} msg];    };    if { $catchResult } {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn 933454 Logg_2 $workspaceFileUnix "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_process_count;       incr Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_process_count;       if { {No} == {No} } {           FME_LogMessage fme_inform 933455 Logg_2 $workspaceFileUnix;           global Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_all_processes;           lappend Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_all_processes $msg;       } else {           FME_LogMessage fme_inform 933456 Logg_2 $workspaceFileUnix;       };       return SUCCESS;    }; }
+Tcl2 proc Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_runCommand {commandArguments workspaceFileUnix} {    if { {No} == {No} && $::__platform__ != {windows} } {       lappend commandArguments \">$::null_device\";       lappend commandArguments \"<$::null_device\";    };    set comment    {       The below 2>@1 forces any standard error output to go into the msg variable       or to NULL if we're running in the background.    };    if { {No} != {No} || $::__platform__ != {windows} } {       lappend commandArguments {2>@1};    };    if { {No} == {No} } {        lappend commandArguments {&};    };    if { {No} == {No} } {       after 1000;       while { [FME_CanSpawnFme ] == {0} } {             after 2000;       };    };    if { No == {No} && {1} > 1 } {       FME_LogMessage fme_inform 933452 Logg_2 $commandArguments;    } else {       FME_LogMessage fme_inform 933453 Logg_2 $commandArguments;    };    if { $::__platform__ == {windows} && {No} == {No} } {       set comment       {          Only on Windows in non-blocking mode we convert Tcl list to string joined          by space (affectively flattening the list). Prior to this we have already          ensured that in this mode paths are always quoted.       };       set commandArguments [join $commandArguments " "];       set catchResult [catch {FME_Execute System RETURN_PID_IF_ASYNC $commandArguments} msg];    } else {       set catchResult [catch {eval [concat exec $commandArguments]} msg];    };    if { $catchResult } {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn 933454 Logg_2 $workspaceFileUnix "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_process_count;       incr Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_process_count;       if { {No} == {No} } {           FME_LogMessage fme_inform 933455 Logg_2 $workspaceFileUnix;           global Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_all_processes;           lappend Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_all_processes $msg;       } else {           FME_LogMessage fme_inform 933456 Logg_2 $workspaceFileUnix;       };       return SUCCESS;    }; }
 # ------------------------------------------------------------------------------
 # Create and write commands to command file
-Tcl2 proc Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_writeCommandFile { commands } {    set commandFile [FME_TempFilename wsr_cm_];    if { [catch { set cmdFileId [open $commandFile "w"] } msg ] } {       FME_LogMessage fme_warn 933457 Logg_2 $commandFile "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return {};    };    fconfigure $cmdFileId -encoding utf-8;    puts $cmdFileId {#! encoding=\"utf-8\"};    puts $cmdFileId DELETE_FILE_AFTER_LOAD;    foreach {command} $commands {       puts $cmdFileId $command;    };    close $cmdFileId;    return $commandFile; }
+Tcl2 proc Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_writeCommandFile { commands } {    set commandFile [FME_TempFilename wsr_cm_];    if { [catch { set cmdFileId [open $commandFile "w"] } msg ] } {       FME_LogMessage fme_warn 933457 Logg_2 $commandFile "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return {};    };    fconfigure $cmdFileId -encoding utf-8;    puts $cmdFileId {#! encoding=\"utf-8\"};    puts $cmdFileId DELETE_FILE_AFTER_LOAD;    foreach {command} $commands {       puts $cmdFileId $command;    };    close $cmdFileId;    return $commandFile; }
 # ------------------------------------------------------------------------------
 # Use \x07 (BELL) character as the delimiter when writing WORKSPACE_PARAMETERS
 # to mapping file
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_2_ExecutorAndRouter }    INPUT  FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_Output    TEST @Tcl2("Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_runner {EX_DATE_TIME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_datetimestamp<closeparen>,Logg_2)EX_PROCESS_NAME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessName<closeparen>,Logg_2)EX_ID@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessID<closeparen>,Logg_2)EX_TYPEINFORMATIONEX@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Logg<closeparen>,Logg_2)EX_WorkSpace@EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),Logg_2)EX_ROT_DIRECTORY@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>RotDirectory<closeparen>,Logg_2)EX_PROCESS_MODUL_NAME@EvaluateExpression(FDIV,STRING_ENCODED,$(ProcessModulName$encode),Logg_2)IsWholeProcessRun@EvaluateExpression(FDIV,STRING_ENCODED,$(IsWholeProcessRun$encode),Logg_2)} {@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR$encode)_logg.fmw,Logg_2)}") == SUCCESS
-Tcl2 proc Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_summarizer { } {     global Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_process_count 0;     FME_SetAttribute _proc_count [set Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_process_count];     global Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_all_processes;     if {[info exists Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_all_processes]} {         set index 0;         foreach pid [set Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_2_ExecutorAndRouter }    INPUT  FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_Output    TEST @Tcl2("Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_runner {EX_DATE_TIME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_datetimestamp<closeparen>,Logg_2)EX_PROCESS_NAME@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessName<closeparen>,Logg_2)EX_ID@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ProcessID<closeparen>,Logg_2)EX_TYPEINFORMATIONEX@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Logg<closeparen>,Logg_2)EX_WorkSpace@EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR_USERTYPED$encode)$(FME_MF_NAME$encode),Logg_2)EX_ROT_DIRECTORY@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>RotDirectory<closeparen>,Logg_2)EX_PROCESS_MODUL_NAME@EvaluateExpression(FDIV,STRING_ENCODED,$(ProcessModulName$encode),Logg_2)IsWholeProcessRun@EvaluateExpression(FDIV,STRING_ENCODED,$(IsWholeProcessRun$encode),Logg_2)} {@EvaluateExpression(FDIV,STRING,$(FME_MF_DIR$encode)_logg.fmw,Logg_2)}") == SUCCESS
+Tcl2 proc Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_summarizer { } {     global Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_process_count 0;     FME_SetAttribute _proc_count [set Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_process_count];     global Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_all_processes;     if {[info exists Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_all_processes]} {         set index 0;         foreach pid [set Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
 # ------------------------------------------------------------------------------
 # Clean up the last batch, if anything was pending.
 FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Logg_2_CleanerUpperOfBatchesInitiator }    CREATE_AT_END yes    OUTPUT { FEATURE_TYPE Logg_2___cleanup___ }
@@ -5585,9 +5945,9 @@ FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Logg_2_CleanerUpperOfBatchesIn
 # As it stands, we are set up here to send out one "dud" completely empty feature that will
 # go out FAILURE if there was a problem. It will have no attributes. Only sent out if there was something
 # left to process and the run did not succeed.
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_2_CleanerUpperOfBatchesDoWeNeedToDoIt }    INPUT FEATURE_TYPE Logg_2___cleanup___    TEST { @Tcl2(Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_flushNeeded) == YES }    OUTPUT PASSED FEATURE_TYPE Logg_2___cleanup___
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_2_CleanerUpperOfBatchesDoWeNeedToDoIt }    INPUT FEATURE_TYPE Logg_2___cleanup___    TEST { @Tcl2(Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_flushNeeded) == YES }    OUTPUT PASSED FEATURE_TYPE Logg_2___cleanup___
 # Note that we don't output anything if we succeed -- we only catch and output the failure
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_2_CleanerUpperOfBatchesRunner }    INPUT FEATURE_TYPE Logg_2___cleanup___    TEST { @Tcl2(Logg_2_168979f4_0af5_41c8_9730_3e8580e287130_flushPending) == SUCCESS }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Logg_2_CleanerUpperOfBatchesRunner }    INPUT FEATURE_TYPE Logg_2___cleanup___    TEST { @Tcl2(Logg_2_f57d82e1_6ed1_44ce_9b95_a971b48427521_flushPending) == SUCCESS }
 FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Logg_2_SummaryMaker }    CREATE_AT_END yes
 # -------------------------------------------------------------------------
 
