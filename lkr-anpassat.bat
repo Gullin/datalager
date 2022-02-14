@@ -127,11 +127,13 @@ REM Hanterar data till datalager
     REM <#BESKRIVNING AV PARAMETRAR TILL FME-PROCESS#>
     >nul (
         @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
+                            --FME_LAUNCH_VIEWER_APP YES ^
                             --ProcessName %DL_PROCESSNAME% ^
                             --RotDirectory %DL_ROTDIR% ^
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
+                            --PG_SCHEMA "data_auto_landskrona_anpassat" ^
                             --PlandokumentDir  %DL_DIRPLANDOKUMENT% ^
                             --PlandokumentFileFilter "**/*.{pdf,tif}" ^
                             --PlandokumentDir2Nd  %DL_DIRPLANDOKUMENT2ND%
