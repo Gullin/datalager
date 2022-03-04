@@ -78,6 +78,7 @@ IF %ERRORLEVEL% EQU 0 (
         @CALL lst
         @CALL nvv
         @CALL trv-lastkajen
+        @CALL msb
 
 
 
