@@ -64,6 +64,7 @@ IF %ERRORLEVEL% EQU 0 (
         @CALL lkr-oracle-topo_karta
         @CALL lkr-oracle-topo_ndrk
         @CALL lkr-oracle-topo_special
+        @CALL lkr-postgis-lk_gis
         @CALL lkr-postgis-ex_special
         @CALL lkr-postgis-td_baskarta
         @CALL lkr-postgis-td_baskarta_anpassat
