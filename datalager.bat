@@ -78,6 +78,7 @@ IF %ERRORLEVEL% EQU 0 (
         @REM @CALL lm-geodataplatsen-fastighetskartan
         @CALL lm-geotorget
         @CALL lst
+        @CALL raa
         @CALL nvv
         @CALL trv-lastkajen
         @CALL msb
