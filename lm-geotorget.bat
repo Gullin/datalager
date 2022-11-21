@@ -20,6 +20,7 @@ REM Namn f”r hela processen
 SET DL_PROCESSNAME=lm-geotorget
 REM Processlokala parametrar
 SET DL_OUTDIR=lantmateriet\topografi_10_nedladdning
+SET DL_OUTDBSCHEMA=data_auto_lantmateriet_topografi_10_nedladdning
 SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\01-download-geotorget-api.fmw"
 SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\02-geotorget-DatalagerManage-driver.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
@@ -191,7 +192,8 @@ REM Hanterar data till datalager
                             --RotDirectory %DL_ROTDIR% ^
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
-                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
+                            --PG_SCHEMA %DL_OUTDBSCHEMA%
     )
 
     IF %ERRORLEVEL% NEQ 0 (

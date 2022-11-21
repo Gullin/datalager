@@ -9,6 +9,7 @@ REM Namn f”r hela processen
 SET DL_PROCESSNAME=lkr-postgis-td_baskarta_anpassat
 REM Processlokala parametrar
 SET DL_OUTDIR=landskrona\td_baskarta\anpassat
+SET DL_OUTDBSCHEMA=data_auto_landskrona_td_baskarta_anpassat
 SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\postgis-td_baskarta_anpassat-DatalagerManage.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
     SET DL_ISWHOLEPROCESS=0
@@ -128,7 +129,7 @@ REM Hanterar data till datalager
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
-                            --PG_SCHEMA "data_auto_landskrona_td_baskarta_anpassat"
+                            --PG_SCHEMA %DL_OUTDBSCHEMA%
     )
 
     IF %ERRORLEVEL% NEQ 0 (

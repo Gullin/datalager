@@ -10,6 +10,7 @@ REM Namn f”r hela processen
 SET DL_PROCESSNAME=trv-lastkajen
 REM Processlokala parametrar
 SET DL_OUTDIR=trafikverket\nvdb
+SET DL_OUTDBSCHEMA=data_auto_trafikverket_nvdb
 SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\01-download-lastkajen-api.fmw"
 SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\02-lastkajen-DatalagerManage-driver.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
@@ -38,6 +39,20 @@ IF %ERRORLEVEL% EQU 0 (
     
     REM FME-processer
     @CALL :GetDataLastkajen
+
+    REM Kontrollerar om h„mtningen slutf”rts utan fel annars k”rs ej resterande
+    IF %DL_ISWHOLEPROCESS% == 1 (
+        @CALL _sys\_exist-FATAL_ERROR
+    ) ELSE (
+        @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
+    )
+
+    IF !ERRORLEVEL! EQU 99999 (
+        @CALL _sys\_log-batch ERROR "Allvarligt fel vid h„mtning av dataset i process %DL_PROCESSID%"
+        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, h„mtning av dataset har misslyckats" %DL_PROCESSNAME%
+
+        GOTO exit
+    )
 
 
 
@@ -162,7 +177,8 @@ REM Hanterar data till datalager
                             --RotDirectory %DL_ROTDIR% ^
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
-                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
+                            --PG_SCHEMA %DL_OUTDBSCHEMA%
     )
 
     IF %ERRORLEVEL% NEQ 0 (

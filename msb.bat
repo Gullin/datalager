@@ -9,6 +9,7 @@ REM Namn f”r hela processen
 SET DL_PROCESSNAME=msb
 REM Processlokala parametrar
 SET DL_OUTDIR=msb
+SET DL_OUTDBSCHEMA=data_auto_msb
 SET DL_FMEPROCESS01="_sys\_download-http-caller.fmw"
 SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\msb-DatalagerManage-driver.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
@@ -158,7 +159,8 @@ REM Hanterar data till datalager
                             --RotDirectory %DL_ROTDIR% ^
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
-                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
+                            --PG_SCHEMA %DL_OUTDBSCHEMA%
     )
 
     IF %ERRORLEVEL% NEQ 0 (

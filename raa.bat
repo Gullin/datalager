@@ -5,10 +5,11 @@ REM CP 437 (DOS)
 
 
 REM S„tts per bat-fil
-REM Namn f”r hela processen
+REM Namn F”r hela processen
 SET DL_PROCESSNAME=raa
 REM Processlokala parametrar
 SET DL_OUTDIR=raa
+SET DL_OUTDBSCHEMA=data_auto_raa
 SET DL_FMEPROCESS01="_sys\_download-http-caller.fmw"
 SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\raa-DatalagerManage-driver.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
@@ -76,29 +77,29 @@ IF %ERRORLEVEL% EQU 0 (
                     @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
                 ) ELSE (
                     @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
-                    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR f”r %DL_PROCESSID% genererad av FME-processerna. Kunde ej g† vidare med distribuering av repository." %DL_PROCESSNAME%
+                    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! frï¿½n FATAL_ERROR fï¿½r %DL_PROCESSID% genererad av FME-processerna. Kunde ej gï¿½ vidare med distribuering av repository." %DL_PROCESSNAME%
 
                     GOTO exit
                 )
             )
         ) ELSE (
             @CALL _sys\_log-batch ERROR "Allvarligt fel vid dataprocessandet i process %DL_PROCESSID%"
-            @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, dataprocessandet har misslyckats" %DL_PROCESSNAME%
+            @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% fï¿½r %DL_PROCESSID%, dataprocessandet har misslyckats" %DL_PROCESSNAME%
 
             GOTO exit
         )
 
     ) ELSE (
         @CALL _sys\_log-batch ERROR "Allvarligt fel vid validering av datasets schema i process %DL_PROCESSID%"
-        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, validering av dataschema har misslyckats" %DL_PROCESSNAME%
+        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% fï¿½r %DL_PROCESSID%, validering av dataschema har misslyckats" %DL_PROCESSNAME%
 
         GOTO exit
     )
 
 
 ) ELSE (
-    @CALL _sys\_log-batch ERROR "Processen %DL_PROCESSID% kunde inte k”ras"
-    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%" %DL_PROCESSNAME%
+    @CALL _sys\_log-batch ERROR "Processen %DL_PROCESSID% kunde inte kï¿½ras"
+    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% fï¿½r %DL_PROCESSID%" %DL_PROCESSNAME%
 
     GOTO exit
 )
@@ -157,7 +158,8 @@ REM Hanterar data till datalager
                             --RotDirectory %DL_ROTDIR% ^
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
-                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
+                            --PG_SCHEMA %DL_OUTDBSCHEMA%
     )
 
     IF %ERRORLEVEL% NEQ 0 (

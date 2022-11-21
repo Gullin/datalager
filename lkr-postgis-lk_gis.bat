@@ -9,6 +9,7 @@ REM Namn f”r hela processen
 SET DL_PROCESSNAME=lkr-postgis-lk_gis
 REM Processlokala parametrar
 SET DL_OUTDIR=landskrona\lk_gis
+SET DL_OUTDBSCHEMA=data_auto_landskrona_lk_gis
 SET DL_FMEPROCESS01="%DL_PROCESSNAME%\_fme\postgis-lk_gis-DatalagerManage-driver.fmw"
 IF NOT DEFINED DL_ISWHOLEPROCESS (
     SET DL_ISWHOLEPROCESS=0
@@ -127,7 +128,8 @@ REM Hanterar data till datalager
                             --RotDirectory %DL_ROTDIR% ^
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
-                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
+                            --PG_SCHEMA %DL_OUTDBSCHEMA%
     )
 
     IF %ERRORLEVEL% NEQ 0 (
