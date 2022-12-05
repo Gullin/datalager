@@ -2,8 +2,8 @@
 #! <WORKSPACE
 #    Command-line to run this workspace:
 #        "C:\Program Files\FME_2021_0_21306\fme.exe" C:\dev\Datalager_procsrc\_sys\schema_validate_manually.fmw
-#              --SourceDataset_XLSXR_3 "R:\Temp\Datalager\nvv\_schema\schema-flush.xlsx"
-#              --SourceDataset_XLSXR "R:\Temp\Datalager\nvv\_schema\schema-manifest.xlsx"
+#              --SourceDataset_XLSXR_3 "C:\dev\Datalager_procsrc\trv\_schema\schema-flush.xlsx"
+#              --SourceDataset_XLSXR "C:\dev\Datalager_procsrc\trv\_schema\schema-manifest.xlsx"
 #    
 #!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
 #!   ATTR_TYPE_ENCODING="SDF"
@@ -19,8 +19,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="21306"
-#!   FME_DOCUMENT_GUID="6cead5a8-5152-4d71-89dd-294e56c5c9ae"
-#!   FME_DOCUMENT_PRIORGUID="3c736ea4-7d6a-4747-9f7f-2180e92050ff,ed45ea5b-5697-470d-9d95-1f404bbf38d4,e0b26582-1e7e-4460-8896-403a31e9dda0,471c9649-ae09-49e3-817b-0bd230762d8c"
+#!   FME_DOCUMENT_GUID="70537780-793f-47ff-8620-e9310142fa82"
+#!   FME_DOCUMENT_PRIORGUID="3c736ea4-7d6a-4747-9f7f-2180e92050ff,ed45ea5b-5697-470d-9d95-1f404bbf38d4,e0b26582-1e7e-4460-8896-403a31e9dda0,471c9649-ae09-49e3-817b-0bd230762d8c,6cead5a8-5152-4d71-89dd-294e56c5c9ae"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_NAMES_ENCODING="windows-1252"
@@ -30,7 +30,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2021.0.0.1 (20210315 - Build 21306 - WIN64)"
-#!   LAST_SAVE_DATE="2022-03-29T08:04:07"
+#!   LAST_SAVE_DATE="2022-12-05T09:34:55"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -535,12 +535,12 @@
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR_3 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Flush:"
-#!   DEFAULT_VALUE="R:\Temp\Datalager\nvv\_schema\schema-flush.xlsx"
+#!   DEFAULT_VALUE="C:\dev\Datalager_procsrc\trv\_schema\schema-flush.xlsx"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Manifest:"
-#!   DEFAULT_VALUE="R:\Temp\Datalager\nvv\_schema\schema-manifest.xlsx"
+#!   DEFAULT_VALUE="C:\dev\Datalager_procsrc\trv\_schema\schema-manifest.xlsx"
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -609,7 +609,7 @@
 #!   BOUNDING_RECT="1693.8399999999999 319.94 1888.6199999999999 1452.6600000000001"
 #!   STICKY="true"
 #!   COLOUR="0.52156862745098043,0.42352941176470588,0.2627450980392157,0.39215686274509803"
-#!   CONTENTS="6 5 9 10 7 8 "
+#!   CONTENTS="6 10 9 7 8 5 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
@@ -1327,6 +1327,7 @@
 #! >
 #!     <OUTPUT_FEAT NAME="MERGED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1342,9 +1343,9 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="UNMERGED_REQUESTOR"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1360,7 +1361,6 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="USED_SUPPLIER"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -1378,6 +1378,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
@@ -1393,7 +1394,6 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
@@ -1468,7 +1468,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1482,12 +1482,12 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema{}.NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="schema{}.NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema{}.NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="schema{}.NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Use Attributes From One Feature"/>
 #!     <XFORM_PARM PARM_NAME="AGGREGATE_TYPE" PARM_VALUE="Homogeneous Collection (If Possible)"/>
 #!     <XFORM_PARM PARM_NAME="ASSEMBLE_HIERARCHY_GROUP" PARM_VALUE=""/>
@@ -1534,7 +1534,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1548,17 +1548,17 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema{}.NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="schema{}.NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema{}.NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="schema{}.NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="UNMERGED_REQUESTOR"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1572,12 +1572,12 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="schema{}.NewColumn" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="schema{}.NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="schema{}.NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="schema{}.NewColumn" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="USED_SUPPLIER"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -1597,7 +1597,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="4"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
@@ -1611,12 +1611,12 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="schema{}.NewColumn" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="schema{}.NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.column_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="schema{}.NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="schema{}.NewColumn" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
@@ -1789,7 +1789,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1803,7 +1803,7 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1812,7 +1812,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1826,7 +1826,7 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1850,7 +1850,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="4"/>
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
@@ -1864,7 +1864,7 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.column_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="4" />
@@ -1943,7 +1943,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1957,7 +1957,7 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2008,7 +2008,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2022,12 +2022,12 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_dirpath" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="dl_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -2041,7 +2041,7 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge List Attributes"/>
@@ -2133,6 +2133,7 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="NewColumn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="dl_need_new_column_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2148,7 +2149,6 @@
 #!     <XFORM_ATTR ATTR_NAME="Dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="column_name_char_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="HasToBeChecked" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NewDatatype" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; NewColumn SET_TO true"/>
@@ -2732,8 +2732,8 @@ FME_PYTHON_VERSION 2or3
 ARCGIS_COMPATIBILITY ARCGIS_AUTO
 GUI IGNORE SourceDataset_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1,SourceDataset_XLSXR_2,XLSXR_IN_ADVANCED_XLSXR_2,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2,XLSXR_IN_READ_BLANK_AS_XLSXR_2,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2,XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_2,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2
 # ============================================================================
-DEFAULT_MACRO SourceDataset_XLSXR_3 R:\Temp\Datalager\nvv\_schema\schema-flush.xlsx
-DEFAULT_MACRO SourceDataset_XLSXR R:\Temp\Datalager\nvv\_schema\schema-manifest.xlsx
+DEFAULT_MACRO SourceDataset_XLSXR_3 C:\dev\Datalager_procsrc\trv\_schema\schema-flush.xlsx
+DEFAULT_MACRO SourceDataset_XLSXR C:\dev\Datalager_procsrc\trv\_schema\schema-manifest.xlsx
 # ============================================================================
 GUI MULTIFILE SourceDataset_XLSXR_3 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Flush:
 GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Manifest:
@@ -2925,10 +2925,10 @@ XLSXR_1_MERGE_DEF XLSXR_1::schema EXACT schema DEFLINE xlsx_start_row,,xlsx_end_
 XLSXR_2_MERGE_DEF XLSXR_2::schema EXACT schema DEFLINE xlsx_start_row,,xlsx_end_row,,fme_attribute_reading,defined,fme_feature_type_name,char<openparen>20<closeparen>,column_name,char<openparen>17<closeparen>,dl_need_new_column_name,char<openparen>6<closeparen>,dl_new_column_name,char<openparen>12<closeparen>,dl_export,char<openparen>6<closeparen>,fme_data_type,char<openparen>18<closeparen>,native_data_type,char<openparen>14<closeparen>,fme_format_long_name,char<openparen>22<closeparen>,fme_format_short_name,char<openparen>15<closeparen>,_dirpath,char<openparen>1<closeparen>,_extension,char<openparen>1<closeparen>,DatasetFull,char<openparen>8<closeparen>,Dataset,char<openparen>8<closeparen>,column_name_char_length,number<openparen>3<comma>0<closeparen>
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "schema_XLSXR_1 Splitter"    INPUT FEATURE_TYPE schema      multi_reader_keyword $(DATASET_KEYWORD_XLSXR_1)    OUTPUT FEATURE_TYPE schema_XLSXR_1_0_T8XMNJMl364=    OUTPUT FEATURE_TYPE schema_XLSXR_1_1_CI/7xSwH2Yc=
+FACTORY_DEF * TeeFactory    FACTORY_NAME "schema_XLSXR_2 Splitter"    INPUT FEATURE_TYPE schema      multi_reader_keyword $(DATASET_KEYWORD_XLSXR_2)    OUTPUT FEATURE_TYPE schema_XLSXR_2_0_T8XMNJMl364=    OUTPUT FEATURE_TYPE schema_XLSXR_2_1_CI/7xSwH2Yc=    OUTPUT FEATURE_TYPE schema_XLSXR_2_2_gG/bofyNLJE=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "schema_XLSXR_2 Splitter"    INPUT FEATURE_TYPE schema      multi_reader_keyword $(DATASET_KEYWORD_XLSXR_2)    OUTPUT FEATURE_TYPE schema_XLSXR_2_0_T8XMNJMl364=    OUTPUT FEATURE_TYPE schema_XLSXR_2_1_CI/7xSwH2Yc=    OUTPUT FEATURE_TYPE schema_XLSXR_2_2_gG/bofyNLJE=
+FACTORY_DEF * TeeFactory    FACTORY_NAME "schema_XLSXR_1 Splitter"    INPUT FEATURE_TYPE schema      multi_reader_keyword $(DATASET_KEYWORD_XLSXR_1)    OUTPUT FEATURE_TYPE schema_XLSXR_1_0_T8XMNJMl364=    OUTPUT FEATURE_TYPE schema_XLSXR_1_1_CI/7xSwH2Yc=
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
@@ -3048,7 +3048,7 @@ DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
 # [PR#45549] The Data Inspector will limit the maximum number of features
 # it reads on WIN32, so we will correspondingly limit the number of
 # features we record here using the MAX_FEATURES_TO_RECORD directive.
-FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { New_Column_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { fme_feature_type_name,varchar<openparen>20<closeparen>,column_name,varchar<openparen>17<closeparen>,dl_need_new_column_name,varchar<openparen>6<closeparen>,dl_new_column_name,varchar<openparen>12<closeparen>,dl_export,varchar<openparen>6<closeparen>,fme_data_type,varchar<openparen>18<closeparen>,native_data_type,varchar<openparen>14<closeparen>,fme_format_long_name,varchar<openparen>22<closeparen>,fme_format_short_name,varchar<openparen>15<closeparen>,_dirpath,varchar<openparen>1<closeparen>,_extension,varchar<openparen>1<closeparen>,DatasetFull,varchar<openparen>8<closeparen>,Dataset,varchar<openparen>8<closeparen>,column_name_char_length,number<openparen>3<comma>0<closeparen>,HasToBeChecked,varchar<openparen>6<closeparen>,NewDatatype,varchar<openparen>200<closeparen> }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { New_Column_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { NewDatatype,varchar<openparen>200<closeparen>,fme_feature_type_name,varchar<openparen>20<closeparen>,column_name,varchar<openparen>17<closeparen>,dl_need_new_column_name,varchar<openparen>6<closeparen>,dl_new_column_name,varchar<openparen>12<closeparen>,dl_export,varchar<openparen>6<closeparen>,fme_data_type,varchar<openparen>18<closeparen>,native_data_type,varchar<openparen>14<closeparen>,fme_format_long_name,varchar<openparen>22<closeparen>,fme_format_short_name,varchar<openparen>15<closeparen>,_dirpath,varchar<openparen>1<closeparen>,_extension,varchar<openparen>1<closeparen>,DatasetFull,varchar<openparen>8<closeparen>,Dataset,varchar<openparen>8<closeparen>,column_name_char_length,number<openparen>3<comma>0<closeparen>,HasToBeChecked,varchar<openparen>6<closeparen> }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_2 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE FeatureMerger_3_UNMERGED_REQUESTOR_1_gj7q4DN9FsA=    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "NewColumn" "SET_TO" "true" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT        }
 # -------------------------------------------------------------------------
@@ -3079,7 +3079,7 @@ DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
 # [PR#45549] The Data Inspector will limit the maximum number of features
 # it reads on WIN32, so we will correspondingly limit the number of
 # features we record here using the MAX_FEATURES_TO_RECORD directive.
-FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { New_DatasetOrSource_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { fme_feature_type_name,varchar<openparen>20<closeparen>,_dirpath,varchar<openparen>1<closeparen>,NewColumn,varchar<openparen>200<closeparen>,column_name,varchar<openparen>17<closeparen>,dl_need_new_column_name,varchar<openparen>6<closeparen>,dl_new_column_name,varchar<openparen>12<closeparen>,dl_export,varchar<openparen>6<closeparen>,fme_data_type,varchar<openparen>18<closeparen>,native_data_type,varchar<openparen>14<closeparen>,fme_format_long_name,varchar<openparen>22<closeparen>,fme_format_short_name,varchar<openparen>15<closeparen>,_extension,varchar<openparen>1<closeparen>,DatasetFull,varchar<openparen>8<closeparen>,Dataset,varchar<openparen>8<closeparen>,column_name_char_length,number<openparen>3<comma>0<closeparen>,HasToBeChecked,varchar<openparen>6<closeparen>,NewDatatype,varchar<openparen>200<closeparen> }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { New_DatasetOrSource_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { fme_feature_type_name,varchar<openparen>20<closeparen>,_dirpath,varchar<openparen>1<closeparen>,NewDatatype,varchar<openparen>200<closeparen>,column_name,varchar<openparen>17<closeparen>,dl_need_new_column_name,varchar<openparen>6<closeparen>,dl_new_column_name,varchar<openparen>12<closeparen>,dl_export,varchar<openparen>6<closeparen>,fme_data_type,varchar<openparen>18<closeparen>,native_data_type,varchar<openparen>14<closeparen>,fme_format_long_name,varchar<openparen>22<closeparen>,fme_format_short_name,varchar<openparen>15<closeparen>,_extension,varchar<openparen>1<closeparen>,DatasetFull,varchar<openparen>8<closeparen>,Dataset,varchar<openparen>8<closeparen>,column_name_char_length,number<openparen>3<comma>0<closeparen>,HasToBeChecked,varchar<openparen>6<closeparen>,NewColumn,varchar<openparen>200<closeparen> }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AggregateFactory    FACTORY_NAME { Aggregator_4 }    INPUT  FEATURE_TYPE AttributeKeeper_OUTPUT_3_G7IKo1WJnvk=    MODE { ONE_LEVEL }    GROUP_BY { _dirpath }    FLUSH_WHEN_GROUPS_CHANGE { No }    REMOVE_GEOMETRY { NO }    ACCUMULATE_ATTRIBUTES { One }    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE { <Unused> }    SEPARATOR { <comma> }    PRODUCE_MULTIS { YES }    OUTPUT { AGGREGATE FEATURE_TYPE Aggregator_4_AGGREGATE          }
 # -------------------------------------------------------------------------
@@ -3099,7 +3099,7 @@ DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
 # [PR#45549] The Data Inspector will limit the maximum number of features
 # it reads on WIN32, so we will correspondingly limit the number of
 # features we record here using the MAX_FEATURES_TO_RECORD directive.
-FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { New_Source_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { _dirpath,varchar<openparen>1<closeparen>,fme_feature_type_name,varchar<openparen>20<closeparen>,NewColumn,varchar<openparen>200<closeparen>,column_name,varchar<openparen>17<closeparen>,dl_need_new_column_name,varchar<openparen>6<closeparen>,dl_new_column_name,varchar<openparen>12<closeparen>,dl_export,varchar<openparen>6<closeparen>,fme_data_type,varchar<openparen>18<closeparen>,native_data_type,varchar<openparen>14<closeparen>,fme_format_long_name,varchar<openparen>22<closeparen>,fme_format_short_name,varchar<openparen>15<closeparen>,_extension,varchar<openparen>1<closeparen>,DatasetFull,varchar<openparen>8<closeparen>,Dataset,varchar<openparen>8<closeparen>,column_name_char_length,number<openparen>3<comma>0<closeparen>,HasToBeChecked,varchar<openparen>6<closeparen>,NewDatatype,varchar<openparen>200<closeparen> }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { New_Source_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { _dirpath,varchar<openparen>1<closeparen>,fme_feature_type_name,varchar<openparen>20<closeparen>,NewDatatype,varchar<openparen>200<closeparen>,column_name,varchar<openparen>17<closeparen>,dl_need_new_column_name,varchar<openparen>6<closeparen>,dl_new_column_name,varchar<openparen>12<closeparen>,dl_export,varchar<openparen>6<closeparen>,fme_data_type,varchar<openparen>18<closeparen>,native_data_type,varchar<openparen>14<closeparen>,fme_format_long_name,varchar<openparen>22<closeparen>,fme_format_short_name,varchar<openparen>15<closeparen>,_extension,varchar<openparen>1<closeparen>,DatasetFull,varchar<openparen>8<closeparen>,Dataset,varchar<openparen>8<closeparen>,column_name_char_length,number<openparen>3<comma>0<closeparen>,HasToBeChecked,varchar<openparen>6<closeparen>,NewColumn,varchar<openparen>200<closeparen> }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
