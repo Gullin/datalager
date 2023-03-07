@@ -149,7 +149,7 @@ REM H„mta geodatapaket fr†n lastkajen
                             --ProcessName %DL_PROCESSNAME% ^
                             --RotDirectory %DL_ROTDIR% ^
                             --User %USER-TRV-LASTKAJEN% ^
-                            --Password %PASS-TRV-LASTKAJEN% ^
+                            --Password !PASS-TRV-LASTKAJEN! ^
                             --OutputDirectory %DL_ROTDIR%%DL_PROCESSNAME%/_ned ^
                             --ProcessModulName %DL_PROCESSNAME% ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS%
