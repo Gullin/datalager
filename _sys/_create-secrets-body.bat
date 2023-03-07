@@ -68,7 +68,6 @@ REM Skapar upp filstrukturen f”r d„r hemligheter kan sparas
         ECHO SET CONSUMERSECRET-LM-GEOTORGET= >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
         ECHO. >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
         ECHO REM Trafikverket, Lastkajen >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
-        ECHO REM Vid anv„ndande av utropstecken beh”ver ev. DelayedExpansion st„ngas av vid tilldelning till variabel >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
         ECHO SET USER-TRV-LASTKAJEN= >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
         ECHO SET PASS-TRV-LASTKAJEN= >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
         ECHO. >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
