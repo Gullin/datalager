@@ -1,17 +1,19 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
-#    Command-line to run this workspace:
-#        "C:\Program Files\FME_2021_0_21306\fme.exe" C:\dev\Datalager_procsrc\_sys\_logg.fmw
-#              --EX_DATE_TIME ""
-#              --EX_PROCESS_NAME ""
-#              --EX_ID ""
-#              --EX_TYPE ""
-#              --EX ""
-#              --EX_WorkSpace "$(FME_MF_DIR_USERTYPED)$(FME_MF_NAME)"
-#              --EX_ROT_DIRECTORY "../"
-#              --EX_PROCESS_MODUL_NAME ""
-#              --IsWholeProcessRun "1"
+#    Command line to run this workspace:
+#        "C:\Program Files\FME_2022_2_22765\fme.exe" C:\dev\Datalager_procsrc\_sys\_logg.fmw
+#          --EX_DATE_TIME ""
+#          --EX_PROCESS_NAME ""
+#          --EX_ID ""
+#          --EX_TYPE ""
+#          --EX ""
+#          --EX_WorkSpace "$(FME_MF_DIR_USERTYPED)$(FME_MF_NAME)"
+#          --EX_ROT_DIRECTORY "../"
+#          --EX_PROCESS_MODUL_NAME ""
+#          --IsWholeProcessRun "1"
+#          --FME_LAUNCH_VIEWER_APP "YES"
 #    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
 #!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -20,14 +22,15 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="6127.96 4247.41"
-#!   DOC_TOP_LEFT="-646.453 -3947.16"
+#!   DOC_EXTENTS="6127.96 3910.2"
+#!   DOC_TOP_LEFT="-646.453 -3609.95"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_BUILD_NUM="21306"
-#!   FME_DOCUMENT_GUID="5a79b55a-5dd4-4af4-b83c-5d663b41dfd0"
-#!   FME_DOCUMENT_PRIORGUID="87c17a14-eb93-443b-99db-0a6e4ed025ef,4fd95922-3887-40fa-9321-d9bbdd9582a3,78aefedc-b91c-40e0-92d7-d76ce2a37072,8c86b130-534d-4b7b-b36c-7f4dbe4f6bb3,9960c267-c72e-4ae2-b9f9-6c6d765c56a8,7df86ffb-8fd6-4780-9b20-0c9218508a49,3dc6cfe2-48ef-4604-a3a0-d1dcbefa76ca,5c2d3c59-c127-4c62-a24e-ea2417ea1002,9df341f6-d837-4d63-a79e-51e03bb8c12b,595ee802-b7f7-4eb3-a879-45ae87b630fc,4f1f0bf0-bf4b-46ff-b007-e748ecbc8863,d29b0163-f5c3-4067-830e-9678bf290053,35d6d41f-5b28-4a8d-adc9-ac876e8373e7,43cfba42-d9a3-4634-a52c-2fe55094e926,21a5822b-2721-4189-bd0e-498ee2c2c138,80fa5584-a6df-4253-9eb4-d5464e23f147,e32841ca-1870-4e95-b345-8133238bb5b6,2b24382e-eb47-4d17-9cfe-84e84ae7d7e4,1afc23f9-70c4-4b03-a76a-df2e5f0f7c78,094db78a-9a5b-43a3-ac01-88f08ab23085,3ea16fd3-190e-444a-b6bb-830187dece7e,25b0141a-a2e8-45b5-8d3b-0b78a9f779a3,d2a3f64d-99f9-4b39-aefa-3b505b21560d"
+#!   FME_BUILD_NUM="22765"
+#!   FME_BULK_MODE_THRESHOLD=""
+#!   FME_DOCUMENT_GUID="fca4ac4f-5d9d-4656-b740-9343f53389d7"
+#!   FME_DOCUMENT_PRIORGUID="87c17a14-eb93-443b-99db-0a6e4ed025ef,4fd95922-3887-40fa-9321-d9bbdd9582a3,78aefedc-b91c-40e0-92d7-d76ce2a37072,8c86b130-534d-4b7b-b36c-7f4dbe4f6bb3,9960c267-c72e-4ae2-b9f9-6c6d765c56a8,7df86ffb-8fd6-4780-9b20-0c9218508a49,3dc6cfe2-48ef-4604-a3a0-d1dcbefa76ca,5c2d3c59-c127-4c62-a24e-ea2417ea1002,9df341f6-d837-4d63-a79e-51e03bb8c12b,595ee802-b7f7-4eb3-a879-45ae87b630fc,4f1f0bf0-bf4b-46ff-b007-e748ecbc8863,d29b0163-f5c3-4067-830e-9678bf290053,35d6d41f-5b28-4a8d-adc9-ac876e8373e7,43cfba42-d9a3-4634-a52c-2fe55094e926,21a5822b-2721-4189-bd0e-498ee2c2c138,80fa5584-a6df-4253-9eb4-d5464e23f147,e32841ca-1870-4e95-b345-8133238bb5b6,2b24382e-eb47-4d17-9cfe-84e84ae7d7e4,1afc23f9-70c4-4b03-a76a-df2e5f0f7c78,094db78a-9a5b-43a3-ac01-88f08ab23085,3ea16fd3-190e-444a-b6bb-830187dece7e,25b0141a-a2e8-45b5-8d3b-0b78a9f779a3,d2a3f64d-99f9-4b39-aefa-3b505b21560d,5a79b55a-5dd4-4af4-b83c-5d663b41dfd0"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_NAMES_ENCODING="windows-1252"
@@ -36,8 +39,8 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2021.0.0.1 (20210315 - Build 21306 - WIN64)"
-#!   LAST_SAVE_DATE="2022-12-05T09:42:29"
+#!   LAST_SAVE_BUILD="FME(R) 2022.2.0.0 (20221103 - Build 22765 - WIN64)"
+#!   LAST_SAVE_DATE="2023-06-13T08:26:28"
 #!   LOG_FILE="$(EX_ROT_DIRECTORY)_log/FME-$(FME_MF_NAME).log"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -45,7 +48,7 @@
 #!   MAX_LOG_FEATURES="200"
 #!   MULTI_WRITER_DATASET_ORDER="BY_ID"
 #!   PASSWORD=""
-#!   PYTHON_COMPATIBILITY="2or3"
+#!   PYTHON_COMPATIBILITY="310"
 #!   REDIRECT_TERMINATORS="NONE"
 #!   SAVE_ON_PROMPT_AND_RUN="Yes"
 #!   SHOW_ANNOTATIONS="true"
@@ -56,7 +59,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="969.837 -2291.69"
+#!   VIEW_POSITION="969.837 -1386.51"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="87"
@@ -236,74 +239,6 @@
 #!   VALUE="Specify a name for the SQLite3 Database file"
 #! />
 #! </DATASET>
-#! <DATASET
-#!   IS_SOURCE="false"
-#!   ROLE="WRITER"
-#!   FORMAT="XLSXW"
-#!   DATASET="$(Destination_log_file)"
-#!   KEYWORD="XLSXW_2"
-#!   MULTI_GEOM_ALLOWED="true"
-#!   ATTR_MAX_LENGTH="255"
-#!   ATTR_CASE="ANY"
-#!   ALLOWED_FEAT_TYPES=""
-#!   WRITE_DEFS="true"
-#!   DEFLINE_TEMPLATE="xlsx_drop_sheet No xlsx_trunc_sheet No xlsx_sheet_order &quot;&quot; xlsx_freeze_end_row &quot;&quot; xlsx_names_are_positions No xlsx_field_names_out Yes xlsx_start_col &quot;&quot; xlsx_start_row &quot;&quot; xlsx_offset_col &quot;&quot; xlsx_offset_row &quot;&quot; xlsx_raster_type PNG xlsx_table_writer_mode Insert xlsx_row_id_column &quot;&quot; xlsx_protect_sheet &quot;NO&quot; xlsx_protect_sheet_level &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_password &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_permissions &quot;&lt;Unused&gt;&quot;"
-#!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_basename string(50) fme_color string(50) fme_dataset string(50) fme_db_operation string(width,xlsx_col_props) fme_feature_type string(50) fme_fill_color string(50) fme_geometry string(50) fme_primary_axis number(width,xlsx_col_props) fme_rotation number(width,xlsx_col_props) fme_secondary_axis number(width,xlsx_col_props) fme_start_angle number(width,xlsx_col_props) fme_sweep_angle number(width,xlsx_col_props) fme_text_size number(width,xlsx_col_props) fme_text_string string(50) fme_type string(50) xlsx_col_id number(width,xlsx_col_props) xlsx_raster_height number(width,xlsx_col_props) xlsx_raster_scale_factor number(width,xlsx_col_props) xlsx_raster_width number(width,xlsx_col_props) xlsx_row_formatting string(width,xlsx_col_props) xlsx_row_id number(width,xlsx_col_props) xlsx_type string(width,xlsx_col_props)"
-#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_layer_group xlsx_table_writer_mode%xlsx_field_names_out%xlsx_names_are_positions%xlsx_row_id_column%xlsx_truncate_group%xlsx_table_group%xlsx_rowcolumn_group%xlsx_protect_sheet%xlsx_advanced_group Sheet Settings&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_truncate_group xlsx_row_id%xlsx_drop_sheet%xlsx_trunc_sheet Drop/Truncate&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_rowcolumn_group xlsx_start_col%xlsx_start_row%xlsx_offset_col%xlsx_offset_row Start Position&quot; &quot;&quot; &quot;GUI ACTIVEDISCLOSUREGROUP xlsx_protect_sheet xlsx_protect_sheet_password%xlsx_protect_sheet_level%xlsx_protect_sheet_permissions Protect Sheet&quot; NO &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_advanced_group xlsx_sheet_order%xlsx_freeze_end_row%xlsx_raster_type Advanced&quot; &quot;&quot; &quot;GUI CHOICE xlsx_drop_sheet Yes%No Drop Existing Sheet/Named Range:&quot; No &quot;GUI CHOICE xlsx_trunc_sheet Yes%No Truncate Existing Sheet/Named Range:&quot; No &quot;GUI OPTIONAL RANGE_SLIDER xlsx_sheet_order 1%MAX Sheet Order (1 - n):&quot; &quot;&quot; &quot;GUI OPTIONAL RANGE_SLIDER xlsx_freeze_end_row 1%MAX Freeze First Row(s) (1 - n):&quot; &quot;&quot; &quot;GUI CHOICE xlsx_field_names_out Yes%No Output Field Names:&quot; Yes &quot;GUI CHOICE xlsx_names_are_positions Yes%No Use Attribute Names As Column Positions:&quot; No &quot;GUI OPTIONAL TEXT xlsx_start_col Named Range Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_start_row Named Range Start Row:&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT xlsx_offset_col Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_offset_row Start Row:&quot; &quot;&quot; &quot;GUI CHOICE xlsx_raster_type BMP%JPEG%PNG Raster Format:&quot; PNG &quot;GUI OPTIONAL PASSWORD_ENCODED xlsx_protect_sheet_password Password:&quot; &lt;Unused&gt; &quot;GUI ACTIVECHOICE_LOOKUP xlsx_protect_sheet_level Select&lt;space&gt;Only&lt;space&gt;Permissions,PROT_DEFAULT,xlsx_protect_sheet_permissions%View&lt;space&gt;Only&lt;space&gt;Permissions,PROT_ALL,xlsx_protect_sheet_permissions%Specific&lt;space&gt;Permissions Protection Level:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL LOOKUP_LISTBOX xlsx_protect_sheet_permissions Select&lt;space&gt;locked&lt;space&gt;cells,PROT_SEL_LOCKED_CELLS%Select&lt;space&gt;unlocked&lt;space&gt;cells,PROT_SEL_UNLOCKED_CELLS%Format&lt;space&gt;cells,PROT_FORMAT_CELLS%Format&lt;space&gt;columns,PROT_FORMAT_COLUMNS%Format&lt;space&gt;rows,PROT_FORMAT_ROWS%Insert&lt;space&gt;columns,PROT_INSERT_COLUMNS%Insert&lt;space&gt;rows,PROT_INSERT_ROWS%Add&lt;space&gt;hyperlinks&lt;space&gt;to&lt;space&gt;unlocked&lt;space&gt;cells,PROT_INSERT_HYPERLINKS%Delete&lt;space&gt;unlocked&lt;space&gt;columns,PROT_DELETE_COLUMNS%Delete&lt;space&gt;unlocked&lt;space&gt;rows,PROT_DELETE_ROWS%Sort&lt;space&gt;unlocked&lt;space&gt;cells/rows/columns,PROT_SORT%Use&lt;space&gt;Autofilter&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_AUTOFILTER%Use&lt;space&gt;PivotTable&lt;space&gt;&amp;&lt;space&gt;PivotChart&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_PIVOTTABLES%Edit&lt;space&gt;unlocked&lt;space&gt;objects,PROT_OBJECTS%Edit&lt;space&gt;unprotected&lt;space&gt;scenarios,PROT_SCENARIOS Specific Permissions:&quot; &lt;Unused&gt; &quot;GUI ACTIVECHOICE xlsx_table_writer_mode Insert,+xlsx_row_id_column+%Update,+xlsx_row_id_column+xlsx_row_id%Delete,+xlsx_row_id_column+xlsx_row_id Writer Mode:&quot; Insert &quot;GUI OPTIONAL ATTR xlsx_row_id_column ALLOW_NEW Row Number Attribute:&quot; &quot;&quot; "
-#!   ATTR_INDEX_TYPES=""
-#!   ATTR_NAME_INVALID_CHARS="\\&quot;*{}$"
-#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
-#!   ENABLED="true"
-#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
-#!   DATASET_TYPE="FILE"
-#!   FTTR_TYPE=""
-#!   GENERATE_FME_BUILD_NUM="21306"
-#!   COORDSYS=""
-#!   FANOUT_EXPRESSION=""
-#!   FANOUT_GROUP="NO"
-#! >
-#! <METAFILE_PARAMETER
-#!   NAME="ALLOW_DATASET_CONFLICT"
-#!   VALUE="YES"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="ATTRIBUTE_READING"
-#!   VALUE="DEFLINE"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DATASET_NAME"
-#!   VALUE="xlsx file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DEFAULT_ATTR_TYPE"
-#!   VALUE="auto"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DEFAULT_READER"
-#!   VALUE="XLSXR"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
-#!   VALUE="Sheet1"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_NAME"
-#!   VALUE="Sheet"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="MIME_TYPE"
-#!   VALUE="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet ADD_DISPOSITION"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="USER_ATTRIBUTES_COLUMNS"
-#!   VALUE="Width,Cell Width%Precision,Formatting"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a name for the Microsoft Excel file"
-#! />
-#! </DATASET>
 #! </DATASETS>
 #! <DATA_TYPES>
 #! <DATA_TYPE
@@ -406,6 +341,12 @@
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="text"
 #!   FME_TYPE="fme_time"
+#!   FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
 #!   FORMAT="SQLITE3"
 #! />
 #! <DATA_TYPE
@@ -581,150 +522,6 @@
 #!   FORMAT_TYPE="number(width,decimal)"
 #!   FME_TYPE="fme_decimal(width,decimal)"
 #!   FORMAT="TEXTLINE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="auto(width,xlsx_col_props)"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="datetime(width,xlsx_col_props)"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="time(width,xlsx_col_props)"
-#!   FME_TYPE="fme_time"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date(width,xlsx_col_props)"
-#!   FME_TYPE="fme_date"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="boolean(width,xlsx_col_props)"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="XLSXW"
 #! />
 #! </DATA_TYPES>
 #! <GEOM_TYPES>
@@ -908,108 +705,6 @@
 #!   FME_TYPE="fme_feature_table"
 #!   FORMAT="TEXTLINE"
 #! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_point"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_feature_table"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_voxel_grid"
-#!   FORMAT="XLSXW"
-#! />
 #! </GEOM_TYPES>
 #! <FEATURE_TYPES>
 #! <FEATURE_TYPE
@@ -1039,8 +734,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="48"
 #!   FEAT_GEOMTYPE="All"
-#!   POSITION="4935.4700000000003 -3438.0599999999999"
-#!   BOUNDING_RECT="4935.4700000000003 -3438.0599999999999 431 71"
+#!   POSITION="4935.4700000000003 -2866.1799999999998"
+#!   BOUNDING_RECT="4935.4700000000003 -2866.1799999999998 431 71"
 #!   ORDER="500000000000000"
 #!   COLLAPSED="false"
 #!   KEYWORD="SQLITE3_1"
@@ -1081,51 +776,6 @@
 #! >
 #!     <FEAT_ATTRIBUTE ATTR_NAME="text_line_data" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="false"
-#!   NODE_NAME="Generell"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="69"
-#!   FEAT_GEOMTYPE="All"
-#!   POSITION="4935.4700000000003 -2816.6457398803882"
-#!   BOUNDING_RECT="4935.4700000000003 -2816.6457398803882 430 71"
-#!   ORDER="500000000000000"
-#!   COLLAPSED="false"
-#!   KEYWORD="XLSXW_2"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   SCHEMA_ATTRIBUTE_SOURCE="0"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Tidpunkt" ATTR_TYPE="string(20,version;1;CELL_BORDER_FORMATTING;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Processnamn" ATTR_TYPE="string(20,version;1;CELL_BORDER_FORMATTING;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Process ID" ATTR_TYPE="string(20,version;1;CELL_BORDER_FORMATTING;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Typ" ATTR_TYPE="string(20,version;1;CELL_BORDER_FORMATTING;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Meddelande" ATTR_TYPE="string(200,version;1;CELL_BORDER_FORMATTING;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="FME workspace" ATTR_TYPE="string(20,version;1;CELL_BORDER_FORMATTING;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_advanced_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_drop_sheet" PARM_VALUE="No"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_out" PARM_VALUE="Yes"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_freeze_end_row" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_layer_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_names_are_positions" PARM_VALUE="No"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_col" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_row" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet" PARM_VALUE="NO"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_level" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_password" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_permissions" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_raster_type" PARM_VALUE="PNG"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_row_id_column" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_rowcolumn_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_sheet_order" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_start_col" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_table_writer_mode" PARM_VALUE="Insert"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_trunc_sheet" PARM_VALUE="No"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_truncate_group" PARM_VALUE=""/>
-#! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
 #! <WRITER_DATASETS>
@@ -1133,11 +783,6 @@
 #!   NAME="SQLITE3_1"
 #!   OVERRIDE="-SQLITE3_1_DATASET"
 #!   DATASET="SQLITE3_1/DatalagerLogg.sqlite"
-#! />
-#! <DATASET
-#!   NAME="XLSXW_2"
-#!   OVERRIDE="-XLSXW_2_DATASET"
-#!   DATASET="XLSXW_2/DatalagerLogg.xlsx"
 #! />
 #! <DATASET
 #!   NAME="TEXTLINE_1"
@@ -1198,7 +843,7 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI IGNORE OPTIONAL NAMEDGROUP FME_USER_PARAM_PRIVATE_GRP Destination_exc_file%Destination_exc_file_local%Destination_log_file%Destination_log_file_sqlite%EX_ROT_DIRECTORY_2 Private Parameters"
+#!   GUI_LINE="GUI IGNORE NO_EDIT OPTIONAL NAMEDGROUP FME_USER_PARAM_PRIVATE_GRP Destination_exc_file%Destination_exc_file_local%Destination_log_file_sqlite%EX_ROT_DIRECTORY_2 Private Parameters"
 #!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
@@ -1213,11 +858,6 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI IGNORE OPTIONAL FILENAME Destination_log_file Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Sökväg loggfil:"
-#!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)_log/DatalagerLogg.xlsx"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI IGNORE OPTIONAL FILENAME Destination_log_file_sqlite SQLite_Database_Files(*.sl3;*.db;*.sqlite)|*.sl3;*.db;*.sqlite|SQLite_Database_Files(*.sl3)|*.sl3|SQLite_Database_Files(*.db)|*.db|SQLite_Database_Files(*.sqlite)|*.sqlite|All_files(*)|* Sökväg loggfil:"
 #!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)_log/DatalagerLogg.sqlite"
 #!   IS_STAND_ALONE="false"
@@ -1229,24 +869,93 @@
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <USER_PARAMETERS
-#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiRVhfREFURV9USU1FIiwicHJvbXB0IjoiRXhjZXB0aW9uIGRhdGUgdGltZToiLCJyZXF1aXJlZCI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZGF0ZXRpbWUiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJFWF9QUk9DRVNTX05BTUUiLCJwcm9tcHQiOiJQcm9jZXNzbmFtbjoiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiRVhfSUQiLCJwcm9tcHQiOiJQcm9jZXNzIElEOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VzIjpbeyJkaXNwbGF5IjoiSU5GT1JNQVRJT04iLCJ2YWx1ZSI6IklORk9STUFUSU9OIn0seyJkaXNwbGF5IjoiS0xBUlQiLCJ2YWx1ZSI6IktMQVJUIn0seyJkaXNwbGF5IjoiVkFSTklORyIsInZhbHVlIjoiVkFSTklORyJ9LHsiZGlzcGxheSI6IkVSUk9SIiwidmFsdWUiOiJFUlJPUiJ9LHsiZGlzcGxheSI6Ik9Lw4RORCIsInZhbHVlIjoiT0vDhE5EIn1dLCJuYW1lIjoiRVhfVFlQRSIsInByb21wdCI6IkV4Y2VwdGlvbiB0eXBlOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJkcm9wZG93biIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkVYIiwicHJvbXB0IjoiRXhjZXB0aW9uIG1lc3NhZ2U6IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93QXJpdGhtZXRpY0VkaXRvciI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiZGVmYXVsdFZhbHVlIjoiJChGTUVfTUZfRElSX1VTRVJUWVBFRCkkKEZNRV9NRl9OQU1FKSIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJFWF9Xb3JrU3BhY2UiLCJwcm9tcHQiOiJXb3Jrc3BhY2UgbWVkIHPDtmt2w6RnOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiIuLi8iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiRVhfUk9UX0RJUkVDVE9SWSIsInByb21wdCI6IkthdGFsb2dlbiBkw6RyIHByb2Nlc3NlbiBzdGFydGFyOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkVYX1BST0NFU1NfTU9EVUxfTkFNRSIsInByb21wdCI6IlByb2Nlc3Ntb2R1bHNuYW1uOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiMSIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJJc1dob2xlUHJvY2Vzc1J1biIsInByb21wdCI6IsOEciBoZWxhIGRhdGFsYWdlcnByb2Nlc3NlbiBrw7ZyZDoiLCJyZXF1aXJlZCI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiaGlkZGVuIjp0cnVlLCJuYW1lIjoiRk1FX1VTRVJfUEFSQU1fUFJJVkFURV9HUlAiLCJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiIkKEVYX1JPVF9ESVJFQ1RPUlkpX2xvZy9GQVRBTF9FUlJPUi5sb2ciLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlRleHQvQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0IiwiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IlRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJoaWRkZW4iOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0aW5hdGlvbl9leGNfZmlsZSIsInByb21wdCI6IlPDtmt2w6RnIGV4Y2VwdGlvbmZpbDoiLCJyZXF1aXJlZCI6ZmFsc2UsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiJChFWF9ST1RfRElSRUNUT1JZKSQoRVhfUFJPQ0VTU19NT0RVTF9OQU1FKS9fbG9nL0ZBVEFMX0VSUk9SLmxvZyIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiVGV4dC9Db21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiLCIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImhpZGRlbiI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3RpbmF0aW9uX2V4Y19maWxlX2xvY2FsIiwicHJvbXB0IjoiU8O2a3bDpGcgZXhjZXB0aW9uZmlsOiIsInJlcXVpcmVkIjpmYWxzZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiIkKEVYX1JPVF9ESVJFQ1RPUlkpX2xvZy9EYXRhbGFnZXJMb2dnLnhsc3giLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkV4Y2VsIEZpbGVzIiwiZmlsdGVyIjpbIioueGxzeCIsIioueGxzbSIsIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImhpZGRlbiI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3RpbmF0aW9uX2xvZ19maWxlIiwicHJvbXB0IjoiU8O2a3bDpGcgbG9nZ2ZpbDoiLCJyZXF1aXJlZCI6ZmFsc2UsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiJChFWF9ST1RfRElSRUNUT1JZKV9sb2cvRGF0YWxhZ2VyTG9nZy5zcWxpdGUiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlNRTGl0ZSBEYXRhYmFzZSBGaWxlcyIsImZpbHRlciI6WyIqLnNsMyIsIiouZGIiLCIqLnNxbGl0ZSJdfSx7ImRlc2NyaXB0aW9uIjoiU1FMaXRlIERhdGFiYXNlIEZpbGVzIiwiZmlsdGVyIjpbIiouc2wzIl19LHsiZGVzY3JpcHRpb24iOiJTUUxpdGUgRGF0YWJhc2UgRmlsZXMiLCJmaWx0ZXIiOlsiKi5kYiJdfSx7ImRlc2NyaXB0aW9uIjoiU1FMaXRlIERhdGFiYXNlIEZpbGVzIiwiZmlsdGVyIjpbIiouc3FsaXRlIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImhpZGRlbiI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3RpbmF0aW9uX2xvZ19maWxlX3NxbGl0ZSIsInByb21wdCI6IlPDtmt2w6RnIGxvZ2dmaWw6IiwicmVxdWlyZWQiOmZhbHNlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6Ii4uLyIsImVkaXRvciI6InBsYWludGV4dCIsImhpZGRlbiI6dHJ1ZSwibmFtZSI6IkVYX1JPVF9ESVJFQ1RPUllfMiIsInByb21wdCI6IkthdGFsb2dlbiBkw6RyIHByb2Nlc3NlbiBzdGFydGFyOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XSwicHJvbXB0IjoiUHJpdmF0ZSBQYXJhbWV0ZXJzIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiZ3JvdXAiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19"
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiIiLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJuYW1lIjoiRVhfREFURV9USU1FIiwicHJvbXB0IjoiRXhjZXB0aW9uIGRhdGUgdGltZToiLCJyZXF1aXJlZCI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZGF0ZXRpbWUiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IiIsImRlcHJlY2F0ZWRGbGFncyI6WyJub25lIl0sImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJFWF9QUk9DRVNTX05BTUUiLCJwcm9tcHQiOiJQcm9jZXNzbmFtbjoiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiIiLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiRVhfSUQiLCJwcm9tcHQiOiJQcm9jZXNzIElEOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJ1c2VyRGVmaW5lZCIsImNob2ljZXMiOlt7ImRpc3BsYXkiOiJJTkZPUk1BVElPTiIsInZhbHVlIjoiSU5GT1JNQVRJT04ifSx7ImRpc3BsYXkiOiJLTEFSVCIsInZhbHVlIjoiS0xBUlQifSx7ImRpc3BsYXkiOiJWQVJOSU5HIiwidmFsdWUiOiJWQVJOSU5HIn0seyJkaXNwbGF5IjoiRVJST1IiLCJ2YWx1ZSI6IkVSUk9SIn0seyJkaXNwbGF5IjoiT0vDhE5EIiwidmFsdWUiOiJPS8OETkQifV0sInNvcnQiOiJub1NvcnQifSwiZGVmYXVsdFZhbHVlIjoiIiwiZGVwcmVjYXRlZEZsYWdzIjpbIm5vbmUiXSwibmFtZSI6IkVYX1RZUEUiLCJwcm9tcHQiOiJFeGNlcHRpb24gdHlwZToiLCJyZXF1aXJlZCI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZHJvcGRvd24iLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IiIsImRlcHJlY2F0ZWRGbGFncyI6WyJub25lIl0sImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJFWCIsInByb21wdCI6IkV4Y2VwdGlvbiBtZXNzYWdlOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpJChGTUVfTUZfTkFNRSkiLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiRVhfV29ya1NwYWNlIiwicHJvbXB0IjoiV29ya3NwYWNlIG1lZCBzw7ZrdsOkZzoiLCJyZXF1aXJlZCI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiLi4vIiwiZGVwcmVjYXRlZEZsYWdzIjpbIm5vbmUiXSwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkVYX1JPVF9ESVJFQ1RPUlkiLCJwcm9tcHQiOiJLYXRhbG9nZW4gZMOkciBwcm9jZXNzZW4gc3RhcnRhcjoiLCJyZXF1aXJlZCI6ZmFsc2UsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IiIsImRlcHJlY2F0ZWRGbGFncyI6WyJub25lIl0sImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJFWF9QUk9DRVNTX01PRFVMX05BTUUiLCJwcm9tcHQiOiJQcm9jZXNzbW9kdWxzbmFtbjoiLCJyZXF1aXJlZCI6ZmFsc2UsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IjEiLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiSXNXaG9sZVByb2Nlc3NSdW4iLCJwcm9tcHQiOiLDhHIgaGVsYSBkYXRhbGFnZXJwcm9jZXNzZW4ga8O2cmQ6IiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IiIsImRlcHJlY2F0ZWRGbGFncyI6WyJub25lIl0sImhpZGRlbiI6dHJ1ZSwibmFtZSI6IkZNRV9VU0VSX1BBUkFNX1BSSVZBVEVfR1JQIiwicGFyYW1ldGVycyI6W3siYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiJChFWF9ST1RfRElSRUNUT1JZKV9sb2cvRkFUQUxfRVJST1IubG9nIiwiZGVwcmVjYXRlZEZsYWdzIjpbIm5vbmUiXSwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJUZXh0L0NvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCIsIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaGlkZGVuIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiRGVzdGluYXRpb25fZXhjX2ZpbGUiLCJwcm9tcHQiOiJTw7ZrdsOkZyBleGNlcHRpb25maWw6IiwicmVxdWlyZWQiOmZhbHNlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJ3cml0ZSIsImRlZmF1bHRWYWx1ZSI6IiQoRVhfUk9UX0RJUkVDVE9SWSkkKEVYX1BST0NFU1NfTU9EVUxfTkFNRSkvX2xvZy9GQVRBTF9FUlJPUi5sb2ciLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlRleHQvQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0IiwiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IlRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJoaWRkZW4iOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0aW5hdGlvbl9leGNfZmlsZV9sb2NhbCIsInByb21wdCI6IlPDtmt2w6RnIGV4Y2VwdGlvbmZpbDoiLCJyZXF1aXJlZCI6ZmFsc2UsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiJChFWF9ST1RfRElSRUNUT1JZKV9sb2cvRGF0YWxhZ2VyTG9nZy5zcWxpdGUiLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlNRTGl0ZSBEYXRhYmFzZSBGaWxlcyIsImZpbHRlciI6WyIqLnNsMyIsIiouZGIiLCIqLnNxbGl0ZSJdfSx7ImRlc2NyaXB0aW9uIjoiU1FMaXRlIERhdGFiYXNlIEZpbGVzIiwiZmlsdGVyIjpbIiouc2wzIl19LHsiZGVzY3JpcHRpb24iOiJTUUxpdGUgRGF0YWJhc2UgRmlsZXMiLCJmaWx0ZXIiOlsiKi5kYiJdfSx7ImRlc2NyaXB0aW9uIjoiU1FMaXRlIERhdGFiYXNlIEZpbGVzIiwiZmlsdGVyIjpbIiouc3FsaXRlIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImhpZGRlbiI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3RpbmF0aW9uX2xvZ19maWxlX3NxbGl0ZSIsInByb21wdCI6IlPDtmt2w6RnIGxvZ2dmaWw6IiwicmVxdWlyZWQiOmZhbHNlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6Ii4uLyIsImRlcHJlY2F0ZWRGbGFncyI6WyJub25lIl0sImVkaXRvciI6InBsYWludGV4dCIsImhpZGRlbiI6dHJ1ZSwibmFtZSI6IkVYX1JPVF9ESVJFQ1RPUllfMiIsInByb21wdCI6IkthdGFsb2dlbiBkw6RyIHByb2Nlc3NlbiBzdGFydGFyOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XSwicHJvbXB0IjoiUHJpdmF0ZSBQYXJhbWV0ZXJzIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiZ3JvdXAiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19"
 #! >
 #! <PARAMETER_INFO>
-#!     <INFO NAME="Destination_exc_file" IS_STAND_ALONE="false" />
-#!     <INFO NAME="Destination_exc_file_local" IS_STAND_ALONE="true" />
-#!     <INFO NAME="Destination_log_file" IS_STAND_ALONE="false" />
-#!     <INFO NAME="Destination_log_file_sqlite" IS_STAND_ALONE="false" />
-#!     <INFO NAME="EX" IS_STAND_ALONE="false" />
-#!     <INFO NAME="EX_DATE_TIME" IS_STAND_ALONE="true" />
-#!     <INFO NAME="EX_ID" IS_STAND_ALONE="true" />
-#!     <INFO NAME="EX_PROCESS_MODUL_NAME" IS_STAND_ALONE="true" />
-#!     <INFO NAME="EX_PROCESS_NAME" IS_STAND_ALONE="true" />
-#!     <INFO NAME="EX_ROT_DIRECTORY" IS_STAND_ALONE="true" />
-#!     <INFO NAME="EX_ROT_DIRECTORY_2" IS_STAND_ALONE="true" />
-#!     <INFO NAME="EX_TYPE" IS_STAND_ALONE="true" />
-#!     <INFO NAME="EX_WorkSpace" IS_STAND_ALONE="true" />
-#!     <INFO NAME="FME_USER_PARAM_PRIVATE_GRP" IS_STAND_ALONE="false" />
-#!     <INFO NAME="IsWholeProcessRun" IS_STAND_ALONE="true" />
+#!     <INFO NAME="EX_DATE_TIME" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL DATETIME_OR_ATTR EX_DATE_TIME &quot;{}&quot; Exception date time:"
+#! />
+#!     <INFO NAME="EX_PROCESS_NAME" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI TEXT_OR_ATTR EX_PROCESS_NAME Processnamn:"
+#! />
+#!     <INFO NAME="EX_ID" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR EX_ID Process ID:"
+#! />
+#!     <INFO NAME="EX_TYPE" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL CHOICE_OR_ATTR EX_TYPE INFORMATION%KLART%VARNING%ERROR%OKÄND Exception type:"
+#! />
+#!     <INFO NAME="EX" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL TEXT_EDIT_OR_NUM_MULTI_FEATURE_OR_ATTR EX &quot; &quot; Exception message:"
+#! />
+#!     <INFO NAME="EX_WorkSpace" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)$(FME_MF_NAME)"
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR EX_WorkSpace Workspace med sökväg:"
+#! />
+#!     <INFO NAME="EX_ROT_DIRECTORY" 
+#!   DEFAULT_VALUE="../"
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL TEXT EX_ROT_DIRECTORY Katalogen där processen startar:"
+#! />
+#!     <INFO NAME="EX_PROCESS_MODUL_NAME" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL TEXT EX_PROCESS_MODUL_NAME Processmodulsnamn:"
+#! />
+#!     <INFO NAME="IsWholeProcessRun" 
+#!   DEFAULT_VALUE="1"
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR IsWholeProcessRun Är hela datalagerprocessen körd:"
+#! />
+#!     <INFO NAME="FME_USER_PARAM_PRIVATE_GRP" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI IGNORE NO_EDIT OPTIONAL NAMEDGROUP FME_USER_PARAM_PRIVATE_GRP Destination_exc_file%Destination_exc_file_local%Destination_log_file_sqlite%EX_ROT_DIRECTORY_2 Private Parameters"
+#! />
+#!     <INFO NAME="Destination_exc_file" 
+#!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)_log/FATAL_ERROR.log"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI IGNORE OPTIONAL FILENAME Destination_exc_file Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Sökväg exceptionfil:"
+#! />
+#!     <INFO NAME="Destination_exc_file_local" 
+#!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)$(EX_PROCESS_MODUL_NAME)/_log/FATAL_ERROR.log"
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI IGNORE OPTIONAL FILENAME Destination_exc_file_local Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Sökväg exceptionfil:"
+#! />
+#!     <INFO NAME="Destination_log_file_sqlite" 
+#!   DEFAULT_VALUE="$(EX_ROT_DIRECTORY)_log/DatalagerLogg.sqlite"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI IGNORE OPTIONAL FILENAME Destination_log_file_sqlite SQLite_Database_Files(*.sl3;*.db;*.sqlite)|*.sl3;*.db;*.sqlite|SQLite_Database_Files(*.sl3)|*.sl3|SQLite_Database_Files(*.db)|*.db|SQLite_Database_Files(*.sqlite)|*.sqlite|All_files(*)|* Sökväg loggfil:"
+#! />
+#!     <INFO NAME="EX_ROT_DIRECTORY_2" 
+#!   DEFAULT_VALUE="../"
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI IGNORE OPTIONAL TEXT EX_ROT_DIRECTORY_2 Katalogen där processen startar:"
+#! />
 #! </PARAMETER_INFO>
 #! </USER_PARAMETERS>
 #! <COMMENTS>
@@ -1261,6 +970,7 @@
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
 #!   CUSTOM_USER_COLOR="false"
+#!   UUID="{82b5b876-0b5f-4b89-bc92-4bbef3436f56}"
 #!   COLOUR="1,1,0.95686274509803926,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="0"
@@ -1280,7 +990,7 @@
 #!   BOUNDING_RECT="1322.3199999999999 -835.55899999999997 2128.5100000000002 367.91000000000003"
 #!   STICKY="true"
 #!   COLOUR="0.75686274509803919,0.5490196078431373,0.094117647058823528,0.39215686274509803"
-#!   CONTENTS="70 71 62 68 9 "
+#!   CONTENTS="68 9 70 62 71 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1294,7 +1004,7 @@
 #!   BOUNDING_RECT="1339.8399999999999 -1687.4200000000001 1708.97 296"
 #!   STICKY="true"
 #!   COLOUR="0.18823529411764706,0.35686274509803922,0.69803921568627447,0.39215686274509803"
-#!   CONTENTS="23 24 21 "
+#!   CONTENTS="24 21 23 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1308,7 +1018,7 @@
 #!   BOUNDING_RECT="1331.0799999999999 -1255.28 2126.1900000000001 296"
 #!   STICKY="true"
 #!   COLOUR="0.72156862745098038,0.011764705882352941,0.51764705882352946,0.39215686274509803"
-#!   CONTENTS="45 35 41 44 40 37 "
+#!   CONTENTS="35 45 40 41 37 44 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1318,11 +1028,11 @@
 #!   TOP_LEFT="3598.46 -1707.77"
 #!   ORDER="500000000000000"
 #!   PALETTE_COLOR=""
-#!   BOTTOM_RIGHT="5481.5100000000002 -3947.1599999999999"
-#!   BOUNDING_RECT="3598.46 -1707.77 1883.05 2239.3899999999999"
+#!   BOTTOM_RIGHT="5481.5100000000002 -3609.9498926023743"
+#!   BOUNDING_RECT="3598.46 -1707.77 1883.05 1902.1798926023744"
 #!   STICKY="true"
 #!   COLOUR="0.34509803921568627,0.16078431372549021,0.37254901960784315,0.39215686274509803"
-#!   CONTENTS="12 65 48 64 28 69 75 66 5 73 56 29 67 74 55 42 76 63 51 "
+#!   CONTENTS="67 29 48 55 51 74 75 65 63 5 28 73 56 66 12 64 42 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1336,7 +1046,7 @@
 #!   BOUNDING_RECT="3598.46 -1831.77 1883.05 711.52599999999995"
 #!   STICKY="true"
 #!   COLOUR="0.21176470588235294,0.50196078431372548,0.062745098039215685,0.39215686274509803"
-#!   CONTENTS="63 12 65 67 51 28 66 55 5 64 29 "
+#!   CONTENTS="67 29 55 51 63 66 65 12 64 5 28 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1376,6 +1086,7 @@
 #!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
 #!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
 #!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
@@ -1445,28 +1156,28 @@
 #! >
 #!     <OUTPUT_FEAT NAME="PASSED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1 OR 2 OR 3"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Across Output Ports"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST _EX_DATE_TIME ATTRIBUTE_VALUE_NULL &quot;&quot;&#10;TEST _EX_DATE_TIME ATTRIBUTE_IS_EMPTY &quot;&quot;&#10;TEST _EX_DATE_TIME ATTRIBUTE_IS_MISSING &quot;&quot;"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
@@ -1489,11 +1200,11 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1519,22 +1230,22 @@
 #! >
 #!     <OUTPUT_FEAT NAME="PASSED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1542,7 +1253,7 @@
 #!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1 OR 2 OR 3"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Across Output Ports"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST _EX_TYPE ATTRIBUTE_VALUE_NULL &quot;&quot;&#10;TEST _EX_TYPE ATTRIBUTE_IS_EMPTY &quot;&quot;&#10;TEST _EX_TYPE ATTRIBUTE_IS_MISSING &quot;&quot;"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
@@ -1565,11 +1276,11 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1598,29 +1309,29 @@
 #!     <OUTPUT_FEAT NAME="PASSED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Across Output Ports"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;_EX_TYPE&lt;closeparen&gt; = ERROR"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
@@ -1642,22 +1353,22 @@
 #! >
 #!     <OUTPUT_FEAT NAME="PASSED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1665,7 +1376,7 @@
 #!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1 OR 2 OR 3"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Across Output Ports"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST _EX_WorkSpace ATTRIBUTE_VALUE_NULL &quot;&quot;&#10;TEST _EX_WorkSpace ATTRIBUTE_IS_EMPTY &quot;&quot;&#10;TEST _EX_WorkSpace ATTRIBUTE_IS_MISSING &quot;&quot;"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
@@ -1687,11 +1398,11 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1717,11 +1428,11 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1771,7 +1482,7 @@
 #!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1 OR 2 OR 3"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Across Output Ports"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST _EX_ID ATTRIBUTE_VALUE_NULL &quot;&quot;&#10;TEST _EX_ID ATTRIBUTE_IS_EMPTY &quot;&quot;&#10;TEST _EX_ID ATTRIBUTE_IS_MISSING &quot;&quot;"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
@@ -1825,11 +1536,11 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1856,11 +1567,11 @@
 #!     <OUTPUT_FEAT NAME="PASSED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1868,11 +1579,11 @@
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1880,7 +1591,7 @@
 #!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Across Output Ports"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;_IsWholeProcessRun&lt;closeparen&gt; = 1"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
@@ -1903,11 +1614,11 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1930,26 +1641,26 @@
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="21306"
+#!   LAST_PARM_EDIT="22765"
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_datetimestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;Rejected&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1972,10 +1683,10 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_EX_DATE_TIME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Exception" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_PROCESS_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_EX_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_TYPE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_EX_WorkSpace" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_IsWholeProcessRun" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2309,28 +2020,13 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="76"
-#!   SOURCE_NODE="74"
-#!   TARGET_NODE="69"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #!   IDENTIFIER="73"
 #!   SOURCE_NODE="74"
 #!   TARGET_NODE="48"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
-#!   EXECUTION_IDX="1"
+#!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
 #!   COLOUR="0,0,0,1"
 #!   PEN_WIDTH="4"
@@ -2498,6 +2194,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_dts" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="DATETIME_ATTR" PARM_VALUE="_dts"/>
 #!     <XFORM_PARM PARM_NAME="INCLUDE_OFFSET" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PREVIEW" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PREVIEW_GROUP" PARM_VALUE=""/>
@@ -2633,6 +2330,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_dts" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_subMils" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="END" PARM_VALUE="2"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="RESULT_ATTR" PARM_VALUE="_subMils"/>
 #!     <XFORM_PARM PARM_NAME="SRC_STRING" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;_mils&lt;closeparen&gt;"/>
@@ -2882,39 +2580,40 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 
-FME_PYTHON_VERSION 2or3
+FME_PYTHON_VERSION 310
 ARCGIS_COMPATIBILITY ARCGIS_AUTO
-GUI IGNORE DestDataset_TEXTLINE_1,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1,TEXTLINE_OUT_ENCODING_TEXTLINE_1,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1,DestDataset_TEXTLINE_2,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_2,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_2,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_2,TEXTLINE_OUT_ENCODING_TEXTLINE_2,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_2,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_2,DestDataset_SQLITE3_1,SQLITE3_OUT_OVERWRITE_FILE_SQLITE3_1,SQLITE3_OUT_DATASET_TEMPLATE_SQLITE3_1,SQLITE3_OUT_ADVANCED_SQLITE3_1,SQLITE3_OUT_WRITER_MODE_SQLITE3_1,SQLITE3_OUT_START_TRANSACTION_SQLITE3_1,SQLITE3_OUT_TRANSACTION_INTERVAL_SQLITE3_1,SQLITE3_OUT_BEGIN_SQL{0}_SQLITE3_1,SQLITE3_OUT_END_SQL{0}_SQLITE3_1,SQLITE3_OUT_INIT_TABLES_SQLITE3_1,DestDataset_XLSXW_2,XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_2,XLSXW_OUT_OVERWRITE_FILE_XLSXW_2,XLSXW_OUT_TEMPLATEFILE_XLSXW_2,XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2,XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET_XLSXW_2
+GUI IGNORE DestDataset_TEXTLINE_1,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1,TEXTLINE_OUT_ENCODING_TEXTLINE_1,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1,DestDataset_TEXTLINE_2,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_2,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_2,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_2,TEXTLINE_OUT_ENCODING_TEXTLINE_2,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_2,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_2,DestDataset_SQLITE3_1,SQLITE3_OUT_OVERWRITE_FILE_SQLITE3_1,SQLITE3_OUT_DATASET_TEMPLATE_SQLITE3_1,SQLITE3_OUT_ADVANCED_SQLITE3_1,SQLITE3_OUT_WRITER_MODE_SQLITE3_1,SQLITE3_OUT_START_TRANSACTION_SQLITE3_1,SQLITE3_OUT_TRANSACTION_INTERVAL_SQLITE3_1,SQLITE3_OUT_BEGIN_SQL{0}_SQLITE3_1,SQLITE3_OUT_END_SQL{0}_SQLITE3_1,SQLITE3_OUT_INIT_TABLES_SQLITE3_1
 # ============================================================================
 DEFAULT_MACRO EX_DATE_TIME 
+
 DEFAULT_MACRO EX_PROCESS_NAME 
+
 DEFAULT_MACRO EX_ID 
+
 DEFAULT_MACRO EX_TYPE 
+
 DEFAULT_MACRO EX 
+
 DEFAULT_MACRO EX_WorkSpace $(FME_MF_DIR_USERTYPED)$(FME_MF_NAME)
+
 DEFAULT_MACRO EX_ROT_DIRECTORY ../
+
 DEFAULT_MACRO EX_PROCESS_MODUL_NAME 
+
 DEFAULT_MACRO IsWholeProcessRun 1
+
 DEFAULT_MACRO FME_USER_PARAM_PRIVATE_GRP 
+
 DEFAULT_MACRO Destination_exc_file $(EX_ROT_DIRECTORY)_log/FATAL_ERROR.log
+
 DEFAULT_MACRO Destination_exc_file_local $(EX_ROT_DIRECTORY)$(EX_PROCESS_MODUL_NAME)/_log/FATAL_ERROR.log
-DEFAULT_MACRO Destination_log_file $(EX_ROT_DIRECTORY)_log/DatalagerLogg.xlsx
+
 DEFAULT_MACRO Destination_log_file_sqlite $(EX_ROT_DIRECTORY)_log/DatalagerLogg.sqlite
+
 DEFAULT_MACRO EX_ROT_DIRECTORY_2 ../
+
 # ============================================================================
-GUI OPTIONAL DATETIME EX_DATE_TIME "{}" Exception date time:
-GUI TEXT EX_PROCESS_NAME Processnamn:
-GUI OPTIONAL TEXT EX_ID Process ID:
-GUI OPTIONAL CHOICE EX_TYPE INFORMATION%KLART%VARNING%ERROR%OKÄND Exception type:
-GUI OPTIONAL TEXT_EDIT_OR_NUM_MULTI_FEATURE EX " " Exception message:
-GUI OPTIONAL TEXT EX_WorkSpace Workspace med sökväg:
-GUI OPTIONAL TEXT EX_ROT_DIRECTORY Katalogen där processen startar:
-GUI OPTIONAL TEXT EX_PROCESS_MODUL_NAME Processmodulsnamn:
-GUI OPTIONAL TEXT IsWholeProcessRun Är hela datalagerprocessen körd:
-# ============================================================================
-USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiRVhfREFURV9USU1FIiwicHJvbXB0IjoiRXhjZXB0aW9uIGRhdGUgdGltZToiLCJyZXF1aXJlZCI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZGF0ZXRpbWUiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJFWF9QUk9DRVNTX05BTUUiLCJwcm9tcHQiOiJQcm9jZXNzbmFtbjoiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiRVhfSUQiLCJwcm9tcHQiOiJQcm9jZXNzIElEOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VzIjpbeyJkaXNwbGF5IjoiSU5GT1JNQVRJT04iLCJ2YWx1ZSI6IklORk9STUFUSU9OIn0seyJkaXNwbGF5IjoiS0xBUlQiLCJ2YWx1ZSI6IktMQVJUIn0seyJkaXNwbGF5IjoiVkFSTklORyIsInZhbHVlIjoiVkFSTklORyJ9LHsiZGlzcGxheSI6IkVSUk9SIiwidmFsdWUiOiJFUlJPUiJ9LHsiZGlzcGxheSI6Ik9Lw4RORCIsInZhbHVlIjoiT0vDhE5EIn1dLCJuYW1lIjoiRVhfVFlQRSIsInByb21wdCI6IkV4Y2VwdGlvbiB0eXBlOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJkcm9wZG93biIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkVYIiwicHJvbXB0IjoiRXhjZXB0aW9uIG1lc3NhZ2U6IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93QXJpdGhtZXRpY0VkaXRvciI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiZGVmYXVsdFZhbHVlIjoiJChGTUVfTUZfRElSX1VTRVJUWVBFRCkkKEZNRV9NRl9OQU1FKSIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJFWF9Xb3JrU3BhY2UiLCJwcm9tcHQiOiJXb3Jrc3BhY2UgbWVkIHPDtmt2w6RnOiIsInJlcXVpcmVkIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiIuLi8iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiRVhfUk9UX0RJUkVDVE9SWSIsInByb21wdCI6IkthdGFsb2dlbiBkw6RyIHByb2Nlc3NlbiBzdGFydGFyOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkVYX1BST0NFU1NfTU9EVUxfTkFNRSIsInByb21wdCI6IlByb2Nlc3Ntb2R1bHNuYW1uOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiMSIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJJc1dob2xlUHJvY2Vzc1J1biIsInByb21wdCI6IsOEciBoZWxhIGRhdGFsYWdlcnByb2Nlc3NlbiBrw7ZyZDoiLCJyZXF1aXJlZCI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiaGlkZGVuIjp0cnVlLCJuYW1lIjoiRk1FX1VTRVJfUEFSQU1fUFJJVkFURV9HUlAiLCJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiIkKEVYX1JPVF9ESVJFQ1RPUlkpX2xvZy9GQVRBTF9FUlJPUi5sb2ciLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlRleHQvQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0IiwiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IlRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJoaWRkZW4iOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0aW5hdGlvbl9leGNfZmlsZSIsInByb21wdCI6IlPDtmt2w6RnIGV4Y2VwdGlvbmZpbDoiLCJyZXF1aXJlZCI6ZmFsc2UsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiJChFWF9ST1RfRElSRUNUT1JZKSQoRVhfUFJPQ0VTU19NT0RVTF9OQU1FKS9fbG9nL0ZBVEFMX0VSUk9SLmxvZyIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiVGV4dC9Db21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiLCIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImhpZGRlbiI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3RpbmF0aW9uX2V4Y19maWxlX2xvY2FsIiwicHJvbXB0IjoiU8O2a3bDpGcgZXhjZXB0aW9uZmlsOiIsInJlcXVpcmVkIjpmYWxzZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiIkKEVYX1JPVF9ESVJFQ1RPUlkpX2xvZy9EYXRhbGFnZXJMb2dnLnhsc3giLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkV4Y2VsIEZpbGVzIiwiZmlsdGVyIjpbIioueGxzeCIsIioueGxzbSIsIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImhpZGRlbiI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3RpbmF0aW9uX2xvZ19maWxlIiwicHJvbXB0IjoiU8O2a3bDpGcgbG9nZ2ZpbDoiLCJyZXF1aXJlZCI6ZmFsc2UsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiJChFWF9ST1RfRElSRUNUT1JZKV9sb2cvRGF0YWxhZ2VyTG9nZy5zcWxpdGUiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlNRTGl0ZSBEYXRhYmFzZSBGaWxlcyIsImZpbHRlciI6WyIqLnNsMyIsIiouZGIiLCIqLnNxbGl0ZSJdfSx7ImRlc2NyaXB0aW9uIjoiU1FMaXRlIERhdGFiYXNlIEZpbGVzIiwiZmlsdGVyIjpbIiouc2wzIl19LHsiZGVzY3JpcHRpb24iOiJTUUxpdGUgRGF0YWJhc2UgRmlsZXMiLCJmaWx0ZXIiOlsiKi5kYiJdfSx7ImRlc2NyaXB0aW9uIjoiU1FMaXRlIERhdGFiYXNlIEZpbGVzIiwiZmlsdGVyIjpbIiouc3FsaXRlIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImhpZGRlbiI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3RpbmF0aW9uX2xvZ19maWxlX3NxbGl0ZSIsInByb21wdCI6IlPDtmt2w6RnIGxvZ2dmaWw6IiwicmVxdWlyZWQiOmZhbHNlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6Ii4uLyIsImVkaXRvciI6InBsYWludGV4dCIsImhpZGRlbiI6dHJ1ZSwibmFtZSI6IkVYX1JPVF9ESVJFQ1RPUllfMiIsInByb21wdCI6IkthdGFsb2dlbiBkw6RyIHByb2Nlc3NlbiBzdGFydGFyOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XSwicHJvbXB0IjoiUHJpdmF0ZSBQYXJhbWV0ZXJzIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiZ3JvdXAiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19
-# ============================================================================
-INCLUDE [ if {{$(EX_PROCESS_NAME)} == {}} { puts_real {Parameter 'EX_PROCESS_NAME' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(EX_PROCESS_NAME$encode)} == {}} { puts_real {Parameter 'EX_PROCESS_NAME' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
@@ -2927,8 +2626,6 @@ MULTI_WRITER_TYPE{1} TEXTLINE
 MULTI_WRITER_KEYWORD{1} TEXTLINE_2
 MULTI_WRITER_TYPE{2} SQLITE3
 MULTI_WRITER_KEYWORD{2} SQLITE3_1
-MULTI_WRITER_TYPE{3} XLSXW
-MULTI_WRITER_KEYWORD{3} XLSXW_2
 #! END_WB_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "TEXTLINE_1"
@@ -3117,88 +2814,6 @@ SQLITE3_1_DATASET "$(DestDataset_SQLITE3_1)"
 SQLITE3_1_GENERATE_FME_BUILD_NUM 17259
 #! END_DEST_HEADER
 #! START_WB_HEADER
-MACRO WB_KEYWORD "XLSXW_2"
-#! END_WB_HEADER
-#! START_DEST_HEADER XLSXW XLSXW_2
-# ============================================================================
-# First get the dataset for the database. For Excel, it's the file name.
-# For now we'll use whatever they had when they generated this mapping file,
-# and not reprompt
-#! END_DEST_HEADER
-#! START_WB_HEADER
-DEFAULT_MACRO DestDataset
-INCLUDE [ if {"$(DestDataset)" != ""} {                          \
- puts {DEFAULT_MACRO DestDataset_XLSXW_2 $(DestDataset)}         \
- } ]
-#! END_WB_HEADER
-#! START_DEST_HEADER XLSXW XLSXW_2
-DEFAULT_MACRO DestDataset_XLSXW_2 $(Destination_log_file)
-GUI FILENAME DestDataset_XLSXW_2 Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Destination Microsoft Excel File:
-CHECK_RASTER_ATTRIBUTES YES
-# ============================================================================
-DEFAULT_MACRO XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_2 
-GUI OPTIONAL DISCLOSUREGROUP XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_2 XLSXW_OUT_OVERWRITE_FILE_XLSXW_2%XLSXW_OUT_TEMPLATEFILE_XLSXW_2%XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2%XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET_XLSXW_2 Writer Parameters
-# Whether or not to overwrite the file
-DEFAULT_MACRO XLSXW_OUT_OVERWRITE_FILE_XLSXW_2 No
-XLSXW_2_OVERWRITE_FILE "$(XLSXW_OUT_OVERWRITE_FILE_XLSXW_2)"
-GUI ACTIVECHOICE XLSXW_OUT_OVERWRITE_FILE_XLSXW_2 Yes%No,XLSXW_OUT_TEMPLATEFILE_XLSXW_2,XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2,XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET_XLSXW_2,XLSXW_OUT_+TEMPLATEFILE+<Unused> Overwrite Existing File:
-# Template file option
-DEFAULT_MACRO XLSXW_OUT_TEMPLATEFILE_XLSXW_2 
-XLSXW_2_TEMPLATEFILE "$(XLSXW_OUT_TEMPLATEFILE_XLSXW_2)"
-GUI OPTIONAL FILENAME_MUSTEXIST XLSXW_OUT_TEMPLATEFILE_XLSXW_2 Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Template File:
-GUI LOOKUP XLSXW_OUT_TEMPLATEFILE_XLSXW_2 <Unused>, 
-DEFAULT_MACRO XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2 
-XLSXW_2_TEMPLATE_SHEET "$(XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2)"
-GUI OPTIONAL DYNAMIC_SINGLE_SELECT XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2 $[XLSXW_OUT_TEMPLATEFILE_XLSXW_2],_FORMAT_OVERRIDE_,XLSXR,RETRIEVE_ALL_TABLE_NAMES,Yes,IGNORE_ALL_NAMED_RANGES,Yes Template Sheet:
-GUI LOOKUP XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2 <Unused>, 
-DEFAULT_MACRO XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET_XLSXW_2 <Unused>
-XLSXW_2_REMOVE_UNCHANGED_TEMPLATE_SHEET "$(XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET_XLSXW_2)"
-GUI CHOICE XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET_XLSXW_2 Yes%No Remove Template Sheet if Unchanged:
-# ============================================================================
-# Parameters whose values will be percolated to the feature types, but will not
-# remain as writer level settings
-# Default to not drop feature type first
-DEFAULT_MACRO XLSXW_OUT_DROP_TABLE_XLSXW_2 No
-XLSXW_2_DROP_TABLE "$(XLSXW_OUT_DROP_TABLE_XLSXW_2)"
-# Default to not truncate feature type first (removeallcelldata,retainformatting/headers,etc.)
-DEFAULT_MACRO XLSXW_OUT_TRUNCATE_TABLE_XLSXW_2 No
-XLSXW_2_TRUNCATE_TABLE "$(XLSXW_OUT_TRUNCATE_TABLE_XLSXW_2)"
-# Maintain compatibility with lenient attrName.* matching
-DEFAULT_MACRO XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_2 yes
-XLSXW_2_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING "$(XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_2)"
-# Default to write out the field names
-DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_2 Yes
-XLSXW_2_FIELD_NAMES_OUT "$(XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_2)"
-# Default writer mode
-DEFAULT_MACRO XLSXW_OUT_WRITER_MODE_XLSXW_2 Insert
-XLSXW_2_WRITER_MODE "$(XLSXW_OUT_WRITER_MODE_XLSXW_2)"
-# Default raster writing type
-DEFAULT_MACRO XLSXW_OUT_RASTER_FORMAT_XLSXW_2 PNG
-XLSXW_2_RASTER_FORMAT "$(XLSXW_OUT_RASTER_FORMAT_XLSXW_2)"
-# ============================================================================
-# Choose excel file protection mode
-DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_XLSXW_2 NO
-XLSXW_2_PROTECT_SHEET "$(XLSXW_OUT_PROTECT_SHEET_XLSXW_2)"
-# Whether or not to enable sheet password protection
-DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_2 <Unused>
-XLSXW_2_PROTECT_SHEET_PASSWORD "$(XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_2)"
-# Which kind of protection level
-DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_2 <Unused>
-XLSXW_2_PROTECT_SHEET_LEVEL "$(XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_2)"
-# Which kind of specific permissions will be enabled
-DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_2 <Unused>
-XLSXW_2_PROTECT_SHEET_PERMISSIONS "$(XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_2)"
-# ============================================================================
-# Opt in for destination dataset type vs format type validation
-DEFAULT_MACRO XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_2 Yes
-XLSXW_2_DESTINATION_DATASETTYPE_VALIDATION "$(XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_2)"
-DEFAULT_MACRO XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_2 FEATURE
-XLSXW_2_COORDINATE_SYSTEM_GRANULARITY "$(XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_2)"
-# ============================================================================
-XLSXW_2_GENERATE_FME_BUILD_NUM 21306
-XLSXW_2_DATASET "$(DestDataset_XLSXW_2)"
-#! END_DEST_HEADER
-#! START_WB_HEADER
 #! END_WB_HEADER
 #! END_HEADER
 
@@ -3213,10 +2828,11 @@ FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
 FME_NAMES_ENCODING windows-1252
+FME_BULK_MODE_THRESHOLD 
+LAST_SAVE_BUILD "FME 2022.2.0.0 (20221103 - Build 22765 - WIN64)"
 DEFAULT_MACRO DATASET_KEYWORD_TEXTLINE_1 TEXTLINE_1
 DEFAULT_MACRO DATASET_KEYWORD_TEXTLINE_2 TEXTLINE_2
 DEFAULT_MACRO DATASET_KEYWORD_SQLITE3_1 SQLITE3_1
-DEFAULT_MACRO DATASET_KEYWORD_XLSXW_2 XLSXW_2
 # -------------------------------------------------------------------------
 
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
@@ -3248,20 +2864,21 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_P
 Tcl2 proc ParameterFetcher_doFetch {} {    foreach {name val} {"_EX_DATE_TIME {$(EX_DATE_TIME$encode)} _EX_PROCESS_NAME {$(EX_PROCESS_NAME$encode)} _EX_ID {$(EX_ID$encode)} _EX_TYPE {$(EX_TYPE$encode)} _EX_WorkSpace {$(EX_WorkSpace$encode)} _IsWholeProcessRun {$(IsWholeProcessRun$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ParameterFetcher }    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    OUTPUT { FEATURE_TYPE ParameterFetcher_OUTPUT         @Tcl2(ParameterFetcher_doFetch)          }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_6 }    INPUT  FEATURE_TYPE ParameterFetcher_OUTPUT    TEST _EX_ID ATTRIBUTE_VALUE_NULL "" ENCODED TEST _EX_ID ATTRIBUTE_IS_EMPTY "" ENCODED TEST _EX_ID ATTRIBUTE_IS_MISSING "" ENCODED    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1 OR 2 OR 3" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_6_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_6_FAILED         }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_6 }    INPUT  FEATURE_TYPE ParameterFetcher_OUTPUT    TEST { _EX_ID ATTRIBUTE_VALUE_NULL "" ENCODED } TEST { _EX_ID ATTRIBUTE_IS_EMPTY "" ENCODED } TEST { _EX_ID ATTRIBUTE_IS_MISSING "" ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_6_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_6_FAILED         }
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_3 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Tester_6_PASSED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "_EX_ID" "SET_TO" "EJ<space>SATT<space>I<space>FME-PROCESS" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT        }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester }    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT  FEATURE_TYPE Tester_6_FAILED    TEST _EX_DATE_TIME ATTRIBUTE_VALUE_NULL "" ENCODED TEST _EX_DATE_TIME ATTRIBUTE_IS_EMPTY "" ENCODED TEST _EX_DATE_TIME ATTRIBUTE_IS_MISSING "" ENCODED    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1 OR 2 OR 3" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_FAILED         }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester }    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT  FEATURE_TYPE Tester_6_FAILED    TEST { _EX_DATE_TIME ATTRIBUTE_VALUE_NULL "" ENCODED } TEST { _EX_DATE_TIME ATTRIBUTE_IS_EMPTY "" ENCODED } TEST { _EX_DATE_TIME ATTRIBUTE_IS_MISSING "" ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_FAILED         }
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DTStamperYYYY-MM-DD_HH:MI:SS.sss Input Input Collector"   INPUT FEATURE_TYPE Tester_PASSED   OUTPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_Input
 MACRO DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME DTStamperYYYY-MM-DD_HH:MI:SS.sss
-MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_XFORMER_NAME DTStamperYYYY-MM-DD_HH:MI:SS.sss
 MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_XFORMER_NAME DTStamperYYYY-MM-DD_HH:MI:SS.sss
+MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_SUB_DOC_NAME DTStamperYYYY-MM-DD_HH:MI:SS.sss
 MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_SUB_DOC_NAME DTStamperYYYY-MM-DD_HH:MI:SS.sss
 DEFAULT_MACRO DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input1670229749 Input Splitter"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input1686637588 Input Splitter"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 DEFAULT_MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeStamper_EXPRESSION
 INCLUDE [    set expression {<at>DateTimeCast<openparen><at>DateTimeNow<openparen>local<closeparen><comma>datetime<closeparen>};    if { "NO" eq "NO" } {        set expression <at>TimeZoneRemove<openparen>$expression<closeparen>;    };    puts "MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeStamper_EXPRESSION $expression"; ]
@@ -3277,13 +2894,13 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.ss
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_65c4f341_2feb_4464_8be5_9ec345aa2ab10_replacer { findText replaceText invalidValue} {     set attrs [split \"_dts\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_65c4f341_2feb_4464_8be5_9ec345aa2ab10_replacer {<backslash>.<backslash>d*} {} {_FME_NO_OP_}")
+Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_0de4a416_3f04_4b9d_97d3_87ddf9f396390_replacer { findText replaceText invalidValue} {     set attrs [split \"_dts\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_0de4a416_3f04_4b9d_97d3_87ddf9f396390_replacer {<backslash>.<backslash>d*} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_9fa4e2a6_08c6_43ec_8aa2_1bcf724aed690_replacer { findText replaceText invalidValue} {     set attrs [split \"_mils\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_9fa4e2a6_08c6_43ec_8aa2_1bcf724aed690_replacer {.*<backslash>.} {} {_FME_NO_OP_}")
+Tcl2 proc $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_89babe9a_8490_43d3_a319_418a2d5713380_replacer { findText replaceText invalidValue} {     set attrs [split \"_mils\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{YES} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_OUTPUT"    OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_OUTPUT"         @Tcl2("$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringReplacer_2_89babe9a_8490_43d3_a319_418a2d5713380_replacer {.*<backslash>.} {} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 # Since the Tcl "END" index specification starts at -1 for the second
 # last character, and we've defined -1 to be the last charater, we've got
@@ -3301,30 +2918,30 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC }    } else {        puts "MACRO $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover }    INPUT  FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_StringConcatenator_OUTPUT"    OUTPUT { FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"        @RemoveAttributes(fme_encoded,_mils,_dts,_subMils)        $($(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output1670229749 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>1670229749 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeConverter_<REJECTED>"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>" @RemoveAttributes(_dts)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output1686637588 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_AttributeRemover_OUTPUT"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>1686637588 Output Collector"   INPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_DateTimeConverter_<REJECTED>"   OUTPUT FEATURE_TYPE "$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME)_<Rejected>" @RemoveAttributes(_dts)
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(DTStamperYYYY-MM-DD_HH:MI:SS.sss_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DTStamperYYYY-MM-DD_HH:MI:SS.sss Output Output Renamer/Nuker"   INPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_Output   OUTPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_Output
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DTStamperYYYY-MM-DD_HH:MI:SS.sss <Rejected> Output Renamer/Nuker"   INPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_<Rejected>   OUTPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_<Rejected>
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TeeFactory FACTORY_NAME DTStamperYYYY-MM-DD_HH:MI:SS.sss_<Rejected> INPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_<Rejected>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, DTStamperYYYY-MM-DD_HH:MI:SS.sss<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+FACTORY_DEF * TeeFactory FACTORY_NAME DTStamperYYYY-MM-DD_HH:MI:SS.sss_<Rejected> INPUT FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_<Rejected>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, DTStamperYYYY-MM-DD_HH:MI:SS.sss<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_4 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE DTStamperYYYY-MM-DD_HH:MI:SS.sss_Output    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "_EX_DATE_TIME" "SET_TO" "<at>Value<openparen>_datetimestamp<closeparen>" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT        }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_4 }    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    INPUT  FEATURE_TYPE Tester_FAILED    TEST _EX_WorkSpace ATTRIBUTE_VALUE_NULL "" ENCODED TEST _EX_WorkSpace ATTRIBUTE_IS_EMPTY "" ENCODED TEST _EX_WorkSpace ATTRIBUTE_IS_MISSING "" ENCODED    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1 OR 2 OR 3" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_4_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_4_FAILED         }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_4 }    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    INPUT  FEATURE_TYPE Tester_FAILED    TEST { _EX_WorkSpace ATTRIBUTE_VALUE_NULL "" ENCODED } TEST { _EX_WorkSpace ATTRIBUTE_IS_EMPTY "" ENCODED } TEST { _EX_WorkSpace ATTRIBUTE_IS_MISSING "" ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_4_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_4_FAILED         }
 # -------------------------------------------------------------------------
 Tcl2 proc StringConcatenator_2_evaluator {} {    if {{OUTGOING} == {OUTGOING}} {      set attr [FME_DecodeText {_EX_WorkSpace}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {<Unused>};      if {[string length $attrAll] == 0} { return; };      set attrs [split {<Unused>} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"$(FME_MF_DIR_USERTYPED$encode)<backslash>$(FME_MF_NAME$encode)"};    };    lappend parmList {StringConcatenator_2};    eval FME_Execute $parmList; }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { StringConcatenator_2 }    INPUT  FEATURE_TYPE Tester_4_PASSED    OUTPUT { FEATURE_TYPE StringConcatenator_2_OUTPUT         @Tcl2("StringConcatenator_2_evaluator ")          }
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} StringReplacerFactory    FACTORY_NAME { StringReplacer }    INPUT  FEATURE_TYPE StringConcatenator_2_OUTPUT    INPUT  FEATURE_TYPE Tester_4_FAILED    USE_REGEX { NO }    CASE_SENSITIVE { NO }    SOURCE_ATTRIBUTES { _EX_WorkSpace }    FIND_TEXT { "<solidus>" }    REPLACE_TEXT { "<backslash>" }    REPLACE_NO_MATCH { "_FME_NO_OP_" }    OUTPUT { OUTPUT FEATURE_TYPE StringReplacer_OUTPUT          }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_2 }    INPUT  FEATURE_TYPE StringReplacer_OUTPUT    TEST _EX_TYPE ATTRIBUTE_VALUE_NULL "" ENCODED TEST _EX_TYPE ATTRIBUTE_IS_EMPTY "" ENCODED TEST _EX_TYPE ATTRIBUTE_IS_MISSING "" ENCODED    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1 OR 2 OR 3" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_2_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_2_FAILED         }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_2 }    INPUT  FEATURE_TYPE StringReplacer_OUTPUT    TEST { _EX_TYPE ATTRIBUTE_VALUE_NULL "" ENCODED } TEST { _EX_TYPE ATTRIBUTE_IS_EMPTY "" ENCODED } TEST { _EX_TYPE ATTRIBUTE_IS_MISSING "" ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_2_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_2_FAILED         }
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Tester_2 FAILED Splitter"   INPUT FEATURE_TYPE Tester_2_FAILED   OUTPUT FEATURE_TYPE Tester_2_FAILED_0_52RatjfZRx8=   OUTPUT FEATURE_TYPE Tester_2_FAILED_1_z/q1qWuo7hw=
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_2 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Tester_2_PASSED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "_EX_TYPE" "SET_TO" "OK<u00c4>ND" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT        }
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator_2 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_2_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT_0_j0uI5yR3ojs=   OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT_1_RySErNGX5NA=
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_3 }    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT_0_j0uI5yR3ojs=    INPUT  FEATURE_TYPE Tester_2_FAILED_0_52RatjfZRx8=    TEST "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_EX_TYPE<closeparen>,Tester_3)" = ERROR ENCODED    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_3_PASSED         }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_3 }    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT_0_j0uI5yR3ojs=    INPUT  FEATURE_TYPE Tester_2_FAILED_0_52RatjfZRx8=    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_EX_TYPE<closeparen>,Tester_3)" = ERROR ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_3_PASSED         }
 # -------------------------------------------------------------------------
 Tcl2 proc StringConcatenator_evaluator {} {    if {{OUTGOING} == {OUTGOING}} {      set attr [FME_DecodeText {text_line_data}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {<Unused>};      if {[string length $attrAll] == 0} { return; };      set attrs [split {<Unused>} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"<at>Value<openparen>_EX_DATE_TIME<closeparen><space>|<space><at>Value<openparen>_EX_PROCESS_NAME<closeparen><space>|<space><at>Value<openparen>_EX_ID<closeparen><space>|<space><at>Value<openparen>_EX_TYPE<closeparen><space>|<space><at>Value<openparen>Exception<closeparen><space>|<space><at>Value<openparen>_EX_WorkSpace<closeparen>"};    };    lappend parmList {StringConcatenator};    eval FME_Execute $parmList; }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { StringConcatenator }    INPUT  FEATURE_TYPE Tester_3_PASSED    OUTPUT { FEATURE_TYPE StringConcatenator_OUTPUT         @Tcl2("StringConcatenator_evaluator ")          }
@@ -3332,21 +2949,18 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { StringConcatenator }    INPUT  FEAT
 Tcl2 proc AttributeEncoder_2_convert {} {    set attrs [split {<Unused>} { }];    set allAttributes false;    if { {ALL} == {ALL} } {       set attrs [FME_AttributeNames];       set allAttributes true;    };    set parmList {{EvaluateExpression} {ATTR_SET_EXPR}};    foreach attr $attrs {      if {[string first {fme_} $attr] == 0 && $allAttributes} {         continue;      };      if {$allAttributes} {        set attr [FME_EncodeText $attr];      };      set funcAttr $attr;      if { [string first "<quote>" $attr] != -1 }      {          set funcAttr [string map {"<quote>" "<backslash><quote>"} $attr];          append funcAttr "<quote>";          set funcAttr "<quote>"$funcAttr;      };      set funcCall [join [list "<at>ConvertEncoding<openparen>windows-1252<comma><at>Value<openparen>" $funcAttr "<closeparen><comma>FALSE<closeparen>"] {}];      lappend parmList $attr;      lappend parmList $funcCall;    };    lappend parmList {AttributeEncoder_2};    eval FME_Execute $parmList; }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { AttributeEncoder_2 }    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    OUTPUT { FEATURE_TYPE AttributeEncoder_2_OUTPUT         @Tcl2("AttributeEncoder_2_convert")          }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_5 }    INPUT  FEATURE_TYPE AttributeEncoder_2_OUTPUT    TEST "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_IsWholeProcessRun<closeparen>,Tester_5)" = 1 ENCODED    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_5_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_5_FAILED         }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_5 }    INPUT  FEATURE_TYPE AttributeEncoder_2_OUTPUT    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_IsWholeProcessRun<closeparen>,Tester_5)" = 1 ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_5_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_5_FAILED         }
 # -------------------------------------------------------------------------
 Tcl2 proc AttributeEncoder_convert {} {    set attrs [split {<Unused>} { }];    set allAttributes false;    if { {ALL} == {ALL} } {       set attrs [FME_AttributeNames];       set allAttributes true;    };    set parmList {{EvaluateExpression} {ATTR_SET_EXPR}};    foreach attr $attrs {      if {[string first {fme_} $attr] == 0 && $allAttributes} {         continue;      };      if {$allAttributes} {        set attr [FME_EncodeText $attr];      };      set funcAttr $attr;      if { [string first "<quote>" $attr] != -1 }      {          set funcAttr [string map {"<quote>" "<backslash><quote>"} $attr];          append funcAttr "<quote>";          set funcAttr "<quote>"$funcAttr;      };      set funcCall [join [list "<at>ConvertEncoding<openparen>windows-1252<comma><at>Value<openparen>" $funcAttr "<closeparen><comma>FALSE<closeparen>"] {}];      lappend parmList $attr;      lappend parmList $funcCall;    };    lappend parmList {AttributeEncoder};    eval FME_Execute $parmList; }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { AttributeEncoder }    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT_1_RySErNGX5NA=    INPUT  FEATURE_TYPE Tester_2_FAILED_1_z/q1qWuo7hw=    OUTPUT { FEATURE_TYPE AttributeEncoder_OUTPUT         @Tcl2("AttributeEncoder_convert")          }
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE AttributeEncoder_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "_EX_DATE_TIME" "Tidpunkt" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "_EX_PROCESS_NAME" "Processnamn" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "_EX_ID" "Process<space>ID" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "_EX_TYPE" "Typ" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "Exception" "Meddelande" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "_EX_WorkSpace" "FME<space>workspace" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "_creation_instance" "_creation_instance" "" "REMOVE" }      ATTR_ACTION { "_IsWholeProcessRun" "_IsWholeProcessRun" "" "REMOVE" }      ATTR_ACTION { "_datetimestamp" "_datetimestamp" "" "REMOVE" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeManager OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeManager_OUTPUT   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_0_qkWxPTSviNs=   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_1_qYvk7jiZJpI=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Tester_5_PASSED TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeManager_OUTPUT_0_qkWxPTSviNs= TO XLSXW __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Generell<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeManager_OUTPUT_1_qYvk7jiZJpI= TO SQLITE3 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Generell<closeparen> GEOMETRY    ROUTE FME_GENERIC Tester_5_FAILED TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Tester_5_FAILED TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY    ROUTE FME_GENERIC Tester_5_PASSED TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeManager_OUTPUT TO SQLITE3 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Generell<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
 SQLITE3_1_DEF Generell   sqlite3_update_key_columns   ""   sqlite3_drop_table           NO   sqlite3_truncate_table       NO   sqlite3_table_writer_mode    INHERIT_FROM_WRITER   Tidpunkt                     text   Processnamn                  text   "Process ID"                 text   Typ                          text   Meddelande                   varchar(200)   "FME workspace"              text
-# -------------------------------------------------------------------------
-XLSXW_2_DEF Generell   xlsx_drop_sheet              No   xlsx_trunc_sheet             No   xlsx_sheet_order             ""   xlsx_freeze_end_row          ""   xlsx_names_are_positions     No   xlsx_field_names_out         Yes   xlsx_start_col               ""   xlsx_start_row               ""   xlsx_offset_col              ""   xlsx_offset_row              ""   xlsx_raster_type             PNG   xlsx_table_writer_mode       Insert   xlsx_row_id_column           ""   xlsx_protect_sheet           NO   xlsx_protect_sheet_level     <Unused>   xlsx_protect_sheet_password  <Unused>   xlsx_protect_sheet_permissions <Unused>   Tidpunkt                     string(20,version<semicolon>1<semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Processnamn                  string(20,version<semicolon>1<semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   "Process ID"                 string(20,version<semicolon>1<semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Typ                          string(20,version<semicolon>1<semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Meddelande                   string(200,version<semicolon>1<semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   "FME workspace"              string(20,version<semicolon>1<semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)
