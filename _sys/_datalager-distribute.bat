@@ -21,9 +21,10 @@ FOR /f "tokens=1,2" %%i IN ('_sys\_local-current-datetime iso-simple') DO SET Cu
 SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 
 @CALL _sys\_log-batch START %DL_PROCESSID%
-IF %ERRORLEVEL% EQU 0 (
-    IF %DL_ISWHOLEPROCESS% == 1 (
-        SET DL_SOURCES=%DL_ROTDIR%%DL_DISTSOURCE%
+
+IF "%ERRORLEVEL%" EQU "0" (
+    IF "%DL_ISWHOLEPROCESS%" == "1" (
+        SET "DL_SOURCES=%DL_ROTDIR%%DL_DISTSOURCE%"
 
 
 
@@ -33,7 +34,8 @@ IF %ERRORLEVEL% EQU 0 (
 
 
     ) ELSE (
-        SET DL_SOURCES=%DL_ROTDIR%%_arg%\_log\%DL_DISTSOURCEFILE%
+        SET DL_ISWHOLEPROCESS=0
+        SET "DL_SOURCES=%DL_ROTDIR%%_arg%\_log\%DL_DISTSOURCEFILE%"
 
 
 
