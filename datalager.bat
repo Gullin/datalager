@@ -48,14 +48,15 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO Anv„ndning: datalager [val]
         ECHO.
         ECHO [val]:
-        ECHO   --execute ^| -e          Exekverar alla processmoduler f”r databearbetning
-        ECHO   --reset ^| -r            Raderar allt som inte „r n”dv„ndigt f”r datalagerprocessen ^(loggar, data, backup, publisering, ej aff„rslogik^)
-        ECHO   --clear ^| -c            Raderar loggar och publiceringsunderlag ^(_deploy, skapad av --deploy^)
-        ECHO   --schemainit ^| -si      Initierar nytt schema f”r dataset som underlag f”r manifest
-        ECHO   --backupconfig ^| -bc    S„kerhetskopierar schema-filer ^(xlsx, ini^) och inst„llningar f”r m†lkataloger
-        ECHO   --createsecrets ^| -cs   Skapar bat-fil med f”ruts„ttningarna ^(variabelnamn^) f”r n”dv„ndiga inlogg och e-postinst„llningar f”r fortsatt ifyllnad
-        ECHO   --deploy ^| -d           Skapar en katalog _deploy med de filer och kataloger som kr„vs f”r upps„ttning av ny fullst„ndig process ^(ej inst„llningar och schema^)
-        ECHO   --instal ^| -i           OBS Ej fungerande p.g.a. process ej g†r att k”ra genom Windows path.
+        ECHO   --execute ^| -e              Exekverar alla processmoduler f”r databearbetning
+        ECHO   --distributionsource ^| -ds  Listar k„llor, f”r distribuering fr†n datarepo, till fil %DL_DISTSOURCEFILE% under "%DL_ROTDIR%%DL_REPOSITORYROTDIR%"
+        ECHO   --reset ^| -r                Raderar allt som inte „r n”dv„ndigt f”r datalagerprocessen ^(loggar, data, backup, publisering, ej aff„rslogik^)
+        ECHO   --clear ^| -c                Raderar loggar och publiceringsunderlag ^(_deploy, skapad av --deploy^)
+        ECHO   --schemainit ^| -si          Initierar nytt schema f”r dataset som underlag f”r manifest
+        ECHO   --backupconfig ^| -bc        S„kerhetskopierar schema-filer ^(xlsx, ini^) och inst„llningar f”r m†lkataloger
+        ECHO   --createsecrets ^| -cs       Skapar bat-fil med f”ruts„ttningarna ^(variabelnamn^) f”r n”dv„ndiga inlogg och e-postinst„llningar f”r fortsatt ifyllnad
+        ECHO   --deploy ^| -d               Skapar en katalog _deploy med de filer och kataloger som kr„vs f”r upps„ttning av ny fullst„ndig process ^(ej inst„llningar och schema^)
+        ECHO   --instal ^| -i               OBS Ej fungerande p.g.a. process ej g†r att k”ra genom Windows path.
         ECHO.
         PAUSE
 
@@ -65,6 +66,8 @@ IF %ERRORLEVEL% EQU 0 (
 
         IF "%_arg%"=="--execute" SET EXECUTE=1
         IF "%_arg%"=="-e" SET EXECUTE=1
+        IF "%_arg%"=="--distributionsource" SET DISTRIBUTION=1
+        IF "%_arg%"=="-ds" SET DISTRIBUTION=1
         IF "%_arg%"=="--reset" SET RESETING=1
         IF "%_arg%"=="-r" SET RESETING=1
         IF "%_arg%"=="--clear" SET CLEARING=1
@@ -85,6 +88,18 @@ IF %ERRORLEVEL% EQU 0 (
             @CALL :ExecuteDatalager
 
             SET EXECUTE=
+
+            GOTO exit
+        )
+        IF DEFINED DISTRIBUTION (
+            CD /D "%DL_POWERSHELLDIR%"
+
+            ECHO "%DL_ROTDIR%%DL_REPOSITORYROTDIR%"
+            Powershell -noprofile -File "%DL_ROTDIR%_sys\_create_DatalagerDistributionSource.log.ps1" -rootFolder "%DL_ROTDIR%%DL_REPOSITORYROTDIR%"
+
+            CD /D %DL_ROTDIR%
+
+            SET DISTRIBUTION=
 
             GOTO exit
         )
