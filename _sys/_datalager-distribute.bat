@@ -4,10 +4,14 @@ SETLOCAL
 
 
 REM CP 437 (DOS)
+REM Om ej argument skickas med (ej k”rning av processmodul) antas k”rningen ske f”r hela datalagret.
 REM Argument 1: Om processmodulen k”rs enskilt skickas processmodulens utkatalog med in som argument
 
 IF NOT [%1]==[] (
     SET _arg=%1
+) ELSE (
+    SET DL_ISWHOLEPROCESS=1
+    SET _arg=datalager
 )
 
 REM S„tts per bat-fil
