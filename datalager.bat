@@ -6,7 +6,7 @@ REM CP 437 (DOS)
 REM Argument 1: V„xel [ null | [ ---reset|-r ]          | [ --clear|-c ] | 
 REM                            [ --schemainit|-si ]     | [ --backupconfig|-bc ] |
 REM                            [ --createsecrets|-cs ]  | [ --deploy|-d ] |
-REM                            [ --instal|-i ] ]
+REM                            [ --instal|-i ]          | [ --execute|-e]]
 
 REM Kontrollerar om ett argument existerar, anv„nder argumentet f”r alternativ till att k”ra hela processen.
 REM Ska hela processen k”ras skickas inget argument med.
@@ -43,67 +43,28 @@ IF EXIST _cleared_*.* DEL _cleared_*.*
 IF %ERRORLEVEL% EQU 0 (
     IF NOT DEFINED _arg (
 
-        @CALL _sys\_process-clean-clear
-
-        REM M†lkatalog f”r processernas resulterande data.
-        REM Variabeln DL_REPOSITORYROTDIR ska skickas med som parameter till alla FME-processer som genererar output till datalagret.
-        REM Respektive processmodul skapar upp sina substrukturer under repo-roten.
-        IF NOT DEFINED DL_REPOSITORYROTDIR SET DL_REPOSITORYROTDIR=_geodatarepo\
-
-        REM Loggning av resp. process resurskatalog f”r distribuering senare i processen. Skapar tom fil.
-        >nul ECHO 2> %DL_DISTSOURCE%
-
-
-        
-        REM Processmoduler
-        @CALL lkr-anpassat
-        @CALL lkr-anpassat-ecos
-        @CALL lkr-oracle-lkr_gis
-        @CALL lkr-oracle-topo_abt
-        @CALL lkr-oracle-topo_bal
-        @CALL lkr-oracle-topo_karta
-        @CALL lkr-oracle-topo_ndrk
-        @CALL lkr-oracle-topo_special
-        @CALL lkr-postgis-lk_gis
-        @CALL lkr-postgis-lk_gis_anpassat
-        @CALL lkr-postgis-ex_special
-        @CALL lkr-postgis-td_baskarta
-        @CALL lkr-postgis-td_baskarta_anpassat
-        @CALL lkr-postgis-td_detaljplan
-        @CALL lkr-postgis-td_drk
-        @CALL lkr-postgis-td_drk_anpassat
-        @CALL lkr-postgis-td_bal
-        @CALL lkr-postgis-td_bal_anpassat
-        @REM "lm-geodataplatsen-fastighetskartan" ska plockas bort i en kommande version. Ers„tts med "GSD-Fastighetskartan topografi, vektor"
-        @REM @CALL lm-geodataplatsen-fastighetskartan
-        @CALL lm-geotorget
-        @CALL lst
-        @CALL raa
-        @CALL nvv
-        @CALL trv
-        @CALL trv-lastkajen
-        @CALL msb
-
-
-
-        REM Kontrollerar om processen har k”rts utan allvarliga fel, distribueras i s† fall
-        @CALL _sys\_exist-FATAL_ERROR
-        
-        IF !ERRORLEVEL! NEQ 99999 (
-
-            REM Kopierar ut genererat datalager till platser. Platser definieras i rutinen.
-            @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
-        ) ELSE (
-            @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID_MASTER%"
-            @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR i %DL_PROCESSID_MASTER% f”r n†gon av processmodulerna"
-
-            GOTO exit
-        )
+        CLS
+        ECHO.
+        ECHO Anv„ndning: datalager [val]
+        ECHO.
+        ECHO [val]:
+        ECHO   --execute ^| -e          Exekverar alla processmoduler f”r databearbetning
+        ECHO   --reset ^| -r            Raderar allt som inte „r n”dv„ndigt f”r datalagerprocessen ^(loggar, data, backup, publisering, ej aff„rslogik^)
+        ECHO   --clear ^| -c            Raderar loggar och publiceringsunderlag ^(_deploy, skapad av --deploy^)
+        ECHO   --schemainit ^| -si      Initierar nytt schema f”r dataset som underlag f”r manifest
+        ECHO   --backupconfig ^| -bc    S„kerhetskopierar schema-filer ^(xlsx, ini^) och inst„llningar f”r m†lkataloger
+        ECHO   --createsecrets ^| -cs   Skapar bat-fil med f”ruts„ttningarna ^(variabelnamn^) f”r n”dv„ndiga inlogg och e-postinst„llningar f”r fortsatt ifyllnad
+        ECHO   --deploy ^| -d           Skapar en katalog _deploy med de filer och kataloger som kr„vs f”r upps„ttning av ny fullst„ndig process ^(ej inst„llningar och schema^)
+        ECHO   --instal ^| -i           OBS Ej fungerande p.g.a. process ej g†r att k”ra genom Windows path.
+        ECHO.
+        PAUSE
 
     ) ELSE (
         
         SET DL_ISWHOLEPROCESS=2
 
+        IF "%_arg%"=="--execute" SET EXECUTE=1
+        IF "%_arg%"=="-e" SET EXECUTE=1
         IF "%_arg%"=="--reset" SET RESETING=1
         IF "%_arg%"=="-r" SET RESETING=1
         IF "%_arg%"=="--clear" SET CLEARING=1
@@ -119,6 +80,14 @@ IF %ERRORLEVEL% EQU 0 (
         IF "%_arg%"=="--instal" SET INSTALLING=1
         IF "%_arg%"=="-i" SET INSTALLING=1 ELSE GOTO notdefined
 
+        IF DEFINED EXECUTE (
+            SET DL_ISWHOLEPROCESS=1
+            @CALL :ExecuteDatalager
+
+            SET EXECUTE=
+
+            GOTO exit
+        )
         IF DEFINED RESETING (
             @CALL _sys\_process-clean-reset
 
@@ -213,3 +182,65 @@ IF !ERRORLEVEL! EQU 99999 (
 @CALL _sys\_log-batch KLART %DL_PROCESSID_MASTER%
 ENDLOCAL
 EXIT
+
+
+:ExecuteDatalager
+    @CALL _sys\_process-clean-clear
+
+    REM M†lkatalog f”r processernas resulterande data.
+    REM Variabeln DL_REPOSITORYROTDIR ska skickas med som parameter till alla FME-processer som genererar output till datalagret.
+    REM Respektive processmodul skapar upp sina substrukturer under repo-roten.
+    IF NOT DEFINED DL_REPOSITORYROTDIR SET DL_REPOSITORYROTDIR=_geodatarepo\
+
+    REM Loggning av resp. process resurskatalog f”r distribuering senare i processen. Skapar tom fil.
+    >nul ECHO 2> %DL_DISTSOURCE%
+
+
+    REM Processmoduler
+    @CALL lkr-anpassat
+    @CALL lkr-anpassat-ecos
+    @CALL lkr-oracle-lkr_gis
+    @CALL lkr-oracle-topo_abt
+    @CALL lkr-oracle-topo_bal
+    @CALL lkr-oracle-topo_karta
+    @CALL lkr-oracle-topo_ndrk
+    @CALL lkr-oracle-topo_special
+    @CALL lkr-postgis-lk_gis
+    @CALL lkr-postgis-lk_gis_anpassat
+    @CALL lkr-postgis-ex_special
+    @CALL lkr-postgis-td_baskarta
+    @CALL lkr-postgis-td_baskarta_anpassat
+    @CALL lkr-postgis-td_baskarta_anpassat_markdetaljtyp
+    @CALL lkr-postgis-td_detaljplan
+    @CALL lkr-postgis-td_drk
+    @CALL lkr-postgis-td_drk_anpassat
+    @CALL lkr-postgis-td_bal
+    @CALL lkr-postgis-td_bal_anpassat
+
+    @REM "lm-geodataplatsen-fastighetskartan" ska plockas bort i en kommande version. Ers„tts med "GSD-Fastighetskartan topografi, vektor"
+    @REM @CALL lm-geodataplatsen-fastighetskartan
+
+    @CALL lm-geotorget
+    @CALL lst
+    @CALL raa
+    @CALL nvv
+    @CALL trv
+    @CALL trv-lastkajen
+    @CALL msb
+
+
+
+    REM Kontrollerar om processen har k”rts utan allvarliga fel, distribueras i s† fall
+    @CALL _sys\_exist-FATAL_ERROR
+    
+    IF !ERRORLEVEL! NEQ 99999 (
+        REM Kopierar ut genererat datalager till platser. Platser definieras i rutinen.
+        @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+    ) ELSE (
+        @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID_MASTER%"
+        @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR i %DL_PROCESSID_MASTER% f”r n†gon av processmodulerna"
+
+        GOTO exit
+    )
+
+GOTO :eof
