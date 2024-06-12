@@ -49,6 +49,7 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO.
         ECHO [val]:
         ECHO   --execute ^| -e              Exekverar alla processmoduler f”r databearbetning
+        ECHO   --extract ^| -ex             #EJ IMPLEMENTERAD# Exekverar alla processmoduler f”r extrahering och insamling av data till repo, ingen distribuering g”rs
         ECHO   --distributionsource ^| -ds  Listar k„llor, f”r distribuering fr†n datarepo, till fil %DL_DISTSOURCEFILE% under "%DL_ROTDIR%%DL_REPOSITORYROTDIR%"
         ECHO   --reset ^| -r                Raderar allt som inte „r n”dv„ndigt f”r datalagerprocessen ^(loggar, data, backup, publisering, ej aff„rslogik^)
         ECHO   --clear ^| -c                Raderar loggar och publiceringsunderlag ^(_deploy, skapad av --deploy^)
@@ -66,6 +67,8 @@ IF %ERRORLEVEL% EQU 0 (
 
         IF "%_arg%"=="--execute" SET EXECUTE=1
         IF "%_arg%"=="-e" SET EXECUTE=1
+        IF "%_arg%"=="--extract" SET EXTRACT=1
+        IF "%_arg%"=="-ex" SET EXTRACT=1
         IF "%_arg%"=="--distributionsource" SET DISTRIBUTION=1
         IF "%_arg%"=="-ds" SET DISTRIBUTION=1
         IF "%_arg%"=="--reset" SET RESETING=1
@@ -88,6 +91,14 @@ IF %ERRORLEVEL% EQU 0 (
             @CALL :ExecuteDatalager
 
             SET EXECUTE=
+
+            GOTO exit
+        )
+        IF DEFINED EXTRACT (
+            SET DL_ISWHOLEPROCESS=1
+            @CALL :ExecuteDatalager
+
+            SET EXTRACT=
 
             GOTO exit
         )
@@ -243,8 +254,10 @@ EXIT
     @CALL _sys\_exist-FATAL_ERROR
     
     IF !ERRORLEVEL! NEQ 99999 (
-        REM Kopierar ut genererat datalager till platser. Platser definieras i rutinen.
-        @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+        IF NOT DEFINED EXTRACT (
+            REM Kopierar ut genererat datalager till platser. Platser definieras i rutinen.
+            @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+        )
     ) ELSE (
         @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID_MASTER%"
         @CALL _sys\_log-error %DL_PROCESSID_MASTER% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR i %DL_PROCESSID_MASTER% f”r n†gon av processmodulerna"
