@@ -199,12 +199,6 @@ EXIT
     REM Processmoduler
     @CALL lkr-anpassat
     @CALL lkr-anpassat-ecos
-    @CALL lkr-oracle-lkr_gis
-    @CALL lkr-oracle-topo_abt
-    @CALL lkr-oracle-topo_bal
-    @CALL lkr-oracle-topo_karta
-    @CALL lkr-oracle-topo_ndrk
-    @CALL lkr-oracle-topo_special
     @CALL lkr-postgis-lk_gis
     @CALL lkr-postgis-lk_gis_anpassat
     @CALL lkr-postgis-ex_special
