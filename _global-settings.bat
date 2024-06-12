@@ -35,13 +35,20 @@ SET DL_DISTSOURCE=%DL_LOGDIR%%DL_DISTSOURCEFILE%
 REM Repositorydelarnas rotkatalog
 SET DL_REPOSITORYROTDIR=_geodatarepo\
 
+REM S”kv„g till PowerShell, anv„nds n„r PowerShell-skript exekveras
+SET DL_POWERSHELLDIR="C:\Windows\System32\WindowsPowerShell\v1.0"
+
 
 
 REM FME-VARIABLER
 REM S”kv„g till fme som k”r fmw-filerna (FME-skripten). Fullst„ndig s”kv„g kr„vs n„r flera installationer finns p† k”rande maskin
 REM Om l„sning av Oracle-data ska g”ras f†r FME:s s”kv„g ej inneh†lla tecken som strider mot Oracle (ex. paranteser, accepteras i katalognamngivning men ej av Oracles' anslutningsstr„ng)
 @REM SET DL_FMEFULLPATH="C:\Program Files\FME_2018_1_2_1_18592\fme.exe"
-SET DL_FMEFULLPATH="C:\Program Files\FME_2021_0_21306\fme.exe"
+@REM SET DL_FMEFULLPATH="C:\Program Files\FME_2021_0_21306\fme.exe"
+SET DL_FMEFULLPATH="C:\Program Files\FME_2021_0_0_21306\fme.exe"
+@REM SET DL_FMEFULLPATH="C:\Program Files\FME_2022_0_0_2_22343\fme.exe"
+@REM SET DL_FMEFULLPATH="C:\Program Files\FME_2022_0_0_2_22346\fme.exe"
+@REM SET DL_FMEFULLPATH="C:\Program Files\FME_2022_2_22765\fme.exe"
 
 REM S”kv„g till FME:s arbetskatalog. Ska ligga skilt fr†n enhet d„r OS finns installerat, g„rna p† snabb diskyta med SSD-diskar och med bra tilltaget lagringsutrymme
 SET FME_TEMP=d:\fme_temp_workdir\
