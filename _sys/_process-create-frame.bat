@@ -54,16 +54,16 @@ REM ### METODER ###
 
         CHCP 1252 > nul
 
-        ECHO ; Dataset fr†n olika datak„llor [ers„tt raden med relevant information] >>%file%
+        ECHO ; Dataset från olika datakällor [ersätt raden med relevant information] >>%file%
         ECHO ; INFORMATION: Nedan kommenterade rader inkl. denna kan raderas. >>%file%
         ECHO ;    Rad kommenteras med inledande ; ^(semikolon^). >>%file%
-        ECHO ;    Filen m†ste ha en inledande rad som „r bortkommenterad. >>%file%
-        ECHO ;    Formatet best†r av fem kolumner med ^| ^(pipe^) som kolumnavgr„nsare. >>%file%
-        ECHO ;       Kolumn 1: namn p† feature/datset. Ska subkataloger med filter i exempelvis zip-fil genoms”kas l„ggs \**\*.shp till efter namnet. >>%file%
-        ECHO ;       Kolumn 2: s”kv„g till dataset ^(exempelvis distanserad plats^). Relativ eller absolut s”kv„g. Relativ s”kv„g b”rjar med \ ^(backslash^) eller / ^(slash^). Relativ s”kv„g f”ruts„tts vara i processmodulskatalogen. Absolut s”kv„g m†ste inneh†lla : ^(kolon^). >>%file%
-        ECHO ;       Kolumn 3: S”kv„g till dataset ^(exempelvis lokalt^). Relativ eller absolut s”kv„g. Relativ s”kv„g b”rjar med \ ^(backsh^) eller / ^(slash^). Relativ s”kv„g f”ruts„tts vara i processmodulskatalogen. Absolut s”kv„g m†ste inneh†lla : ^(kolon^). >>%file%
-        ECHO ;       Kolumn 4: kommentarsf„lt, fritext. >>%file%
-        ECHO ;       Kolumn 5: datasets format, FME:s kortnamn f”r formatet. Fungerar som signal f”r hur FME ska tolka datasetet. >>%file%
+        ECHO ;    Filen måste ha en inledande rad som är bortkommenterad. >>%file%
+        ECHO ;    Formatet består av fem kolumner med ^| ^(pipe^) som kolumnavgränsare. >>%file%
+        ECHO ;       Kolumn 1: namn på feature/datset. Ska subkataloger med filter i exempelvis zip-fil genomsökas läggs \**\*.shp till efter namnet. >>%file%
+        ECHO ;       Kolumn 2: söväg till dataset ^(exempelvis distanserad plats^). Relativ eller absolut sökväg. Relativ sökväg börjar med \ ^(backslash^) eller / ^(slash^). Relativ sökväg förutsätts vara i processmodulskatalogen. Absolut sökväg måste innehålla : ^(kolon^). >>%file%
+        ECHO ;       Kolumn 3: Sökväg till dataset ^(exempelvis lokalt^). Relativ eller absolut sökväg. Relativ sökväg börjar med \ ^(backsh^) eller / ^(slash^). Relativ sökväg förutsätts vara i processmodulskatalogen. Absolut sökväg måste innehålla : ^(kolon^). >>%file%
+        ECHO ;       Kolumn 4: kommentarsfält, fritext. >>%file%
+        ECHO ;       Kolumn 5: datasets format, FME:s kortnamn för formatet. Fungerar som signal för hur FME ska tolka datasetet. >>%file%
 
         CHCP 437 > nul
 
