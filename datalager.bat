@@ -5,7 +5,8 @@ SETLOCAL EnableDelayedExpansion
 REM CP 437 (DOS)
 REM Argument 1: V„xel [ null | [ ---reset|-r ]          | [ --clear|-c ] | 
 REM                            [ --schemainit|-si ]     | [ --backupconfig|-bc ] |
-REM                            [ --createsecrets|-cs ]  | [ --deploy|-d ] |
+REM                            [ --createsecrets|-cs ]  | [ --createframe|-cf ] |
+REM                            [ --new|-n ]             | [ --deploy|-d ] |
 REM                            [ --instal|-i ]          | [ --execute|-e]]
 
 REM Kontrollerar om ett argument existerar, anv„nder argumentet f”r alternativ till att k”ra hela processen.
@@ -57,6 +58,7 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO   --backupconfig ^| -bc        S„kerhetskopierar schema-filer ^(xlsx, ini^) och inst„llningar f”r m†lkataloger
         ECHO   --createsecrets ^| -cs       Skapar bat-fil med f”ruts„ttningarna ^(variabelnamn^) f”r n”dv„ndiga inlogg och e-postinst„llningar f”r fortsatt ifyllnad
         ECHO   --createframe ^| -cf         Skapar processmoduls katalog med underkataloger och tom _modul-settings-datasets.ini fil med f”rklarande text
+        ECHO   --new ^| -n                  Skapar ny processmodul. Bat-fil efter mall ^(v„rden mellan ^<^#^#^>^ ska ers„ttas^) med tillh”rande kataloger enl. --createframe
         ECHO   --deploy ^| -d               Skapar en katalog _deploy med de filer och kataloger som kr„vs f”r upps„ttning av ny fullst„ndig process ^(ej inst„llningar och schema^)
         ECHO   --instal ^| -i               OBS Ej fungerande p.g.a. process ej g†r att k”ra genom Windows path.
         ECHO.
@@ -84,6 +86,8 @@ IF %ERRORLEVEL% EQU 0 (
         IF "%_arg%"=="-cs" SET CREATESECRETS=1
         IF "%_arg%"=="--createframe" SET CREATEFRAME=1
         IF "%_arg%"=="-cf" SET CREATEFRAME=1
+        IF "%_arg%"=="--new" SET NEW=1
+        IF "%_arg%"=="-n" SET NEW=1
         IF "%_arg%"=="--deploy" SET DEPLOY=1
         IF "%_arg%"=="-d" SET DEPLOY=1
         IF "%_arg%"=="--instal" SET INSTALLING=1
@@ -168,10 +172,19 @@ IF %ERRORLEVEL% EQU 0 (
             GOTO exit
         )
         IF DEFINED CREATEFRAME (
-            @CALL _sys\_log-batch SECTS %DL_PROCESSID_MASTER%
+            @CALL _sys\_log-batch FRAME %DL_PROCESSID_MASTER%
             @CALL _sys\_process-create-frame %2
 
             SET CREATEFRAME=
+
+            GOTO exit
+        )
+        IF DEFINED NEW (
+            @CALL _sys\_log-batch NEW %DL_PROCESSID_MASTER%
+            COPY _sys\mall-processmodul.bat %2.bat > nul
+            @CALL datalager -cf %2
+
+            SET NEW=
 
             GOTO exit
         )
