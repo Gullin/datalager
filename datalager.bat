@@ -237,6 +237,8 @@ EXIT
     @CALL lkr-postgis-td_bal
     @CALL lkr-postgis-td_bal_anpassat
 
+    @CALL lkr-postgis-flex_grund
+
     @REM "lm-geodataplatsen-fastighetskartan" ska plockas bort i en kommande version. Ers„tts med "GSD-Fastighetskartan topografi, vektor"
     @REM @CALL lm-geodataplatsen-fastighetskartan
 
