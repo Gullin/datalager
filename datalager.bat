@@ -8,6 +8,7 @@ REM                            [ --schemainit|-si ]     | [ --backupconfig|-bc ]
 REM                            [ --createsecrets|-cs ]  | [ --createframe|-cf ] |
 REM                            [ --new|-n ]             | [ --deploy|-d ] |
 REM                            [ --instal|-i ]          | [ --execute|-e]]
+REM                            [ --tools|-t ]
 
 REM Kontrollerar om ett argument existerar, anv„nder argumentet f”r alternativ till att k”ra hela processen.
 REM Ska hela processen k”ras skickas inget argument med.
@@ -61,6 +62,7 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO   --new ^| -n                  Skapar ny processmodul. Bat-fil efter mall ^(v„rden mellan ^<^#^#^>^ ska ers„ttas^) med tillh”rande kataloger enl. --createframe
         ECHO   --deploy ^| -d               Skapar en katalog _deploy med de filer och kataloger som kr„vs f”r upps„ttning av ny fullst„ndig process ^(ej inst„llningar och schema^)
         ECHO   --instal ^| -i               OBS Ej fungerande p.g.a. process ej g†r att k”ra genom Windows path.
+        ECHO   --tools ^| -t                Samling med verktyg f”r att st”dja vissa uppgifter
         ECHO.
         PAUSE
 
@@ -91,7 +93,9 @@ IF %ERRORLEVEL% EQU 0 (
         IF "%_arg%"=="--deploy" SET DEPLOY=1
         IF "%_arg%"=="-d" SET DEPLOY=1
         IF "%_arg%"=="--instal" SET INSTALLING=1
-        IF "%_arg%"=="-i" SET INSTALLING=1 ELSE GOTO notdefined
+        IF "%_arg%"=="-i" SET INSTALLING=1
+        IF "%_arg%"=="--tools" SET TOOLS=1
+        IF "%_arg%"=="-t" SET TOOLS=1 ELSE GOTO notdefined
 
         IF DEFINED EXECUTE (
             SET DL_ISWHOLEPROCESS=1
@@ -201,6 +205,40 @@ IF %ERRORLEVEL% EQU 0 (
             @CALL _sys\_setup
 
             SET INSTALLING=
+
+            GOTO exit
+        )
+        IF DEFINED TOOLS (
+            @CALL _sys\_log-batch TOOLS %DL_PROCESSID_MASTER%
+
+            IF [%2]==[] (
+                ENDLOCAL
+                CLS
+                ECHO.
+                ECHO Anv„ndning: datalager --tools^|-t [val]
+                ECHO.
+                ECHO [val]:
+                ECHO   --get-meta-fmw ^| -gmf              Parsar FME:s FMW-filers information om version och encoding
+                ECHO.
+                PAUSE
+
+                @CALL datalager
+            ) ELSE (
+                SET "TRUE="
+                IF "%2" == "--get-meta-fmw" SET TRUE=1
+                IF "%2" == "-gmf" SET TRUE=1
+                IF DEFINED TRUE (
+                    ECHO "%DL_ROTDIR%"
+                    CD /D "%DL_POWERSHELLDIR%"
+
+                    Powershell -noprofile -File "%DL_ROTDIR%_sys\_get-fmw-version-encoding.ps1" -rootFolder "%DL_ROTDIR%"
+
+                    CD /D %DL_ROTDIR%
+                    SET "TRUE="
+                )
+            )
+
+            SET TOOLS=
 
             GOTO exit
         )
