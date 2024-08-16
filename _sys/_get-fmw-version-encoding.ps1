@@ -4,7 +4,10 @@ param (
     [string]$rootFolder,
     
     # Filfilter
-    [string]$filter = "*.fmw"
+    [string]$filter = "*.fmw",
+
+    # Print to text file
+    [string] $printToTextFile = "true"
 
 )
 
@@ -13,11 +16,11 @@ Clear-Host
 # Eliminerar ev. citattecken från sökvägen
 $rootFolder = $rootFolder.Replace("""", "")
 
+# Definiera XML-tagg och element du letar efter
+$startText = "WORKSPACE"
+
 # Definiera texten som indikerar att rader ska ignoreras från denna rad till slutet
 $endText = "#! </WORKSPACE>"
-
-# Definiera XML-tagg och element du letar efter
-$xmlTag = "WORKSPACE"
 
 # Definiera tecknet som rader måste börja med för att accepteras
 $validStartChar = "#"
@@ -31,6 +34,11 @@ $xmlFiles = $xmlFiles | Sort-Object DirectoryName, Name
 $fmeVersions = @()
 $fmeEncodings = @()
 
+$loggFile = Join-Path -Path $PSScriptRoot -ChildPath "_get-fmw-version-encoding.log"
+# Kontrollera om filen finns och radera den om så är fallet
+if (Test-Path $loggFile) {
+    Remove-Item $loggFile
+}
 
 foreach ($file in $xmlFiles) {
     try {
@@ -68,7 +76,7 @@ foreach ($file in $xmlFiles) {
         # Hitta startraden där FME skriver in hur anrop till skriptet ska göras. Uppfyller ej XML-standard.
         $startIndex = -1
         for ($i = 0; $i -lt $cleanedLines.Count; $i++) {
-            if ($cleanedLines[$i].Trim() -match '<WORKSPACE') {
+            if ($cleanedLines[$i].Trim() -match $startText) {
                 $startIndex = $i
                 break
             }
@@ -100,7 +108,7 @@ foreach ($file in $xmlFiles) {
         $attributeLastSavedBuild = $xmlContent.WORKSPACE.LAST_SAVE_BUILD
         $attributeFmeNamesEncoding = $xmlContent.WORKSPACE.FME_NAMES_ENCODING
 
-        if ($attributeFmeNamesEncoding -eq $null -or $attributeFmeNamesEncoding -eq "") {
+        if ($null -eq $attributeFmeNamesEncoding -or $attributeFmeNamesEncoding -eq "") {
             $attributeFmeNamesEncoding = "N/A"
         }
 
@@ -108,9 +116,16 @@ foreach ($file in $xmlFiles) {
         $fmeEncodings += $attributeFmeNamesEncoding
 
         # # Visa filnamn och värdet av taggen
-        Write-Host $($file.FullName)
-        Write-Host "`t $attributeLastSavedBuild"
-        Write-Host "`t $attributeFmeNamesEncoding"
+        if ($printToTextFile -as [bool]) {
+            $($file.FullName) | Tee-Object -FilePath $loggFile -Append | Write-Host
+            "`t $attributeLastSavedBuild" | Tee-Object -FilePath $loggFile -Append | Write-Host
+            "`t $attributeFmeNamesEncoding" | Tee-Object -FilePath $loggFile -Append | Write-Host
+        }
+        else {
+            Write-Host $($file.FullName)
+            Write-Host "`t $attributeLastSavedBuild"
+            Write-Host "`t $attributeFmeNamesEncoding"
+        }
     } catch {
         Write-Host "Error processing file: $($file.FullName)"
         Write-Host $_.Exception.Message
@@ -158,12 +173,22 @@ foreach ($file in $xmlFiles) {
 #     Write-Host "$key : $($hashTable[$key])"
 # }
 
-Write-Host ""
-Write-Host "SAMMANFATTNING"
-Write-Host "==========================="
-Write-Host ""
-Write-Host "Versioner"
-Write-Host "---------------------------"
+if ($printToTextFile -as [bool]) {
+    "" | Tee-Object -FilePath $loggFile -Append | Write-Host
+    "SAMMANFATTNING" | Tee-Object -FilePath $loggFile -Append | Write-Host
+    "===========================" | Tee-Object -FilePath $loggFile -Append | Write-Host
+    "" | Tee-Object -FilePath $loggFile -Append | Write-Host
+    "Versioner" | Tee-Object -FilePath $loggFile -Append | Write-Host
+    "===========================" | Tee-Object -FilePath $loggFile -Append | Write-Host
+}
+else {
+    Write-Host ""
+    Write-Host "SAMMANFATTNING"
+    Write-Host "==========================="
+    Write-Host ""
+    Write-Host "Versioner"
+    Write-Host "---------------------------"
+}
 
 
 # Använd Group-Object för att gruppera och räkna förekomster
@@ -176,13 +201,25 @@ $groupedFmeVersions = $fmeVersions | Group-Object
 $sortedGroupedFmeVersions = $groupedFmeVersions | Sort-Object Name
 
 # Visa resultatet
-foreach ($group in $sortedGroupedFmeVersions) {
-    Write-Host "$($group.Name): $($group.Count)"
+if ($printToTextFile -as [bool]) {
+    foreach ($group in $sortedGroupedFmeVersions) {
+        "$($group.Name): $($group.Count)" | Tee-Object -FilePath $loggFile -Append | Write-Host
+    }
+
+    "" | Tee-Object -FilePath $loggFile -Append | Write-Host
+    "Encoding" | Tee-Object -FilePath $loggFile -Append | Write-Host
+    "---------------------------" | Tee-Object -FilePath $loggFile -Append | Write-Host
+}
+else {
+    foreach ($group in $sortedGroupedFmeVersions) {
+        Write-Host "$($group.Name): $($group.Count)"
+    }
+
+    Write-Host ""
+    Write-Host "Encoding"
+    Write-Host "---------------------------"
 }
 
-Write-Host ""
-Write-Host "Encoding"
-Write-Host "---------------------------"
 
 # Använd Group-Object för att gruppera och räkna förekomster
 $groupedFmeEncodings = $fmeEncodings | Group-Object
@@ -194,7 +231,20 @@ $groupedFmeEncodings = $fmeEncodings | Group-Object
 $sortedGroupedFmeEncodings = $groupedFmeEncodings | Sort-Object Name
 
 # Visa resultatet
-foreach ($group in $sortedGroupedFmeEncodings) {
-    Write-Host "$($group.Name): $($group.Count)"
+if ($printToTextFile -as [bool]) {
+    foreach ($group in $sortedGroupedFmeEncodings) {
+        "$($group.Name): $($group.Count)" | Tee-Object -FilePath $loggFile -Append | Write-Host
+    }
+
+    "" | Tee-Object -FilePath $loggFile -Append | Write-Host
+    
+    Write-Host "Ovan har även skrivits ut till $loggFile"
+    Write-Host ""
 }
-Write-Host ""
+else {
+    foreach ($group in $sortedGroupedFmeEncodings) {
+        Write-Host "$($group.Name): $($group.Count)"
+    }
+
+    Write-Host ""
+}
