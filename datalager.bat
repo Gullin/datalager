@@ -51,8 +51,8 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO Anv„ndning: datalager [val]
         ECHO.
         ECHO [val]:
-        ECHO   --execute ^| -e              Exekverar alla processmoduler f”r databearbetning (hela datalagerprocessen, ej per processmodul)
-        ECHO   --extract ^| -ex             Exekverar alla processmoduler f”r extrahering och insamling av data till repo, ingen distribuering g”rs (hela datalagerprocessen, ej per processmodul)
+        ECHO   --execute ^| -e              Exekverar alla processmoduler f”r databearbetning ^(hela datalagerprocessen, ej per processmodul^)
+        ECHO   --extract ^| -ex             Exekverar alla processmoduler f”r extrahering och insamling av data till repo, ingen distribuering g”rs ^(hela datalagerprocessen, ej per processmodul^)
         ECHO   --distributionsource ^| -ds  Listar k„llor, f”r distribuering fr†n datarepo, till fil %DL_DISTSOURCEFILE% under "%DL_ROTDIR%%DL_REPOSITORYROTDIR%"
         ECHO   --reset ^| -r                Raderar allt som inte „r n”dv„ndigt f”r datalagerprocessen ^(loggar, data, backup, publisering, ej aff„rslogik^)
         ECHO   --clear ^| -c                Raderar loggar och publiceringsunderlag ^(_deploy, skapad av --deploy^)
@@ -66,6 +66,8 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO   --tools ^| -t                Samling med verktyg f”r att st”dja vissa uppgifter
         ECHO.
         PAUSE
+
+        GOTO exit
 
     ) ELSE (
         
