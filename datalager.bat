@@ -9,7 +9,7 @@ REM                            [ --createsecrets|-cs ]  | [ --createframe|-cf ] 
 REM                            [ --new|-n ]             | [ --deploy|-d ] |
 REM                            [ --instal|-i ]          | [ --execute|-e]]
 REM                            [ --extract|-ex]]        | [ --distributionsource|-ds]] |
-REM                            [ --tools|-t ]
+REM                            [ --distribute|-db]      | [ --tools|-t ]
 
 REM Kontrollerar om ett argument existerar, anv„nder argumentet f”r alternativ till att k”ra hela processen.
 REM Ska hela processen k”ras skickas inget argument med.
@@ -54,6 +54,7 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO   --execute ^| -e              Exekverar alla processmoduler f”r databearbetning ^(hela datalagerprocessen, ej per processmodul^)
         ECHO   --extract ^| -ex             Exekverar alla processmoduler f”r extrahering och insamling av data till repo, ingen distribuering g”rs ^(hela datalagerprocessen, ej per processmodul^)
         ECHO   --distributionsource ^| -ds  Listar k„llor, f”r distribuering fr†n datarepo, till fil %DL_DISTSOURCEFILE% under "%DL_ROTDIR%%DL_REPOSITORYROTDIR%"
+        ECHO   --distribute ^| -db          Distribuerar hela datalagrets repo alt. specificerad processmodul. F”ruts„ttning att %DL_DISTSOURCEFILE% existerar f”r k”rningen. Kompletterar --extract ^| -ex
         ECHO   --reset ^| -r                Raderar allt som inte „r n”dv„ndigt f”r datalagerprocessen ^(loggar, data, backup, publisering, ej aff„rslogik^)
         ECHO   --clear ^| -c                Raderar loggar och publiceringsunderlag ^(_deploy, skapad av --deploy^)
         ECHO   --schemainit ^| -si          Initierar nytt schema f”r dataset som underlag f”r manifest
@@ -79,6 +80,8 @@ IF %ERRORLEVEL% EQU 0 (
         IF "%_arg%"=="-ex" SET EXTRACT=1
         IF "%_arg%"=="--distributionsource" SET DISTRIBUTION=1
         IF "%_arg%"=="-ds" SET DISTRIBUTION=1
+        IF "%_arg%"=="--distribute" SET DISTRIBUTE=1
+        IF "%_arg%"=="-db" SET DISTRIBUTE=1
         IF "%_arg%"=="--reset" SET RESETING=1
         IF "%_arg%"=="-r" SET RESETING=1
         IF "%_arg%"=="--clear" SET CLEARING=1
@@ -119,12 +122,35 @@ IF %ERRORLEVEL% EQU 0 (
         IF DEFINED DISTRIBUTION (
             CD /D "%DL_POWERSHELLDIR%"
 
-            ECHO "%DL_ROTDIR%%DL_REPOSITORYROTDIR%"
             Powershell -noprofile -File "%DL_ROTDIR%_sys\_create_DatalagerDistributionSource.log.ps1" -rootFolder "%DL_ROTDIR%%DL_REPOSITORYROTDIR%"
 
             CD /D %DL_ROTDIR%
 
             SET DISTRIBUTION=
+
+            GOTO exit
+        )
+        IF DEFINED DISTRIBUTE (
+            ECHO Distribuering
+
+            @REM TODO: ™verv„ga om ett tredje fall med argument "datalager" f”ljt av en serie motsvarande vilka rader i distriberingsloggen som ska distribueras
+
+            IF [%2]==[] (
+                IF EXIST "%DL_ROTDIR%%DL_DISTSOURCE%" (
+                    @CALL _sys\_datalager-distribute
+                ) ELSE (
+                    ECHO Existerar ej, "%DL_ROTDIR%!_arg2!\%DL_DISTSOURCE%"
+                )
+            ) ELSE (
+                SET _arg2=%2
+                IF EXIST "%DL_ROTDIR%!_arg2!\%DL_DISTSOURCE%" (
+                    @CALL _sys\_datalager-distribute !_arg2!
+                ) ELSE (
+                    ECHO Existerar ej, "%DL_ROTDIR%!_arg2!\%DL_DISTSOURCE%"
+                )
+            )
+
+            SET DISTRIBUTE=
 
             GOTO exit
         )
