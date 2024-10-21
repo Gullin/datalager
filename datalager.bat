@@ -324,6 +324,7 @@ EXIT
     @CALL lkr-postgis-td_baskarta_anpassat_markdetaljtyp
     @CALL lkr-postgis-td_detaljplan
     @CALL lkr-postgis-td_detaljplan_sis
+    @CALL lkr-postgis-td_detaljplan_sis_anpassat
     @CALL lkr-postgis-td_drk
     @CALL lkr-postgis-td_drk_anpassat
     @CALL lkr-postgis-td_bal
