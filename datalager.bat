@@ -250,23 +250,34 @@ IF %ERRORLEVEL% EQU 0 (
                 ECHO Anv„ndning: datalager --tools^|-t [val]
                 ECHO.
                 ECHO [val]:
+                ECHO   --get-process-modules ^| -gpm       Listar alla processmoduler
                 ECHO   --get-meta-fmw ^| -gmf              Parsar FME:s FMW-filers information om version och encoding
                 ECHO.
                 PAUSE
 
                 @CALL datalager
             ) ELSE (
-                SET "TRUE="
-                IF "%2" == "--get-meta-fmw" SET TRUE=1
-                IF "%2" == "-gmf" SET TRUE=1
-                IF DEFINED TRUE (
-                    ECHO "%DL_ROTDIR%"
+                SET "GPM="
+                IF "%2" == "--get-process-modules" SET GPM=1
+                IF "%2" == "-gpm" SET GPM=1
+                SET "GMF="
+                IF "%2" == "--get-meta-fmw" SET GMF=1
+                IF "%2" == "-gmf" SET GMF=1
+                IF DEFINED GPM (
+                    CD /D "%DL_POWERSHELLDIR%"
+
+                    Powershell -noprofile -File "%DL_ROTDIR%_sys\_get-process_modules.ps1" -rootFolder "%DL_ROTDIR%"
+
+                    CD /D %DL_ROTDIR%
+                    SET "GPM="
+                )
+                IF DEFINED GMF (
                     CD /D "%DL_POWERSHELLDIR%"
 
                     Powershell -noprofile -File "%DL_ROTDIR%_sys\_get-fmw-version-encoding.ps1" -rootFolder "%DL_ROTDIR%"
 
                     CD /D %DL_ROTDIR%
-                    SET "TRUE="
+                    SET "GMF="
                 )
             )
 
