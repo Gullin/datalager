@@ -58,6 +58,9 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO   --reset ^| -r                Raderar allt som inte „r n”dv„ndigt f”r datalagerprocessen ^(loggar, data, backup, publisering, ej aff„rslogik^)
         ECHO   --clear ^| -c                Raderar loggar och publiceringsunderlag ^(_deploy, skapad av --deploy^)
         ECHO   --schemainit ^| -si          Initierar nytt schema f”r dataset som underlag f”r manifest
+        ECHO                                argument 1: processmodulsnamn, argument 2: formatben„mning enl. FME-kortnamn,
+        ECHO                                argument 3: dataset ^(databas, FME:s anslutningsnamn ^| fil, s”kv„g^), argument 4: endast f”r databas, tabellnamn med schemaprefix, inom cituationstecken, om flera avgr„nsat med mellanrum
+        ECHO                                utel„mnas argument 2, 3 och 4 anv„nds _modul_settings_dataset.ini
         ECHO   --backupconfig ^| -bc        S„kerhetskopierar schema-filer ^(xlsx, ini^) och inst„llningar f”r m†lkataloger
         ECHO   --createsecrets ^| -cs       Skapar bat-fil med f”ruts„ttningarna ^(variabelnamn^) f”r n”dv„ndiga inlogg och e-postinst„llningar f”r fortsatt ifyllnad
         ECHO   --createframe ^| -cf         Skapar processmoduls katalog med underkataloger och tom _modul-settings-datasets.ini fil med f”rklarande text
