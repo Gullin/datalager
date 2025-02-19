@@ -13,10 +13,15 @@ REM             Validering mellan k”rningar g”rs med "manifest" mot "flush".
 REM Argument 5: Format, FME:s kortnamn f”r formatet. Fungerar som signal f”r hur FME ska tolka datasetet.
 REM             Kan utel„mnas om formatet kan h„mtas fr†n 5:e kolumnen i _modul-settings-datasets.ini.
 REM             Argument 6 och 7 ska d† ocks† utel„mnas.
-REM             ESRISHAPE           F”r ESRI shape-filer
+REM             ESRISHAPE           F”r ESRI shape-filer (shp)
 REM             ORACLE_SPATIAL      F”r databas Oracle och datatypen spatial
 REM             ORACLE_NONSPATIAL   F”r databas Oracle endast tabelldata
 REM             POSTGIS             F”r databas Postgresql med spatialt till„gg kallad PostGIS
+REM             POSTGRES            F”r databas Postgresql f”r ren tabelldata
+REM             MSSQL_ADO           F”r databas Microsoft SQL Server f”r ren tabelldata
+REM             OGCGEOPACKAGE       F”r GeoPackage-filer (gpkg)
+REM             WFS                 F”r OWS WFS (OWS, OGC Web Services) (OGC, Open Geospatial Consortium) (WFS, Web Feature Service)
+REM             OGCAPI_FEATURES     F”r OGC API-Feature (WFS 3.0), mer †t modernare web API
 REM Argument 6: Dataset vars schema-struktur ska l„sas av.
 REM             F”r filer anges s”kv„g och f”r databas anges det namn i FME som definierar anslutningen. Absoluta s”kv„gen anges vid filer.
 REM             F”r specifik fil ange exempelvis c:\katalog\dataset.shp
@@ -110,7 +115,8 @@ REM Metoder
                             --OutSchemaFileNameSuffix %_arg4% ^
                             --OutputDirectory %DL_ROTDIR%%_arg1%\_schema\ ^
                             --ProcessModulName %_arg1% ^
-                            --IsWholeProcessRun %_arg2%
+                            --IsWholeProcessRun %_arg2% ^
+                            --FME_LAUNCH_VIEWER_APP YES
     )
 
     IF %ERRORLEVEL% NEQ 0 (
