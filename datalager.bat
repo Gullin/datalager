@@ -352,6 +352,7 @@ EXIT
     @REM "lm-geodataplatsen-fastighetskartan" ska plockas bort i en kommande version. Ers„tts med "GSD-Fastighetskartan topografi, vektor"
     @REM @CALL lm-geodataplatsen-fastighetskartan
 
+    @CALL hvm
     @CALL lm-geotorget
     @CALL lst
     @CALL raa
