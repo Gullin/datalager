@@ -58,9 +58,10 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO   --reset ^| -r                Raderar allt som inte „r n”dv„ndigt f”r datalagerprocessen ^(loggar, data, backup, publisering, ej aff„rslogik^)
         ECHO   --clear ^| -c                Raderar loggar och publiceringsunderlag ^(_deploy, skapad av --deploy^)
         ECHO   --schemainit ^| -si          Initierar nytt schema f”r dataset som underlag f”r manifest
-        ECHO                                argument 1: processmodulsnamn, argument 2: formatben„mning enl. FME-kortnamn,
-        ECHO                                argument 3: dataset ^(databas, FME:s anslutningsnamn ^| fil, s”kv„g^), argument 4: endast f”r databas, tabellnamn med schemaprefix, inom cituationstecken, om flera avgr„nsat med mellanrum
-        ECHO                                utel„mnas argument 2, 3 och 4 anv„nds _modul_settings_dataset.ini
+        ECHO                                argument 1: processmodulsnamn, argument 2: uppr„tth†llande av namnkonvention ^(true ^| false^), argument 3: formatben„mning enl. FME-kortnamn,
+        ECHO                                argument 4: dataset ^(databas, FME:s anslutningsnamn ^| fil, s”kv„g^), argument 5: endast f”r databas, tabellnamn med schemaprefix, inom cituationstecken, om flera avgr„nsat med mellanrum
+        ECHO                                utel„mnas argument 2 „r standard true
+        ECHO                                utel„mnas argument 3, 4 och 5 anv„nds _modul_settings_dataset.ini
         ECHO   --backupconfig ^| -bc        S„kerhetskopierar schema-filer ^(xlsx, ini^) och inst„llningar f”r m†lkataloger
         ECHO   --createsecrets ^| -cs       Skapar bat-fil med f”ruts„ttningarna ^(variabelnamn^) f”r n”dv„ndiga inlogg och e-postinst„llningar f”r fortsatt ifyllnad
         ECHO   --createframe ^| -cf         Skapar processmoduls katalog med underkataloger och tom _modul-settings-datasets.ini fil med f”rklarande text
@@ -173,19 +174,24 @@ IF %ERRORLEVEL% EQU 0 (
             GOTO exit
         )
         IF DEFINED SCHEMAINIT (
-            IF [%4]==[] (
-                SET _arg4=NULL
+            IF [%3]==[] (
+                SET _arg3=true
             ) ELSE (
-                SET _arg4=%4
+                SET _arg3=%3
             )
             IF [%5]==[] (
                 SET _arg5=NULL
             ) ELSE (
                 SET _arg5=%5
             )
+            IF [%6]==[] (
+                SET _arg6=NULL
+            ) ELSE (
+                SET _arg6=%6
+            )
 
             @CALL _sys\_log-batch SCHEM %DL_PROCESSID_MASTER%
-            @CALL _sys\_schema-driver %2 %DL_ISWHOLEPROCESS% write init %3 !_arg4! !_arg5!
+            @CALL _sys\_schema-driver %2 %DL_ISWHOLEPROCESS% write init !_arg3! %4 !_arg5! !_arg6!
 
             SET SCHEMAINIT=
 

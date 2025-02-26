@@ -58,7 +58,7 @@ IF %ERRORLEVEL% EQU 0 (
 
     REM Validering av data-schema
     REM Žndras f”r resp. processmodul
-    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL OGCGEOPACKAGE
+    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL false OGCGEOPACKAGE
 
     REM Kontrollerar om valideringen har godk„nnts annars k”rs ej resterande
     IF %DL_ISWHOLEPROCESS% == 1 (

@@ -36,7 +36,7 @@ SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 IF %ERRORLEVEL% EQU 0 (
     REM Validering av data-schema
     REM Žndras f”r resp. processmodul
-    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL WFS
+    @CALL _sys\_schema-driver %DL_PROCESSNAME% %DL_ISWHOLEPROCESS% validate NULL false WFS
 
     REM Kontrollerar om valideringen har godk„nnts annars k”rs ej resterande
     IF %DL_ISWHOLEPROCESS% == 1 (
