@@ -259,6 +259,7 @@ IF %ERRORLEVEL% EQU 0 (
                 ECHO   --get-process-modules ^| -gpm        Listar alla processmoduler
                 ECHO   --get-meta-fmw ^| -gmf               Parsar FME:s FMW-filers information om version och encoding
                 ECHO   --get-format-used ^| -gfu            Listar anv„nda format och antalet f”rekomster fr†n _modul_settings_dataset.ini
+                ECHO   --check-repo-folders ^| -crf         J„mf”r k„llf”rvaret ^(repot^) med en representativ filbaserad sajt
                 ECHO.
                 PAUSE
 
@@ -273,6 +274,9 @@ IF %ERRORLEVEL% EQU 0 (
                 SET "GFU="
                 IF "%2" == "--get-format-used" SET GFU=1
                 IF "%2" == "-gfu" SET GFU=1
+                SET "CRF="
+                IF "%2" == "--check-repo-folders" SET CRF=1
+                IF "%2" == "-crf" SET CRF=1
                 IF DEFINED GPM (
                     CD /D "%DL_POWERSHELLDIR%"
 
@@ -296,6 +300,14 @@ IF %ERRORLEVEL% EQU 0 (
 
                     CD /D %DL_ROTDIR%
                     SET "GFU="
+                )
+                IF DEFINED CRF (
+                    CD /D "%DL_POWERSHELLDIR%"
+
+                    Powershell -noprofile -File "%DL_ROTDIR%_sys\_check_repo_compare_folders_source_sajt.ps1" -rootFolder """%DL_ROTDIR%""" -repoSubFolder """%DL_REPOSITORYROTDIR%"""
+
+                    CD /D %DL_ROTDIR%
+                    SET "CRF="
                 )
             )
 
