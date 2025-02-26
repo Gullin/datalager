@@ -260,6 +260,7 @@ IF %ERRORLEVEL% EQU 0 (
                 ECHO   --get-meta-fmw ^| -gmf               Parsar FME:s FMW-filers information om version och encoding
                 ECHO   --get-format-used ^| -gfu            Listar anv„nda format och antalet f”rekomster fr†n _modul_settings_dataset.ini
                 ECHO   --check-repo-folders ^| -crf         J„mf”r k„llf”rvaret ^(repot^) med en representativ filbaserad sajt
+                ECHO   --check-repo-dates ^| -crd           Redovisar k„llf”rvarets ^(repot^) resp. underkatalogs min.- och max.-datum
                 ECHO.
                 PAUSE
 
@@ -277,6 +278,9 @@ IF %ERRORLEVEL% EQU 0 (
                 SET "CRF="
                 IF "%2" == "--check-repo-folders" SET CRF=1
                 IF "%2" == "-crf" SET CRF=1
+                SET "CRD="
+                IF "%2" == "--check-repo-dates" SET CRD=1
+                IF "%2" == "-crd" SET CRD=1
                 IF DEFINED GPM (
                     CD /D "%DL_POWERSHELLDIR%"
 
@@ -308,6 +312,14 @@ IF %ERRORLEVEL% EQU 0 (
 
                     CD /D %DL_ROTDIR%
                     SET "CRF="
+                )
+                IF DEFINED CRD (
+                    CD /D "%DL_POWERSHELLDIR%"
+
+                    Powershell -noprofile -File "%DL_ROTDIR%_sys\_check_repo_min_max_date_folders.ps1" -rootRepoFolder %DL_ROTDIR%%DL_REPOSITORYROTDIR%
+
+                    CD /D %DL_ROTDIR%
+                    SET "CRD="
                 )
             )
 
