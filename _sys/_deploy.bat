@@ -80,6 +80,13 @@ IF %ERRORLEVEL% EQU 0 (
     ECHO        * Kontrollera s”kv„gar i schema-manifest.xlsx vid filbaserade processmoduler
     ECHO.
 
+    ECHO.
+    ECHO OBS:
+    ECHO        Skapad katalog !DL_DEPLOYDIR! raderas vid n†gon datak”rning ^(k”rning i sin helhet
+    ECHO        eller av resp. processmodul^). Ska resultatet anv„ndas som n†gon typ av uppbackning,
+    ECHO        t„nk p† att flytta katalogen fr†n automatiska datalagerprocessens katalog.
+    ECHO.
+
 ) ELSE (
     @CALL _sys\_log-batch ERROR "Processen %DL_PROCESSID% kunde inte k”ras"
     @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%" %_arg%
