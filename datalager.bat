@@ -256,8 +256,9 @@ IF %ERRORLEVEL% EQU 0 (
                 ECHO Anv„ndning: datalager --tools^|-t [val]
                 ECHO.
                 ECHO [val]:
-                ECHO   --get-process-modules ^| -gpm       Listar alla processmoduler
-                ECHO   --get-meta-fmw ^| -gmf              Parsar FME:s FMW-filers information om version och encoding
+                ECHO   --get-process-modules ^| -gpm        Listar alla processmoduler
+                ECHO   --get-meta-fmw ^| -gmf               Parsar FME:s FMW-filers information om version och encoding
+                ECHO   --get-format-used ^| -gfu            Listar anv„nda format och antalet f”rekomster fr†n _modul_settings_dataset.ini
                 ECHO.
                 PAUSE
 
@@ -269,6 +270,9 @@ IF %ERRORLEVEL% EQU 0 (
                 SET "GMF="
                 IF "%2" == "--get-meta-fmw" SET GMF=1
                 IF "%2" == "-gmf" SET GMF=1
+                SET "GFU="
+                IF "%2" == "--get-format-used" SET GFU=1
+                IF "%2" == "-gfu" SET GFU=1
                 IF DEFINED GPM (
                     CD /D "%DL_POWERSHELLDIR%"
 
@@ -284,6 +288,14 @@ IF %ERRORLEVEL% EQU 0 (
 
                     CD /D %DL_ROTDIR%
                     SET "GMF="
+                )
+                IF DEFINED GFU (
+                    CD /D "%DL_POWERSHELLDIR%"
+
+                    Powershell -noprofile -File "%DL_ROTDIR%_sys\_get_formt_used.ps1" -rootFolder "%DL_ROTDIR%"
+
+                    CD /D %DL_ROTDIR%
+                    SET "GFU="
                 )
             )
 
