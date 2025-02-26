@@ -57,18 +57,13 @@ IF %ERRORLEVEL% EQU 0 (
         FOR /D %%p IN ("*.*") DO (
             SET FOLDER=%%p
             IF NOT "!FOLDER:~0,1!"=="_" (
-                IF NOT EXIST !FOLDER!\_schema\_modul-settings-datasets.ini ECHO !FOLDER!\_schema\_modul-settings-datasets.ini
-                REM IF EXIST !FOLDER!\_schema\_modul-settings-datasets.ini ECHO K| XCOPY /Y !FOLDER!\_schema\_modul-settings-datasets.ini !COPYTOFOLDER!\!FOLDER!\_schema /I > nul
-                REM IF EXIST !FOLDER!\_schema\_modul-settings-datasets.ini ECHO D | XCOPY /Y !FOLDER!\_schema\_modul-settings-datasets.ini !COPYTOFOLDER!\!FOLDER!\_schema /I > nul
                 IF EXIST !FOLDER!\_schema\_modul-settings-datasets.ini XCOPY /Y !FOLDER!\_schema\_modul-settings-datasets.ini !COPYTOFOLDER!\!FOLDER!\_schema\* /I > nul
-                REM IF EXIST !FOLDER!\_schema\schema-manifest.xlsx ECHO K| XCOPY /Y !FOLDER!\_schema\schema-manifest.xlsx !COPYTOFOLDER!\!FOLDER!\_schema /I > nul
-                REM IF EXIST !FOLDER!\_schema\schema-manifest.xlsx ECHO D| XCOPY /Y !FOLDER!\_schema\schema-manifest.xlsx !COPYTOFOLDER!\!FOLDER!\_schema /I > nul
                 IF EXIST !FOLDER!\_schema\schema-manifest.xlsx XCOPY /Y !FOLDER!\_schema\schema-manifest.xlsx !COPYTOFOLDER!\!FOLDER!\_schema\* /I > nul
             )
         )
     ) ELSE (
-        IF EXIST %_arg1%\_schema\_modul-settings-datasets.ini ECHO K| XCOPY %_arg1%\_schema\_modul-settings-datasets.ini !COPYTOFOLDER!\%_arg1%\_schema /I > nul
-        IF EXIST %_arg1%\_schema\schema-manifest.xlsx ECHO K| XCOPY %_arg1%\_schema\schema-manifest.xlsx !COPYTOFOLDER!\%_arg1%\_schema /I > nul
+        IF EXIST "%DL_ROTDIR%%_arg1%\_schema\_modul-settings-datasets.ini" XCOPY /Y "%DL_ROTDIR%%_arg1%\_schema\_modul-settings-datasets.ini" !COPYTOFOLDER!\_schema\* /I > nul
+        IF EXIST "%DL_ROTDIR%%_arg1%\_schema\schema-manifest.xlsx" XCOPY /Y "%DL_ROTDIR%%_arg1%\_schema\schema-manifest.xlsx" !COPYTOFOLDER!\_schema\* /I > nul
     )
 
 
