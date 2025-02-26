@@ -46,7 +46,6 @@ IF EXIST _cleared_*.* DEL _cleared_*.*
 IF %ERRORLEVEL% EQU 0 (
     IF NOT DEFINED _arg (
 
-        CLS
         ECHO.
         ECHO Anv„ndning: datalager [val]
         ECHO.
@@ -70,9 +69,8 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO   --instal ^| -i               OBS Ej fungerande p.g.a. process ej g†r att k”ra genom Windows path.
         ECHO   --tools ^| -t                Samling med verktyg f”r att st”dja vissa uppgifter
         ECHO.
-        PAUSE
 
-        GOTO exit
+        GOTO :eof
 
     ) ELSE (
         
@@ -251,7 +249,6 @@ IF %ERRORLEVEL% EQU 0 (
 
             IF [%2]==[] (
                 ENDLOCAL
-                CLS
                 ECHO.
                 ECHO Anv„ndning: datalager --tools^|-t [val]
                 ECHO.
@@ -262,9 +259,7 @@ IF %ERRORLEVEL% EQU 0 (
                 ECHO   --check-repo-folders ^| -crf         J„mf”r k„llf”rvaret ^(repot^) med en representativ filbaserad sajt
                 ECHO   --check-repo-dates ^| -crd           Redovisar k„llf”rvarets ^(repot^) resp. underkatalogs min.- och max.-datum
                 ECHO.
-                PAUSE
 
-                @CALL datalager
             ) ELSE (
                 SET "GPM="
                 IF "%2" == "--get-process-modules" SET GPM=1
