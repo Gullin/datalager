@@ -27,6 +27,7 @@
 #Datasetsformat Autodesk MapGuide Enterprise SDF
 *.sdf
 
+.vscode
 _cleared_*
 _reseted_*
 __secrets/
