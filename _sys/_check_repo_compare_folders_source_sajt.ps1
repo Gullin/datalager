@@ -21,10 +21,12 @@ Clear-Host
 # $source = "C:\temp\slask\comparefolderfiles\folder1"
 # $sajt = "C:\temp\slask\comparefolderfiles\folder2"
 
+$sajtListings = "_global-settings-targetpaths.ini"
+
 $rootFolder = $rootFolder.Replace("""", "")
 $repoSubFolder = $repoSubFolder.Replace("""", "")
 # Läs in ini-filen och filtrera bort rader som börjar med ";" eller är tomma
-$targetPathsSajts = Join-Path -Path $rootFolder -ChildPath "_global-settings-targetpaths.ini"
+$targetPathsSajts = Join-Path -Path $rootFolder -ChildPath $sajtListings
 $values = Get-Content $targetPathsSajts | Where-Object { $_ -notmatch "^\s*;" -and $_ -match "\S" }
 
 # Definierar nödvändiga sökvägar för repo och en filsajt
@@ -56,8 +58,8 @@ elseif ($PresentType -eq "Tabell") {
   $allFiles = ($files1 + $files2) | Sort-Object -Unique
 
   # Inkludera rubrikernas längd i beräkningen av bredder
-  $header1 = 'Repo`n(Green = missing on sajt, Cyan = exists in both)'
-  $header2 = 'Sajt`n(Red = missin in source, Cyan = exists in both)'
+  $header1 = 'Repo ' + $source + '`n(Green = missing on sajt, Cyan = exists in both)'
+  $header2 = 'Sajt ' + $sajt + '`n(Red = missin in source, Cyan = exists in both)'
 
   # Hitta längsta texten i respektive kolumn
   $maxWidth1 = ($files1 + $header1 -split '`n' | Measure-Object -Maximum -Property Length).Maximum
@@ -120,8 +122,10 @@ elseif ($PresentType -eq "Tabell") {
   Write-Host "COMPARED"
   Write-Host "==========================="
   Write-Host "Source (repo):  $source ($(($allFiles | Where-Object { $files1 -contains $_ }).Count) st. poster)"
-  Write-Host "Sajt represent: $sajt ($(($allFiles | Where-Object { $files2 -contains $_ }).Count) st. poster)"
+  Write-Host "Site represent: $sajt ($(($allFiles | Where-Object { $files2 -contains $_ }).Count) st. poster)"
   Write-Host "Number comparing rows: $($allFiles.Length)"
+  Write-Host ""
+  Write-Host "Site is selected from the 1st directory in the file $sajtListings."
   Write-Host ""
 
 }
