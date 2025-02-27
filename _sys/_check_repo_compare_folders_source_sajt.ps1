@@ -116,6 +116,14 @@ elseif ($PresentType -eq "Tabell") {
 
   # Avslutande linje
   Write-Host $divider
+  Write-Host ""
+  Write-Host "COMPARED"
+  Write-Host "==========================="
+  Write-Host "Source (repo):  $source ($(($allFiles | Where-Object { $files1 -contains $_ }).Count) st. poster)"
+  Write-Host "Sajt represent: $sajt ($(($allFiles | Where-Object { $files2 -contains $_ }).Count) st. poster)"
+  Write-Host "Number comparing rows: $($allFiles.Length)"
+  Write-Host ""
+
 }
 else {
   Write-Host 'Inget hanterat alternativ'
