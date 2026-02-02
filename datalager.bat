@@ -366,7 +366,8 @@ EXIT
 
     REM Processmoduler
     @CALL lkr-anpassat
-    @CALL lkr-anpassat-ecos
+    @REM Avvecklad i och med Ecos v2.17 och dess ”verg†ng till ny kartklient. Plockas bort efter en stunds "gallringstid".
+    @REM @CALL lkr-anpassat-ecos
     @CALL lkr-postgis-lk_gis
     @CALL lkr-postgis-lk_gis_anpassat
     @CALL lkr-postgis-ex_special
