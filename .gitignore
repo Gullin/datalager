@@ -27,6 +27,9 @@
 #Datasetsformat Autodesk MapGuide Enterprise SDF
 *.sdf
 
+#Datasetsformat GeoPackage
+*.gpkg
+
 .vscode
 _cleared_*
 _reseted_*
