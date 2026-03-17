@@ -5,6 +5,8 @@
 *.fmw.recover
 *.ffs
 *.fsi # indexfil till ffs
+# bugg i 2025.1 fixad i 2025.2 med att katalog ".sentry-fme" skapas. Ska egentligen inte existera. 
+.sentry-fme/
 
 #Datasetsformat shape
 *.shp
