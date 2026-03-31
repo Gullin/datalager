@@ -167,7 +167,9 @@ REM H„mta data fr†n Geotorget
                             --OnlyOrder "%ORDER%" ^
                             --OutputDirectory %DL_ROTDIR%%DL_PROCESSNAME%/_ned ^
                             --ProcessModulName %DL_PROCESSNAME% ^
-                            --IsWholeProcessRun %DL_ISWHOLEPROCESS%
+                            --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
+                            --OPTIONAL_SCOPE %SCOPES-LM-GEOTORGET% ^
+                            --FME_LAUNCH_VIEWER_APP NO
     )
 
     IF %ERRORLEVEL% NEQ 0 (
