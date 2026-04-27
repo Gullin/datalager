@@ -3,7 +3,7 @@ SETLOCAL EnableDelayedExpansion
 @CALL _global-settings
 
 REM CP 437 (DOS)
-REM Argument 1: V„xel [ null | [ ---reset|-r ]          | [ --clear|-c ] | 
+REM Argument 1: V„xel [ null | [ --reset|-r ]          | [ --clear|-c ] | 
 REM                            [ --schemainit|-si ]     | [ --backupconfig|-bc ] |
 REM                            [ --createsecrets|-cs ]  | [ --createframe|-cf ] |
 REM                            [ --new|-n ]             | [ --deploy|-d ] |
