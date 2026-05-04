@@ -70,6 +70,7 @@ _temp/
 # Logs and Databases #
 ######################
 *.log
+**/_log
 **/_log/*
 
 
