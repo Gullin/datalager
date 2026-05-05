@@ -124,7 +124,7 @@ EXIT /B
 
 
 REM ### METODER ###
-REM Hanterar data till datalager
+REM Ladda ner
 :Download
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
 
@@ -158,9 +158,9 @@ REM Hanterar data till datalager
                             --RotDirectory %DL_ROTDIR% ^
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
-                            --FME_LAUNCH_VIEWER_APP YES ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
-                            --PG_SCHEMA %DL_OUTDBSCHEMA%
+                            --PG_SCHEMA %DL_OUTDBSCHEMA% ^
+                            --FME_LAUNCH_VIEWER_APP NO
     )
 
     IF %ERRORLEVEL% NEQ 0 (
