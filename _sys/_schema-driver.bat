@@ -122,7 +122,7 @@ REM Metoder
                             --ProcessModulName %_arg1% ^
                             --IsWholeProcessRun %_arg2% ^
                             --ENFORCE_NAMING_CONVENTION %_arg5% ^
-                            --FME_LAUNCH_VIEWER_APP YES
+                            --FME_LAUNCH_VIEWER_APP NO
     )
 
     IF %ERRORLEVEL% NEQ 0 (
