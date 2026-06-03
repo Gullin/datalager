@@ -258,6 +258,10 @@ IF %ERRORLEVEL% EQU 0 (
                 ECHO   --get-format-used ^| -gfu            Listar anv„nda format och antalet f”rekomster fr†n _modul_settings_dataset.ini
                 ECHO   --check-repo-folders ^| -crf         J„mf”r k„llf”rvaret ^(repot^) med en representativ filbaserad sajt
                 ECHO   --check-repo-dates ^| -crd           Redovisar k„llf”rvarets ^(repot^) resp. underkatalogs min.- och max.-datum
+                ECHO   --change-schema-path ^| -csp         Žndrar s”kv„gen i "schema-manifest.xlsx" och "_dirpath" f”r filbaserade dataset.
+                ECHO                                         argument 1: processmodul ^(l„mnas tomt om alla^), argument 2: textstr„ng att byta ut, argument 3: ers„ttande textstr„ng.
+                ECHO                                         Om flera processmoduler ska dessa vara inom cituationstecken och avgr„nsas med mellanrum.
+                ECHO                                         Ers„ttande textstr„ng beh”ver vara identisk ^(skiftl„gesk„nsligt^).
                 ECHO.
 
             ) ELSE (
@@ -276,6 +280,9 @@ IF %ERRORLEVEL% EQU 0 (
                 SET "CRD="
                 IF "%2" == "--check-repo-dates" SET CRD=1
                 IF "%2" == "-crd" SET CRD=1
+                SET "CSP="
+                IF "%2" == "--change-schema-path" SET CSP=1
+                IF "%2" == "-csp" SET CSP=1
                 IF DEFINED GPM (
                     CD /D "%DL_POWERSHELLDIR%"
 
@@ -315,6 +322,35 @@ IF %ERRORLEVEL% EQU 0 (
 
                     CD /D %DL_ROTDIR%
                     SET "CRD="
+                )
+                IF DEFINED CSP (
+
+                    @CALL _sys\_process-clean-clear
+
+                    IF [%3]==[] (
+                        ECHO.
+                        ECHO " #### OBS^! Funktion Change Schema Path tar minst 2 argument #### "
+                        ECHO.
+                        @CALL datalager -t
+                    )
+                    IF [%5]==[] (
+                        REM Endast tv† argument
+                        SET "ARG1=%DL_ROTDIR%"
+                        SET "ARG2=%~3"
+                        SET "ARG3=%~4"
+                    ) ELSE (
+                        REM Tre argument
+                        SET "ARG1=%~3"
+                        SET "ARG2=%~4"
+                        SET "ARG3=%~5"
+                        SET DL_ISWHOLEPROCESS=0
+                    )
+
+
+                    @CALL _sys\_change-schema-path "!ARG1!" "!ARG2!" "!ARG3!"
+
+
+                    SET "CSP="
                 )
             )
 
