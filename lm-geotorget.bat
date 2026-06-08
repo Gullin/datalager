@@ -185,7 +185,7 @@ GOTO :eof
 
 REM Hanterar data till datalager
 :ManageSourceDatalager
-    @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
+    @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS02%"
 
     REM <#BESKRIVNING AV PARAMETRAR TILL FME-PROCESS#>
     >nul (
