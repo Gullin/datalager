@@ -129,7 +129,8 @@ REM Hanterar data till datalager
                             --OutputDirectory %DL_PROCESSMODULOUTDIR% ^
                             --ProcessModulName %DL_PROCESSNAME% ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
-                            --PG_SCHEMA %DL_OUTDBSCHEMA%
+                            --PG_SCHEMA %DL_OUTDBSCHEMA% ^
+                            --FME_LAUNCH_VIEWER_APP NO
     )
 
     IF %ERRORLEVEL% NEQ 0 (
