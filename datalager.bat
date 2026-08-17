@@ -428,6 +428,7 @@ EXIT
 
     @CALL hvm
     @CALL lm-geotorget
+    @CALL lm-geotorget-kommun_lan_rike
     @CALL lst
     @CALL raa
     @CALL nvv
