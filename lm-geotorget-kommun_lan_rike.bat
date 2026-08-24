@@ -38,7 +38,7 @@ SET DL_PROCESSID=%DL_PROCESSNAME%_%CurrentDateTime%
 IF %ERRORLEVEL% EQU 0 (
 
     REM Ladda ner data
-    @REM @CALL :DownloadData
+    @CALL :DownloadData
 
     IF %ERRORLEVEL% EQU 0 (
 
