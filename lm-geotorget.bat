@@ -5,16 +5,6 @@ SETLOCAL EnableDelayedExpansion
 REM CP 437 (DOS)
 
 
-REM Processmodulen kan ta 1 argument, antingen f”rkortat eller utskrivet, -oo | --only-order.
-REM Skickas inget eller fel argument k”rs hela processen.
-REM Kontrollerar om ett argument existerar, anv„nder argumentet f”r att alternativt k”ra processen f”r att endast genomf”ra en best„llning av leverans.
-IF NOT [%1]==[] (
-    SET _arg=%1
-
-    IF "!_arg!"=="-oo" SET ORDER=1
-    IF "!_arg!"=="--only-order" SET ORDER=1
-)
-
 REM S„tts per bat-fil
 REM Namn f”r hela processen
 SET DL_PROCESSNAME=lm-geotorget
@@ -26,6 +16,22 @@ SET DL_FMEPROCESS02="%DL_PROCESSNAME%\_fme\02-geotorget-DatalagerManage-driver.f
 IF NOT DEFINED DL_ISWHOLEPROCESS (
     SET DL_ISWHOLEPROCESS=0
 )
+
+REM Processmodulen kan ta 2 argument, antingen f”rkortat eller utskrivet,
+REM     -oo | --only-order  = L„gger ny order f”r nerladdning 
+REM     -ex | --extract     = K”r processen utan distribuering (endast extrahering/nerladdning)
+REM Skickas inget eller fel argument k”rs hela processen.
+REM Kontrollerar om ett argument existerar, anv„nder argumentet f”r att alternativt k”ra processen f”r att endast genomf”ra en best„llning av leverans.
+IF NOT [%1]==[] (
+    FOR %%A IN (%*) DO (
+        IF /I "%%~A"=="-only-order" SET ORDER=1
+        IF /I "%%~A"=="-oo" SET ORDER=1
+
+        IF /I "%%~A"=="--extract" SET EXTRACT=1
+        IF /I "%%~A"=="-ex" SET EXTRACT=1
+    )
+)
+
 
 
 
@@ -90,29 +96,36 @@ IF %ERRORLEVEL% EQU 0 (
 
 
 
-            IF !ERRORLEVEL! EQU 0 (
-                REM Loggning av resp. process resurskatalog f”r distribuering och distribuering om processmodulen k”rs enskilt
-                REM Distribuering g”rs ej vid fel.
-                IF %DL_ISWHOLEPROCESS% == 1 (
-                    ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
-                ) ELSE (
-                    @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
-
-                    IF !ERRORLEVEL! NEQ 99999 (
-                        ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
-                        @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+            REM Om inte endast extrahering av data utan „ven distribuering
+            IF NOT DEFINED EXTRACT (
+                IF !ERRORLEVEL! EQU 0 (
+                    REM Loggning av resp. process resurskatalog f”r distribuering och distribuering om processmodulen k”rs enskilt
+                    REM Distribuering g”rs ej vid fel.
+                    IF %DL_ISWHOLEPROCESS% == 1 (
+                        ECHO %DL_OUTDIR% >> %DL_DISTSOURCE%
                     ) ELSE (
-                        @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
-                        @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR f”r %DL_PROCESSID% genererad av FME-processerna. Kunde ej g† vidare med distribuering av repository." %DL_PROCESSNAME%
+                        @CALL _sys\_exist-FATAL_ERROR %DL_PROCESSNAME%
 
-                        GOTO exit
+                        IF !ERRORLEVEL! NEQ 99999 (
+                            ECHO %DL_OUTDIR% > %DL_ROTDIR%%DL_PROCESSNAME%/_log/%DL_DISTSOURCEFILE%
+                            @CALL _sys\_datalager-distribute %DL_PROCESSNAME%
+                        ) ELSE (
+                            @CALL _sys\_log-batch ERROR "Allvarligt fel i FME-skript vid exekvering av process %DL_PROCESSID%"
+                            @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel !ERRORLEVEL! fr†n FATAL_ERROR f”r %DL_PROCESSID% genererad av FME-processerna. Kunde ej g† vidare med distribuering av repository." %DL_PROCESSNAME%
+
+                            GOTO exit
+                        )
                     )
+                ) ELSE (
+                    @CALL _sys\_log-batch ERROR "Allvarligt fel vid dataprocessandet i process %DL_PROCESSID%"
+                    @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, dataprocessandet har misslyckats" %DL_PROCESSNAME%
+
+                    GOTO exit
                 )
             ) ELSE (
-                @CALL _sys\_log-batch ERROR "Allvarligt fel vid dataprocessandet i process %DL_PROCESSID%"
-                @CALL _sys\_log-error %DL_PROCESSID% "Errorlevel %ERRORLEVEL% f”r %DL_PROCESSID%, dataprocessandet har misslyckats" %DL_PROCESSNAME%
-
-                GOTO exit
+                IF DL_ISWHOLEPROCESS EQU 1 (
+                    @CALL _sys\_log-batch INFOR "Exekvering av process %DL_PROCESSID% utan processmoduls egna distribuering"
+                )
             )
 
         ) ELSE (
