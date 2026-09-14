@@ -163,8 +163,8 @@ REM Ladda ner data
                             --OutputDirectory %DL_ROTDIR%%DL_PROCESSNAME%/_ned ^
                             --ProcessModulName %DL_PROCESSNAME% ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
-                            --USERNAME %LM-USER-LAND0003% ^
-                            --PASSWORD %LM-PASS-LAND0003% ^
+                            --USERNAME %LM-USER% ^
+                            --PASSWORD %LM-PASS% ^
                             --FME_LAUNCH_VIEWER_APP YES
     )
 
