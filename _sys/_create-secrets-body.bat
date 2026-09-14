@@ -64,6 +64,9 @@ REM Skapar upp filstrukturen f”r d„r hemligheter kan sparas
         ECHO SET CONSUMERSECRET-LM-GEOTORGET= >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
         ECHO REM F”r flera scope ange mellanslag mellan dessa >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
         ECHO SET SCOPES-LM-GEOTORGET= >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
+        ECHO REM Lantm„teriet funktionskonto ^(n”dv„ndiga beh”righeter kr„vs beroende p† anv„ndning^) >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
+        ECHO SET LM-USER= >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
+        ECHO SET LM-PASS= >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
         ECHO. >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
         ECHO REM Trafikverket, Lastkajen >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
         ECHO SET USER-TRV-LASTKAJEN= >> !DL_SECRETSFOLDER!!DL_SECRETSFILE!
