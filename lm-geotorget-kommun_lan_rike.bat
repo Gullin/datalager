@@ -165,7 +165,7 @@ REM Ladda ner data
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
                             --USERNAME %LM-USER% ^
                             --PASSWORD %LM-PASS% ^
-                            --FME_LAUNCH_VIEWER_APP YES
+                            --FME_LAUNCH_VIEWER_APP NO
     )
 
     IF %ERRORLEVEL% NEQ 0 (
@@ -191,7 +191,7 @@ REM Hanterar data till datalager
                             --ProcessModulName %DL_PROCESSNAME% ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
                             --PG_SCHEMA %DL_OUTDBSCHEMA% ^
-                            --FME_LAUNCH_VIEWER_APP YES
+                            --FME_LAUNCH_VIEWER_APP NO
     )
 
     IF %ERRORLEVEL% NEQ 0 (
