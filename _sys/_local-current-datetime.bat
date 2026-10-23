@@ -8,11 +8,11 @@ IF /I "%_arg%"=="standard" GOTO Standard
 GOTO Standard
 
 :IsoSimple
-FOR /F "delims=" %%I IN ('powershell.exe -NoLogo -NoProfile -NonInteractive -Command "Get-Date -Format yyyyMMddTHHmmssffffff"') DO ECHO %%I
+FOR /F "delims=" %%I IN ('powershell.exe -NoLogo -NoProfile -NonInteractive -Command "Get-Date -Format yyyyMMddTHHmmssfff"') DO ECHO %%I
 GOTO End
 
 :Standard
-FOR /F "delims=" %%I IN ('powershell.exe -NoLogo -NoProfile -NonInteractive -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss.ffffff'"') DO ECHO %%I
+FOR /F "delims=" %%I IN ('powershell.exe -NoLogo -NoProfile -NonInteractive -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss.fff'"') DO ECHO %%I
 
 :End
 ENDLOCAL
