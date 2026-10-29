@@ -67,6 +67,7 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO   --new ^| -n                  Skapar ny processmodul. Bat-fil efter mall ^(v„rden mellan ^<^#^#^>^ ska ers„ttas^) med tillh”rande kataloger enl. --createframe
         ECHO   --deploy ^| -d               Skapar en katalog %DL_DEPLOYDIR% med de filer och kataloger som kr„vs f”r upps„ttning av ny fullst„ndig process
         ECHO   --instal ^| -i               OBS Ej fungerande p.g.a. process ej g†r att k”ra genom Windows path.
+        ECHO   --refreshclipparea ^| -rca   Uppdaterar klippytor. Inneh†ller ytor f”r Sk†ne, kranskommuner och Landskrona kommun. Har beroende till processmodul lm-geotorget-kommun_lan_rike
         ECHO   --tools ^| -t                Samling med verktyg f”r att st”dja vissa uppgifter
         ECHO.
 
@@ -102,6 +103,8 @@ IF %ERRORLEVEL% EQU 0 (
         IF "%_arg%"=="-d" SET DEPLOY=1
         IF "%_arg%"=="--instal" SET INSTALLING=1
         IF "%_arg%"=="-i" SET INSTALLING=1
+        IF "%_arg%"=="--refreshclipparea" SET REFRESHCLIPPAREA=1
+        IF "%_arg%"=="-rca" SET REFRESHCLIPPAREA=1
         IF "%_arg%"=="--tools" SET TOOLS=1
         IF "%_arg%"=="-t" SET TOOLS=1 ELSE GOTO notdefined
 
@@ -241,6 +244,15 @@ IF %ERRORLEVEL% EQU 0 (
             @CALL _sys\_setup
 
             SET INSTALLING=
+
+            GOTO exit
+        )
+        IF DEFINED REFRESHCLIPPAREA (
+            @CALL _sys\_log-batch CLIPP %DL_PROCESSID_MASTER%
+            @CALL lm-geotorget-kommun_lan_rike -ex
+            @CALL _sys\_refreshclipparea
+
+            SET REFRESHCLIPPAREA=
 
             GOTO exit
         )

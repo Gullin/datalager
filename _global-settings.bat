@@ -1,4 +1,5 @@
 @ECHO OFF
+REM CP 437 (DOS)
 REM Kallas p† fr†n alla bat-filer.
 REM Placeras f”rst i andra bat-filer.
 REM Ska ligga i processens rotkatalog
@@ -34,6 +35,9 @@ SET DL_DISTSOURCE=%DL_LOGDIR%%DL_DISTSOURCEFILE%
 
 REM Repositorydelarnas rotkatalog
 SET DL_REPOSITORYROTDIR=_geodatarepo\
+
+REM Processmodul f”r styrning av vilket underlagsdata som anv„nds f”r klippytor
+SET "DL_PROCESSMODULE_CLIPPAREA=lm-geotorget-kommun_lan_rike"
 
 REM S”kv„g till PowerShell, anv„nds n„r PowerShell-skript exekveras
 SET DL_POWERSHELLDIR="C:\Windows\System32\WindowsPowerShell\v1.0"
