@@ -156,7 +156,8 @@ REM Hanterar data till datalager
                             --PG_SCHEMA %DL_OUTDBSCHEMA% ^
                             --PlandokumentDir  %DL_DIRPLANDOKUMENT% ^
                             --PlandokumentFileFilter "**/*.{pdf,tif}" ^
-                            --PlandokumentDir3Rd  %DL_DIRPLANDOKUMENT3RD%
+                            --PlandokumentDir3Rd  %DL_DIRPLANDOKUMENT3RD% ^
+                            --FME_LAUNCH_VIEWER_APP NO
     )
 
     IF %ERRORLEVEL% NEQ 0 (
