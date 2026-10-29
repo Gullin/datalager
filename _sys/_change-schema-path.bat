@@ -86,7 +86,7 @@ REM Metoder
                             --StrSearch "%ARG2%" ^
                             --StrReplace "%ARG3%" ^
                             --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
-                            --FME_LAUNCH_VIEWER_APP YES
+                            --FME_LAUNCH_VIEWER_APP NO
     )
 
     IF %ERRORLEVEL% NEQ 0 (
