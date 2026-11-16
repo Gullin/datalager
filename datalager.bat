@@ -64,7 +64,7 @@ IF %ERRORLEVEL% EQU 0 (
         ECHO   --backupconfig ^| -bc        S„kerhetskopierar schema-filer ^(xlsx, ini^) och inst„llningar f”r m†lkataloger
         ECHO   --createsecrets ^| -cs       Skapar bat-fil med f”ruts„ttningarna ^(variabelnamn^) f”r n”dv„ndiga inlogg och e-postinst„llningar f”r fortsatt ifyllnad
         ECHO   --createframe ^| -cf         Skapar processmoduls katalog med underkataloger och tom _modul-settings-datasets.ini fil med f”rklarande text
-        ECHO   --new ^| -n                  Skapar ny processmodul. Bat-fil efter mall ^(v„rden mellan ^<^#^#^>^ ska ers„ttas^) med tillh”rande kataloger enl. --createframe
+        ECHO   --new ^| -n                  Skapar ny processmodul. Argument f”r nytt processmodulsnamn skickas med. Bat-fil efter mall ^(v„rden mellan ^<^#^#^>^ ska ers„ttas^) med tillh”rande kataloger enl. --createframe
         ECHO   --deploy ^| -d               Skapar en katalog %DL_DEPLOYDIR% med de filer och kataloger som kr„vs f”r upps„ttning av ny fullst„ndig process
         ECHO   --instal ^| -i               OBS Ej fungerande p.g.a. process ej g†r att k”ra genom Windows path.
         ECHO   --refreshclipparea ^| -rca   Uppdaterar klippytor. Inneh†ller ytor f”r Sk†ne, kranskommuner och Landskrona kommun. Har beroende till processmodul lm-geotorget-kommun_lan_rike
