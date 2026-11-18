@@ -78,14 +78,14 @@ REM Metoder
     @CALL _sys\_log-batch START "%DL_PROCESSID% %DL_FMEPROCESS01%"
 
     >nul (
-        @%DL_FMEFULLPATH% %DL_FMEPROCESS01% ^
-                            --RotDirectory %DL_ROTDIR% ^
-                            --ProcessName %DL_PROCESSID% ^
-                            --ProcessModulName "%_arg%" ^
-                            --InData "%ARG1%" ^
-                            --StrSearch "%ARG2%" ^
-                            --StrReplace "%ARG3%" ^
-                            --IsWholeProcessRun %DL_ISWHOLEPROCESS% ^
+        @!DL_FMEFULLPATH! !DL_FMEPROCESS01! ^
+                            --RotDirectory !DL_ROTDIR! ^
+                            --ProcessName !DL_PROCESSID! ^
+                            --ProcessModulName !_arg! ^
+                            --InData !ARG1! ^
+                            --StrSearch !ARG2! ^
+                            --StrReplace !ARG3! ^
+                            --IsWholeProcessRun !DL_ISWHOLEPROCESS! ^
                             --FME_LAUNCH_VIEWER_APP NO
     )
 
