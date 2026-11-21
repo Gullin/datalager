@@ -7,7 +7,7 @@ REM CP 437 (DOS)
 
 REM S„tts per bat-fil
 REM Namn f”r hela processen
-SET DL_PROCESSNAME=lm-geotorget
+SET DL_PROCESSNAME=lm-geotorget-topografi_10_nedladdning
 REM Processlokala parametrar
 SET DL_OUTDIR=lantmateriet\topografi_10_nedladdning
 SET DL_OUTDBSCHEMA=data_auto_lantmateriet_topografi_10_nedladdning
