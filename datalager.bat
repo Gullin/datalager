@@ -439,7 +439,7 @@ EXIT
     @REM @CALL lm-geodataplatsen-fastighetskartan
 
     @CALL hvm
-    @CALL lm-geotorget
+    @CALL lm-geotorget-topografi_10_nedladdning
     @CALL lm-geotorget-kommun_lan_rike
     @CALL lst
     @CALL raa
